@@ -1,20 +1,20 @@
 **认知神经 fMRI 工具包与 Codex 插件**
 
-本仓库提供已经完成的三个计算工具包，以及调用它们的 Codex skill／本地执行插件。插件负责检查环境、盘点数据、逐步询问研究目标和实验范式、生成清单、确认参数并调用现成入口。MATLAB/SPM 分析计算由原工具包承担。
+本仓库提供已经完成的三个计算工具包，以及调用它们的 Codex skill／plugin插件。MATLAB/SPM 分析计算由对应工具包承担，在此处不提供额外下载与包装。
 
 **目录与下载**
 
 | 内容 | 当前入口 |
 | --- | --- |
-| 预处理、混杂与 QC | [CogNeuro_fMRI_Toolkit](CogNeuro_fMRI_Toolkit/) |
-| GLM、LSA/LSS、结果与 beta 导出等 | [GLM](GLM/) |
-| FC、PPI/DCM、预测、解码、RSA 等方法 | [Function](Function/) |
-| 插件 0.1.1 完整来源包 | [下载ZIP](CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace-0.1.1.zip) |
-| 插件安装与首次配置 | [安装教程](CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/INSTALL_ZH.md) |
+| 预处理、 QC | [CogNeuro_fMRI_Toolkit](CogNeuro_fMRI_Toolkit/) |
+| 各类GLM | [GLM](GLM/) |
+| FC、PPI/DCM、预测、解码、RSA 等具体方法 | [Function](Function/) |
+| 插件 0.1.1 完整包 | [下载ZIP](CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace-0.1.1.zip) |
+| 插件安装与配置教程 | [安装教程](CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/INSTALL_ZH.md) |
 | 独立 skill 0.4.0 | [下载ZIP](CogNeuro_fMRI_Skill/cogneuro-fmri-0.4.0.zip) |
 | 独立 skill 安装教程 | [详细教程](CogNeuro_fMRI_Skill/INSTALL_AND_FIRST_RUN_ZH_0.4.0.md) |
 
-本次保留提供目录中的历史发行包；首次使用优先选择插件0.1.1或独立skill0.4.0。两者择一安装可避免同名skill重复出现。三个工具包保留各自内部结构，放在用户选择的目录，不要求D盘。
+
 
 **从本仓库安装插件**
 
