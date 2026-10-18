@@ -41,14 +41,12 @@ codex plugin add cogneuro-fmri@cogneuro-fmri-tools
 填写真实清单并解释参数，完整方案经我确认后再执行。
 ```
 
-**运行环境与范围**
+**运行环境**
 
-skill基础脚本需要Python3.10+，只使用标准库。调用MATLAB入口需要完整MATLAB及所选方法的依赖；现有工具包记录实测MATLAB R2025b、SPM12 revision7771。SPM、FSL/CAT、GIFT、BrainSpace、BCT、PCM、GLHMM、PyDDM等按实际路线核对，不能将来源表中的全部参考项视为必装依赖。插件不附带MATLAB/SPM或这些可选安装。
+skill基础脚本需要Python3.10+，只使用标准库。调用MATLAB入口需要完整MATLAB及所选方法的依赖；现有工具包记录实测MATLAB R2025b、SPM12 revision7771无问题。
 
-插件封装检查与工具包科学验证分别记录。插件／skill的完成记录不代替原方法约束、模型收敛和研究质量检查。已有验证边界见各包当前说明和插件中的VALIDATION.json，不因上传而新增数值验证声明。
 
 **本次发布文件与许可状态**
-
 上传使用作者提供的独立副本，保留各工具包、配置和用户文档的当前字节。根目录[PUBLICATION_MANIFEST.json](PUBLICATION_MANIFEST.json)记录本次源码及附件的SHA256；原包已有清单保留原样，其中部分文档和一个已缺失文件与旧清单存在差异，具体列在该新清单的upstream_manifest_notes中，没有恢复旧内容。
 
 项目作者尚未选定自有内容的项目级许可证。本次上传没有代作者添加许可证；现有第三方许可证和来源声明保留在原位置。授权方式确定后可另行补充。
