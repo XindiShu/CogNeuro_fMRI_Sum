@@ -1,0 +1,987 @@
+[
+  {
+    "path": "config/design_config.m",
+    "bytes": 1089,
+    "sha256": "FDCCF5723C79B83157D71F8D705A0B43AB4E38E97CB7F3E4E65E415AC6B3589D"
+  },
+  {
+    "path": "config/glm_beta_sources_template.tsv",
+    "bytes": 346,
+    "sha256": "47B367658EC13636C6FA3E11069F21858D9B1F7FDC83AE742BEB9FAE4BC79A16"
+  },
+  {
+    "path": "config/glm_config.asv",
+    "bytes": 10441,
+    "sha256": "E108B61B31F321C9CB380E1946FD57B4F31CB05FD889DA5F7EDC5F1DED66874F"
+  },
+  {
+    "path": "config/glm_config.m",
+    "bytes": 10675,
+    "sha256": "2D3135480204CCB680BF40A5B646AF4E525DADAB299EE71F055085D64149C1D1"
+  },
+  {
+    "path": "config/glm_events_glmsingle_template.tsv",
+    "bytes": 263,
+    "sha256": "C9053450B8585D2FFDD414E569EF8E56B060A72494298896CA451CC3524F8924"
+  },
+  {
+    "path": "config/glm_events_pmod_template.tsv",
+    "bytes": 150,
+    "sha256": "8C4A495A504A304A5172EC5553C97939512EFEFAC56310DF697D8EC6098AE1FD"
+  },
+  {
+    "path": "config/glm_events_template.tsv",
+    "bytes": 304,
+    "sha256": "5E7E75D1CC89320AAFC7A0951F58EC25234D575BF4DA2935CFD9F3CEC3B004EB"
+  },
+  {
+    "path": "config/glm_group_paired_template.tsv",
+    "bytes": 623,
+    "sha256": "C81E2B2707307852E4B76012EEA36B9BA91F78A4D6F1884F331870E5CC85F213"
+  },
+  {
+    "path": "config/glm_group_regression_template.tsv",
+    "bytes": 476,
+    "sha256": "7975DEBE9E1B7E89870FFB35536CB0620E8348F82F42B8B370FCFBFCFE760609"
+  },
+  {
+    "path": "config/glm_group_template.tsv",
+    "bytes": 648,
+    "sha256": "159A9D26FDC15E26A776D9DA8A1B2A2946FB24B266538C8D46ACF6461541242E"
+  },
+  {
+    "path": "config/glm_group_two_sample_template.tsv",
+    "bytes": 403,
+    "sha256": "C5FD3D5266655A9E785ABD6855BB6B86AE36C75495AEA36E355B0AD3BA2B6DAD"
+  },
+  {
+    "path": "config/glm_outputs_config.m",
+    "bytes": 2651,
+    "sha256": "8D565E5A2F98E60A570AFD3E9213141D827B31655F2AFD7FD3B9A44E1861EFA4"
+  },
+  {
+    "path": "config/glm_results_template.tsv",
+    "bytes": 77,
+    "sha256": "09426429F4BDDECC7E19204564A268975BDCEFD03AFFD8872E5108992133B61D"
+  },
+  {
+    "path": "config/glm_roi_template.tsv",
+    "bytes": 114,
+    "sha256": "AFC0FB2FEAD95BC19AEF41805B82B4482A96B8E3CC1BDBFC6E0A120E66C4D3B7"
+  },
+  {
+    "path": "config/glm_runs_template.tsv",
+    "bytes": 187,
+    "sha256": "616C27FBD4BD032F6A7C83AA70F833871281B88694447CE8099FFFBD5D2D3C47"
+  },
+  {
+    "path": "config/glmsingle_demo_config.m",
+    "bytes": 3641,
+    "sha256": "562CBC199C3544F2B3C1123A572EF8B2859D82E8281E33E452432EB75322E58B"
+  },
+  {
+    "path": "config/preprocess_config.m",
+    "bytes": 2074,
+    "sha256": "125A1A6B803A5CE32898DEDD14215EEA7DAB6872B6539DFF09E90CF7C337DE60"
+  },
+  {
+    "path": "config/single_trial_config.m",
+    "bytes": 1119,
+    "sha256": "34098C208E3A268753C88A6911136EAF1849E7869E5024E80E1990CCD3B55B62"
+  },
+  {
+    "path": "config/single_trial_runs_template.tsv",
+    "bytes": 521,
+    "sha256": "6C52EB64CF8EBEBD14B8648051C442DEA530F6C3313F941325EA6962B887B9CD"
+  },
+  {
+    "path": "config/toolkit_config.m",
+    "bytes": 27736,
+    "sha256": "6C36BBDF326BD31B183C19F003BD3EA0DB79FB834984B850CA4C8DD355F00086"
+  },
+  {
+    "path": "docs/Condition_GLM.md",
+    "bytes": 8339,
+    "sha256": "38BE99C88E734D5652991E44B9572C8A3DD0CE28B11B68A202B6AE35A6151BF8"
+  },
+  {
+    "path": "docs/Cross_run_group_GLM.md",
+    "bytes": 9411,
+    "sha256": "50E1044517B31DDF794940A33D4AD922A48328FBE57490E9E0290B0C448DC4D1"
+  },
+  {
+    "path": "docs/Estimation_Units_GLM_.md",
+    "bytes": 7666,
+    "sha256": "99726717A45D1220020F04201E0137A16F427A301682EFFC96B3C79C6F7D2E87"
+  },
+  {
+    "path": "docs/GLM_HRF.md",
+    "bytes": 7452,
+    "sha256": "4DEA253502C626607EA44AF277200346BBBF5B2B2EDD4601F25D8D30CFD58D62"
+  },
+  {
+    "path": "docs/GLMsingle_ABCD.md",
+    "bytes": 14242,
+    "sha256": "A5A53E184F1450C33028A21B2321538CB9210F2F75D36027FBA2B5350F3C2647"
+  },
+  {
+    "path": "docs/GLMSINGLE_HCP_DEMO.md",
+    "bytes": 9610,
+    "sha256": "9328EB5D9D0FFB8D1FB9B3F47363289E7CA60E5F33E6559D0C77D9763F43E37F"
+  },
+  {
+    "path": "docs/Group_and_Convariates.md",
+    "bytes": 11495,
+    "sha256": "238C7FF19823D765792FFFF90165572ACF5545250868CBADCF3C55688F7F1538"
+  },
+  {
+    "path": "docs/GUIDE.md",
+    "bytes": 12173,
+    "sha256": "CBD007D96CCB90534BFD12A24CA8C93090E1BA56737ADA1E5D3F728AA476D1BA"
+  },
+  {
+    "path": "docs/Line_by_Line_Explanation.md",
+    "bytes": 32166,
+    "sha256": "C091E5F850B88ABF42CF8119D257E77D9C43887EC13336D8EBA936E425EE06F9"
+  },
+  {
+    "path": "docs/LSA_GLM.md",
+    "bytes": 7022,
+    "sha256": "4B08AD639AEDAD725823893D36267084516850199125EB1A233432F242ABE872"
+  },
+  {
+    "path": "docs/LSS_GLM.md",
+    "bytes": 5825,
+    "sha256": "880186BB903BF84656E4B72A7552CCBAD76ABFF32DBB59025D50A04490457AC7"
+  },
+  {
+    "path": "docs/Methods_Summary.md",
+    "bytes": 28090,
+    "sha256": "0C5556FF87965F7F1A5BD74D6605E9A413F2CE27527A5FB1CE393B5AE12D3B97"
+  },
+  {
+    "path": "docs/Package_File_Explanation.md",
+    "bytes": 61676,
+    "sha256": "0D8E2A96975623EEB4283894CAE5720313C781E5A1BB3B95DCB23E912C36E266"
+  },
+  {
+    "path": "docs/Pmod_and_FIR_GLM.md",
+    "bytes": 10188,
+    "sha256": "90AE36754DB204A4368B40FAC6416EDD5E3D2CA5C2690E347998A3A48261486A"
+  },
+  {
+    "path": "examples/hcp_100206_confounds.tsv",
+    "bytes": 505,
+    "sha256": "3BD14C907701601D20715427A88BA89061F12816375B7A714DEA1CE01FE71BA3"
+  },
+  {
+    "path": "examples/hcp_100206_sdc_confounds.tsv",
+    "bytes": 479,
+    "sha256": "AF1CBF66B45A9A4F69EB3F22A5DC349D3A2AE72FC4E80EC842D2AF61CCFBBD58"
+  },
+  {
+    "path": "examples/hcp_100206_sdc_glm.tsv",
+    "bytes": 314,
+    "sha256": "9E43F0382874207C328C7AB7A0278FB6C75C4D621612FFE78CE46836382D595D"
+  },
+  {
+    "path": "examples/hcp_100206_sdc_single_trial.tsv",
+    "bytes": 314,
+    "sha256": "9E43F0382874207C328C7AB7A0278FB6C75C4D621612FFE78CE46836382D595D"
+  },
+  {
+    "path": "examples/hcp_glm_engineering.tsv",
+    "bytes": 319,
+    "sha256": "04BA3CC246209B4DCFA81AB444CDA15FB6C43EE5883E3477F0FF4EAFFCD002D9"
+  },
+  {
+    "path": "examples/hcp_language_lr_events.tsv",
+    "bytes": 272,
+    "sha256": "2BF808D2FB929CE41170DDAB0BBE375CCDB008F74EA6E3E2B04C44D23EC985EE"
+  },
+  {
+    "path": "examples/run_hcp_sdc_glm_100206.m",
+    "bytes": 2585,
+    "sha256": "9F99A09D2B520DDF3BEE1ACFA3BF928C02B723830F8BB86019E720D46837BB93"
+  },
+  {
+    "path": "examples/run_hcp_sdc_math_trial_100206.m",
+    "bytes": 1724,
+    "sha256": "D41A106E67B2BE17F50A3B29F98F088DAF495037659BED234F559F375E91C23C"
+  },
+  {
+    "path": "examples/run_hcp_sdc_single_trial_100206.m",
+    "bytes": 2400,
+    "sha256": "10E708932DBDE0B440E9805AEC6081F1818375E7B3A95B20A8C890927307077C"
+  },
+  {
+    "path": "examples/validate_glm_engineering.m",
+    "bytes": 1303,
+    "sha256": "E766C2FE02E46C644C8EFD03A3F1682C56C10ADD659179FF4D5D415B558559E6"
+  },
+  {
+    "path": "examples/validate_glm_group_engineering.m",
+    "bytes": 5295,
+    "sha256": "4DF14BACA080C3DDE3AB5DDDED0B4496D85704FAB4FF36A7B1E368FA1E47F099"
+  },
+  {
+    "path": "examples/validate_glm_outputs_engineering.m",
+    "bytes": 4805,
+    "sha256": "2674DE0139C0DBC7AE99AE8077A0E2EB4C22331772C440235DE0B878CEA239FB"
+  },
+  {
+    "path": "examples/validate_glm_release.m",
+    "bytes": 5408,
+    "sha256": "9F2DFA4539322607A40D09C35B96D7F37ECA06FF69359417CC10F274CB906459"
+  },
+  {
+    "path": "examples/validate_glmsingle_engineering.m",
+    "bytes": 4080,
+    "sha256": "63E7DF51C28C91AD2100B7E4B09EAC7F217C33088377842169E3ADE2DBF62F5C"
+  },
+  {
+    "path": "external/glmsingle/DEPENDENCY_MANIFEST.json",
+    "bytes": 13919,
+    "sha256": "7A2F100002F2F7D61D87DA7D7C24A96B4762E90E19E657BE20D01C997CED6BA5"
+  },
+  {
+    "path": "external/glmsingle/LICENSE",
+    "bytes": 1520,
+    "sha256": "C4074F88FC1D822ACB17EB12D8278BC096D8B1884D310F573574436C54FC94B7"
+  },
+  {
+    "path": "external/glmsingle/matlab/fracridge/LICENSE",
+    "bytes": 1311,
+    "sha256": "BE29AB2BB99E886C5CDDCAFCEAB0871E02AA07C8A7F279F942D954F4CAF18778"
+  },
+  {
+    "path": "external/glmsingle/matlab/fracridge/matlab/fracridge.m",
+    "bytes": 19048,
+    "sha256": "10EBBF9BA5BE453C65FA926EB870B354A5765AAF0FA19CCDB4111ECFDB522169"
+  },
+  {
+    "path": "external/glmsingle/matlab/fracridge/matlab/interp1qr_license.txt",
+    "bytes": 1312,
+    "sha256": "E8B763247BB67732424741596C6D927C0BEF9E360EC11FD6597A2D5500B88F1C"
+  },
+  {
+    "path": "external/glmsingle/matlab/fracridge/matlab/interp1qr.m",
+    "bytes": 3159,
+    "sha256": "BEF97E58FCA6DDF9B407642B8752157D539D8F04EFFF4F9EC5EDE7256FCA00BD"
+  },
+  {
+    "path": "external/glmsingle/matlab/GLMestimatesingletrial.m",
+    "bytes": 63318,
+    "sha256": "F6C7B9AA3023B90F143FF1C1BBC69514D2DD58166E8E5BEA703BA76D72991129"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/absolutepath.m",
+    "bytes": 737,
+    "sha256": "9FD9152806DCE309FB737E6988B886E0758239A4DA07ECB8827814E70B87AAFB"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/axissquarify.m",
+    "bytes": 903,
+    "sha256": "8178BF41162682A631D94164643F37B4E76B1AE89C59F1FA934986156B6EAE7D"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/calccod.m",
+    "bytes": 4080,
+    "sha256": "655E7A869E60E2D26C6A44E38313A2992E4F054470A6FE80C8D059D0AAABA451"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/calccodcell.m",
+    "bytes": 892,
+    "sha256": "FED4D04C5CA732EBC02FF55FE4E6666B18CC8BE94B8BC0EC6107C69223C8D167"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/calccorrelation.m",
+    "bytes": 3942,
+    "sha256": "8C633EF71F58F6328BE756F1D735268F2B9924498941E16E933B352157AB05A2"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/calccpfov1D.m",
+    "bytes": 621,
+    "sha256": "B4201A4265BC4C9F929719603020320F3A0AE59AEDB2C44C9248A7C9F2C9C3B0"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/calczscore.m",
+    "bytes": 1839,
+    "sha256": "3A26E4E2BF227C16991EF58B558C81A732463C0EE7304DC2B2A310F62D609377"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/catcell.m",
+    "bytes": 472,
+    "sha256": "8457F32EE205EE536C1D5061BAD719A30A383F0AD98A7B42C5695EDACDA8CF54"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/cell2str.m",
+    "bytes": 475,
+    "sha256": "7D14312681E69B61CDC4813043D0BCEF35B8801113BFC58251A1B43DCE19F1FB"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/choose.m",
+    "bytes": 314,
+    "sha256": "308D9ACE4636E3D045313B4FECE185436A1D6C156A56C098FEF1DA0F962E2F63"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/chunking.m",
+    "bytes": 973,
+    "sha256": "ADE4674E79E5A9E627A758474FFAE69882AE4315694E638C09A43F6ADDF69519"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/cmaplookup.m",
+    "bytes": 1402,
+    "sha256": "305BC23EC9C4020452F7059CF7C68BB1C258F46233AE90753E6193C1E0761E8F"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/cmapsign.m",
+    "bytes": 630,
+    "sha256": "913890DCBC485F9FFF2FF5356E90173812515E7786D0F682D937185362F090C6"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/cmapsign2.m",
+    "bytes": 633,
+    "sha256": "33B0AA2F9D9291A261AC2859AAF6A21EC533C6084FD6FD6D297C4751BAC4D899"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/cmapsign4.m",
+    "bytes": 724,
+    "sha256": "6A505B59CFEA13AC91D09370235B0F0E1B49C33EB2AB059533F89E42759A8A4A"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/cmapturbo.m",
+    "bytes": 8135,
+    "sha256": "CE08659E888C8283E52754C62994DBFAFEB40BB381F123128DD6673778993662"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/constructbutterfilter1D.m",
+    "bytes": 1615,
+    "sha256": "53DD93EBFA56CEB6FEEFD215BD9A8CC80CF74FFCA20360E85D3CF4CBED617DD3"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/constructpolynomialmatrix.m",
+    "bytes": 1323,
+    "sha256": "774C2199781CC01C1F08B95E8025007C5113901D68FDDDC96B17DB5D74ECA502"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/constructstimulusmatrices.m",
+    "bytes": 2366,
+    "sha256": "93B60C9AD0260D4326598C97EA1C6FAFAD887354E60C7D2B216733C97826D460"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/copymatrix.m",
+    "bytes": 1495,
+    "sha256": "8CAC437610ACDDE74560A3299A7FD12468AA756C33661D78786642102CBDBE13"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/deconvolvevectors.m",
+    "bytes": 507,
+    "sha256": "5F3321A9BB5CDDF04971AF60E02862AD41584A2D6ABEBE35FD9ECBE1EA4D64DD"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/errorbar2.m",
+    "bytes": 1833,
+    "sha256": "50C4E6EF5CC0513B15A9E5B79A2E6BD2C1542BB4828E90700ED593A17308A01A"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/figureprep.m",
+    "bytes": 771,
+    "sha256": "00E7E3EDBC765C5670A5E5AA55B6FA08010C8C339AD387AD72426E3E32391102"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/figurewrite.m",
+    "bytes": 1863,
+    "sha256": "755A2780B055B7939010AD5133411E89C230C6857AE56B7CEA1CDCCD6AF72AB3"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/filterout.m",
+    "bytes": 947,
+    "sha256": "FAC252F24EEFA34AED5654559B34A9D98B921822BC3ACC7C859ADE235BDBF351"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/findtailthreshold.m",
+    "bytes": 3714,
+    "sha256": "01C444F62052B2F1EEC643708DAA1D004EC59D91D2A4A069AC2EAF9BF2CD8EB0"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/flatten.m",
+    "bytes": 176,
+    "sha256": "66A17DAF2ED9C69EE131948E898B4223FD97087229CA5FB260DC5A20F0549297"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/fouriertospace1D.m",
+    "bytes": 2101,
+    "sha256": "92FD6D3CC38681116CAEE5250E14FA9BF591F2B46ACFD37AC8BC704591BFEDDE"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/getcanonicalhrf.m",
+    "bytes": 6058,
+    "sha256": "F111A3BDDA125D2C96C4C18CB7D473298FBDB1FEA7E3063B676AA3128CEC7D5E"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/getcanonicalhrflibrary.m",
+    "bytes": 1732,
+    "sha256": "80036AFE5013BE24BBD9671B13405ED23E85D8AEF4BECE244B2D5DC679E2497C"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/getcanonicalhrflibrary.tsv",
+    "bytes": 108451,
+    "sha256": "9E7B5C293819DC0D85B0006BC8712459DB82D0D2A7695CE7219FDE0EFB5F0106"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/getfigurepos.m",
+    "bytes": 555,
+    "sha256": "E40FB9D1DFD5A63E699D060C32D309ABCBC980C175F1CEB24AA5391B340B6C68"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/GLMestimatemodel.m",
+    "bytes": 38371,
+    "sha256": "B165B624D6271AEA81E8E2764E7B05CD8CCD47C1CDBE633DC0D2BBF1AA78DE42"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/GLMpredictresponses.m",
+    "bytes": 4502,
+    "sha256": "78AF25F255822D065EA73B625EB4625473487E108E0C2F3736EC9275FA7782D9"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/imageactual.m",
+    "bytes": 1142,
+    "sha256": "92608DA68D4BC2BD931F0DFD2845ABC3D10CB26F196DE8E66B771213251140CF"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/isint.m",
+    "bytes": 371,
+    "sha256": "7DACFC101466647F3BBA90CC7710D488E14728F7526E4F8E2FA997E56D4B4A07"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/isrowvector.m",
+    "bytes": 308,
+    "sha256": "205DAB93EE2AD872E98AA464AA554A06DE7EE53D811F58522E3128C8E3961BCE"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/linspacecircular.m",
+    "bytes": 385,
+    "sha256": "8A2A1B53E0BAB6E59B10C0DF57A6F720F64D5202B9AC363EC095A604FFDE2ED3"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/linspacefixeddiff.m",
+    "bytes": 365,
+    "sha256": "DA8B235027332BD5CDF2ECEAC83D1CD1D14976AD4AEEAE95615CF7EAC5D3024B"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/makeimagestack.m",
+    "bytes": 5949,
+    "sha256": "144C10BC5E0322455A83F96D1A6F195C69950BF7EE998FE3AD9127DDBBD8B178"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/matchfiles.m",
+    "bytes": 9839,
+    "sha256": "C0B7DDC90FEC81D63C4FA4B2BA9ADAF2BED46E8C4A7EEDABE64189A7FD9374DD"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/matrixindex.m",
+    "bytes": 680,
+    "sha256": "FD135F870278CF2EA12AD4368F57AF77F98AB202BB948F94808C2BC2B0754036"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/mkdirquiet.m",
+    "bytes": 383,
+    "sha256": "76BFF7871D73A69F976C8B2B7C56DED0E9A7CB9EFA3DD65AF9FBAB5271FA9818"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/mod2.m",
+    "bytes": 196,
+    "sha256": "D7AABF02CAB5A9D697FFF1803D00C0E24B22588BDCA832F2251F5114E5D3C464"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/mtimescell.m",
+    "bytes": 526,
+    "sha256": "CBEA41AEE044F40769ABA50896DBE7105CE7360358DC3188B939059A80350A14"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/nanreplace.m",
+    "bytes": 922,
+    "sha256": "0220B27A083592DFDD21BE8BB454A347FF24C7D63CF9BE9BC4875DA73702D570"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/normalizemax.m",
+    "bytes": 564,
+    "sha256": "633AF735B91BFECB3BCF51B29825A0537473DC1B3006E15232F58D95A7330470"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/normalizerange.m",
+    "bytes": 3664,
+    "sha256": "75C4CE6A8D60C7A451233EE45FBB39BB72B45ED7E8587D1662361DBDE99DEA32"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/olsmatrix.m",
+    "bytes": 2019,
+    "sha256": "06976CBED5150C047B8CF085E77A133D00C327DD9F81F65659900A1E604BDB9B"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/olsmatrix2.m",
+    "bytes": 2163,
+    "sha256": "A48FA548E8A339C61744B1F2A514297C2A2C196CB16EC00D1FD69970D831C403"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/permutedim.m",
+    "bytes": 1991,
+    "sha256": "913A6C46033AF273092F56076304A5CF1BD9F548C29B692125ECB7BDDB7D8EE7"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/picksubset.m",
+    "bytes": 1316,
+    "sha256": "CCF4E2EE61E1B9DCF39031692980F575DB88643D5A758843D9E9EDD50B936063"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/placematrix.m",
+    "bytes": 1452,
+    "sha256": "53DD10CE5F68035C6B3C77C9A1C6B4BE69F8A39729EF9CF36C9389A332475DF2"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/printnice.m",
+    "bytes": 2860,
+    "sha256": "D19642390517D2B0173E7BEBE81611E41C726AB73C8A37CC7E5A811FB8FFC8CB"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/processmulti1D.m",
+    "bytes": 860,
+    "sha256": "7AC3ECA97748AB59928CC8B888AF2122D0449DFDF09D77C069135D4A2A197601"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/projectionmatrix.m",
+    "bytes": 854,
+    "sha256": "D31202FA9E9531D82A66A744E76D0764DEB158BA0DFCEED3141200873DD83929"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/resamplingindices.m",
+    "bytes": 943,
+    "sha256": "47D677909C4558B024F205F73D038CCC939FFDB73C39597E3B7B563C6AD133A7"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/reshape2D_undo.m",
+    "bytes": 930,
+    "sha256": "54C649B550BD01D9759A7AA34199EDCCF686407F254A00BD7881A5BE12668008"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/reshape2D.m",
+    "bytes": 557,
+    "sha256": "BA49487E564628D3E3492EBE28A0221B45CEF72650BF4AAFFBF1FB113A1A0EFA"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/rmdirquiet.m",
+    "bytes": 398,
+    "sha256": "6439196466B4237BC1D1F4423845B532B2701F486A2D47A2A033F73A93C50075"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/robustrange.m",
+    "bytes": 1629,
+    "sha256": "A9DD9322362FC85C3418D987A830FF68F870B48CBEA4F4FA03EB61058C8EE2CB"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/scattersparse.m",
+    "bytes": 1444,
+    "sha256": "A2B3988002725D231FF8E278C388AB8B9A7D1705EBF6360495A0002183A91063"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/setfigurepos.m",
+    "bytes": 1148,
+    "sha256": "3FB26CFC146AA32D9A2BB61F328364C260416B82D7ED37711A02E2CE84454952"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/setrandstate.m",
+    "bytes": 471,
+    "sha256": "1D6C4DC043A0432AC9A413A2F40B22FFFEDF5E2FDC5851AE2DB5AA6022A26FAD"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/signedarraypower.m",
+    "bytes": 242,
+    "sha256": "DB267047117C444F80311D8ADEC182CD948DECC714A4CBE107E4E4536AF4C8B6"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/sizefull.m",
+    "bytes": 359,
+    "sha256": "DCD5D62589E43A500F1661E52F806260225BADA0A357354F30105B4A8F7474EF"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/splitmatrix.m",
+    "bytes": 1293,
+    "sha256": "592A9971E823F18C2231892D24FD16DDD5BA4110F185BE8895824FFCA7DD9420"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/squish.m",
+    "bytes": 523,
+    "sha256": "611C4BE6F87D92840816872ABDFD9E68695B75AFF6538723C36C1524DECDA888"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/statusdots.m",
+    "bytes": 683,
+    "sha256": "6BBD4096EB115EDA84739E7936AF717AFB77528E15B97E4031B860AA1888644A"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/straightline.m",
+    "bytes": 1226,
+    "sha256": "8B2A38B0560704A075FE34289E117770B47A87556593CA2459901DC12173715D"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/stripfile.m",
+    "bytes": 1381,
+    "sha256": "3A35F00603FB06E0B0F9A6061066C407AB6C6EB90440D790B2592F20A43F0B36"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/subscript.m",
+    "bytes": 2236,
+    "sha256": "CE551ADF4856D3E947E7A637C0B12D28A9449CACB0486FC0FEEEC5CCB3727007"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/swap.m",
+    "bytes": 150,
+    "sha256": "CF460156D4C49990610FB931FC0663403C5F11E13C2000B7A150FB6BB1AB5055"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/tsfilter.m",
+    "bytes": 2013,
+    "sha256": "C5915011C188B08006CE2ADCD26D7A9BA17871E5EC6929A502EE3828712E301D"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/unitlength.m",
+    "bytes": 2576,
+    "sha256": "043AF1A8A519D39D190079AA4ECB017D84283542B59929E9A3D2C2789B7F16BD"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/unitlengthfast.m",
+    "bytes": 1203,
+    "sha256": "C66EBB0F34BE8DBB0B35362CBBC670B1A5CD15120A001C20C2E7AC77F4F0D761"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/vectorlength.m",
+    "bytes": 932,
+    "sha256": "E29FE10124341D00FC33B9C81C014BF76F7DA112B0843BD22AD73A8FA86D7531"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/vflatten.m",
+    "bytes": 181,
+    "sha256": "27FF2C8308CCDEBDA188F13DFD193CCA3E6D8907A5256A8C0FB6E95E45256D00"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/zerodiv.m",
+    "bytes": 2421,
+    "sha256": "FDE161E892CCBC3C28F44F5B521DBF1AECB718E8F84FABA713E3A86E816D404E"
+  },
+  {
+    "path": "external/glmsingle/matlab/utilities/zeromean.m",
+    "bytes": 724,
+    "sha256": "36F8F3736EA897A5F9EFF9AADE8B7DA3244F5ED69C75597C49CCE30A46232F45"
+  },
+  {
+    "path": "external/glmsingle/SOURCE.json",
+    "bytes": 601,
+    "sha256": "189364FA0C2296F64D2238BA6A3831CFBD04E95DC0BF3959762CFACD4AFADA03"
+  },
+  {
+    "path": "matlab/+psy/confound_design.m",
+    "bytes": 3029,
+    "sha256": "5315654A7E071FB98950F72589D09084349E59C53EB2F2B802B7E32A01D9F8C4"
+  },
+  {
+    "path": "matlab/+psy/discover_hcp.m",
+    "bytes": 2195,
+    "sha256": "D76CEBBF67C1B678B1ED266EEB91E133A6E5117DACF2A82FDDE97438CEF3627E"
+  },
+  {
+    "path": "matlab/+psy/file_sha256.m",
+    "bytes": 542,
+    "sha256": "5E52B1220479BA1A76189F60006ECBAC31BF933C0AB162AFEAA4507974A1CAB9"
+  },
+  {
+    "path": "matlab/+psy/glm_absolute_path.m",
+    "bytes": 441,
+    "sha256": "291E787A3DB7EF75C2ABA70B0887E2B81731F459450E7783EF813724AB46795F"
+  },
+  {
+    "path": "matlab/+psy/glm_basis.m",
+    "bytes": 853,
+    "sha256": "52E4BD85B3D6C6FAFE54C5A1899C90C0F2575166E27D623157F2AAF54775A8B1"
+  },
+  {
+    "path": "matlab/+psy/glm_batch.m",
+    "bytes": 2542,
+    "sha256": "EDF16D6B4A43BCFBB9DA6A62E1C954FEEA7F7C57333E23663BFB9B743A1B5064"
+  },
+  {
+    "path": "matlab/+psy/glm_beta_catalog.m",
+    "bytes": 9847,
+    "sha256": "B96A20F12A146BD4DE57A95A634C3A9D32CD301CBED960F53E64D301ED38C079"
+  },
+  {
+    "path": "matlab/+psy/glm_beta_read.m",
+    "bytes": 2961,
+    "sha256": "2C7980F6FC5E1D3ACB7635359FE0691CA3719DD1FEF8E264AD9C0CD235C51AD7"
+  },
+  {
+    "path": "matlab/+psy/glm_contrast_table.m",
+    "bytes": 746,
+    "sha256": "E327D52517FD7019BF74D6716F48AF2EB8450AE8618F12733324369DE157F6CC"
+  },
+  {
+    "path": "matlab/+psy/glm_contrasts.m",
+    "bytes": 1146,
+    "sha256": "FF1BF890178A02D9F69B2D5F74EFA51A9EF3ADC92487A7169483825ECF523205"
+  },
+  {
+    "path": "matlab/+psy/glm_diagnostics.m",
+    "bytes": 5032,
+    "sha256": "49E9DCAAB035B56C4EED8DD8D9014204E05EAAE9F54A188CF9D053F3E7C5FDD4"
+  },
+  {
+    "path": "matlab/+psy/glm_events.m",
+    "bytes": 1221,
+    "sha256": "C8739F96302E6260BDB048032038644E2AB3BD8254FCC51DD98AD018B6E6EFBD"
+  },
+  {
+    "path": "matlab/+psy/glm_file_inventory.m",
+    "bytes": 641,
+    "sha256": "7372145B1D8BC137B1F2DC2037AEAFC0AC04E4964EDE6F01DAAF03AAB852CE42"
+  },
+  {
+    "path": "matlab/+psy/glm_framework_batch.m",
+    "bytes": 6029,
+    "sha256": "A49842AAFDC2DD2D928E1C4572D5DE16F575EF18E635AC7A8497895F82403D45"
+  },
+  {
+    "path": "matlab/+psy/glm_framework_options.m",
+    "bytes": 11430,
+    "sha256": "4A947F0D3EFAC133A381B619D1F4A92B80FE0E48BDDF5C5398677C3FFCE382CC"
+  },
+  {
+    "path": "matlab/+psy/glm_framework_plan.m",
+    "bytes": 6926,
+    "sha256": "461419AA2EB1DB4A38C01A3570955FF7F8A6670ABC193CBF3F9850EBEFF6A410"
+  },
+  {
+    "path": "matlab/+psy/glm_framework_run.m",
+    "bytes": 6158,
+    "sha256": "60D2CBD82EE47AD47D6895BC296C5104030F21BB2F9B14F0A39BC55DA435F775"
+  },
+  {
+    "path": "matlab/+psy/glm_group_batch.m",
+    "bytes": 8928,
+    "sha256": "0098CB505976C2FB30E3BD62EC46F9118769EB9709CAF4F778FF48B31B9F53A3"
+  },
+  {
+    "path": "matlab/+psy/glm_group_plan.m",
+    "bytes": 6691,
+    "sha256": "9CFBE10CECDE309B173524084C57C128C851EFCECE067E136821A22FB3104CB3"
+  },
+  {
+    "path": "matlab/+psy/glm_highpass_rank.m",
+    "bytes": 200,
+    "sha256": "754C148C032EFC5AD84FA780D1CDA9B7D9C53DB55B6A5E2B9CD03D99365D048C"
+  },
+  {
+    "path": "matlab/+psy/glm_model_contrasts.m",
+    "bytes": 1874,
+    "sha256": "FC87298BBCCA60C1ABDE4B5DA838E869E79EB249F96048ED4A791E029A44BE68"
+  },
+  {
+    "path": "matlab/+psy/glm_outputs_options.m",
+    "bytes": 2156,
+    "sha256": "F14284B6A16B05E048B67B73F2CE2A1D12E71B1F788E5B241E063F8ECAD56EDB"
+  },
+  {
+    "path": "matlab/+psy/glm_pmod.m",
+    "bytes": 1684,
+    "sha256": "0DBA7005F9D81079F5642284DE46B2CE3936E16C9E356FB2542BB9CADB346952"
+  },
+  {
+    "path": "matlab/+psy/glm_read_table.m",
+    "bytes": 645,
+    "sha256": "ACB4E948238617F2EF14523085297E9D2F7D4368208CE799007352925C5FA14C"
+  },
+  {
+    "path": "matlab/+psy/glm_results_export.m",
+    "bytes": 5878,
+    "sha256": "D2E1F7B48944F3435C3386BA4946898AA3076A9CFB95A8C740ABFD54B7C8606F"
+  },
+  {
+    "path": "matlab/+psy/glm_results_plot.m",
+    "bytes": 2609,
+    "sha256": "DCC37B09A79990D2B627779ECC3E1BF8188F4590B4F2D874FB2F829DEC0115F0"
+  },
+  {
+    "path": "matlab/+psy/glm_roi_extract.m",
+    "bytes": 1974,
+    "sha256": "21AFA86F2E4E135F8CB2A3C8525013B38110E868B8996A40DEF520248C75F192"
+  },
+  {
+    "path": "matlab/+psy/glm_run.m",
+    "bytes": 7547,
+    "sha256": "647CA181FE4CF3C70BC20B3C3C21ED0F0B3289D32802B28A8E40B33978599055"
+  },
+  {
+    "path": "matlab/+psy/glm_subject_run.m",
+    "bytes": 4320,
+    "sha256": "C58E91DCC394FDF2F7EA2D98D96B3A3E534258BA17504F9816C8523F2308E9CC"
+  },
+  {
+    "path": "matlab/+psy/glm_threshold.m",
+    "bytes": 2387,
+    "sha256": "EFF32B57342C070CFD7FE965A58E41642E602231ACF27BFE7CBB203B418E2892"
+  },
+  {
+    "path": "matlab/+psy/glm_write_json.m",
+    "bytes": 315,
+    "sha256": "40BED1DBAC6A183C8668AC77053128ACED90947B2BC40B87D2D6F5A58893C421"
+  },
+  {
+    "path": "matlab/+psy/glmsingle_dependency.m",
+    "bytes": 1483,
+    "sha256": "B1A3D53332F5AE9F591891E33823F99D3312DEC4C00F771EFD1D90B5A64ECD37"
+  },
+  {
+    "path": "matlab/+psy/glmsingle_design_check.m",
+    "bytes": 1702,
+    "sha256": "F502D36A00965281E4E8158B45A806D52FA699105FECFF7C6FABD07F62F19CCE"
+  },
+  {
+    "path": "matlab/+psy/glmsingle_export.m",
+    "bytes": 5598,
+    "sha256": "930D416181EF2E1531B84CBDC6CC9FE44C038A668EEA782225CD0412D37804D7"
+  },
+  {
+    "path": "matlab/+psy/glmsingle_options.m",
+    "bytes": 2493,
+    "sha256": "77F68529502A0B12B922E2542976C5D7702683F506598581C320180D88F1FF18"
+  },
+  {
+    "path": "matlab/+psy/glmsingle_plan.m",
+    "bytes": 5187,
+    "sha256": "AAD9007D0E51B971DFA0FF59E41E29B2821ED163672655030926E369560AC911"
+  },
+  {
+    "path": "matlab/+psy/glmsingle_run.m",
+    "bytes": 8526,
+    "sha256": "D0058FDD4398ACA5AA1E714FB8E46C47D71DEC93CDFA90FAE7E8BC8B955DC19F"
+  },
+  {
+    "path": "matlab/+psy/read_events_tsv.m",
+    "bytes": 1199,
+    "sha256": "975AFBE7A98B8B6E8C61EF092401DAE063013E7FA7DD63F71BC27F36F4249DB6"
+  },
+  {
+    "path": "matlab/+psy/read_hcp_events.m",
+    "bytes": 2135,
+    "sha256": "3E4A2BC61C0300F2729A19F608C816485A45184473B48670C26F5B35152BADA1"
+  },
+  {
+    "path": "matlab/+psy/run_output_dir.m",
+    "bytes": 298,
+    "sha256": "A88092DFDC20FDCC2092D88296D84070D7B6DABFB7FA444228CD73430A98D46A"
+  },
+  {
+    "path": "matlab/+psy/single_trial_batch.m",
+    "bytes": 2720,
+    "sha256": "08FB859D9905E35672E6CA2C680C2A2CF070FC97AE6BC8467E4ECAC8DBD2B2C0"
+  },
+  {
+    "path": "matlab/+psy/single_trial_run.m",
+    "bytes": 5122,
+    "sha256": "589B4CA5AD7C97A75BB3A303B310A9136553C52D47D44F5B7C106FB5B5CF867A"
+  },
+  {
+    "path": "matlab/+psy/spm_step.m",
+    "bytes": 180,
+    "sha256": "0E57D0CA4383A699D3FE8ADEE5FF1060388E3055082216794296D0FC2074BC91"
+  },
+  {
+    "path": "matlab/+psy/verify_glm.m",
+    "bytes": 3057,
+    "sha256": "506ED1BA9A1D002A5BD7087E5A50D6610325759074CC873084C1D086BEDFDDE5"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1799,
+    "sha256": "A090DD2FBE0F7857A6D1556D0A76573696C7B498C5E1203EEC368E49C2592A80"
+  },
+  {
+    "path": "run_glm_outputs.m",
+    "bytes": 5249,
+    "sha256": "F3599BBDE685902F0F8E56F878246B969D3CF26CAFE30BC93ECA7E451EAB83FA"
+  },
+  {
+    "path": "run_glm.m",
+    "bytes": 295,
+    "sha256": "52424782178A459B89C62405DC9CF5DD52C1C38E975AC162011432207E3A4F68"
+  },
+  {
+    "path": "run_glmsingle_demo.m",
+    "bytes": 12814,
+    "sha256": "ECD5EAD359AB2F8651B04F517E2A8EC3E03500AD6E5C00A2953925ADB5AA050C"
+  },
+  {
+    "path": "run_single_trial.m",
+    "bytes": 285,
+    "sha256": "A0BE4F936E9C3A459F7874A86EF745388EBC9E26FE8F587A036884CD46FADF7D"
+  },
+  {
+    "path": "scripts/release_layout.json",
+    "bytes": 10666,
+    "sha256": "7910853F5B157E4CBD3032BBF0F7DF723A82B35A77A243ADC1DE988EF6A68B7E"
+  },
+  {
+    "path": "scripts/sync_glm_copy.ps1",
+    "bytes": 6756,
+    "sha256": "11C885CCA97AE99F616BF722949C8F74156DB6F8E8164D36B11931E0927636E3"
+  },
+  {
+    "path": "tests/test_glm_framework.m",
+    "bytes": 13601,
+    "sha256": "C50492C0842A2F6644008B34CC179FBE2256277A5F651AAD38233A96C7F7BBD8"
+  },
+  {
+    "path": "tests/test_glm_group_extended.m",
+    "bytes": 10014,
+    "sha256": "712AB1351E082267DE2F0F950C2793D3506F8DCF0EB43DEE14163B2391FDEB35"
+  },
+  {
+    "path": "tests/test_glm_multilevel.m",
+    "bytes": 8534,
+    "sha256": "EDB157C51639A5D855BD42008DA086D3DCF0DAC2D578F5350F0694A522C7A73B"
+  },
+  {
+    "path": "tests/test_glm_outputs.m",
+    "bytes": 14317,
+    "sha256": "87C6F3DE5AD76656B6301F88A059CDAF1F9EA671D273611C4B5CB9C87D8544FA"
+  },
+  {
+    "path": "tests/test_glm_pmod_fir.m",
+    "bytes": 11116,
+    "sha256": "FFDB559A6A98335E254CF095775BE35747D8105AF725F46C11970C85FDD18648"
+  },
+  {
+    "path": "tests/test_glm.m",
+    "bytes": 1070,
+    "sha256": "755DFF15EC7CF0BF628A3666F71CDBFF64664D31F890EEE2EB1D3897D164770D"
+  },
+  {
+    "path": "tests/test_glmsingle_demo.m",
+    "bytes": 5521,
+    "sha256": "05C13A8053FE602163510C80DC1014BACDBE3F3A3476AAC528A7D84C0CF41CF8"
+  },
+  {
+    "path": "tests/test_glmsingle.m",
+    "bytes": 10879,
+    "sha256": "FBF74FEF7570ADBE787F9E82F5B6C572167F58600D5BC19C3710E3DE01B6FB82"
+  },
+  {
+    "path": "tests/test_single_trial.m",
+    "bytes": 4338,
+    "sha256": "171FA2AF80E813ED757A5B44342653D1D01858DB961E29EB934DE2BC455BBFEB"
+  },
+  {
+    "path": "tests/test_verify_glm.m",
+    "bytes": 1465,
+    "sha256": "0F47C7A6F0E769C8C0F339E1B11BC29AE4557D1999CF94194324B3F5EB596240"
+  }
+]

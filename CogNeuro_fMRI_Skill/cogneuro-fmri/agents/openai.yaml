@@ -1,0 +1,6 @@
+interface:
+  display_name: "认知神经 fMRI 工具包向导"
+  short_description: "扫描数据并逐步确认研究方案，调用已有预处理、GLM和分析方法工具包"
+  default_prompt: "使用 $cogneuro-fmri 读取我的数据路径和三个工具包，确认目标、范式、缺项与参数，填写真实清单，并在工作流获确认后调用原包现成入口。"
+policy:
+  allow_implicit_invocation: false

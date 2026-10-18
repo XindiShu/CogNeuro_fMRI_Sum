@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "instructions_zh": [
+    "以下仅演示执行层所需的字段结构，所有 confirmed=false；不得直接当作用户选择或通用最佳参数。",
+    "选定路线后结合实际范式、TR、采集记录和研究假设讨论参数，将确认结果写入项目 answers.json 的 parameter_choices。",
+    "每个选择均需真实 source 和 confirmed=true；mask、TR、时间状态等逐run事实仍需单独确认。",
+    "FC执行当前只接受未滤波且未回归的空间预处理BOLD，防止工具包再次隐式清理。",
+    "单独GLM执行限定run级condition/joint/canonical；事件已对齐首个保留帧，提供显式mask和所选混杂列。",
+    "preprocess使用preprocess_parameter_choices；preprocess_glm将其与glm_parameter_choices、preprocess_glm_additional_parameter_choices合并到同一个parameter_choices对象，不能把本文件的分组名称照搬为配置键。",
+    "原始路线只接入raw NIfTI、sdc.method=none、segment.backend=spm、normalise.method=segmentation；realign停止点只是部分空间预处理。",
+    "必须读取实际官方toolkit_config.m并计算SHA256；以下空哈希不可执行，overrides数组仅演示内存中的明确科学参数选择。",
+    "preprocess_glm一次具体确认覆盖预处理、完成记录交接、实际GLM设计预检和条件GLM；真实设计检查在预处理后才进行，失败停止。",
+    "自动交接只生成24列运动项及FD，不生成WM/CSF均值；handoff与后续GLM的include_tissue_means都须false。"
+  ],
+  "raw_preprocessing_run_facts": {
+    "subject": {"value": "p01", "source": "待核对真实被试身份", "confirmed": false},
+    "session": {"value": "baseline", "source": "待核对session；确无session可显式留空", "confirmed": false},
+    "run": {"value": "task01", "source": "待核对本次run身份", "confirmed": false},
+    "input_stage": {"value": "raw", "source": "待确认这是原始BOLD，未将衍生影像误作raw", "confirmed": false},
+    "t1": {"value": "<对应T1的实际绝对路径>", "source": "待核对与本run对应的真实T1；原生清单包括realign-only也要求此项", "confirmed": false},
+    "metadata": {"value": "<实际采集JSON绝对路径>", "source": "待读取真实采集记录及单位；不从范式推断采集事实", "confirmed": false},
+    "tr_seconds": {"value": 2, "source": "待核对NIfTI/采集JSON中的TR，单位秒", "confirmed": false},
+    "sdc_method": {"value": "none", "source": "待确认本次试点不做磁敏感畸变校正及其适用限制", "confirmed": false},
+    "events": {"value": "<真实事件TSV绝对路径>", "source": "待核对onset/duration秒和真实条件；仅preprocess且无事件时可明确留空", "confirmed": false},
+    "discard_volumes": {"value": 2, "source": "仅示例：待确认此前未删、本次应删的dummy帧数；不删时填0", "confirmed": false},
+    "event_reference": {"value": "original_first_volume", "source": "待确认事件基于原始首帧还是保留首帧；无事件的preprocess可填unspecified", "confirmed": false}
+  },
+  "preprocess_parameter_choices": {
+    "preprocessing_options": {
+      "value": {
+        "stop_after": "realign",
+        "toolkit_config_sha256": "",
+        "overrides": [
+          {"path": "sdc.method", "value": "none"},
+          {"path": "segment.backend", "value": "spm"},
+          {"path": "normalise.method", "value": "segmentation"},
+          {"path": "sliceTiming.enabled", "value": false},
+          {"path": "sliceTiming.mode", "value": "off"}
+        ]
+      },
+      "source": "待审阅当前官方toolkit_config.m的相关参数、填写真实64位SHA256并确认每条覆盖。realign仅部分空间处理；示例关闭STC不构成方法推荐。overrides=[]表示明确沿用已审阅配置。",
+      "confirmed": false
+    },
+    "execution_options": {
+      "value": {"max_matrix_gib": 2},
+      "source": "待确认检查数组的GiB上限；不是MATLAB/SPM峰值内存保证",
+      "confirmed": false
+    }
+  },
+  "preprocess_glm_additional_run_facts": {
+    "mask": {
+      "value": "<所选交接BOLD空间的显式分析mask绝对路径>",
+      "source": "待确认掩膜来源、空间和适用性；后续核对实际网格，不自动配准或重采样",
+      "confirmed": false
+    }
+  },
+  "preprocess_glm_additional_parameter_choices": {
+    "handoff_options": {
+      "value": {"bold_source": "realigned", "include_tissue_means": false},
+      "source": "待确认从完成记录选择realigned/normalized_unsmoothed/smoothed；后两者需要stop_after=smooth。realigned不代表完成配准/标准化；自动交接仅运动24列和FD，不含组织均值。",
+      "confirmed": false
+    }
+  },
+  "fc_parameter_choices": {
+    "cleaning": {
+      "value": {"detrend": false, "bandHz": [], "minResidualDimensions": 10},
+      "source": "待用户讨论：bandHz单位Hz，空数组不带通，剩余维度是代数维度",
+      "confirmed": false
+    },
+    "fc_measure": {"value": "pearson", "source": "待用户选择pearson/spearman/partial", "confirmed": false},
+    "roi_definition": {"value": "", "source": "待填写ROI定义、空间和独立性依据", "confirmed": false},
+    "execution_options": {
+      "value": {"max_matrix_gib": 2, "roi_min_voxels": 3},
+      "source": "待用户确认：GiB是数组上限，非峰值内存；每ROI最少掩膜内体素为正整数",
+      "confirmed": false
+    }
+  },
+  "glm_parameter_choices": {
+    "conditions": {"value": ["A", "B"], "source": "待用户确认实际条件编码及顺序", "confirmed": false},
+    "contrasts": {
+      "value": [{"name": "A_minus_B", "weights": [1, -1]}],
+      "source": "待用户确认研究假设，权重按conditions顺序，无量纲", "confirmed": false
+    },
+    "glm_options": {
+      "value": {
+        "highpass_seconds": 128,
+        "microtime_resolution": 16,
+        "microtime_onset": 8,
+        "serial_correlation": "AR(1)",
+        "hrf": "canonical",
+        "min_residual_df": 10,
+        "mask_threshold": 0.8,
+        "confounds": {
+          "motion_model": "6", "include_tissue_means": false, "linear_trend": false,
+          "add_spikes": false, "fd_threshold_mm": 0.5, "min_residual_df": 10
+        }
+      },
+      "source": "待按实验和采集确认：高通为秒，microtime为正整数且onset<=resolution，FD阈值为mm；motion_model仅none/6/24，serial_correlation仅AR(1)/FAST",
+      "confirmed": false
+    },
+    "execution_options": {
+      "value": {"max_matrix_gib": 2}, "source": "待确认数组GiB上限，不是峰值内存保证", "confirmed": false
+    }
+  }
+}

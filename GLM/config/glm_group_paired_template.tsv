@@ -1,0 +1,7 @@
+subject	session	contrast	contrast_image	mask	pair_level
+participant01	baseline	A_minus_B	E:/study/p01/pre/con_0001.nii	E:/study/p01/pre/mask.nii	pre
+participant01	followup	A_minus_B	E:/study/p01/post/con_0001.nii	E:/study/p01/post/mask.nii	post
+participant02	baseline	A_minus_B	E:/study/p02/pre/con_0001.nii	E:/study/p02/pre/mask.nii	pre
+participant02	followup	A_minus_B	E:/study/p02/post/con_0001.nii	E:/study/p02/post/mask.nii	post
+participant03	baseline	A_minus_B	E:/study/p03/pre/con_0001.nii	E:/study/p03/pre/mask.nii	pre
+participant03	followup	A_minus_B	E:/study/p03/post/con_0001.nii	E:/study/p03/post/mask.nii	post

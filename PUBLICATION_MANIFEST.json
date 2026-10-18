@@ -1,0 +1,4005 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/XindiShu/CogNeuro_fMRI_Sum",
+  "publication_date": "2026-10-18",
+  "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "bytes": 455,
+      "sha256": "e90ae2cea8392e66e28f4116957ccdf119e607730f6ab580e0a191430a04966d"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 87,
+      "sha256": "95f44e50561d002defe37f22a52a9e217e955a498053bc48907939f3b6c0d25e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 125,
+      "sha256": "b531a3a58de8f7d755d07215d32b729924562edceb8c905655e515b34e380055"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace-0.1.1.zip",
+      "bytes": 197109,
+      "sha256": "0c640f6669dd36faca4d48c037c5561f460f32b7ad251fde9b254eee614175ec"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace-0.1.1.zip.sha256",
+      "bytes": 103,
+      "sha256": "841242e1d2f467760cfd4c6f06f60016c4fc15f95aae598a030dd73689ce1dae"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/.agents/plugins/marketplace.json",
+      "bytes": 352,
+      "sha256": "cac3fee990eb9979ba33ccb06822a7e1c7714a1e8f473ff1448f8a05dc56b570"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/.gitignore",
+      "bytes": 38,
+      "sha256": "f371675b2c5fbb4ee895b6d70f27687ba63287a5dc7f536e9f04c22928de881b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/INSTALL_ZH.md",
+      "bytes": 5608,
+      "sha256": "6987fbdd873634f6f7aaf662089b022e474ca011380728864657198bf6a4e21b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/PUBLISHING_ZH.md",
+      "bytes": 3185,
+      "sha256": "8d73407dda66a293386d1cd7a0384137e9f2b1afbe35de33ee9dc9fd5ab00f8a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/README.md",
+      "bytes": 4305,
+      "sha256": "d81ef8a98f739121f896051597b1eb023ae3ed8fdd3802ace1ceaf885ce88188"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/RELEASE_MANIFEST.json",
+      "bytes": 10410,
+      "sha256": "8b4bb771864619c1b9c94fb7bdb5b40994df01e0b18c87b36367b25ecde8fbad"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/VALIDATION.json",
+      "bytes": 2584,
+      "sha256": "43eed2db5e07578e1f34794582906782ef6d49b6cd5b1801fec19da7219a1428"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/plugin.json",
+      "bytes": 1418,
+      "sha256": "1b4a8c0af453fec0b44e29ce55669e5c319af027c31758a3cc3126e86a6d758c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/PACKAGE_MANIFEST.json",
+      "bytes": 6514,
+      "sha256": "1921431224810012caba5766108b97db73eaabf320cea18358219e65ad56e486"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/SKILL.md",
+      "bytes": 7534,
+      "sha256": "3ca5ba567d4d96b1a0813cd468ed78154295610ded47c9468ddf795115d2e708"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/VALIDATION.json",
+      "bytes": 16004,
+      "sha256": "f4623f0bdc74d21cdee20415977363339127b02d3965270883f4e2a88b53e42d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/agents/openai.yaml",
+      "bytes": 434,
+      "sha256": "7a5c33e3471d336fb1b2355e9bfaf78d094c4c05cefbd23dce1135c86a21af54"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/answers.example.json",
+      "bytes": 2244,
+      "sha256": "8d7650139c11b1eb2f75467fb41cac6ec4faaa0c07ec151e551d3a495f612eaa"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/execution-profiles.example.json",
+      "bytes": 6698,
+      "sha256": "d981bd7ccdb98abb2a6c702d99a062c912de1edbaf8cbb0665ee03c10f7e78b7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/native-answers.example.json",
+      "bytes": 2084,
+      "sha256": "bb2ee1def96ffd5111cb03d6fa7bd69c658b7432fc4444879d5c0e1a8a49ebb0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/toolkit-registry.json",
+      "bytes": 34661,
+      "sha256": "a2a31395140d5f9fb7cc103ac16a046233492bf68ed4128cf15724905b733f38"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_fc_adapter.m",
+      "bytes": 14058,
+      "sha256": "e994f986dd962a46a6afc35357885dc2be71af1a6e63a392661a29c789f8c78c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_glm_adapter.m",
+      "bytes": 22763,
+      "sha256": "5e1e48e8618a0c13648686d0d51e5683aeaccdd1f421c064b2a34f5e315db433"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_job.m",
+      "bytes": 1565,
+      "sha256": "da3d7f897020480cebc6dd7dc76b4771e65031bfe4c582d22502d3964a99e837"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_preprocess_adapter.m",
+      "bytes": 25274,
+      "sha256": "1e76972f2738fff429e39fa83a79eaa1c651bc8d010458b388d175b15ddd9d29"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_preprocess_handoff.m",
+      "bytes": 20060,
+      "sha256": "fb92874bfe4e98f48c6c10d7fd3f4b95e9534c6afda09880389e75fe9855047c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_toolkit_dispatch.m",
+      "bytes": 7897,
+      "sha256": "1db063ffa674865d8caab85e4b41861039b01824fb7aaa7cb243b370b071a75c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/references/interface-map.md",
+      "bytes": 5422,
+      "sha256": "afdb1ad9e2cb2f931e14cfe85bde89dac3c3d9f7636b1d4f3504108bb9b82d88"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/references/toolkit-adapters.md",
+      "bytes": 4816,
+      "sha256": "ac716c13fccc657363e3735fe2dc743fd22e03e174c46c6c00d84fd2acfb443c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/references/workflow-spec.md",
+      "bytes": 4716,
+      "sha256": "8fd2ebe75b5d0959e060fbd3352dd1319d90cf98f80d112e26c80f559fcd4f48"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/execution.py",
+      "bytes": 31999,
+      "sha256": "7c7555bed40a80a4e49032f6735dac85f04a56a1d2be92a603d50a0836367181"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/fmri_project.py",
+      "bytes": 29833,
+      "sha256": "d67a62d0d06e7c3670b9aa403dd02749ce8d18f85bcd70649e1e5ea86558868b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/inventory.py",
+      "bytes": 17734,
+      "sha256": "f60073923ff1c88fd145cccd0ab8ee0e442202b8be9b4b5e2f5fa5646788146a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/native_jobs.py",
+      "bytes": 7897,
+      "sha256": "1d125dd653a9a75b87367ed38f42bd20095d539b237a9d4006d4820f4ebdbf01"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/native_plan.py",
+      "bytes": 12139,
+      "sha256": "fe2215eecc80b9214d02a90ab1e50b35720feaa2cdf6049ceb3069d3d70103eb"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/preprocessing.py",
+      "bytes": 17078,
+      "sha256": "c501f55c98e17036c583c2320916a14a0b05168e66784d2f929129b6ff8d4f7d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/toolkit_catalog.py",
+      "bytes": 8004,
+      "sha256": "2919c0fcf590bde4fee1e9139d612696f275c63aba8a9e76f5e31c56b786d68a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/helpers/cogneuro_check_spatial_integration.m",
+      "bytes": 7764,
+      "sha256": "83443b5354c579c6dcf0e32f5b20c320ae148ae475a10c943f56ce5664a2d25d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/helpers/cogneuro_make_spatial_fixture.m",
+      "bytes": 5212,
+      "sha256": "357e7d9b9848ce04e788e71c2a2b0125462f4065a5f1d02265fca11474f8b953"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_fc_adapter.m",
+      "bytes": 11235,
+      "sha256": "5c7a804953030fef6477c932a619fb46cf2b7ef4564b22cfc62c5c39998ef2a2"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_glm_adapter.m",
+      "bytes": 9984,
+      "sha256": "62887826c4d089ce72195a6fdb5957ee1118d1916538c1607e25c2d5933a9997"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_native_dispatch.m",
+      "bytes": 7181,
+      "sha256": "29b7900da56f036d64507a665304b97d2ac2834b8e9faa0c390d195d67146fb0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_preprocess_adapter.m",
+      "bytes": 11341,
+      "sha256": "8dd2e7424ead2e965276d93ba444f328ebfc12f1dd00bf0582b1918613f45100"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_preprocess_handoff.m",
+      "bytes": 10723,
+      "sha256": "e44a5e8eac37105948a23938b52c3b5aec59eae9d802fd207b64c9b249b5201c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_preprocessing_integration.py",
+      "bytes": 9164,
+      "sha256": "f8f547bd0a4e6a23c323f47ee09bb8fbea471f0482fb8cb1ab0fa93984ba2931"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_spatial_integration.py",
+      "bytes": 6712,
+      "sha256": "6639d40ce4f806ea89873d68a7c8931995e52728087e466a24a7f634d78e33be"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_synthetic_integration.py",
+      "bytes": 9830,
+      "sha256": "138ec038b37462c53182bacc4b71784b7368d2b67764c544b0162e07e731e12e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_execution.py",
+      "bytes": 31709,
+      "sha256": "b1392969a98aadc52c130e5ef13905b731287ff7751a6a2f6fdd9670efba8c97"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_inventory.py",
+      "bytes": 14049,
+      "sha256": "78055c21ea2c3c0c13c133e12c5d823748ff457d0452bbcd4567ebd091460dc9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_native_interfaces.py",
+      "bytes": 11744,
+      "sha256": "d655057fb5d30954d0472070aca48ee988035fc6f88344b0ea64b72bb61fe083"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_preprocessing_execution.py",
+      "bytes": 24830,
+      "sha256": "58fce4786f0e0c2a5b793388072190ec1dc8dadc052a668a1b838ae0dfcbe850"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_project.py",
+      "bytes": 20498,
+      "sha256": "91eb2876142ee35af24803e5c118f15ab2c8b8e7f0811b10533a41e6d2f8e544"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-setup/SKILL.md",
+      "bytes": 3754,
+      "sha256": "8882e00350850aa44b723ac2054c835d9d5d0f91534731079440198589708125"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-setup/agents/openai.yaml",
+      "bytes": 337,
+      "sha256": "bd75d408d4fc861f2a2178aaa4740e7c0a30c0d99d99fdef0cec49a29e4d870e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-setup/scripts/environment.py",
+      "bytes": 7292,
+      "sha256": "805cdc0e1d88200431f1ada5956fc9638789b409128b6b26e75214318190bb6e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/tests/test_environment.py",
+      "bytes": 6045,
+      "sha256": "8a41d1172274ffd9b0f058959491261efd11385aad8762f9ce4188d22f1a59f7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/scripts/package_release.py",
+      "bytes": 4588,
+      "sha256": "99adb56eff3798bac565e309ea0a109390d5ef97c353af5e86e11585adaa5875"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-plugin-0.1.1.zip",
+      "bytes": 179551,
+      "sha256": "81b0c8c314ad4b324f4a0133bb190a7ebc8322b50e162f5b0bb042aaabccbbd2"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-plugin-0.1.1.zip.sha256",
+      "bytes": 98,
+      "sha256": "8d56e36c3aeac84111026c28d88fb96383b44526d660842028195d34230f9ed8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace-0.1.0.zip",
+      "bytes": 196488,
+      "sha256": "2f74ede426232ee848846d65be3314b186029b5506b4ca55710c295efce49f4d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace-0.1.0.zip.sha256",
+      "bytes": 103,
+      "sha256": "72b3049490055af6ea8d277521c8a6e34b178ca684496a2afd454bd5f43b6fec"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/.agents/plugins/marketplace.json",
+      "bytes": 352,
+      "sha256": "cac3fee990eb9979ba33ccb06822a7e1c7714a1e8f473ff1448f8a05dc56b570"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/.gitignore",
+      "bytes": 38,
+      "sha256": "f371675b2c5fbb4ee895b6d70f27687ba63287a5dc7f536e9f04c22928de881b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/INSTALL_ZH.md",
+      "bytes": 5139,
+      "sha256": "b1880c33350e1537fad1f1d72525f8827b17af3a0db59ccc574e8fb6809e03d8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/PUBLISHING_ZH.md",
+      "bytes": 2943,
+      "sha256": "5b373169970ff0a222eb678a87ace9eff31fe5b51d68c990721b637c95765d7d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/README.md",
+      "bytes": 4103,
+      "sha256": "b9d03018d5760c6861471db6a076b203874052cc49829774612ed1241ee05002"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/RELEASE_MANIFEST.json",
+      "bytes": 10410,
+      "sha256": "f56ac0ec8c8eac879d8b3e0f81fffb8bd8aab847a2fea2b7c00a83ae89cc31be"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/VALIDATION.json",
+      "bytes": 2193,
+      "sha256": "7a469f22684175fdc13b2e6dcb502406e5bebf341b23cd2db2ba181c2cf03583"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/plugin.json",
+      "bytes": 1219,
+      "sha256": "9b658f99488c366de4b5d8c5e51395f031980f1f59079247b2288f83870ebfd5"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/PACKAGE_MANIFEST.json",
+      "bytes": 6514,
+      "sha256": "1921431224810012caba5766108b97db73eaabf320cea18358219e65ad56e486"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/SKILL.md",
+      "bytes": 7534,
+      "sha256": "3ca5ba567d4d96b1a0813cd468ed78154295610ded47c9468ddf795115d2e708"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/VALIDATION.json",
+      "bytes": 16004,
+      "sha256": "f4623f0bdc74d21cdee20415977363339127b02d3965270883f4e2a88b53e42d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/agents/openai.yaml",
+      "bytes": 434,
+      "sha256": "7a5c33e3471d336fb1b2355e9bfaf78d094c4c05cefbd23dce1135c86a21af54"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/answers.example.json",
+      "bytes": 2244,
+      "sha256": "8d7650139c11b1eb2f75467fb41cac6ec4faaa0c07ec151e551d3a495f612eaa"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/execution-profiles.example.json",
+      "bytes": 6698,
+      "sha256": "d981bd7ccdb98abb2a6c702d99a062c912de1edbaf8cbb0665ee03c10f7e78b7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/native-answers.example.json",
+      "bytes": 2084,
+      "sha256": "bb2ee1def96ffd5111cb03d6fa7bd69c658b7432fc4444879d5c0e1a8a49ebb0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/toolkit-registry.json",
+      "bytes": 34661,
+      "sha256": "a2a31395140d5f9fb7cc103ac16a046233492bf68ed4128cf15724905b733f38"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_fc_adapter.m",
+      "bytes": 14058,
+      "sha256": "e994f986dd962a46a6afc35357885dc2be71af1a6e63a392661a29c789f8c78c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_glm_adapter.m",
+      "bytes": 22763,
+      "sha256": "5e1e48e8618a0c13648686d0d51e5683aeaccdd1f421c064b2a34f5e315db433"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_job.m",
+      "bytes": 1565,
+      "sha256": "da3d7f897020480cebc6dd7dc76b4771e65031bfe4c582d22502d3964a99e837"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_preprocess_adapter.m",
+      "bytes": 25274,
+      "sha256": "1e76972f2738fff429e39fa83a79eaa1c651bc8d010458b388d175b15ddd9d29"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_preprocess_handoff.m",
+      "bytes": 20060,
+      "sha256": "fb92874bfe4e98f48c6c10d7fd3f4b95e9534c6afda09880389e75fe9855047c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_toolkit_dispatch.m",
+      "bytes": 7897,
+      "sha256": "1db063ffa674865d8caab85e4b41861039b01824fb7aaa7cb243b370b071a75c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/references/interface-map.md",
+      "bytes": 5422,
+      "sha256": "afdb1ad9e2cb2f931e14cfe85bde89dac3c3d9f7636b1d4f3504108bb9b82d88"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/references/toolkit-adapters.md",
+      "bytes": 4816,
+      "sha256": "ac716c13fccc657363e3735fe2dc743fd22e03e174c46c6c00d84fd2acfb443c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/references/workflow-spec.md",
+      "bytes": 4716,
+      "sha256": "8fd2ebe75b5d0959e060fbd3352dd1319d90cf98f80d112e26c80f559fcd4f48"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/execution.py",
+      "bytes": 31999,
+      "sha256": "7c7555bed40a80a4e49032f6735dac85f04a56a1d2be92a603d50a0836367181"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/fmri_project.py",
+      "bytes": 29833,
+      "sha256": "d67a62d0d06e7c3670b9aa403dd02749ce8d18f85bcd70649e1e5ea86558868b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/inventory.py",
+      "bytes": 17734,
+      "sha256": "f60073923ff1c88fd145cccd0ab8ee0e442202b8be9b4b5e2f5fa5646788146a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/native_jobs.py",
+      "bytes": 7897,
+      "sha256": "1d125dd653a9a75b87367ed38f42bd20095d539b237a9d4006d4820f4ebdbf01"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/native_plan.py",
+      "bytes": 12139,
+      "sha256": "fe2215eecc80b9214d02a90ab1e50b35720feaa2cdf6049ceb3069d3d70103eb"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/preprocessing.py",
+      "bytes": 17078,
+      "sha256": "c501f55c98e17036c583c2320916a14a0b05168e66784d2f929129b6ff8d4f7d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/toolkit_catalog.py",
+      "bytes": 8004,
+      "sha256": "2919c0fcf590bde4fee1e9139d612696f275c63aba8a9e76f5e31c56b786d68a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/helpers/cogneuro_check_spatial_integration.m",
+      "bytes": 7764,
+      "sha256": "83443b5354c579c6dcf0e32f5b20c320ae148ae475a10c943f56ce5664a2d25d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/helpers/cogneuro_make_spatial_fixture.m",
+      "bytes": 5212,
+      "sha256": "357e7d9b9848ce04e788e71c2a2b0125462f4065a5f1d02265fca11474f8b953"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_fc_adapter.m",
+      "bytes": 11235,
+      "sha256": "5c7a804953030fef6477c932a619fb46cf2b7ef4564b22cfc62c5c39998ef2a2"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_glm_adapter.m",
+      "bytes": 9984,
+      "sha256": "62887826c4d089ce72195a6fdb5957ee1118d1916538c1607e25c2d5933a9997"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_native_dispatch.m",
+      "bytes": 7181,
+      "sha256": "29b7900da56f036d64507a665304b97d2ac2834b8e9faa0c390d195d67146fb0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_preprocess_adapter.m",
+      "bytes": 11341,
+      "sha256": "8dd2e7424ead2e965276d93ba444f328ebfc12f1dd00bf0582b1918613f45100"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_preprocess_handoff.m",
+      "bytes": 10723,
+      "sha256": "e44a5e8eac37105948a23938b52c3b5aec59eae9d802fd207b64c9b249b5201c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_preprocessing_integration.py",
+      "bytes": 9164,
+      "sha256": "f8f547bd0a4e6a23c323f47ee09bb8fbea471f0482fb8cb1ab0fa93984ba2931"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_spatial_integration.py",
+      "bytes": 6712,
+      "sha256": "6639d40ce4f806ea89873d68a7c8931995e52728087e466a24a7f634d78e33be"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_synthetic_integration.py",
+      "bytes": 9830,
+      "sha256": "138ec038b37462c53182bacc4b71784b7368d2b67764c544b0162e07e731e12e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_execution.py",
+      "bytes": 31709,
+      "sha256": "b1392969a98aadc52c130e5ef13905b731287ff7751a6a2f6fdd9670efba8c97"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_inventory.py",
+      "bytes": 14049,
+      "sha256": "78055c21ea2c3c0c13c133e12c5d823748ff457d0452bbcd4567ebd091460dc9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_native_interfaces.py",
+      "bytes": 11744,
+      "sha256": "d655057fb5d30954d0472070aca48ee988035fc6f88344b0ea64b72bb61fe083"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_preprocessing_execution.py",
+      "bytes": 24830,
+      "sha256": "58fce4786f0e0c2a5b793388072190ec1dc8dadc052a668a1b838ae0dfcbe850"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_project.py",
+      "bytes": 20498,
+      "sha256": "91eb2876142ee35af24803e5c118f15ab2c8b8e7f0811b10533a41e6d2f8e544"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-setup/SKILL.md",
+      "bytes": 3754,
+      "sha256": "8882e00350850aa44b723ac2054c835d9d5d0f91534731079440198589708125"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-setup/agents/openai.yaml",
+      "bytes": 337,
+      "sha256": "bd75d408d4fc861f2a2178aaa4740e7c0a30c0d99d99fdef0cec49a29e4d870e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/skills/cogneuro-setup/scripts/environment.py",
+      "bytes": 7207,
+      "sha256": "d22b55648f48dc6d8e9385080af36f3f7ed01ac022f5305b01aa1928890067c0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/plugins/cogneuro-fmri/tests/test_environment.py",
+      "bytes": 6045,
+      "sha256": "8a41d1172274ffd9b0f058959491261efd11385aad8762f9ce4188d22f1a59f7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-marketplace/scripts/package_release.py",
+      "bytes": 4588,
+      "sha256": "99adb56eff3798bac565e309ea0a109390d5ef97c353af5e86e11585adaa5875"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-plugin-0.1.0.zip",
+      "bytes": 179469,
+      "sha256": "7ecbf0503f9e36a54b5afc67efcce1e1fc6798ddfe8ddcde52bfdb5e83db184f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Plugin/cogneuro-fmri-plugin-0.1.0.zip.sha256",
+      "bytes": 98,
+      "sha256": "97447ed6462581475513d2d7e5153c6ef065701b8b60a0a50a1f1298fa071ffd"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/INSTALL_AND_FIRST_RUN_ZH_0.4.0.md",
+      "bytes": 23289,
+      "sha256": "8a65ffb73fcc9bd258b892cfd0fdfba2e2e6309dbb90545d189af1fbb8c71e50"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.1.0.zip",
+      "bytes": 38840,
+      "sha256": "a7ce28a666cdb3e8c965a626090b5a1cfd030b0986259fbef39d1f060066f1aa"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.1.0.zip.sha256",
+      "bytes": 91,
+      "sha256": "e95256bf00cadbc9479c5f7e82ad06d49344123666099f7f969706f226e7f922"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.2.0.zip",
+      "bytes": 92014,
+      "sha256": "37b84468130c3d1a4373d0e1cf3baad84007906b4939d46230bc24a32de35f9f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.2.0.zip.sha256",
+      "bytes": 91,
+      "sha256": "9e050d9d81cf9156fe559346f0a863b2673e646ca50da212bee067b7e963142f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.3.0.zip",
+      "bytes": 138145,
+      "sha256": "8d2c2d054a529613b9d5ce6b93703aa747f775442c500fc3a72b06c11385f7e5"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.3.0.zip.sha256",
+      "bytes": 91,
+      "sha256": "a7ea26cc5ddb35ec6d6c66e6f300f89f521f7ac152102a935959a39c50989fdd"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.3.1.zip",
+      "bytes": 149379,
+      "sha256": "5bcb35d2775f74f89f5844900b90680c9781acbafcd3736b24bbb53d165253bd"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.3.1.zip.sha256",
+      "bytes": 91,
+      "sha256": "2b940ebe38c4a132f8d598564b251a9f52be7290876144931fcc46c37ad51ba9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.4.0.zip",
+      "bytes": 169168,
+      "sha256": "7f0e60823679c83c73f433945fe6e176c3d0616a2d068ed9e89bc8be6d7a1458"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri-0.4.0.zip.sha256",
+      "bytes": 91,
+      "sha256": "4301b0d3f140562c97e48c2a909b412c13a321996f0272748f3a57565ea8b801"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/PACKAGE_MANIFEST.json",
+      "bytes": 6514,
+      "sha256": "1921431224810012caba5766108b97db73eaabf320cea18358219e65ad56e486"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/SKILL.md",
+      "bytes": 7534,
+      "sha256": "3ca5ba567d4d96b1a0813cd468ed78154295610ded47c9468ddf795115d2e708"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/VALIDATION.json",
+      "bytes": 16004,
+      "sha256": "f4623f0bdc74d21cdee20415977363339127b02d3965270883f4e2a88b53e42d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/agents/openai.yaml",
+      "bytes": 434,
+      "sha256": "7a5c33e3471d336fb1b2355e9bfaf78d094c4c05cefbd23dce1135c86a21af54"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/assets/answers.example.json",
+      "bytes": 2244,
+      "sha256": "8d7650139c11b1eb2f75467fb41cac6ec4faaa0c07ec151e551d3a495f612eaa"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/assets/execution-profiles.example.json",
+      "bytes": 6698,
+      "sha256": "d981bd7ccdb98abb2a6c702d99a062c912de1edbaf8cbb0665ee03c10f7e78b7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/assets/native-answers.example.json",
+      "bytes": 2084,
+      "sha256": "bb2ee1def96ffd5111cb03d6fa7bd69c658b7432fc4444879d5c0e1a8a49ebb0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/assets/toolkit-registry.json",
+      "bytes": 34661,
+      "sha256": "a2a31395140d5f9fb7cc103ac16a046233492bf68ed4128cf15724905b733f38"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/matlab/cogneuro_fc_adapter.m",
+      "bytes": 14058,
+      "sha256": "e994f986dd962a46a6afc35357885dc2be71af1a6e63a392661a29c789f8c78c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/matlab/cogneuro_glm_adapter.m",
+      "bytes": 22763,
+      "sha256": "5e1e48e8618a0c13648686d0d51e5683aeaccdd1f421c064b2a34f5e315db433"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/matlab/cogneuro_job.m",
+      "bytes": 1565,
+      "sha256": "da3d7f897020480cebc6dd7dc76b4771e65031bfe4c582d22502d3964a99e837"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/matlab/cogneuro_preprocess_adapter.m",
+      "bytes": 25274,
+      "sha256": "1e76972f2738fff429e39fa83a79eaa1c651bc8d010458b388d175b15ddd9d29"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/matlab/cogneuro_preprocess_handoff.m",
+      "bytes": 20060,
+      "sha256": "fb92874bfe4e98f48c6c10d7fd3f4b95e9534c6afda09880389e75fe9855047c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/matlab/cogneuro_toolkit_dispatch.m",
+      "bytes": 7897,
+      "sha256": "1db063ffa674865d8caab85e4b41861039b01824fb7aaa7cb243b370b071a75c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/references/interface-map.md",
+      "bytes": 5422,
+      "sha256": "afdb1ad9e2cb2f931e14cfe85bde89dac3c3d9f7636b1d4f3504108bb9b82d88"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/references/toolkit-adapters.md",
+      "bytes": 4816,
+      "sha256": "ac716c13fccc657363e3735fe2dc743fd22e03e174c46c6c00d84fd2acfb443c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/references/workflow-spec.md",
+      "bytes": 4716,
+      "sha256": "8fd2ebe75b5d0959e060fbd3352dd1319d90cf98f80d112e26c80f559fcd4f48"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/scripts/execution.py",
+      "bytes": 31999,
+      "sha256": "7c7555bed40a80a4e49032f6735dac85f04a56a1d2be92a603d50a0836367181"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/scripts/fmri_project.py",
+      "bytes": 29833,
+      "sha256": "d67a62d0d06e7c3670b9aa403dd02749ce8d18f85bcd70649e1e5ea86558868b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/scripts/inventory.py",
+      "bytes": 17734,
+      "sha256": "f60073923ff1c88fd145cccd0ab8ee0e442202b8be9b4b5e2f5fa5646788146a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/scripts/native_jobs.py",
+      "bytes": 7897,
+      "sha256": "1d125dd653a9a75b87367ed38f42bd20095d539b237a9d4006d4820f4ebdbf01"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/scripts/native_plan.py",
+      "bytes": 12139,
+      "sha256": "fe2215eecc80b9214d02a90ab1e50b35720feaa2cdf6049ceb3069d3d70103eb"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/scripts/preprocessing.py",
+      "bytes": 17078,
+      "sha256": "c501f55c98e17036c583c2320916a14a0b05168e66784d2f929129b6ff8d4f7d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/scripts/toolkit_catalog.py",
+      "bytes": 8004,
+      "sha256": "2919c0fcf590bde4fee1e9139d612696f275c63aba8a9e76f5e31c56b786d68a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/helpers/cogneuro_check_spatial_integration.m",
+      "bytes": 7764,
+      "sha256": "83443b5354c579c6dcf0e32f5b20c320ae148ae475a10c943f56ce5664a2d25d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/helpers/cogneuro_make_spatial_fixture.m",
+      "bytes": 5212,
+      "sha256": "357e7d9b9848ce04e788e71c2a2b0125462f4065a5f1d02265fca11474f8b953"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/matlab/test_fc_adapter.m",
+      "bytes": 11235,
+      "sha256": "5c7a804953030fef6477c932a619fb46cf2b7ef4564b22cfc62c5c39998ef2a2"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/matlab/test_glm_adapter.m",
+      "bytes": 9984,
+      "sha256": "62887826c4d089ce72195a6fdb5957ee1118d1916538c1607e25c2d5933a9997"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/matlab/test_native_dispatch.m",
+      "bytes": 7181,
+      "sha256": "29b7900da56f036d64507a665304b97d2ac2834b8e9faa0c390d195d67146fb0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/matlab/test_preprocess_adapter.m",
+      "bytes": 11341,
+      "sha256": "8dd2e7424ead2e965276d93ba444f328ebfc12f1dd00bf0582b1918613f45100"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/matlab/test_preprocess_handoff.m",
+      "bytes": 10723,
+      "sha256": "e44a5e8eac37105948a23938b52c3b5aec59eae9d802fd207b64c9b249b5201c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/run_preprocessing_integration.py",
+      "bytes": 9164,
+      "sha256": "f8f547bd0a4e6a23c323f47ee09bb8fbea471f0482fb8cb1ab0fa93984ba2931"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/run_spatial_integration.py",
+      "bytes": 6712,
+      "sha256": "6639d40ce4f806ea89873d68a7c8931995e52728087e466a24a7f634d78e33be"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/run_synthetic_integration.py",
+      "bytes": 9830,
+      "sha256": "138ec038b37462c53182bacc4b71784b7368d2b67764c544b0162e07e731e12e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/test_execution.py",
+      "bytes": 31709,
+      "sha256": "b1392969a98aadc52c130e5ef13905b731287ff7751a6a2f6fdd9670efba8c97"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/test_inventory.py",
+      "bytes": 14049,
+      "sha256": "78055c21ea2c3c0c13c133e12c5d823748ff457d0452bbcd4567ebd091460dc9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/test_native_interfaces.py",
+      "bytes": 11744,
+      "sha256": "d655057fb5d30954d0472070aca48ee988035fc6f88344b0ea64b72bb61fe083"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/test_preprocessing_execution.py",
+      "bytes": 24830,
+      "sha256": "58fce4786f0e0c2a5b793388072190ec1dc8dadc052a668a1b838ae0dfcbe850"
+    },
+    {
+      "path": "CogNeuro_fMRI_Skill/cogneuro-fmri/tests/test_project.py",
+      "bytes": 20498,
+      "sha256": "91eb2876142ee35af24803e5c118f15ab2c8b8e7f0811b10533a41e6d2f8e544"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/FILE_MANIFEST.json",
+      "bytes": 28887,
+      "sha256": "6dd45ad6148bdecfdbc560899bb4bd551489f084ac20e103554c6a71ea1fd93f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/README.md",
+      "bytes": 2592,
+      "sha256": "cdb1606f27568e61ed565d3f1d5f29b5bb6a5da4bf97db81e7b2c6fc3b9ad99b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/acquisition_template.json",
+      "bytes": 90,
+      "sha256": "ae69ac6df01e0eb64807c649f1932ab4ae09acd965659a2d30f9b3726f109e19"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/anatomy_channels_template.json",
+      "bytes": 309,
+      "sha256": "3a551e9afaf18590e75b2bdd4dad5d06dd338fd7898bb04d1c2dd391c9a02791"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/atlases_template.json",
+      "bytes": 287,
+      "sha256": "53470c12fba534ad2c48e760840e0f4d6b302a51cd956704019788269ba90be9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/bold_unwarp_config.m",
+      "bytes": 1030,
+      "sha256": "ff5c1ecf10277e3c0598922f7598be4c52a27b529fbf07856562828d8c5a95f0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/confounds_config.m",
+      "bytes": 1301,
+      "sha256": "400c9188fdc8d789286d9b344a817f51b06ca14b6b170b53e03194a9dbcf6904"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/confounds_runs_template.tsv",
+      "bytes": 343,
+      "sha256": "e3ba7ed8ebdf4e0e479410489a1decdf7685bd5b10893e90a26c6f59411e0f4f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/denoise_config.m",
+      "bytes": 1230,
+      "sha256": "c1862620796fb5bb40ce4e101fcf0dc8c218552d4fc34ba3d4efca4d7f84a981"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/denoise_runs_template.tsv",
+      "bytes": 175,
+      "sha256": "6119a6577c90d7be489405552170efb6898733d72d7c9f0fe4a9d47b53b7f6af"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/design_config.m",
+      "bytes": 1089,
+      "sha256": "fdccf5723c79b83157d71f8d705a0b43ab4e38e97cb7f3e4e65e415ac6b3589d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/events_template.tsv",
+      "bytes": 47,
+      "sha256": "fbd434bf79d8658c575c0eb8b093a2f9b1a9532b5949c4b7f1cf9b0f016f06cf"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/fieldmaps_hz_template.json",
+      "bytes": 161,
+      "sha256": "1cfcc79ad02302d598640a63142d3906619a58b6e9348f886f7744a1bf3acd9e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/fieldmaps_pepolar_template.json",
+      "bytes": 253,
+      "sha256": "f304c2ffd2d044e6d80aec525be4f74b37588c47ecdaae7a9268c5fa88d8e07e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/fieldmaps_phasediff_template.json",
+      "bytes": 268,
+      "sha256": "c548bc3188e5bfb0bd109c8c3ac98c75b1ccc549f3143b3124c980574db4a33a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/fieldmaps_phasemag_template.json",
+      "bytes": 402,
+      "sha256": "5e9509c4a8e62ad7a08184c651c7c28e9812c071622b5fddc6f43f6ee1f6203f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/fieldmaps_realimag_template.json",
+      "bytes": 403,
+      "sha256": "44c7d67c446c467906bd7561afcf78a984319164670bf426138416031ba47ce0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/fieldmaps_vdm_template.json",
+      "bytes": 120,
+      "sha256": "f8494e113d92b25d545abb4eb11b11c80b9ecec8097c37dfe3782583d7708120"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/hcp_language_config.m",
+      "bytes": 1162,
+      "sha256": "5cc669e6c006801ee80093ba441adf185a21e3e0cdaeb0dd138f51f29812dde1"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/preprocess_config.m",
+      "bytes": 2074,
+      "sha256": "125a1a6b803a5ce32898dedd14215eea7dab6872b6539dff09e90cf7c337de60"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/provenance_template.json",
+      "bytes": 278,
+      "sha256": "45f4bee03209ac689ec6743fc8182c096755998128318970e8d2db98b5927289"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/qc_config.m",
+      "bytes": 623,
+      "sha256": "f0d80f6545c6e589fae896470eba79cd5bb464225ad0cc5c29e83cf1c990217a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/runs_extended_template.tsv",
+      "bytes": 1007,
+      "sha256": "27cdcfea0092f7bb80a880fba699e6cbba20da13326bb0b9c5ea6661e9a27369"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/runs_segmentation_template.tsv",
+      "bytes": 605,
+      "sha256": "726a095a8bc1463a76ee9b2817498e297c7321376ba07ebe94b14d1b22a98669"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/runs_template.tsv",
+      "bytes": 386,
+      "sha256": "288c7fae14149485a00be49aa79dd3d7ea002fadd8cbe4441de9410f334c22dc"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/spatial_reuse_template.tsv",
+      "bytes": 575,
+      "sha256": "4000654002abeff323ea3ef85260a729f3e6daa963456e072ed5f0f1ee728788"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/toolkit_config.m",
+      "bytes": 27736,
+      "sha256": "6c36bbdf326bd31b183c19f003bd3ea0db79fb834984b850ca4c8dd355f00086"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/config/topup_config.m",
+      "bytes": 1124,
+      "sha256": "17253b9bc5a7a652e746875747b4c3444d38dbfbf3f50fae4c4f4fa3c3a5fac5"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/Coregistration.md",
+      "bytes": 30406,
+      "sha256": "3ee967b5ba6b3f7693a7462e08fe2936758e5d9a4901ae0b8148c22eed82d882"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/Engineering_QC.md",
+      "bytes": 47361,
+      "sha256": "8f0fee5af56d0ecd10e331af589193b6cbbb63956d7e0c1c5ac614f36932d0be"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/File_Catalog_and_Environment.md",
+      "bytes": 45193,
+      "sha256": "77391c4e7c7b2e7615980d66f930575d9c5d4321c06070d04d51ca57d74e1b6b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/HCP_LANGUAGE.md",
+      "bytes": 3314,
+      "sha256": "723c002b0eec189facd97605e303feb84417f0121d7e0a4b7fd3145e03fdd2de"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/Normalization.md",
+      "bytes": 55258,
+      "sha256": "62f7fc9a3c6025338c6d588f9565efc1c9c21ebb44a7bdef0ef74305ab947202"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/PREPROCESSING.md",
+      "bytes": 14906,
+      "sha256": "89f58d43a894b509581117b313a9e6846c746335671ae4db23cb1d6257d75a93"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/PREPROCESSING_FINAL_INTEGRATION_REVIEW_20261016.md",
+      "bytes": 10207,
+      "sha256": "064da0e2a870ee80f1f2c68b37f9dbb373548fea8bd449d7c18ec78f07af0657"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/PREPROCESSING_ROUTE_MAP.md",
+      "bytes": 7091,
+      "sha256": "a83d27c6f8491bab5fa3917b733e9b6bfdda1c5663f963790c486c9f0cd2b616"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/Realignment.md",
+      "bytes": 40528,
+      "sha256": "606547e009a6a58714a2570f9f3ba1df5813c8a910696674530c77d44e4e72b6"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/Run_Manifest_Guide.md",
+      "bytes": 13624,
+      "sha256": "f774f80eb968f6582d516c7d046fda259ced1d0c7e78d95435315e486c16bd00"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/SDC.md",
+      "bytes": 78900,
+      "sha256": "87a665035fb101ff1f5a3e485fc946ba19641cbf333e5e2b1cd3f0e28c4accfe"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/STC_Slice Timing Correction.md",
+      "bytes": 24763,
+      "sha256": "c0d05eae43ab52509d903f8946d3ae593d55aedc9acf60d3638b537500409928"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/Segmentation.md",
+      "bytes": 59122,
+      "sha256": "ecffd6a9b066dd5ed20f28887862a48c979ff454043142fb3ccef6a3646788dd"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/Spatial Smoothing.md",
+      "bytes": 31099,
+      "sha256": "de464ab66e83d63e96fc4def4d34d35bdca01daeeb9e098299fe79ce73373149"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/TOPUP_INSTALL.md",
+      "bytes": 2435,
+      "sha256": "a14355099b005b2d497de4a532f86cadb30a3717411ae3417371e9454986edc9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/figures/preprocessing_routes.png",
+      "bytes": 853733,
+      "sha256": "5175ab4a9e294a893ef51a2f02ccf547c739138ec48ae403004134f7797ca4b7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/docs/figures/preprocessing_routes.svg",
+      "bytes": 37268,
+      "sha256": "2df4d9dd141469ba5d0bd02f601169e7a6b616111e0ceecf3c0c1f3ccb285248"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/hcp_100206_confounds.tsv",
+      "bytes": 505,
+      "sha256": "3bd14c907701601d20715427a88ba89061f12816375b7a714dea1ce01fe71ba3"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/hcp_100206_denoise_engineering.tsv",
+      "bytes": 303,
+      "sha256": "f4ea7c02e4019e69ed5e11f6eec1808e9a38255ffb45db8793efec83e845aa52"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/hcp_100206_runs.tsv",
+      "bytes": 2285,
+      "sha256": "a904d8c9f3b92f1e07b929eff718d5c136478a9887925421aac49a063aba0926"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/hcp_100206_sdc_confounds.tsv",
+      "bytes": 479,
+      "sha256": "af1cbf66b45a9a4f69eb3f22a5dc349d3a2ae72fc4e80ec842d2af61ccfbbd58"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/hcp_100206_sdc_runs.tsv",
+      "bytes": 495,
+      "sha256": "4d22679c5840b8c1de3b80b5697f89abe3bcb70b099e3abcab7ba1e9f91456ff"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/hcp_language_lr_events.tsv",
+      "bytes": 272,
+      "sha256": "2bf808d2fb929ce41170ddab0bbe375ccdb008f74ea6e3e2b04c44d23ec985ee"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/recover_hcp_sdc_realign_100206.m",
+      "bytes": 1526,
+      "sha256": "17d8ad094dfbb76ee4c68e89ace83b07d6f09e65056353f16fb1975b7f313f90"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/run_hcp_bold_unwarp_100206.m",
+      "bytes": 1537,
+      "sha256": "f21c1fa266b33235c07e1c033baa045c2112909312af91d30a611dbc43440864"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/run_hcp_sdc_confound_design_100206.m",
+      "bytes": 1496,
+      "sha256": "8e21c1ada53ad299e2299ae6d3fba8fd9006ea62cd54e8f9c636ef09b7726965"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/run_hcp_sdc_confounds_100206.m",
+      "bytes": 2097,
+      "sha256": "04419604ed5d6bcd8d4efea92aedcf8204cc8db1d38e26422496bf9d57bb2d31"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/run_hcp_sdc_realign_100206.m",
+      "bytes": 1206,
+      "sha256": "31af1de7f79540181219b137bc6c93137624e2c1b0b7260003b9509d39288e36"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/run_hcp_sdc_spatial_100206.m",
+      "bytes": 2612,
+      "sha256": "d79ea6518676ea54a2f0a3d4a9fd7e2d4a84a23dfabc63eab028a7c2018a08d8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/run_hcp_topup_100206.m",
+      "bytes": 2139,
+      "sha256": "6e61620ca3d3fc5cdf461ba878ac57ebd39ace1d4307eac2057872fcbb419ef9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/examples/validate_denoise_engineering.m",
+      "bytes": 635,
+      "sha256": "e5eb3250e83577d17c5c95aeb680d5e1ce61258601b87363da89dbb654f9268e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/apply_atlases.m",
+      "bytes": 2764,
+      "sha256": "8e60380a5006815aa49dcc04d4d0dff268a246de8523ec0a0e50a171f77854a7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/atlas_options.m",
+      "bytes": 902,
+      "sha256": "6a45c81993d0966cd73d12ce776d944cdb12076ded372f72eced0f3959aeadd0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/bold_unwarp_batch.m",
+      "bytes": 559,
+      "sha256": "13f9c056ec5f7afa8b378c4a66dfe3083d7cf74fad62b543acf5d16ddb5baf13"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/bold_unwarp_finalize.m",
+      "bytes": 1883,
+      "sha256": "f501fed934c2df545504ec5f2b20d3336d4d1f55bc7d0fc2f753fcd414c30ca7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/bold_unwarp_qc.m",
+      "bytes": 3070,
+      "sha256": "760c14493b649df076ef619023aaf2d1d681f41c93b9d26e078f122409098731"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/bold_unwarp_run.m",
+      "bytes": 4991,
+      "sha256": "19529ce346df481a6f60ca96ea0d87a4911f1131c6ec61c3a42cc2641bc4cfb6"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/bold_unwarp_validate.m",
+      "bytes": 2642,
+      "sha256": "1d1512225ff5a48deee9f22f3b6a3fc48dda7725d5366335a839ece7f808b3f6"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/cat12_environment.m",
+      "bytes": 1695,
+      "sha256": "2df5faeedb95dbcae61dfba74523781c2f46e275ccce27a2ea1012584f01adfc"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/cat12_segment.m",
+      "bytes": 3282,
+      "sha256": "2e967d94da778bde1929088c47f224402e718674c2d84a2142486c50812c5fd7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/confound_design.m",
+      "bytes": 3029,
+      "sha256": "5315654a7e071fb98950f72589d09084349e59c53eb2f2b802b7e32a01d9f8c4"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/confound_design_batch.m",
+      "bytes": 1740,
+      "sha256": "c28e65ebe0fa41eb33fb376b0161f36d65ca3a19612e15364c47d3acb9f2ddca"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/confounds_batch.m",
+      "bytes": 3203,
+      "sha256": "aefc06d30a9bdfbc05dbd7a9078370d3faf38e4a72bf4799b3e239098e654d6b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/dartel_job.m",
+      "bytes": 690,
+      "sha256": "c5fc9343dbd73f926b9d1c37c403779eca56675de17a81737b6de2d251e5e747"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/deformation_field_flags.m",
+      "bytes": 573,
+      "sha256": "813289bae4fb6f09fd71a065dbe02a138f6a9914129f748e69725518a81a2338"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/denoise_batch.m",
+      "bytes": 2989,
+      "sha256": "f03e7f8a91791766629f95e669147943d955a686064b7d5a1d4fe01d06479b9d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/denoise_run.m",
+      "bytes": 3027,
+      "sha256": "4391b2624edf8384c8f11ece3f2fb3d19d33788d5bf164a5838d79e284793971"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/discover_hcp.m",
+      "bytes": 2195,
+      "sha256": "d76cebbf67c1b678b1ed266eeb91e133a6e5117dacf2a82fdde97438cef3627e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/dummy_plan.m",
+      "bytes": 2427,
+      "sha256": "25bc83eb7e88ca3e9d97186ab018e9ae53b631a151e7bb39b9fa87cf71697148"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/export_hcp_manifest.m",
+      "bytes": 816,
+      "sha256": "198761bef3a7c2c1f5ee6cadd13bf5e2ffa22a02d67a2a96557ab1d601c83285"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/extract_confounds.m",
+      "bytes": 3209,
+      "sha256": "0d01f680c7e9e9eec83e542518c0c2e98312e14af7fff48af9e6a7a528e1f49a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/fieldmap_reference.m",
+      "bytes": 1716,
+      "sha256": "1713ceb94b907aa62f1ff43a715781221eaf89bff57fd13a2516862a4d2decc1"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/file_sha256.m",
+      "bytes": 542,
+      "sha256": "5e52b1220479ba1a76189f60006ecbac31bf933c0ab162afeaa4507974a1cab9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/finalize_realign.m",
+      "bytes": 3759,
+      "sha256": "13f47089931052ee370b1b16f3d5e7487ae58cf7381513fc8461fbac91a4b59f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/group_deformations.m",
+      "bytes": 1714,
+      "sha256": "929e08cad46b2cbc0e89b750f954305f9f1fcec1ba44d2f2e82a8be91fd6f4e1"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/group_normalise_write.m",
+      "bytes": 3848,
+      "sha256": "93e174157f3dd2f0bc7d90010e14b57e781dfd828589c5389efcb648f3081fcc"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/has_dicom_sources.m",
+      "bytes": 553,
+      "sha256": "fcaec0bc4d9ff90bcfb3215769edc6ddaf08159d321edec05532d24aa5cdb5d0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/import_dicom_series.m",
+      "bytes": 4070,
+      "sha256": "b4df638bf449bd4ac335c157b54ead8619411431733b7f16e6d414ad0fbb0c56"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/inspect_contract.m",
+      "bytes": 3213,
+      "sha256": "c9854617b007592c044698f604c793eb92f5797a8cc904f7cd360f420f79beaf"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/inspect_dicom_inventory.m",
+      "bytes": 918,
+      "sha256": "2a927aaae4be230fb042938bfea330ea48ac70204d334fa357dd25873a5e90b8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/inspect_fieldmaps.m",
+      "bytes": 4767,
+      "sha256": "aea5655929e8e18941f259f43f14f7308c9e79d722064d4034473df3a436faef"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/inspect_run.m",
+      "bytes": 1694,
+      "sha256": "8ba5d1311cd47ea090b452b29197439b03655bf52ea656a16d4b787e63b09720"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/materialize_dicom_run.m",
+      "bytes": 2035,
+      "sha256": "d988ab8009f58cf1308d446423a7cde6a24c019d176380278999035274f5dfbe"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/motion_qc.m",
+      "bytes": 859,
+      "sha256": "0713d12ccbf80d26f63722e84a95761bb6d4fb24907886f0926a87fe3f153ea8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/motion_regressors.m",
+      "bytes": 711,
+      "sha256": "d8068e81d27fdce83c5a1a506397c51049c247b1a1e1d27be233160e66c6ef11"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/nifti_geometry.m",
+      "bytes": 1651,
+      "sha256": "320841b5b856d4e61357ccc4ed09fd01dea0a7a56d0bc29d1e9a502b1adc6b20"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/normalise_group_plan.m",
+      "bytes": 4467,
+      "sha256": "a83b363b731e1891de78ea71c606e3d72132240a7c3a0a2dd570674611866076"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/normalise_group_run.m",
+      "bytes": 6728,
+      "sha256": "d1db86b0fe9d22b9f091996f86b2ae29bf5a325a3ae51dadca87a759ab223871"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/normalise_options.m",
+      "bytes": 4926,
+      "sha256": "3c8226c2d5e7738d925b5c891a51f1096cca220ac71a4370f44a849b5c5122ec"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/normalise_output_check.m",
+      "bytes": 1396,
+      "sha256": "63599376e0fd73eacff6d5a86f94e79b6316f32a0c1ebb00c3a46604dc37eb1e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/plot_qc_mask.m",
+      "bytes": 1267,
+      "sha256": "82fabee169bb17e44865ebd333e66b5631525452a92b002025f316b11d881a67"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/plot_tissue_masks.m",
+      "bytes": 1056,
+      "sha256": "878f6a84f2bb7aeab65707bab9b6b332c268ef94427bc4acb734ab4330cd0bda"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/prepare_spm_sdc.m",
+      "bytes": 6189,
+      "sha256": "94b566ca211bc6d2c41f0ba3c215684d101b34442f82b9c5b4cce1d8c72b5cda"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/preprocess_batch.m",
+      "bytes": 6783,
+      "sha256": "ef334a4149beccce6a66a9383f01ca1609f14904408b1a94f8b2cc4afe33ae6d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/preprocess_group_batch.m",
+      "bytes": 4245,
+      "sha256": "0523234fa7a131a159ab242394862e79f75f477177554e55d4606b44eab71ca4"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/preprocess_hcp.m",
+      "bytes": 181,
+      "sha256": "11b7f10b75b47092d2ce0da32a22ca8407a6d97e594904f1b065a9aa9c3c47ff"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/preprocess_plan.m",
+      "bytes": 5588,
+      "sha256": "e3bf1d3bd07a4648a053bb1dbdbf592afdc16c1f7cc14fc735c5651aa4e2b1c3"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/process_run.m",
+      "bytes": 9731,
+      "sha256": "e226ac51560f8fbf1ff39a41039708369e98d3654bf9258f5f7f5096972b4137"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/qc_batch.m",
+      "bytes": 2242,
+      "sha256": "6ec59ced74b3d9826757727fb7e155ba3da02302812eb02980885a34cc75385c"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/read_events_tsv.m",
+      "bytes": 1199,
+      "sha256": "975afbe7a98b8b6e8c61ef092401dae063013e7fa7dd63f71bc27f36f4249db6"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/read_hcp_events.m",
+      "bytes": 2135,
+      "sha256": "3e4a2bc61c0300f2729a19f608c816485a45184473b48670c26f5b35152bada1"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/read_manifest.m",
+      "bytes": 6520,
+      "sha256": "c235221462f5a5aa86ef42efcdebb1847cfd0bde974f2dd5e6973d1396b398b7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/realign_weight_plan.m",
+      "bytes": 3358,
+      "sha256": "622b726ac87a5f48555ecc97890da8dc0246967c94ed85babdca380fc4ea4dd2"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/reuse_anatomy.m",
+      "bytes": 3114,
+      "sha256": "4b9de7e3ee31bdd8f7b2f105f416e557427c12f8961a002c60bc27dfedfd6ee7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/run_output_dir.m",
+      "bytes": 298,
+      "sha256": "a88092dfdc20fdcc2092d88296d84070d7b6dabfb7fa444228cd73430a98d46a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/sdc_spm_options.m",
+      "bytes": 625,
+      "sha256": "c36bfb171a707bc34bdac984250f1f91268a97cac69aec6c8865140423740278"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/segment_options.m",
+      "bytes": 2667,
+      "sha256": "3d24067dced8516337bbaf8036aa40789031fc2c322e81bde8736419d91b50a8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/segment_output_flags.m",
+      "bytes": 607,
+      "sha256": "5b2d5f11b48197c850d4c3484b068d672bc45d66bd73f97029b52124851eba35"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/segment_plan.m",
+      "bytes": 7052,
+      "sha256": "4995b9c5bc858c4b9fc2731aaa9f8820d55a576bded413027598ec21c6a92006"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/segment_run.m",
+      "bytes": 1955,
+      "sha256": "90b19e19eb6fb903fbcc4ca0463a2396cc04a1b2bb06145c3199c6e7d6feb387"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/shooting_defaults.m",
+      "bytes": 638,
+      "sha256": "8e9f14941f1360a5dafad19bc63c042e82eb17e68f58579b5a01306eee06e5b3"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/shooting_run.m",
+      "bytes": 1323,
+      "sha256": "9763703f7d26ffdb43c296d6f5eb1fe5bff8096abd495c05df0d084009d98928"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/slice_timing_plan.m",
+      "bytes": 4003,
+      "sha256": "68db8c2f4a78316a350fc6a8a66211d9373a2d6d40788b0eecd98126d7f0498d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/smooth_options.m",
+      "bytes": 2610,
+      "sha256": "2edfcf02cfb98b06246c2e9cedab05237b97817492785f11dc9aa46ee7d85714"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/smooth_record.m",
+      "bytes": 1343,
+      "sha256": "f31d9822b273fc3e83fec11e084ae03e4e25b0baa76a992af67eeebeaf240da4"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/smooth_run.m",
+      "bytes": 1726,
+      "sha256": "4401761b55ad6d67764135daa9956a78e5eb94cd52d9641419ca7a4e5f1ded88"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/spatial_steps.m",
+      "bytes": 2664,
+      "sha256": "b053735dcc3009d28b8649b73cd0a12d1a55f9b33f31ea924b4d23cad830a83f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/spm_fieldmap_vdm.m",
+      "bytes": 8275,
+      "sha256": "5f795ed73f7e958e9a3227c6de59e9d3ac3f641495790e58810b38c993fcec69"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/spm_motion_step.m",
+      "bytes": 5025,
+      "sha256": "50f0cbcd67680a0f823fbdc6517ca06d5a9c010dcce0552d5fb093cc5ad821cb"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/spm_segment_batch.m",
+      "bytes": 1666,
+      "sha256": "871b52a5dee231aee3960f9dfbdccf78fadaf1b7cc09acdc896093361e122acf"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/spm_step.m",
+      "bytes": 180,
+      "sha256": "0e57d0ca4383a699d3fe8adee5ff1060388e3055082216794296d0fc2074bc91"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/stage_anatomy.m",
+      "bytes": 2089,
+      "sha256": "25bb4aac9f45c62600f2427601d5713bacae26696539426d9ef8e854197c3fc9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/stage_image.m",
+      "bytes": 498,
+      "sha256": "0821e2bec4ccf42842ea5c27e64b03ed305a8628588888d90b08171b0c59abf8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/temporal_basis.m",
+      "bytes": 1641,
+      "sha256": "6b0637ff3b5f3faa28234d5c1dd41083c05bcee5c6643cef505a72787bbe0b1a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/timeseries_qc.m",
+      "bytes": 4948,
+      "sha256": "053dec922f73f55c2b485e158334c556c59d91daab0fb032c0f6dfcbf4d695d0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/tissue_mask.m",
+      "bytes": 1386,
+      "sha256": "5035cabe60a885411734f75759fdfc0a26bc2b2edca577d911a11924ad085add"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/topup_batch.m",
+      "bytes": 632,
+      "sha256": "08bcb30b7516ee606c1bbcc1cff00a326b8500ea9a53a50ff8906eef21878656"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/topup_qc.m",
+      "bytes": 3607,
+      "sha256": "99aee6f3860a147c41c07970ce311822d6cfbd38e27871d42d733127b91a2ac8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/topup_run.m",
+      "bytes": 5531,
+      "sha256": "1e0f604f7a8a13e50ea50a547e767c0b881b40117453e1c29d9738252ed35bd8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/topup_validate.m",
+      "bytes": 3053,
+      "sha256": "6ceaa2b89534f7eaa482e111e762884c3dc8837b9a4158d9b1624eeadecfa6ec"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/trim_dummy_bold.m",
+      "bytes": 660,
+      "sha256": "a53e75570cf97cea3be1f95de53d8c0be7a042f69f675371d6bccbdb77654c5f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/validate_preprocess_config.m",
+      "bytes": 8007,
+      "sha256": "32fea3a39bf593968a9f4061b4997861270954e3141a7212513cbbc8a4456287"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/verify_realign.m",
+      "bytes": 2983,
+      "sha256": "c0b01ed18b16ebb3653eb84450d3eb1967ddcde5b8cfdbae6723ac69a402363b"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/verify_spatial.m",
+      "bytes": 5056,
+      "sha256": "5c01e967f691f0df7938d2dcfa85a015c3ac6379721a4857e0f34ebfeff95a15"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/matlab/+psy/write_dummy_events.m",
+      "bytes": 1433,
+      "sha256": "583e619cc7bea9204ba66883d11ba4d0e984aa45e2533782ff89294c2a32f8c1"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/run_confound_design.m",
+      "bytes": 288,
+      "sha256": "3f0c3e8b5d1b5b578cabef3809f3b560d723feb8679690db42f9a79b63c57d03"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/run_confounds.m",
+      "bytes": 284,
+      "sha256": "efbe002eeaed7b3e6a474483daa0e388e5b9d6bea5227d0578d447889b175cc5"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/run_denoise.m",
+      "bytes": 279,
+      "sha256": "885d76d63da35b21deabf39cb42534c7b7e9d1d0d14b60be40d4fd76dc8a6f0e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/run_preprocessing.m",
+      "bytes": 557,
+      "sha256": "e4c342bc4a35c46e4d5923ef3e261b34b75ff817ee88d49d24d1ea6173963e5e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/run_timeseries_qc.m",
+      "bytes": 412,
+      "sha256": "993ceeb9d2eccaaa7cf93ffed12a1f47ec7fd521fb10ccc355940d02b402b7eb"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/run_toolkit.m",
+      "bytes": 656,
+      "sha256": "d5e0c3529c06c68e9aa305656a9e0e5b743b8ea6ac51fe2afa8c2214e6b39590"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/scripts/audit_hcp_headers.py",
+      "bytes": 1898,
+      "sha256": "b5ed95c5a70d8193b7d6eada5243cb689af3ad4806f70a93e77a78e5cc58cba1"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/scripts/extract_hcp.py",
+      "bytes": 4329,
+      "sha256": "fa7b8accd54fc88b525ac43ff4d103f36f181ad47bea15966b1acc008162e3bb"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/scripts/getfsl_official.sh",
+      "bytes": 5688,
+      "sha256": "006229bf716b04167f66124b70a4bce592742302470161d7def00649c6d41cac"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/scripts/install_cat12.ps1",
+      "bytes": 2475,
+      "sha256": "ac411efd07490b7ef48896bd7471dc219dd555bd7e7a075d4e33c03a90e736ec"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/scripts/install_topup_wsl.sh",
+      "bytes": 1944,
+      "sha256": "5828b277336e3a7fb09942f275488f4bcfdb890b4716bc244c1b9e00400063fa"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/scripts/release_layout.json",
+      "bytes": 10666,
+      "sha256": "7910853f5b157e4cbd3032bbf0f7df723a82b35a77a243adc1de988ef6a68b7e"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/scripts/sync_final_copy.ps1",
+      "bytes": 10384,
+      "sha256": "4efa3f7946e76efc83c2c93d576b865559b9fa956df5a1668185ec0eaad7a849"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/scripts/verify_nifti_stream.py",
+      "bytes": 2581,
+      "sha256": "24afea68d6abed4fc94d8cfdb1b3b7dd4e6b6729705fd11b790ca93ee82e2aac"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/manual_normalisation_routes.m",
+      "bytes": 4513,
+      "sha256": "ca39df5969d570750f641dcf74ba0ad9bd7779a578940bbfb71379d335752f1a"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/manual_segmentation_extensions.m",
+      "bytes": 4618,
+      "sha256": "62e67b392697903293c66630b038d7e09bfd29de0ea98aed68ba700cf91dffd0"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/manual_spm_fieldmap_fullchain.m",
+      "bytes": 5377,
+      "sha256": "f4c1d03a836ddf20926b2a051f711ab6974c9b27110a71f76dd201517ac17c24"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/manual_spm_fieldmap_smoke.m",
+      "bytes": 3364,
+      "sha256": "a206d707a86d2dc5fcdb0d9cfa826b7fb6a864b24ab7ffa3b08a770868ba3848"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/manual_topup_handoff.m",
+      "bytes": 4996,
+      "sha256": "01be5eafe8319224a5a2d9aa54d6fb8b87ee0f42012340c940523e9055a299f9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_bold_unwarp.m",
+      "bytes": 2535,
+      "sha256": "050c3d3854a9bd81b13110b25d6c45c87a208fac0fd05ba67d6637f70c496db4"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_confound_design.m",
+      "bytes": 1570,
+      "sha256": "0726dd39492ed68a1f7c58df3a12d5e07da5b0f02261b7413102a3b71e6fc9f8"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_confounds.m",
+      "bytes": 3131,
+      "sha256": "071240d59341c520241bdf79ce3691d3bc85e27fb88c0ab4d4de1c32fa378227"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_denoise.m",
+      "bytes": 3346,
+      "sha256": "0f5ce1815104afe2e87ece814dfdcb820f7dfc19282ab37d9e5dfdfb3051e082"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_dicom_dummy.m",
+      "bytes": 6024,
+      "sha256": "d2fc7897a4c514e3dc22868419cdd63938eec72af627eaba07d20832ea090fd1"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_finalize_realign.m",
+      "bytes": 1484,
+      "sha256": "9da94452041e682d557b7f3a2d0cc561150125bb8fc88cc708da114611ae9501"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_hcp_events.m",
+      "bytes": 1757,
+      "sha256": "9454999e98eb67e503013e3d00f2a27b9f058b71fcdeef68f6cc4091cb17d89f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_input_contract.m",
+      "bytes": 5113,
+      "sha256": "8c8dd43c9ca5c8fd0b0d31216732241df4c3537cb44c99e38ca8ae3acfa20885"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_manifest.m",
+      "bytes": 3408,
+      "sha256": "12b0896aa127313c18f090120622545bc6e12bd1c058634aff614d31a2040015"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_nifti_geometry.m",
+      "bytes": 788,
+      "sha256": "7b5e362079f14c7f75ddcb532f123112b281f7c294e9907875a53cc73c0efca1"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_normalisation_interfaces.m",
+      "bytes": 13095,
+      "sha256": "6c6a494ef5e3f61414fd246fdbb6d9ed51c9957e84bc4714f2035eafe2b5370f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_preprocessing.m",
+      "bytes": 2025,
+      "sha256": "30932d5a9573de4a235ba7cf40a39aa93501d65ad0e9c0961ac2020cecfeda6d"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_realign_weight.m",
+      "bytes": 8040,
+      "sha256": "636bd4e8deaee12171f5ccd39e0cfd993309682b2beb029ad2114678be30c2cd"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_reuse_anatomy.m",
+      "bytes": 2449,
+      "sha256": "e29de6939a4b52a0a76c2b72bf72a469a81d4cf467752493e0f8238923dbaff9"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_sdc_interfaces.m",
+      "bytes": 12825,
+      "sha256": "f7c69c7f4be68be36f7621b6b9e42f5ad4d6002989d21f86a6b17ccb1dff5312"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_segmentation_interfaces.m",
+      "bytes": 9179,
+      "sha256": "298dcd05f33601944e9db4ff9e96807c6d86f82fcca2dc5b8cffdfeaf348ccb7"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_smoothing_interfaces.m",
+      "bytes": 11975,
+      "sha256": "806229488795286fd52a050316ed979d46aab65add0ad66f06a457b36e08b5f4"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_timeseries_qc.m",
+      "bytes": 1604,
+      "sha256": "719a7980a4f0e442c447d84fd74386eb98922fd6336959c38a69f950af02a95f"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_topup.m",
+      "bytes": 5658,
+      "sha256": "5d8e2bf9b6bb18f5e66f013b0d85ed707397a4668a69c195dc50036d4ab9d352"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/tests/test_unified_preprocessing.m",
+      "bytes": 6330,
+      "sha256": "1220b8aff388ecace1b301a6b698b780167723fb09fa5402181ce1778895f035"
+    },
+    {
+      "path": "CogNeuro_fMRI_Toolkit/validate_preprocessing.m",
+      "bytes": 715,
+      "sha256": "958d48ab7e106bd3aa4ccefd4cb60191612dff17f886df05ce6e8ee9e2e3747a"
+    },
+    {
+      "path": "Function/DEPENDENCIES.tsv",
+      "bytes": 2453,
+      "sha256": "ae5e13b0de5516228c6e349d1a073b16ee423f8e76787059c8cf7045806c6e83"
+    },
+    {
+      "path": "Function/FILE_MANIFEST.json",
+      "bytes": 70230,
+      "sha256": "c9c612608de44acdfccb02b7626999cb6537b7ee3beba6cf9898e97241d9f038"
+    },
+    {
+      "path": "Function/README.md",
+      "bytes": 556,
+      "sha256": "a6e05ab9f95c2e4140516dac0167c7f103d9ae2c5e2ed87eb8ebe1a3881a9147"
+    },
+    {
+      "path": "Function/config/analysis_runs_template.tsv",
+      "bytes": 221,
+      "sha256": "82cfddae6642e1d3f8ca0a6e23462ac5bfd0faed0eefac130af71153ed496be7"
+    },
+    {
+      "path": "Function/config/background_config.m",
+      "bytes": 1089,
+      "sha256": "169643c47565b0088125375e29080097bb9c729fbfef128c07298bc056e0a6d4"
+    },
+    {
+      "path": "Function/config/behavior_config.m",
+      "bytes": 2728,
+      "sha256": "8fb0ac502a7074566941c6f04b5af404ce0ff4ea335585dba4e50dd48a03ce13"
+    },
+    {
+      "path": "Function/config/behavior_runs_template.tsv",
+      "bytes": 71,
+      "sha256": "c9056f91d72880e796dc26fe3e08bfc28afd62d6ba7153bd8615e15fea95a61a"
+    },
+    {
+      "path": "Function/config/dcm_config.m",
+      "bytes": 1300,
+      "sha256": "fa7a4d61465435a17c5af4b6644c0b22813ea3adf79d1d9f46b95b7ce18aef45"
+    },
+    {
+      "path": "Function/config/dcm_group_config.m",
+      "bytes": 986,
+      "sha256": "99daa27d15474d0c869931f5d1ff6f0f8c6c0a939ada9696783bc8eee831482a"
+    },
+    {
+      "path": "Function/config/dcm_group_template.tsv",
+      "bytes": 104,
+      "sha256": "3a2536cce112452f5d1668c0dbad8040ee65ea53d3bb4b9711eb95610099d175"
+    },
+    {
+      "path": "Function/config/dcm_runs_template.tsv",
+      "bytes": 68,
+      "sha256": "bbe5c74935755d50f23eaa8ac9ea56749b67982b975cfd2d19aafb3a22e70ee3"
+    },
+    {
+      "path": "Function/config/dynamic_fc_config.m",
+      "bytes": 1236,
+      "sha256": "b8eafb85a56ed8509b0b045d03beffd3ea555331fa9b07a81e0482919a488a0a"
+    },
+    {
+      "path": "Function/config/dynamic_runs_template.tsv",
+      "bytes": 125,
+      "sha256": "9e435674b7271c5af13ec11065a3419f254428d6c32bd4268b0e150ea0d9ab3d"
+    },
+    {
+      "path": "Function/config/encoding_config.m",
+      "bytes": 1141,
+      "sha256": "4a4f7b1856e949dcfdf1fd8f8ca2faffc644c0cc3569ad8741627d3cef8c2978"
+    },
+    {
+      "path": "Function/config/function_config.m",
+      "bytes": 2190,
+      "sha256": "89a0bd29dda5bee9c74a8106df4beda7befa4cfa2c4f32814fbaab634bc990bc"
+    },
+    {
+      "path": "Function/config/gradient_config.m",
+      "bytes": 1781,
+      "sha256": "e18e9133fb89e4c1f931e266f464b1e20f3d5bae420399b65794361208197bd5"
+    },
+    {
+      "path": "Function/config/gradient_inputs_template.tsv",
+      "bytes": 134,
+      "sha256": "2511c3a5ad3e2676dcf9790d0c21b0eb49ccd2d54dc5c439355f6b5f582dcd79"
+    },
+    {
+      "path": "Function/config/ica_config.m",
+      "bytes": 1382,
+      "sha256": "3b417e14170d9ad138a48dd158f2e86d6ec0a95e5a913cb1853c917eae98472a"
+    },
+    {
+      "path": "Function/config/ica_runs_template.tsv",
+      "bytes": 108,
+      "sha256": "47ed003a0584350955ff61b4723014da6863d7877a82deced4dde028b7500690"
+    },
+    {
+      "path": "Function/config/linear_decode_config.m",
+      "bytes": 879,
+      "sha256": "64ebeb13b92a5057854b2a16b9f386be991e0ccea2c72f7c60261e04ee936d91"
+    },
+    {
+      "path": "Function/config/multivariate_config.m",
+      "bytes": 2067,
+      "sha256": "6a992271a5833268c59ed77ae8a1af7a5f775a8b71998be6303a44622b4206e6"
+    },
+    {
+      "path": "Function/config/naturalistic_config.m",
+      "bytes": 2083,
+      "sha256": "313260b3afa8a3f9d06757bc07f5b2f0c1de9e516c1fe30da05572999637ff1d"
+    },
+    {
+      "path": "Function/config/network_config.m",
+      "bytes": 2185,
+      "sha256": "9e08498f3a41a78cd69ea4827de83ed92037306db113c39203b30676c05fa3c1"
+    },
+    {
+      "path": "Function/config/network_runs_template.tsv",
+      "bytes": 65,
+      "sha256": "28e4b35258da94bf100dbb6e59f9d6ecebfa944e2c3f619ce9d664b35e21203e"
+    },
+    {
+      "path": "Function/config/pattern_config.m",
+      "bytes": 892,
+      "sha256": "3d3451ed23f01a58e4476dda1403855e326cbd6ed3776288201d65781207e268"
+    },
+    {
+      "path": "Function/config/pcm_config.m",
+      "bytes": 1396,
+      "sha256": "9a6059a2a8f119c110025e3126e6a6fd436ed1f2731df390c4729ac68b7448b6"
+    },
+    {
+      "path": "Function/config/pcm_subjects_template.tsv",
+      "bytes": 78,
+      "sha256": "bbed407525b66680a5440c520eaae673e731ccec42e3f752c79465b1735a569f"
+    },
+    {
+      "path": "Function/config/ppi_config.m",
+      "bytes": 1111,
+      "sha256": "c9a554fbddbc166ad0b9096b9540ea4f976b247e15774a62b1f3405ba8ecbb67"
+    },
+    {
+      "path": "Function/config/ppi_runs_template.tsv",
+      "bytes": 106,
+      "sha256": "2aa0e6011f28a5ff35c5d1d7bd4bc920b39efa604915f468c4e71feaf5e2e21d"
+    },
+    {
+      "path": "Function/config/prediction_config.m",
+      "bytes": 1204,
+      "sha256": "0d0d250721f954958fc293b513eea04120e446571f4cbc6f6bcb8971a1cd0e47"
+    },
+    {
+      "path": "Function/config/prepare_inputs_config.m",
+      "bytes": 1147,
+      "sha256": "f26168716550d341ecc9c28156be8e5970f52bddb2354d2955232b4963f99806"
+    },
+    {
+      "path": "Function/config/regularized_fc_config.m",
+      "bytes": 745,
+      "sha256": "3de4c303ac4b181ae375d325c9313d71b951d137f1352c86611c38ad63952a7c"
+    },
+    {
+      "path": "Function/config/regularized_fc_runs_template.tsv",
+      "bytes": 66,
+      "sha256": "3e3e843d849dc823519cc13b2be235a83569775565c09be0132f99b4e61693cc"
+    },
+    {
+      "path": "Function/config/reliability_config.m",
+      "bytes": 1155,
+      "sha256": "004da1e25144b78a2e8a0ce7c44ece1d2628d5578c91cee1891c1130c1f37677"
+    },
+    {
+      "path": "Function/config/rest_extended_config.m",
+      "bytes": 2170,
+      "sha256": "7ef275a0b11679cddd04ace6091420f8a9a2143b75e365d0db41bd146bc1b1e5"
+    },
+    {
+      "path": "Function/config/rest_extended_runs_template.tsv",
+      "bytes": 72,
+      "sha256": "b126f230893df0af30b8ca54c7e273a416f913fe9189634224b4cf0859e0b487"
+    },
+    {
+      "path": "Function/config/roi_patterns_config.m",
+      "bytes": 1184,
+      "sha256": "a8f90a2e11a1e6ce5fdff36699df0d619b9d61f3625c2b1686ea0ba4e9354ebd"
+    },
+    {
+      "path": "Function/config/rsa_ceiling_config.m",
+      "bytes": 911,
+      "sha256": "f39b7c589d0b80aab3606af03e5ef95a9ec7aa441863b413592f486783ac7afe"
+    },
+    {
+      "path": "Function/config/searchlight_config.m",
+      "bytes": 2346,
+      "sha256": "4b971f430288c5372838a318f832a2415a251b91033929b3682fecc8939d1978"
+    },
+    {
+      "path": "Function/config/state_config.m",
+      "bytes": 2244,
+      "sha256": "e1aa08aa82dcf85247a734d6448cf429964350cc1c3ac73a7160c134f795d01d"
+    },
+    {
+      "path": "Function/config/state_runs_template.tsv",
+      "bytes": 170,
+      "sha256": "3e2e5d08710c395a0156d0e19b95c027dbb89d873abea28fa1af6e7dd9d0c77e"
+    },
+    {
+      "path": "Function/config/transfer_config.m",
+      "bytes": 1012,
+      "sha256": "98709811dee323ae8eb14e6239e0c5bd2b42a2b44ce3ed9066d0b740c7703f09"
+    },
+    {
+      "path": "Function/docs/ALFF_REHO.md",
+      "bytes": 12200,
+      "sha256": "f65c770e101bdec0397b41c58aa520d553afd386d396e3427b984c1d3cc40bcc"
+    },
+    {
+      "path": "Function/docs/Basic_Graph_Stats.md",
+      "bytes": 11627,
+      "sha256": "8e03077603723baec2f41727b0f2e9dbaf8e609d3e46de46784408a430f48905"
+    },
+    {
+      "path": "Function/docs/Behaviour_Models.md",
+      "bytes": 20348,
+      "sha256": "7ff8d1b8366382e6a374a4f6f273b39bdcb26f946f95eaef13faa6e53f00995e"
+    },
+    {
+      "path": "Function/docs/Beta_MVPA_RSA.md",
+      "bytes": 13121,
+      "sha256": "2341c72a6d8f4383abafa9a42026b649543daee148a430cdd02a865df2e359a5"
+    },
+    {
+      "path": "Function/docs/DCM_and_PEB.md",
+      "bytes": 18505,
+      "sha256": "883fa3e75f3a2a3ede75df62ccdb5fda10ae063e16996d0f4bdc83d9ba7a59a5"
+    },
+    {
+      "path": "Function/docs/Dynamic_FC.md",
+      "bytes": 11914,
+      "sha256": "ac824b1bd151fddeb1c0f1480fd9f77ba7f25d124c8eb4fb7fd902cd48afed8b"
+    },
+    {
+      "path": "Function/docs/Encoding.md",
+      "bytes": 12137,
+      "sha256": "6bd5c17dad7d8ac7229b8b388a8a8ae810a01ed214e2690f3942da727c608578"
+    },
+    {
+      "path": "Function/docs/Extended_Rest.md",
+      "bytes": 17306,
+      "sha256": "2ab678211546d100ebcbd764ffc5d820b4ff960d5e0a4fd30170278191d64e2b"
+    },
+    {
+      "path": "Function/docs/FC.md",
+      "bytes": 22519,
+      "sha256": "24aa952ebe8ac466b13398bb64dcd207017e27266444b6193386b03c8dcad599"
+    },
+    {
+      "path": "Function/docs/File_Reference.md",
+      "bytes": 44618,
+      "sha256": "c2920fc52a467df1467880f36a834271026722dbfb04abf2f1b715b8c2af336f"
+    },
+    {
+      "path": "Function/docs/Function_Overview.md",
+      "bytes": 6467,
+      "sha256": "4c656f0f89cf54abefe22d7b70b9c86e72d5596c347a110791823312db814bf2"
+    },
+    {
+      "path": "Function/docs/Gradients_Spatial_Nulls.md",
+      "bytes": 15890,
+      "sha256": "c31ef8fa538862795d607ed769ee3cd3fd31998dea5c701730acebd9367123b1"
+    },
+    {
+      "path": "Function/docs/HMM_CAP_LEiDA.md",
+      "bytes": 17178,
+      "sha256": "0c5108b9c8ebcf6a510746eb55f20b5833ce1b9abd29f086c2cd7ed960033bd9"
+    },
+    {
+      "path": "Function/docs/ICA_Dual_FNC.md",
+      "bytes": 13678,
+      "sha256": "4b10b05195d0fbf636dcc1853e8cf5bfd2765102eee8e05ab40d51446a54e4d4"
+    },
+    {
+      "path": "Function/docs/ISC_ISFC_SRM_Events.md",
+      "bytes": 16955,
+      "sha256": "e9c09341463d887963365a0a14d09b406d51d4a0908095369ca80d28a4f644cf"
+    },
+    {
+      "path": "Function/docs/Nested_Prediction.md",
+      "bytes": 12612,
+      "sha256": "7bc1e48189fc145a85d424f8e2205f8c319de5f6c400c533a5faf6d9579b63b9"
+    },
+    {
+      "path": "Function/docs/Network_NBS.md",
+      "bytes": 16365,
+      "sha256": "166dda009eeea313830a04931e6ed4c2e2524afa505bb96917da12ec60371232"
+    },
+    {
+      "path": "Function/docs/OAS_SVM_Regulated_FC_MVPA_RSA.md",
+      "bytes": 20592,
+      "sha256": "b97eecae4ea842f6d77a99b126b1b1cf7111d15a2fe5b80a511de28c8433ef90"
+    },
+    {
+      "path": "Function/docs/PCM.md",
+      "bytes": 14722,
+      "sha256": "c4a4cb18ea23711eed21476399fa3df2427cb0768088b7572fb009ae2e5075d4"
+    },
+    {
+      "path": "Function/docs/PLS_CCA_Mediation.md",
+      "bytes": 16864,
+      "sha256": "40c89951aa45c8ddef3c4bae07bd38674f01222faf65830338f0ae88584d61e3"
+    },
+    {
+      "path": "Function/docs/PPI_gPPI.md",
+      "bytes": 9985,
+      "sha256": "c9495d39ead0bb1cc8c9f3cb6c7ba89c94c9ebc6a1f18b72957c83683dc73d53"
+    },
+    {
+      "path": "Function/docs/Process_Summary.md",
+      "bytes": 21098,
+      "sha256": "1fe6fb69045e3e23b058c7a933ed0a6c98c067a43f85265379df47dc9315caf3"
+    },
+    {
+      "path": "Function/docs/Searchlight.md",
+      "bytes": 16489,
+      "sha256": "dd8bf9e859b80644ed64433ac1297ed75040ee99034a617772802b5ef8541cd9"
+    },
+    {
+      "path": "Function/docs/Summary_Methods_Table.md",
+      "bytes": 2816,
+      "sha256": "97defcc56560272556d0d39150df176d1f9ce9e3cf88bad64be98a30c12d446c"
+    },
+    {
+      "path": "Function/docs/Transfer_Reliability.md",
+      "bytes": 18258,
+      "sha256": "341a2b5d0a6e46d9dc3acdef0106b688639f95550916021777b1101e3c8541e5"
+    },
+    {
+      "path": "Function/examples/export_hcp_behavior_events.m",
+      "bytes": 3320,
+      "sha256": "706ce44572104648046edfc5c1891e8826989d156e907ac549722bf8e131df87"
+    },
+    {
+      "path": "Function/examples/hcp_naturalistic_roi.py",
+      "bytes": 1614,
+      "sha256": "1434ef3fc9b6dc5dacef36d5972bcfa4012255173818b5d90ac0c93f4c43dce2"
+    },
+    {
+      "path": "Function/examples/stage_nifti_prefix.py",
+      "bytes": 2825,
+      "sha256": "4bf32ed77380090ec1cad750f5da30426cac761cf1e9b833838bce6dbbcc02f8"
+    },
+    {
+      "path": "Function/examples/start_background.m",
+      "bytes": 668,
+      "sha256": "c857e4f2c0ff6435f144da658c857286bd3c0b905678719070a02f8caf3913d1"
+    },
+    {
+      "path": "Function/examples/start_behavior.m",
+      "bytes": 709,
+      "sha256": "7fd227a2aa3caf6b3710dbd40752c3fdc4cff0bcfc4a2c153c4ad80faaaa3387"
+    },
+    {
+      "path": "Function/examples/start_beta.m",
+      "bytes": 790,
+      "sha256": "1ed253cf63c44842e84f746b501d9b223c74e851d5093ef39bf60302e7188018"
+    },
+    {
+      "path": "Function/examples/start_dcm.m",
+      "bytes": 705,
+      "sha256": "a21e2046cf2483b939e509ee8acf5e63c54a17c5aace7f9f1acae185830e8aaf"
+    },
+    {
+      "path": "Function/examples/start_dcm_group.m",
+      "bytes": 602,
+      "sha256": "39c9419edf878986f1ee1a34e040acd995c81b788ac4c3367732b8796931d69c"
+    },
+    {
+      "path": "Function/examples/start_dynamic.m",
+      "bytes": 737,
+      "sha256": "a6fd8354124f49991630a8e4cd884f5bd2cc650fdb863c2e6016932ff430ad4b"
+    },
+    {
+      "path": "Function/examples/start_encoding.m",
+      "bytes": 675,
+      "sha256": "460936306469f6b8567af76b93be9c060c24b7cbe6a4d625edea0e0edc590e72"
+    },
+    {
+      "path": "Function/examples/start_extended.m",
+      "bytes": 693,
+      "sha256": "574eb7f029de276b7080d59183f2fdeeb816352adb929c0cc8e9782b47e5074a"
+    },
+    {
+      "path": "Function/examples/start_fc.m",
+      "bytes": 783,
+      "sha256": "b149c2ec5fe53c55892fbc71ed6618d63cb9dd9f9c272598607d065d1ab89cb1"
+    },
+    {
+      "path": "Function/examples/start_gradient.m",
+      "bytes": 767,
+      "sha256": "a3b4cf8547adce541ebbf6940486e77c1a9066291bb6c969aea1232ee04e7c3e"
+    },
+    {
+      "path": "Function/examples/start_graph.m",
+      "bytes": 612,
+      "sha256": "f292eb90e293a0f5785e0416104eaf3ae2110af9323d2ba6980dc9e22a1e8a83"
+    },
+    {
+      "path": "Function/examples/start_ica.m",
+      "bytes": 627,
+      "sha256": "90074dc124bcd309910bf8e66eed3ee1f8a524681a9d4cb3cf72957696967299"
+    },
+    {
+      "path": "Function/examples/start_linear_decode.m",
+      "bytes": 658,
+      "sha256": "a0a50f32ad3be0b4502d6e42fdb73f66ec7e60987f0d9299fbcac32fe4fbc2a2"
+    },
+    {
+      "path": "Function/examples/start_multivariate.m",
+      "bytes": 718,
+      "sha256": "9866715b4afadb835b9803c84930764855084e87c425c68ec86fc0c65c6f7186"
+    },
+    {
+      "path": "Function/examples/start_naturalistic.m",
+      "bytes": 666,
+      "sha256": "6c6af7cccefea896f7d12de278aebd8d05d589df4711bf1af50ffa7f177287ae"
+    },
+    {
+      "path": "Function/examples/start_network.m",
+      "bytes": 733,
+      "sha256": "7790b65c0ee51087d7331a27f845e16bcadf278c72eadc267b5e82ab212638fd"
+    },
+    {
+      "path": "Function/examples/start_pcm.m",
+      "bytes": 807,
+      "sha256": "842bff4853ae4d864eab588292f1b70f19289580bcfd18b2f38304db05ae6fad"
+    },
+    {
+      "path": "Function/examples/start_ppi.m",
+      "bytes": 674,
+      "sha256": "13d7678851fd43e73c773178280d8bc4e797bb0f2670f59e858671d8bfa21955"
+    },
+    {
+      "path": "Function/examples/start_ppi_batch.m",
+      "bytes": 527,
+      "sha256": "28093a8e7a60d8f9821e98de8a09c18aed040492820eb9f0b1b620935002cef5"
+    },
+    {
+      "path": "Function/examples/start_prediction.m",
+      "bytes": 648,
+      "sha256": "f3011668e02ca9672fb55c6a7207ac7ee7977a6bfaac4b4c6e5f54ff3fc2041a"
+    },
+    {
+      "path": "Function/examples/start_prepare_inputs.m",
+      "bytes": 681,
+      "sha256": "32c459a61a900203067c21b4955622042b44081dd1e71fd78fd9f5a3d7a97e57"
+    },
+    {
+      "path": "Function/examples/start_regularized.m",
+      "bytes": 590,
+      "sha256": "1f9b00bf2de1af57d98751bdb992573b39f83e7d38cf2a85f2433bb374eb5281"
+    },
+    {
+      "path": "Function/examples/start_reliability.m",
+      "bytes": 668,
+      "sha256": "565aa60e8053c89420f809b8bb830c2e39f26d61062e96e207ce8abed77daae8"
+    },
+    {
+      "path": "Function/examples/start_rsa_ceiling.m",
+      "bytes": 647,
+      "sha256": "25ba2eb028c194411ba87afe46564e5bb655d0327a25cc2f470dabefda0c56d7"
+    },
+    {
+      "path": "Function/examples/start_searchlight.m",
+      "bytes": 703,
+      "sha256": "986650fb6373aeb6dc785045b747e5373ebaa680e6ca590418ea5a60fc0827b6"
+    },
+    {
+      "path": "Function/examples/start_spectrum.m",
+      "bytes": 769,
+      "sha256": "7782d29143a974b820939419b485f1c7993dcc827878662ef5e718ab336eaa36"
+    },
+    {
+      "path": "Function/examples/start_states.m",
+      "bytes": 707,
+      "sha256": "03ca7044fd82bceb25ee2027beb516d254f89b1614f028dd9f709986da395c07"
+    },
+    {
+      "path": "Function/examples/start_transfer.m",
+      "bytes": 648,
+      "sha256": "4ddd4900cbe7cac2be8de49dc77d9750311ded99b034477497f9226a71dbbeb3"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage1_patterns.m",
+      "bytes": 2500,
+      "sha256": "546fe146a84f4c45079774b7513c6cb871fdfaaed0caaf6ac3cc8a34b51467d7"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage1_ppi.m",
+      "bytes": 1899,
+      "sha256": "96cbbdc7222b127275c413f43b87c209f16bcea0541b8b2a97edcaba5710375f"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage1_timeseries.m",
+      "bytes": 2915,
+      "sha256": "770cd10e4b3fd55a5f9a9722596e84d850c64c44d8d2690fe82342d33608c443"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage2_dcm.m",
+      "bytes": 3845,
+      "sha256": "2796d88297999e2ffcebe5bc9277d671540f63822d44bef5528d0e31bd7e6bd1"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage2_dynamic.m",
+      "bytes": 1670,
+      "sha256": "55ebf34397b12a86f907198551960f58c4d8374c49f18b842ee02b4949f8faa4"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage2_gradients.m",
+      "bytes": 1831,
+      "sha256": "d2d46eda547d5b6ba6b64c30798b27d08f43e57153dfa348717e016802837e5e"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage2_ica.m",
+      "bytes": 1564,
+      "sha256": "74e4ac3e27414e2731206ae5f5c4b82535153771acbd4493a9ec486c07bec37d"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage2_searchlight.m",
+      "bytes": 2537,
+      "sha256": "9a4ce468b51ce616ed30bbedd47dd4b04906e577b24625137f0bc5fb2c6f133c"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_behavior.m",
+      "bytes": 4399,
+      "sha256": "7d41d27f5f89923ebab3e0b6ca143f25e89dc43415e9b0ea896ac7147bedbe28"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_encoding.m",
+      "bytes": 2251,
+      "sha256": "a7c0496bad6fbb92629bec94041de7c354151bc421b309ebee91a54e71889b55"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_generalization.m",
+      "bytes": 3528,
+      "sha256": "d2274eff2cad9e76ce1a17282af13badc9f3e6df11e079125fa3c97dc37cf795"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_multivariate.m",
+      "bytes": 2968,
+      "sha256": "026ca29f96ae5b0629897f458f535974ff9e9dec2c9b7f18348bce853f2ec6cb"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_naturalistic.m",
+      "bytes": 4568,
+      "sha256": "a0b73422d1219c53bc69aae66a4d32921634ad2bcff3330bd0885ba958e9312f"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_network.m",
+      "bytes": 2321,
+      "sha256": "b68d9d0df2ae305bbc8d84e734b9e7434c979f7419d234086af1a118ad70635c"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_pcm.m",
+      "bytes": 2815,
+      "sha256": "16f281915f642c3bc2a6cb79f052d65d4047057202ea632a49b557720a5eb39d"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_regularized.m",
+      "bytes": 3310,
+      "sha256": "63844d05204ac243497e432288c483c8c4eeb22e3afc68a9288d85243ad9c70a"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_rest_extended.m",
+      "bytes": 3966,
+      "sha256": "e97b0fdfcb2c056be38a97bfb239f95d22cbe5118d837c0a406387978680db4d"
+    },
+    {
+      "path": "Function/examples/validate_hcp_stage3_states.m",
+      "bytes": 1319,
+      "sha256": "d57a25f91210a4f1af2b3d427df2b8268f0df077d46e36b65e830a9b2c346fdd"
+    },
+    {
+      "path": "Function/examples/validate_prediction_synthetic.m",
+      "bytes": 1418,
+      "sha256": "dba4df3961c703865c5f98ce3f6099007afefedc04048cd4bba76867734326d5"
+    },
+    {
+      "path": "Function/matlab/+cog/autocorrelation_timescales.m",
+      "bytes": 2538,
+      "sha256": "7ae1db081d4c4ea1ea1942f31a284bb3c80bc115fbf4a1636c2cc12eb82fb41f"
+    },
+    {
+      "path": "Function/matlab/+cog/beta_series.m",
+      "bytes": 1623,
+      "sha256": "b27ee0c5b071d8f6445b649b9e86c59126d8c6c678e4beee47ecd9bc396a1fe3"
+    },
+    {
+      "path": "Function/matlab/+cog/bh_fdr.m",
+      "bytes": 470,
+      "sha256": "b82d6d3fb1e068a58e99a13109b6fd71b016abf5d75583a5889845ec19f3903a"
+    },
+    {
+      "path": "Function/matlab/+cog/bootstrap_unit_rows.m",
+      "bytes": 459,
+      "sha256": "3f80f96ab14de7e2b9b83ee098ef227a1d0424e356b3dd65d68493db8447a50d"
+    },
+    {
+      "path": "Function/matlab/+cog/check_grid.m",
+      "bytes": 285,
+      "sha256": "bc15c64d2c0b73b95a8c16cad6f7eb50605a18fe915bb0a789e77b7dd09c83fe"
+    },
+    {
+      "path": "Function/matlab/+cog/clean_timeseries.m",
+      "bytes": 1468,
+      "sha256": "75ebf7adac06c4e7e3f426b99c40f3438bcd5bd8d2eb3da370ac74b8b11e876e"
+    },
+    {
+      "path": "Function/matlab/+cog/cluster_states.m",
+      "bytes": 2895,
+      "sha256": "a6677e9066e6796c13c5d37d11149c4081f2c2e03d70c655b781e71572d35205"
+    },
+    {
+      "path": "Function/matlab/+cog/dcm_build.m",
+      "bytes": 3817,
+      "sha256": "dec41624e006ddca8ded527cfafe2be2e13521ee1bf4af80d1a5c739e56ca26a"
+    },
+    {
+      "path": "Function/matlab/+cog/dcm_check.m",
+      "bytes": 1017,
+      "sha256": "da5895f699cb5f1aa3a7c0d3272293fe5b4320b1fac6d21cf5dc503955d8f10e"
+    },
+    {
+      "path": "Function/matlab/+cog/dcm_model_probabilities.m",
+      "bytes": 863,
+      "sha256": "2e4fcd25a8da9f2fa33180e467dd970ecaabecd88ef3f4a976a887e784f66066"
+    },
+    {
+      "path": "Function/matlab/+cog/decode.m",
+      "bytes": 3431,
+      "sha256": "de87f5b962d4a33ac97a3e49e15ae3145d680de892e201993f2f0f4567e47a80"
+    },
+    {
+      "path": "Function/matlab/+cog/dual_regression.m",
+      "bytes": 1173,
+      "sha256": "98fb8d834bd9d721640547a33e7da767ceabae6220de3edc99909916ce6ddd6d"
+    },
+    {
+      "path": "Function/matlab/+cog/encoding_apply.m",
+      "bytes": 868,
+      "sha256": "e14f67d2072945ea1caac4afad2c93cbb50ac1c8692f33ea5fd888e617d5f69b"
+    },
+    {
+      "path": "Function/matlab/+cog/encoding_cv.m",
+      "bytes": 4434,
+      "sha256": "2725e218467f1303576bfe01d3f4861feda60150ac08e24b3f7fb65ac7bb16ac"
+    },
+    {
+      "path": "Function/matlab/+cog/encoding_fit.m",
+      "bytes": 1158,
+      "sha256": "d7d4bb49a1bcabfc6300976b3235ea317663e1fe5eed6ebf8f18c357f67148e5"
+    },
+    {
+      "path": "Function/matlab/+cog/entropy_metrics.m",
+      "bytes": 2871,
+      "sha256": "6d4ebc6415aaba118255a506f5da1b7d9391bf46236cebd370fdd9d143cf639f"
+    },
+    {
+      "path": "Function/matlab/+cog/fc.m",
+      "bytes": 1068,
+      "sha256": "e28cbc2fcdd46fb7fb7b5a0644a74ca9c44c4cbd13efe3af403e0bb91745d541"
+    },
+    {
+      "path": "Function/matlab/+cog/fit_rw.m",
+      "bytes": 1927,
+      "sha256": "ec91220ef2b45e33d51cb3cf533157b538c5e23f45196b16e2afa0f32f4778c0"
+    },
+    {
+      "path": "Function/matlab/+cog/gaussian_predictive_score.m",
+      "bytes": 1490,
+      "sha256": "c867a7ccb8c002947b58d7364410488559d9eb876424ec26fdb1a2aaabb715b3"
+    },
+    {
+      "path": "Function/matlab/+cog/gradients.m",
+      "bytes": 2686,
+      "sha256": "b8702e13e483f7b71622b08e7e10086058a06a2aee6b565dc57316832cf69a28"
+    },
+    {
+      "path": "Function/matlab/+cog/graph_metrics.m",
+      "bytes": 1650,
+      "sha256": "de643a637122936720223208740670e1401d21e0a400d4ab92965e36ae5002ce"
+    },
+    {
+      "path": "Function/matlab/+cog/group_summary.m",
+      "bytes": 1211,
+      "sha256": "fc338e575a1f76bcaedb82df33f95c0932b7c8bdccaa19ab37a6e5710f5098f4"
+    },
+    {
+      "path": "Function/matlab/+cog/homotopic_fc.m",
+      "bytes": 1525,
+      "sha256": "2c60a73ec683f8a1a555eb18ca05da1aa496c708fd0429702e8d0541330153ac"
+    },
+    {
+      "path": "Function/matlab/+cog/ica_group.m",
+      "bytes": 2677,
+      "sha256": "21430d9020aaf15416e66216982f814afaf5e64f6ce0aa8248eeb31325f24102"
+    },
+    {
+      "path": "Function/matlab/+cog/icc.m",
+      "bytes": 2411,
+      "sha256": "d9272902c971a6d7939bc4574b30bc8ba95a0e534777d48cae844f31ed9f7c42"
+    },
+    {
+      "path": "Function/matlab/+cog/intersubject.m",
+      "bytes": 3279,
+      "sha256": "1ef37ebf5240c4288fa5d49b6015a5bcc6e2df16a1e9578e9e38959caa4cdf19"
+    },
+    {
+      "path": "Function/matlab/+cog/lag_features.m",
+      "bytes": 1518,
+      "sha256": "d734771b63dc5c7947c8e2a5afa2a89aacb043a2a6d388c0cc40e562f8f46d58"
+    },
+    {
+      "path": "Function/matlab/+cog/linear_decode.m",
+      "bytes": 1801,
+      "sha256": "632eb264aef1db50921f2d0bf296fa29be0577e32887bfc86a95c8f95a56e0f3"
+    },
+    {
+      "path": "Function/matlab/+cog/load_betas.m",
+      "bytes": 1724,
+      "sha256": "1cf8d761ab23a8ca0314d48d4999babe6adc3ac16c247b0618d045e18e6c13f5"
+    },
+    {
+      "path": "Function/matlab/+cog/load_bold.m",
+      "bytes": 1406,
+      "sha256": "a68a9b03f7578de0dd98ffd37a8ae4aeecdff36f4fc81ffd5700f19777a6f925"
+    },
+    {
+      "path": "Function/matlab/+cog/mediation.m",
+      "bytes": 2837,
+      "sha256": "848af9b3749ca336f02dd5a739abd195ca3d0fef11ad1eaec197e64a18fc756d"
+    },
+    {
+      "path": "Function/matlab/+cog/multivariate_analysis.m",
+      "bytes": 5686,
+      "sha256": "38ae10acd6cd4d56f750dc961d57ab9074ddb7a78997ee8a12e115c88559bada"
+    },
+    {
+      "path": "Function/matlab/+cog/multivariate_apply.m",
+      "bytes": 1289,
+      "sha256": "1c3dd5e2c450ba476dc14d2d1a7cebd648836e16ca3260afeccb52b8acda3482"
+    },
+    {
+      "path": "Function/matlab/+cog/multivariate_fit.m",
+      "bytes": 3399,
+      "sha256": "1c0f294a6e4b51080141d485665bcb4202b3925fe5016e03230e913e22e80b33"
+    },
+    {
+      "path": "Function/matlab/+cog/nbs_onesample.m",
+      "bytes": 3643,
+      "sha256": "5c399d12323777117b5045b6f4a5cee3005efae8f1c2079b40eb0c2700347001"
+    },
+    {
+      "path": "Function/matlab/+cog/network_analysis.m",
+      "bytes": 4297,
+      "sha256": "49f85cb1175f71922982630c6b60d18c60a3e08447b49cea95e522684ffc8fe6"
+    },
+    {
+      "path": "Function/matlab/+cog/network_summary.m",
+      "bytes": 1149,
+      "sha256": "47bb8987950ba7400415a3bbe07393d5f49a4958e55fd91e487559eadb915855"
+    },
+    {
+      "path": "Function/matlab/+cog/ordered_events.m",
+      "bytes": 3314,
+      "sha256": "28829ddfae487cdf6d3b2f440d290d46c7c893228f62ce6ee43900468720b387"
+    },
+    {
+      "path": "Function/matlab/+cog/parametric_events.m",
+      "bytes": 1654,
+      "sha256": "f3bcacaa411ec157028809c591588d7e0750a9f57cf1105e76c009d6444c68ab"
+    },
+    {
+      "path": "Function/matlab/+cog/pattern_apply.m",
+      "bytes": 765,
+      "sha256": "54cb17206b8e5ef9c6d9a025374dce5b31368ad2ee527107cdd2eb2ca5fa844c"
+    },
+    {
+      "path": "Function/matlab/+cog/pattern_fit.m",
+      "bytes": 2261,
+      "sha256": "c50fc1997a49e887e762c21b36a2855d54a04ff27b9dd5def2c8f512b15a7c24"
+    },
+    {
+      "path": "Function/matlab/+cog/pcm_fit.m",
+      "bytes": 7252,
+      "sha256": "fa0219209c8c9044cd1cc79004f9ee1884a9c44e61f57f173833a148e20a85a9"
+    },
+    {
+      "path": "Function/matlab/+cog/pcm_individual_cv.m",
+      "bytes": 1436,
+      "sha256": "f91de595b057572f40010e6f74eefc3d355ddffa8a042ed6acb3e8e4d5224c64"
+    },
+    {
+      "path": "Function/matlab/+cog/phase_surrogate.m",
+      "bytes": 524,
+      "sha256": "ca4999dc977ba0b19d55dba32d3a1515a1cf59608e9a70d4f235f6d6f381f8eb"
+    },
+    {
+      "path": "Function/matlab/+cog/predict_nested.m",
+      "bytes": 4575,
+      "sha256": "1fe75759f0f8da1c63d83945c40f10a5be41655021107d6cce59830f25999bfd"
+    },
+    {
+      "path": "Function/matlab/+cog/prediction_apply.m",
+      "bytes": 952,
+      "sha256": "73e247da4d0a34fc978a6f8b5bf82d4ce414283507e6cbe26688a38b41ef4a97"
+    },
+    {
+      "path": "Function/matlab/+cog/prediction_fit.m",
+      "bytes": 2220,
+      "sha256": "73832c62d90f5c2c1157bc4ccc9b0b237e412b5026b09cad8cf1236e66e6410b"
+    },
+    {
+      "path": "Function/matlab/+cog/prepare_dcm_spm.m",
+      "bytes": 3070,
+      "sha256": "d055fd384462086ca83f27ad4d377916696f5e605c0e6e8dc69591ff1c3bdc27"
+    },
+    {
+      "path": "Function/matlab/+cog/prepare_ica_nifti.m",
+      "bytes": 595,
+      "sha256": "0ea310eb752c006cb8f0ad55a8f0a104b8e09f80f7ed1f1d44a7fcef4e086a0f"
+    },
+    {
+      "path": "Function/matlab/+cog/python_process.m",
+      "bytes": 1365,
+      "sha256": "2b8462c0ff3c608af36d5e8e8e563aefee9f5c7d44d3ebe4caca20212699fca8"
+    },
+    {
+      "path": "Function/matlab/+cog/read_runs.m",
+      "bytes": 1707,
+      "sha256": "5dd5b191d38e6f54ebc17477c92cc5ccd0fd189d0137e6495e73fb9387bcdc68"
+    },
+    {
+      "path": "Function/matlab/+cog/read_spm_session.m",
+      "bytes": 1759,
+      "sha256": "e2ce4b0839b75e8caad37427802acbc095ac94c04186a2c2c1881c7b8307b3e7"
+    },
+    {
+      "path": "Function/matlab/+cog/read_tsv.m",
+      "bytes": 577,
+      "sha256": "bb27ecb519ad5c72a5b09b0996431b3661d9502e138f3efd5ac3ddfceb2d3155"
+    },
+    {
+      "path": "Function/matlab/+cog/reho.m",
+      "bytes": 1502,
+      "sha256": "6d9c5d3b3d9ff7a44bf4f3cd54c96af67a36d1e9d27e36a9252089e96b085bf5"
+    },
+    {
+      "path": "Function/matlab/+cog/resolve_path.m",
+      "bytes": 503,
+      "sha256": "8c7fc0ed15154564541a498152aa16899f8aee2a4056454b544171482ede9957"
+    },
+    {
+      "path": "Function/matlab/+cog/roi_extract.m",
+      "bytes": 985,
+      "sha256": "312a99203403421376769f17ca1021d1557822c1c8146a2709fa75ae6120e717"
+    },
+    {
+      "path": "Function/matlab/+cog/rsa.m",
+      "bytes": 3246,
+      "sha256": "69b0612754c9330455ec90b501257f8cde47de6185a4dead6675565d1a7e876a"
+    },
+    {
+      "path": "Function/matlab/+cog/rsa_noise_ceiling.m",
+      "bytes": 3482,
+      "sha256": "8b23d705bc0ec95bf0aac3d15d19b5101b910e11c526395fe49cb3d328eedbec"
+    },
+    {
+      "path": "Function/matlab/+cog/rw_softmax.m",
+      "bytes": 1365,
+      "sha256": "4c159a6d9de7bbe92bd44ea7dc1df3540fb0a360d6fd15474f52b600d26516bf"
+    },
+    {
+      "path": "Function/matlab/+cog/searchlight.m",
+      "bytes": 4856,
+      "sha256": "10c4f5dcaa60d965d98fe6f6654c943efb1eaea4fc7fd8985de2cee5ff3376f7"
+    },
+    {
+      "path": "Function/matlab/+cog/seed_fc.m",
+      "bytes": 481,
+      "sha256": "7289b116da44eff0f9552f55f7a0aa05eaa26ba7cb78f8f322c84a1c51d994be"
+    },
+    {
+      "path": "Function/matlab/+cog/shrinkage_covariance.m",
+      "bytes": 1921,
+      "sha256": "b47333d7bce0375861dc49c7ca99fdb637ecf2e65e0db658a406f09da1003f37"
+    },
+    {
+      "path": "Function/matlab/+cog/sliding_fc.m",
+      "bytes": 4753,
+      "sha256": "635d5721f04f4228de4f7a942a0fac7b4b612f8b77d4bbbd28cc742220776f4d"
+    },
+    {
+      "path": "Function/matlab/+cog/spatial_association.m",
+      "bytes": 3078,
+      "sha256": "9d5f6c4d180f63b345f554ae0e6ea6a28f791372af04e19cdf61bf9b4564abb6"
+    },
+    {
+      "path": "Function/matlab/+cog/spectrum_metrics.m",
+      "bytes": 1322,
+      "sha256": "73be1e47e4294dcd87029310c3c931b1e1b4726a8144e966eed87bcd1fe8f83f"
+    },
+    {
+      "path": "Function/matlab/+cog/split_half.m",
+      "bytes": 1761,
+      "sha256": "8b9ec4115aa60373549417a4fd2c537693bc427fcbc7d138c385c87cbc5f2527"
+    },
+    {
+      "path": "Function/matlab/+cog/srm_apply.m",
+      "bytes": 608,
+      "sha256": "a235a3be96e0556a6befd8824f96e7a68515372db46cb81fed5367a74d4cde70"
+    },
+    {
+      "path": "Function/matlab/+cog/srm_fit.m",
+      "bytes": 1846,
+      "sha256": "d9422cfcd1257164904957d3cd9f8f137f3b79591dc69707720aa8050200f545"
+    },
+    {
+      "path": "Function/matlab/+cog/state_metrics.m",
+      "bytes": 2919,
+      "sha256": "edbaaefc53622c0dc651574f57b82ce478dd6b83149b689259116e98979c96d6"
+    },
+    {
+      "path": "Function/matlab/+cog/transfer_check.m",
+      "bytes": 1572,
+      "sha256": "1625c643d1cdd2ee1f63ff97f2b0368d181cb71a6c365626da2e5bdc2a853ea1"
+    },
+    {
+      "path": "Function/matlab/+cog/verify_spm_model.m",
+      "bytes": 978,
+      "sha256": "fe3656a3b80f7190660fea44c691b9c4eaf3e6e65574afa26e0328935f0e6ad3"
+    },
+    {
+      "path": "Function/matlab/+cog/weighted_fc.m",
+      "bytes": 1226,
+      "sha256": "5e1d4e74156e838cca29c2ac89259f123de8c00a9b219ead8c7a9247a0820fce"
+    },
+    {
+      "path": "Function/matlab/+cog/write_json.m",
+      "bytes": 383,
+      "sha256": "4b8ff7fcfcb709c37588feb0a3749cbe96d029a1e14fd2b0c86dd78fafe68b18"
+    },
+    {
+      "path": "Function/matlab/+cog/write_map.m",
+      "bytes": 448,
+      "sha256": "b14ffd3ba8b6a54a13a28b5df793a2f67f3e1f641d1b1ea23458ccb6288d6ee8"
+    },
+    {
+      "path": "Function/run_background_fc.m",
+      "bytes": 1326,
+      "sha256": "9428905f1c47f6afcdc3727ec6de8f717adac119f362f153cbff2c402add2791"
+    },
+    {
+      "path": "Function/run_behavior.m",
+      "bytes": 5080,
+      "sha256": "014d6584136ed5b44c76e657b79a2948e2b0b9f88ec3c66b5b6e273ffc575e72"
+    },
+    {
+      "path": "Function/run_dcm.m",
+      "bytes": 3099,
+      "sha256": "c63c6391cde3e4175339d32651a4f9716bee1de44cb9f35b0ef0d36732993f04"
+    },
+    {
+      "path": "Function/run_dcm_group.m",
+      "bytes": 3260,
+      "sha256": "3991d851cd3a29791027f9dfb1cef95577d44246c6d07b2084e9ca2677e63670"
+    },
+    {
+      "path": "Function/run_dynamic_fc.m",
+      "bytes": 2263,
+      "sha256": "b1e8bd08f663dae5ae69c1eb4297ce5a25c0829b5aaa65dc1979aaffb7e40d3b"
+    },
+    {
+      "path": "Function/run_encoding.m",
+      "bytes": 2124,
+      "sha256": "495499233a15b572afa82ded6af198e0c757a411cf23b93cfe669545d2a0968b"
+    },
+    {
+      "path": "Function/run_function.m",
+      "bytes": 4850,
+      "sha256": "8bb82f66c00aeb18fd79960ed46592dcda24ae8502e67cf8c3553ed57059fd30"
+    },
+    {
+      "path": "Function/run_gradients.m",
+      "bytes": 2597,
+      "sha256": "da73fdf393a3f90351b7fcf64d0a353b3b9a0af7fe2bc22c851a4b93382b08a3"
+    },
+    {
+      "path": "Function/run_ica.m",
+      "bytes": 3175,
+      "sha256": "2f13150580a52d86027155fe014669b1a072ca5b11188824f9e0deb6cac08a96"
+    },
+    {
+      "path": "Function/run_linear_decode.m",
+      "bytes": 755,
+      "sha256": "ce83d3fac114a6dd610d8a0485b9a3fd0a9f575763bce8a7674144e9f5dbd438"
+    },
+    {
+      "path": "Function/run_multivariate.m",
+      "bytes": 2402,
+      "sha256": "9cc0c835da43df3392819094f0d08048e09df6d4618b9fe615c94013096a92c6"
+    },
+    {
+      "path": "Function/run_naturalistic.m",
+      "bytes": 4348,
+      "sha256": "ab51664a76972ef2ca13cde9f2563a7638bc0405d71f1d2afbee595b3eb762fb"
+    },
+    {
+      "path": "Function/run_network.m",
+      "bytes": 2453,
+      "sha256": "32ffcfdc211af413861c7f5a35d32105b96f6f51238c5e07e47903077a17583d"
+    },
+    {
+      "path": "Function/run_pcm.m",
+      "bytes": 1255,
+      "sha256": "e2d92a7b6d7543a09c0ae836c763172a5ce055015597d73d17f68d5883e769ea"
+    },
+    {
+      "path": "Function/run_ppi.m",
+      "bytes": 5768,
+      "sha256": "f09b7d85f03594dca5399be8349f41b8af75f72dd777899fb30f8c12ceb155e1"
+    },
+    {
+      "path": "Function/run_ppi_batch.m",
+      "bytes": 1099,
+      "sha256": "ff99ac138fba5c5ee2253db7be6136953d17f2e9412f4cb7a23334ce261e4bdb"
+    },
+    {
+      "path": "Function/run_prediction.m",
+      "bytes": 1713,
+      "sha256": "65810f3b32dfd1132aa5b5fec89eacce904fd6f62a404eab1e5519f87155c698"
+    },
+    {
+      "path": "Function/run_prepare_inputs.m",
+      "bytes": 2994,
+      "sha256": "943c72091fbca804ea03de969321133ed8d460a21a1809cc9456726625ad9f77"
+    },
+    {
+      "path": "Function/run_regularized_fc.m",
+      "bytes": 1688,
+      "sha256": "10b3b75153ebb7a6492e3e4690cf02291fa451d4fce59db23679dd692a5fcfe3"
+    },
+    {
+      "path": "Function/run_reliability.m",
+      "bytes": 972,
+      "sha256": "c0c3d4d1d1ccffc6f2cc51f9a677730365ea7e4692012df1d258587db4364eee"
+    },
+    {
+      "path": "Function/run_rest_extended.m",
+      "bytes": 3621,
+      "sha256": "c437ebeda11577c92738cbdf6ffd2e7f553d40098f26208f3b1909c1ee726104"
+    },
+    {
+      "path": "Function/run_roi_patterns.m",
+      "bytes": 3600,
+      "sha256": "75773be9c5f5f1ac8e1d007847e5c20307a885ed2d8041d026c82c2fecc26672"
+    },
+    {
+      "path": "Function/run_rsa_ceiling.m",
+      "bytes": 670,
+      "sha256": "e1cd45127c147a1df5e53330c3edc6abece33aeb663ed038f958b570752cde6f"
+    },
+    {
+      "path": "Function/run_searchlight.m",
+      "bytes": 3155,
+      "sha256": "0e8fbc8f0b5418dd03a24be7e48ea2f2d050a25039f9a2f4612691f6c753470e"
+    },
+    {
+      "path": "Function/run_states.m",
+      "bytes": 5965,
+      "sha256": "e82e51c54a0bf53a8a3ad32d980041f5e4691e72fbc566fc4ff99b020d0dfe23"
+    },
+    {
+      "path": "Function/run_transfer.m",
+      "bytes": 1954,
+      "sha256": "025bf13fc94a823b9a076ac887c76ab8460e80313e87684fea4b34dce03e55ce"
+    },
+    {
+      "path": "Function/scripts/ddm_bridge.py",
+      "bytes": 4267,
+      "sha256": "a01a98529b00fd926b53b0b71e3d229126edd8de049beadf44e7fa6e8bfa1a35"
+    },
+    {
+      "path": "Function/scripts/glhmm_bridge.py",
+      "bytes": 3617,
+      "sha256": "d24a0b94b9f69faad82627396bdc9d2e8a1903c41b54ea42d69a7aadb39add45"
+    },
+    {
+      "path": "Function/scripts/requirements_ddm.txt",
+      "bytes": 132,
+      "sha256": "5cf7876fc3cd0a9a4813557825f59c8ce5547e38e561a2e9dc6bc633ee51db8b"
+    },
+    {
+      "path": "Function/scripts/requirements_glhmm.txt",
+      "bytes": 162,
+      "sha256": "0f09ebb217a5dabd823bb906e7186e1c5b7df2725de711bf0fa09366e880e85b"
+    },
+    {
+      "path": "Function/scripts/sync_release.ps1",
+      "bytes": 5196,
+      "sha256": "3ade3483d8fd01de3777cb370016d4fbcc6e318ab9b37e446fe9373bb45531dd"
+    },
+    {
+      "path": "Function/setup_function.m",
+      "bytes": 281,
+      "sha256": "35415b0759325576b0be4621a24704bef172207380b6dffdd61300cc96dc1518"
+    },
+    {
+      "path": "Function/tests/ddm_native_smoke.py",
+      "bytes": 2131,
+      "sha256": "72e8ca42485930602defc278cb82e3e3ffe69ba3b8ea9828fdabdabb502227b6"
+    },
+    {
+      "path": "Function/tests/oas_oracle.py",
+      "bytes": 322,
+      "sha256": "893a6c5d26ee0f5dbe67adae332028ad75966b40304a4ad0eaefa12dd9e3dfc2"
+    },
+    {
+      "path": "Function/tests/test_function_adapters.m",
+      "bytes": 2238,
+      "sha256": "6cf8c203c25902735520cd1a1db76eec71a254da1f40c0c9a1c1cb90c4b78dfd"
+    },
+    {
+      "path": "Function/tests/test_function_behavior.m",
+      "bytes": 2355,
+      "sha256": "065a3a9cd5a8cf1d12b2f2a740f9608cf1c74285ccf0b82b9d8b29e345dd03ee"
+    },
+    {
+      "path": "Function/tests/test_function_core.m",
+      "bytes": 4734,
+      "sha256": "c82ac96ce4e68fd6c4cec3fd39db55cf8952bcdcf161add4950ea3b4b29d6d62"
+    },
+    {
+      "path": "Function/tests/test_function_dcm.m",
+      "bytes": 3557,
+      "sha256": "4b78cfd0bb989f757235d581d3098cad2ec3af5e497e38f82b4f1c0d39a3a5bb"
+    },
+    {
+      "path": "Function/tests/test_function_dynamic.m",
+      "bytes": 1280,
+      "sha256": "c44fe5e105c705781739a49c324dbc9a59a61686c1ac26972e4aee2ffc8ebdb6"
+    },
+    {
+      "path": "Function/tests/test_function_encoding.m",
+      "bytes": 2406,
+      "sha256": "cd03a989d042209498c273abeee413e5f766a8cc96e0e0ab46aa4f7db32d63d2"
+    },
+    {
+      "path": "Function/tests/test_function_generalization.m",
+      "bytes": 2750,
+      "sha256": "5420e2e5775485f458c2ad5a52c7de664f2fea8132c3d5506fc90860fe53b7f7"
+    },
+    {
+      "path": "Function/tests/test_function_gradients.m",
+      "bytes": 1879,
+      "sha256": "ccb1e9d9cba7e99799aaceb95e278042a2c3ca013dbdd5e04322fc3085235e84"
+    },
+    {
+      "path": "Function/tests/test_function_graph.m",
+      "bytes": 1163,
+      "sha256": "da5e37abef19fd34d59ca7c43b560889b2dcbf9c0aa56a42724d8c93358cc90a"
+    },
+    {
+      "path": "Function/tests/test_function_ica.m",
+      "bytes": 2357,
+      "sha256": "3f5bb7ab493ceec96bd55b78f1cdfcf7e8f61d45deb904e4719dcaf2a8358489"
+    },
+    {
+      "path": "Function/tests/test_function_multivariate.m",
+      "bytes": 2369,
+      "sha256": "0c6d44b8bad50f5a4db369296460bbb34ad1c5e98acb7bb2fbf7a571e8998ff9"
+    },
+    {
+      "path": "Function/tests/test_function_naturalistic.m",
+      "bytes": 1853,
+      "sha256": "3d36088baef27f4fd0323b60fcbf5463e28d9f281ef3bd371fc665071a16b20c"
+    },
+    {
+      "path": "Function/tests/test_function_network.m",
+      "bytes": 2653,
+      "sha256": "9ca5bf2ba5faba0c913e0f08b536a7dc113b9b627b7c5d3d8cf917e37bf8ff08"
+    },
+    {
+      "path": "Function/tests/test_function_patterns.m",
+      "bytes": 2720,
+      "sha256": "e58136a2ff48688c71a891334305c97fd635c386d84af5719953183b97e2a63e"
+    },
+    {
+      "path": "Function/tests/test_function_pcm.m",
+      "bytes": 2842,
+      "sha256": "bd274890b8db81575dda460ea48dfd7ede10846e11a2e0645a45d7c441866066"
+    },
+    {
+      "path": "Function/tests/test_function_ppi.m",
+      "bytes": 1417,
+      "sha256": "46f628b7bffd779886b679b9fdf971229b91342a75011e4eef84042531df5955"
+    },
+    {
+      "path": "Function/tests/test_function_prediction.m",
+      "bytes": 1861,
+      "sha256": "0721d51a44598ba34a7724f8f910bb8ea21236e65b3f821f750faa91e64973e2"
+    },
+    {
+      "path": "Function/tests/test_function_prepare_inputs.m",
+      "bytes": 3192,
+      "sha256": "711d15540b90f05a786bcf88d31a91c8390440de07864b9ce7364bd83a6b5539"
+    },
+    {
+      "path": "Function/tests/test_function_regularized.m",
+      "bytes": 2906,
+      "sha256": "68d9c156f066a9ba57112a5de4591a88cd0d29eb8128210054e4457deeb39149"
+    },
+    {
+      "path": "Function/tests/test_function_rest_extended.m",
+      "bytes": 2041,
+      "sha256": "324d9c8d6f2caf0ef975d60de825ab6e616391d4dd1a84b403ff3af37d9dc75b"
+    },
+    {
+      "path": "Function/tests/test_function_searchlight.m",
+      "bytes": 3146,
+      "sha256": "4cc961b6db7af421c4ff97954245703751a468bc1e712d57226a01d11c2b1e27"
+    },
+    {
+      "path": "Function/tests/test_function_states.m",
+      "bytes": 2874,
+      "sha256": "fc4e7a4d01fa3e9c1cf42ea434fbbf93315136cdfdae8ded03d0eeaf836f76fa"
+    },
+    {
+      "path": "Function/tests/test_function_task_fc.m",
+      "bytes": 933,
+      "sha256": "4178c2d32e72d3906ba598e16cc76e1db0a46c62e978cea69109f67d2eff0440"
+    },
+    {
+      "path": "GLM/FILE_MANIFEST.json",
+      "bytes": 32985,
+      "sha256": "b96b84ec435b55cdd18de8546e781dd321c860a682345f8996d3c5e51ed5e52e"
+    },
+    {
+      "path": "GLM/README.md",
+      "bytes": 728,
+      "sha256": "9165be9693f839f789fbcfcef5eaac6beec1ec9097c1e63881553820e0688bd4"
+    },
+    {
+      "path": "GLM/config/design_config.m",
+      "bytes": 1089,
+      "sha256": "fdccf5723c79b83157d71f8d705a0b43ab4e38e97cb7f3e4e65e415ac6b3589d"
+    },
+    {
+      "path": "GLM/config/glm_beta_sources_template.tsv",
+      "bytes": 346,
+      "sha256": "47b367658ec13636c6fa3e11069f21858d9b1f7fdc83ae742beb9fae4bc79a16"
+    },
+    {
+      "path": "GLM/config/glm_config.m",
+      "bytes": 10675,
+      "sha256": "2d3135480204ccb680bf40a5b646af4e525dadab299ee71f055085d64149c1d1"
+    },
+    {
+      "path": "GLM/config/glm_events_glmsingle_template.tsv",
+      "bytes": 263,
+      "sha256": "c9053450b8585d2ffdd414e569ef8e56b060a72494298896ca451cc3524f8924"
+    },
+    {
+      "path": "GLM/config/glm_events_pmod_template.tsv",
+      "bytes": 150,
+      "sha256": "8c4a495a504a304a5172ec5553c97939512efefac56310df697d8ec6098ae1fd"
+    },
+    {
+      "path": "GLM/config/glm_events_template.tsv",
+      "bytes": 304,
+      "sha256": "5e7e75d1cc89320aafc7a0951f58ec25234d575bf4da2935cfd9f3cec3b004eb"
+    },
+    {
+      "path": "GLM/config/glm_group_paired_template.tsv",
+      "bytes": 623,
+      "sha256": "c81e2b2707307852e4b76012eea36b9ba91f78a4d6f1884f331870e5cc85f213"
+    },
+    {
+      "path": "GLM/config/glm_group_regression_template.tsv",
+      "bytes": 476,
+      "sha256": "7975debe9e1b7e89870ffb35536cb0620e8348f82f42b8b370fcfbfcfe760609"
+    },
+    {
+      "path": "GLM/config/glm_group_template.tsv",
+      "bytes": 648,
+      "sha256": "159a9d26fdc15e26a776d9da8a1b2a2946fb24b266538c8d46acf6461541242e"
+    },
+    {
+      "path": "GLM/config/glm_group_two_sample_template.tsv",
+      "bytes": 403,
+      "sha256": "c5fd3d5266655a9e785abd6855bb6b86ae36c75495aea36e355b0ad3ba2b6dad"
+    },
+    {
+      "path": "GLM/config/glm_outputs_config.m",
+      "bytes": 2651,
+      "sha256": "8d565e5a2f98e60a570afd3e9213141d827b31655f2afd7fd3b9a44e1861efa4"
+    },
+    {
+      "path": "GLM/config/glm_results_template.tsv",
+      "bytes": 77,
+      "sha256": "09426429f4bddecc7e19204564a268975bdcefd03affd8872e5108992133b61d"
+    },
+    {
+      "path": "GLM/config/glm_roi_template.tsv",
+      "bytes": 114,
+      "sha256": "afc0fb2fead95bc19aef41805b82b4482a96b8e3cc1bdbfc6e0a120e66c4d3b7"
+    },
+    {
+      "path": "GLM/config/glm_runs_template.tsv",
+      "bytes": 187,
+      "sha256": "616c27fbd4bd032f6a7c83aa70f833871281b88694447ce8099fffbd5d2d3c47"
+    },
+    {
+      "path": "GLM/config/glmsingle_demo_config.m",
+      "bytes": 3641,
+      "sha256": "562cbc199c3544f2b3c1123a572ef8b2859d82e8281e33e452432eb75322e58b"
+    },
+    {
+      "path": "GLM/config/preprocess_config.m",
+      "bytes": 2074,
+      "sha256": "125a1a6b803a5ce32898dedd14215eea7dab6872b6539dff09e90cf7c337de60"
+    },
+    {
+      "path": "GLM/config/single_trial_config.m",
+      "bytes": 1119,
+      "sha256": "34098c208e3a268753c88a6911136eaf1849e7869e5024e80e1990ccd3b55b62"
+    },
+    {
+      "path": "GLM/config/single_trial_runs_template.tsv",
+      "bytes": 521,
+      "sha256": "6c52eb64cf8ebebd14b8648051c442dea530f6c3313f941325ea6962b887b9cd"
+    },
+    {
+      "path": "GLM/config/toolkit_config.m",
+      "bytes": 27736,
+      "sha256": "6c36bbdf326bd31b183c19f003bd3ea0db79fb834984b850ca4c8dd355f00086"
+    },
+    {
+      "path": "GLM/docs/Condition_GLM.md",
+      "bytes": 8339,
+      "sha256": "38be99c88e734d5652991e44b9572c8a3dd0ce28b11b68a202b6ae35a6151bf8"
+    },
+    {
+      "path": "GLM/docs/Cross_run_group_GLM.md",
+      "bytes": 9411,
+      "sha256": "50e1044517b31ddf794940a33d4ad922a48328fbe57490e9e0290b0c448dc4d1"
+    },
+    {
+      "path": "GLM/docs/Estimation_Units_GLM_.md",
+      "bytes": 7666,
+      "sha256": "99726717a45d1220020f04201e0137a16f427a301682effc96b3c79c6f7d2e87"
+    },
+    {
+      "path": "GLM/docs/GLMSINGLE_HCP_DEMO.md",
+      "bytes": 9610,
+      "sha256": "9328eb5d9d0ffb8d1fb9b3f47363289e7ca60e5f33e6559d0c77d9763f43e37f"
+    },
+    {
+      "path": "GLM/docs/GLM_HRF.md",
+      "bytes": 7452,
+      "sha256": "4dea253502c626607ea44af277200346bbbf5b2b2edd4601f25d8d30cfd58d62"
+    },
+    {
+      "path": "GLM/docs/GLMsingle_ABCD.md",
+      "bytes": 14242,
+      "sha256": "a5a53e184f1450c33028a21b2321538cb9210f2f75d36027fba2b5350f3c2647"
+    },
+    {
+      "path": "GLM/docs/GUIDE.md",
+      "bytes": 12173,
+      "sha256": "cbd007d96ccb90534bfd12a24ca8c93090e1ba56737ada1e5d3f728aa476d1ba"
+    },
+    {
+      "path": "GLM/docs/Group_and_Convariates.md",
+      "bytes": 11495,
+      "sha256": "238c7ff19823d765792ffff90165572acf5545250868cbadcf3c55688f7f1538"
+    },
+    {
+      "path": "GLM/docs/LSA_GLM.md",
+      "bytes": 7022,
+      "sha256": "4b08ad639aedad725823893d36267084516850199125eb1a233432f242abe872"
+    },
+    {
+      "path": "GLM/docs/LSS_GLM.md",
+      "bytes": 5825,
+      "sha256": "880186bb903bf84656e4b72a7552ccbad76abff32dbb59025d50a04490457ac7"
+    },
+    {
+      "path": "GLM/docs/Line_by_Line_Explanation.md",
+      "bytes": 32166,
+      "sha256": "c091e5f850b88abf42cf8119d257e77d9c43887ec13336d8eba936e425ee06f9"
+    },
+    {
+      "path": "GLM/docs/Methods_Summary.md",
+      "bytes": 28090,
+      "sha256": "0c5556ff87965f7f1a5bd74d6605e9a413f2ce27527a5fb1ce393b5ae12d3b97"
+    },
+    {
+      "path": "GLM/docs/Package_File_Explanation.md",
+      "bytes": 71891,
+      "sha256": "bda4e4b4aad0af236834d1cc853e3f9aeea41ec80dfd12b51294b7c3251c502c"
+    },
+    {
+      "path": "GLM/docs/Pmod_and_FIR_GLM.md",
+      "bytes": 10188,
+      "sha256": "90ae36754db204a4368b40fac6416edd5e3d2ca5c2690e347998a3a48261486a"
+    },
+    {
+      "path": "GLM/examples/hcp_100206_confounds.tsv",
+      "bytes": 505,
+      "sha256": "3bd14c907701601d20715427a88ba89061f12816375b7a714dea1ce01fe71ba3"
+    },
+    {
+      "path": "GLM/examples/hcp_100206_sdc_confounds.tsv",
+      "bytes": 479,
+      "sha256": "af1cbf66b45a9a4f69eb3f22a5dc349d3a2ae72fc4e80ec842d2af61ccfbbd58"
+    },
+    {
+      "path": "GLM/examples/hcp_100206_sdc_glm.tsv",
+      "bytes": 314,
+      "sha256": "9e43f0382874207c328c7ab7a0278fb6c75c4d621612ffe78ce46836382d595d"
+    },
+    {
+      "path": "GLM/examples/hcp_100206_sdc_single_trial.tsv",
+      "bytes": 314,
+      "sha256": "9e43f0382874207c328c7ab7a0278fb6c75c4d621612ffe78ce46836382d595d"
+    },
+    {
+      "path": "GLM/examples/hcp_glm_engineering.tsv",
+      "bytes": 319,
+      "sha256": "04ba3cc246209b4dcfa81ab444cda15fb6c43ee5883e3477f0ff4eaffcd002d9"
+    },
+    {
+      "path": "GLM/examples/hcp_language_lr_events.tsv",
+      "bytes": 272,
+      "sha256": "2bf808d2fb929ce41170ddab0bbe375ccdb008f74ea6e3e2b04c44d23ec985ee"
+    },
+    {
+      "path": "GLM/examples/run_hcp_sdc_glm_100206.m",
+      "bytes": 2585,
+      "sha256": "9f99a09d2b520ddf3bee1acfa3bf928c02b723830f8bb86019e720d46837bb93"
+    },
+    {
+      "path": "GLM/examples/run_hcp_sdc_math_trial_100206.m",
+      "bytes": 1724,
+      "sha256": "d41a106e67b2be17f50a3b29f98f088daf495037659bed234f559f375e91c23c"
+    },
+    {
+      "path": "GLM/examples/run_hcp_sdc_single_trial_100206.m",
+      "bytes": 2400,
+      "sha256": "10e708932dbde0b440e9805aec6081f1818375e7b3a95b20a8c890927307077c"
+    },
+    {
+      "path": "GLM/examples/validate_glm_engineering.m",
+      "bytes": 1303,
+      "sha256": "e766c2fe02e46c644c8efd03a3f1682c56c10add659179ff4d5d415b558559e6"
+    },
+    {
+      "path": "GLM/examples/validate_glm_group_engineering.m",
+      "bytes": 5295,
+      "sha256": "4df14baca080c3dde3ab5ddded0b4496d85704fab4ff36a7b1e368fa1e47f099"
+    },
+    {
+      "path": "GLM/examples/validate_glm_outputs_engineering.m",
+      "bytes": 4805,
+      "sha256": "2674de0139c0dbc7ae99ae8077a0e2eb4c22331772c440235de0b878cea239fb"
+    },
+    {
+      "path": "GLM/examples/validate_glm_release.m",
+      "bytes": 5408,
+      "sha256": "9f2dfa4539322607a40d09c35b96d7f37eca06ff69359417cc10f274cb906459"
+    },
+    {
+      "path": "GLM/examples/validate_glmsingle_engineering.m",
+      "bytes": 4080,
+      "sha256": "63e7df51c28c91ad2100b7e4b09eac7f217c33088377842169e3ade2dbf62f5c"
+    },
+    {
+      "path": "GLM/external/glmsingle/DEPENDENCY_MANIFEST.json",
+      "bytes": 13919,
+      "sha256": "7a2f100002f2f7d61d87da7d7c24a96b4762e90e19e657be20d01c997ced6ba5"
+    },
+    {
+      "path": "GLM/external/glmsingle/LICENSE",
+      "bytes": 1520,
+      "sha256": "c4074f88fc1d822acb17eb12d8278bc096d8b1884d310f573574436c54fc94b7"
+    },
+    {
+      "path": "GLM/external/glmsingle/SOURCE.json",
+      "bytes": 601,
+      "sha256": "189364fa0c2296f64d2238ba6a3831cfbd04e95dc0bf3959762cfacd4afada03"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/GLMestimatesingletrial.m",
+      "bytes": 63318,
+      "sha256": "f6c7b9aa3023b90f143ff1c1bbc69514d2dd58166e8e5bea703ba76d72991129"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/fracridge/LICENSE",
+      "bytes": 1311,
+      "sha256": "be29ab2bb99e886c5cddcafceab0871e02aa07c8a7f279f942d954f4caf18778"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/fracridge/matlab/fracridge.m",
+      "bytes": 19048,
+      "sha256": "10ebbf9ba5be453c65fa926eb870b354a5765aaf0fa19ccdb4111ecfdb522169"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/fracridge/matlab/interp1qr.m",
+      "bytes": 3159,
+      "sha256": "bef97e58fca6ddf9b407642b8752157d539d8f04efff4f9ec5ede7256fca00bd"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/fracridge/matlab/interp1qr_license.txt",
+      "bytes": 1312,
+      "sha256": "e8b763247bb67732424741596c6d927c0bef9e360ec11fd6597a2d5500b88f1c"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/GLMestimatemodel.m",
+      "bytes": 38371,
+      "sha256": "b165b624d6271aea81e8e2764e7b05cd8ccd47c1cdbe633dc0d2bbf1aa78de42"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/GLMpredictresponses.m",
+      "bytes": 4502,
+      "sha256": "78af25f255822d065ea73b625eb4625473487e108e0c2f3736ec9275fa7782d9"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/absolutepath.m",
+      "bytes": 737,
+      "sha256": "9fd9152806dce309fb737e6988b886e0758239a4da07ecb8827814e70b87aafb"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/axissquarify.m",
+      "bytes": 903,
+      "sha256": "8178bf41162682a631d94164643f37b4e76b1ae89c59f1fa934986156b6eae7d"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/calccod.m",
+      "bytes": 4080,
+      "sha256": "655e7a869e60e2d26c6a44e38313a2992e4f054470a6fe80c8d059d0aaaba451"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/calccodcell.m",
+      "bytes": 892,
+      "sha256": "fed4d04c5ca732ebc02ff55fe4e6666b18cc8be94b8bc0ec6107c69223c8d167"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/calccorrelation.m",
+      "bytes": 3942,
+      "sha256": "8c633ef71f58f6328be756f1d735268f2b9924498941e16e933b352157ab05a2"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/calccpfov1D.m",
+      "bytes": 621,
+      "sha256": "b4201a4265bc4c9f929719603020320f3a0ae59aedb2c44c9248a7c9f2c9c3b0"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/calczscore.m",
+      "bytes": 1839,
+      "sha256": "3a26e4e2bf227c16991ef58b558c81a732463c0ee7304dc2b2a310f62d609377"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/catcell.m",
+      "bytes": 472,
+      "sha256": "8457f32ee205ee536c1d5061bad719a30a383f0ad98a7b42c5695edacda8cf54"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/cell2str.m",
+      "bytes": 475,
+      "sha256": "7d14312681e69b61cdc4813043d0bcef35b8801113bfc58251a1b43dce19f1fb"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/choose.m",
+      "bytes": 314,
+      "sha256": "308d9ace4636e3d045313b4fece185436a1d6c156a56c098fef1da0f962e2f63"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/chunking.m",
+      "bytes": 973,
+      "sha256": "ade4674e79e5a9e627a758474ffae69882ae4315694e638c09a43f6addf69519"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/cmaplookup.m",
+      "bytes": 1402,
+      "sha256": "305bc23ec9c4020452f7059cf7c68bb1c258f46233ae90753e6193c1e0761e8f"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/cmapsign.m",
+      "bytes": 630,
+      "sha256": "913890dcbc485f9fff2ff5356e90173812515e7786d0f682d937185362f090c6"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/cmapsign2.m",
+      "bytes": 633,
+      "sha256": "33b0aa2f9d9291a261ac2859aaf6a21ec533c6084fd6fd6d297c4751bac4d899"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/cmapsign4.m",
+      "bytes": 724,
+      "sha256": "6a505b59cfea13ac91d09370235b0f0e1b49c33eb2ab059533f89e42759a8a4a"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/cmapturbo.m",
+      "bytes": 8135,
+      "sha256": "ce08659e888c8283e52754c62994dbfafeb40bb381f123128dd6673778993662"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/constructbutterfilter1D.m",
+      "bytes": 1615,
+      "sha256": "53dd93ebfa56ceb6feefd215bd9a8cc80cf74ffca20360e85d3cf4cbed617dd3"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/constructpolynomialmatrix.m",
+      "bytes": 1323,
+      "sha256": "774c2199781cc01c1f08b95e8025007c5113901d68fdddc96b17db5d74eca502"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/constructstimulusmatrices.m",
+      "bytes": 2366,
+      "sha256": "93b60c9ad0260d4326598c97ea1c6fafad887354e60c7d2b216733c97826d460"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/copymatrix.m",
+      "bytes": 1495,
+      "sha256": "8cac437610acdde74560a3299a7fd12468aa756c33661d78786642102cbdbe13"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/deconvolvevectors.m",
+      "bytes": 507,
+      "sha256": "5f3321a9bb5cddf04971af60e02862ad41584a2d6abebe35fd9ecbe1ea4d64dd"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/errorbar2.m",
+      "bytes": 1833,
+      "sha256": "50c4e6ef5cc0513b15a9e5b79a2e6bd2c1542bb4828e90700ed593a17308a01a"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/figureprep.m",
+      "bytes": 771,
+      "sha256": "00e7e3edbc765c5670a5e5aa55b6fa08010c8c339ad387ad72426e3e32391102"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/figurewrite.m",
+      "bytes": 1863,
+      "sha256": "755a2780b055b7939010ad5133411e89c230c6857ae56b7cea1cdccd6af72ab3"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/filterout.m",
+      "bytes": 947,
+      "sha256": "fac252f24eefa34aed5654559b34a9d98b921822bc3acc7c859ade235bdbf351"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/findtailthreshold.m",
+      "bytes": 3714,
+      "sha256": "01c444f62052b2f1eec643708daa1d004ec59d91d2a4a069ac2eaf9bf2cd8eb0"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/flatten.m",
+      "bytes": 176,
+      "sha256": "66a17daf2ed9c69ee131948e898b4223fd97087229ca5fb260dc5a20f0549297"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/fouriertospace1D.m",
+      "bytes": 2101,
+      "sha256": "92fd6d3cc38681116caee5250e14fa9bf591f2b46acfd37ac8bc704591bfedde"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/getcanonicalhrf.m",
+      "bytes": 6058,
+      "sha256": "f111a3bdda125d2c96c4c18cb7d473298fbdb1fea7e3063b676aa3128cec7d5e"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/getcanonicalhrflibrary.m",
+      "bytes": 1732,
+      "sha256": "80036afe5013be24bbd9671b13405ed23e85d8aef4bece244b2d5dc679e2497c"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/getcanonicalhrflibrary.tsv",
+      "bytes": 108451,
+      "sha256": "9e7b5c293819dc0d85b0006bc8712459db82d0d2a7695ce7219fde0efb5f0106"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/getfigurepos.m",
+      "bytes": 555,
+      "sha256": "e40fb9d1dfd5a63e699d060c32d309abcbc980c175f1ceb24aa5391b340b6c68"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/imageactual.m",
+      "bytes": 1142,
+      "sha256": "92608da68d4bc2bd931f0dfd2845abc3d10cb26f196de8e66b771213251140cf"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/isint.m",
+      "bytes": 371,
+      "sha256": "7dacfc101466647f3bba90cc7710d488e14728f7526e4f8e2fa997e56d4b4a07"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/isrowvector.m",
+      "bytes": 308,
+      "sha256": "205dab93ee2ad872e98aa464aa554a06de7ee53d811f58522e3128c8e3961bce"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/linspacecircular.m",
+      "bytes": 385,
+      "sha256": "8a2a1b53e0bab6e59b10c0df57a6f720f64d5202b9ac363ec095a604ffde2ed3"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/linspacefixeddiff.m",
+      "bytes": 365,
+      "sha256": "da8b235027332bd5cdf2eceac83d1cd1d14976ad4aeeae95615cf7eac5d3024b"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/makeimagestack.m",
+      "bytes": 5949,
+      "sha256": "144c10bc5e0322455a83f96d1a6f195c69950bf7ee998fe3ad9127ddbbd8b178"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/matchfiles.m",
+      "bytes": 9839,
+      "sha256": "c0b7ddc90fec81d63c4fa4b2ba9adaf2bed46e8c4a7eedabe64189a7fd9374dd"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/matrixindex.m",
+      "bytes": 680,
+      "sha256": "fd135f870278cf2ea12ad4368f57af77f98ab202bb948f94808c2bc2b0754036"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/mkdirquiet.m",
+      "bytes": 383,
+      "sha256": "76bff7871d73a69f976c8b2b7c56ded0e9a7cb9efa3dd65af9fbab5271fa9818"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/mod2.m",
+      "bytes": 196,
+      "sha256": "d7aabf02cab5a9d697fff1803d00c0e24b22588bdca832f2251f5114e5d3c464"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/mtimescell.m",
+      "bytes": 526,
+      "sha256": "cbea41aee044f40769aba50896dbe7105ce7360358dc3188b939059a80350a14"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/nanreplace.m",
+      "bytes": 922,
+      "sha256": "0220b27a083592dfdd21be8bb454a347ff24c7d63cf9be9bc4875da73702d570"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/normalizemax.m",
+      "bytes": 564,
+      "sha256": "633af735b91bfecb3bcf51b29825a0537473dc1b3006e15232f58d95a7330470"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/normalizerange.m",
+      "bytes": 3664,
+      "sha256": "75c4ce6a8d60c7a451233ee45fbb39bb72b45ed7e8587d1662361dbde99dea32"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/olsmatrix.m",
+      "bytes": 2019,
+      "sha256": "06976cbed5150c047b8cf085e77a133d00c327dd9f81f65659900a1e604bdb9b"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/olsmatrix2.m",
+      "bytes": 2163,
+      "sha256": "a48fa548e8a339c61744b1f2a514297c2a2c196cb16ec00d1fd69970d831c403"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/permutedim.m",
+      "bytes": 1991,
+      "sha256": "913a6c46033af273092f56076304a5cf1bd9f548c29b692125ecb7bddb7d8ee7"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/picksubset.m",
+      "bytes": 1316,
+      "sha256": "ccf4e2ee61e1b9dcf39031692980f575db88643d5a758843d9e9edd50b936063"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/placematrix.m",
+      "bytes": 1452,
+      "sha256": "53dd10ce5f68035c6b3c77c9a1c6b4be69f8a39729ef9cf36c9389a332475df2"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/printnice.m",
+      "bytes": 2860,
+      "sha256": "d19642390517d2b0173e7bebe81611e41c726ab73c8a37cc7e5a811fb8ffc8cb"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/processmulti1D.m",
+      "bytes": 860,
+      "sha256": "7ac3eca97748ab59928cc8b888af2122d0449dfdf09d77c069135d4a2a197601"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/projectionmatrix.m",
+      "bytes": 854,
+      "sha256": "d31202fa9e9531d82a66a744e76d0764deb158ba0dfceed3141200873dd83929"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/resamplingindices.m",
+      "bytes": 943,
+      "sha256": "47d677909c4558b024f205f73d038ccc939ffdb73c39597e3b7b563c6ad133a7"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/reshape2D.m",
+      "bytes": 557,
+      "sha256": "ba49487e564628d3e3492ebe28a0221b45cef72650bf4aaffbf1fb113a1a0efa"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/reshape2D_undo.m",
+      "bytes": 930,
+      "sha256": "54c649b550bd01d9759a7aa34199edccf686407f254a00bd7881a5be12668008"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/rmdirquiet.m",
+      "bytes": 398,
+      "sha256": "6439196466b4237bc1d1f4423845b532b2701f486a2d47a2a033f73a93c50075"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/robustrange.m",
+      "bytes": 1629,
+      "sha256": "a9dd9322362fc85c3418d987a830ff68f870b48cbea4f4fa03eb61058c8ee2cb"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/scattersparse.m",
+      "bytes": 1444,
+      "sha256": "a2b3988002725d231ff8e278c388ab8b9a7d1705ebf6360495a0002183a91063"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/setfigurepos.m",
+      "bytes": 1148,
+      "sha256": "3fb26cfc146aa32d9a2bb61f328364c260416b82d7ed37711a02e2ce84454952"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/setrandstate.m",
+      "bytes": 471,
+      "sha256": "1d6c4dc043a0432ac9a413a2f40b22fffedf5e2fdc5851ae2db5aa6022a26fad"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/signedarraypower.m",
+      "bytes": 242,
+      "sha256": "db267047117c444f80311d8adec182cd948decc714a4cbe107e4e4536af4c8b6"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/sizefull.m",
+      "bytes": 359,
+      "sha256": "dcd5d62589e43a500f1661e52f806260225bada0a357354f30105b4a8f7474ef"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/splitmatrix.m",
+      "bytes": 1293,
+      "sha256": "592a9971e823f18c2231892d24fd16ddd5ba4110f185be8895824ffca7dd9420"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/squish.m",
+      "bytes": 523,
+      "sha256": "611c4be6f87d92840816872abdfd9e68695b75aff6538723c36c1524decda888"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/statusdots.m",
+      "bytes": 683,
+      "sha256": "6bbd4096eb115eda84739e7936af717afb77528e15b97e4031b860aa1888644a"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/straightline.m",
+      "bytes": 1226,
+      "sha256": "8b2a38b0560704a075fe34289e117770b47a87556593ca2459901dc12173715d"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/stripfile.m",
+      "bytes": 1381,
+      "sha256": "3a35f00603fb06e0b0f9a6061066c407ab6c6eb90440d790b2592f20a43f0b36"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/subscript.m",
+      "bytes": 2236,
+      "sha256": "ce551adf4856d3e947e7a637c0b12d28a9449cacb0486fc0feeec5ccb3727007"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/swap.m",
+      "bytes": 150,
+      "sha256": "cf460156d4c49990610fb931fc0663403c5f11e13c2000b7a150fb6bb1ab5055"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/tsfilter.m",
+      "bytes": 2013,
+      "sha256": "c5915011c188b08006ce2adcd26d7a9ba17871e5ec6929a502ee3828712e301d"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/unitlength.m",
+      "bytes": 2576,
+      "sha256": "043af1a8a519d39d190079aa4ecb017d84283542b59929e9a3d2c2789b7f16bd"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/unitlengthfast.m",
+      "bytes": 1203,
+      "sha256": "c66ebb0f34be8dbb0b35362cbbc670b1a5cd15120a001c20c2e7ac77f4f0d761"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/vectorlength.m",
+      "bytes": 932,
+      "sha256": "e29fe10124341d00fc33b9c81c014bf76f7da112b0843bd22ad73a8fa86d7531"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/vflatten.m",
+      "bytes": 181,
+      "sha256": "27ff2c8308ccdebda188f13dfd193cca3e6d8907a5256a8c0fb6e95e45256d00"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/zerodiv.m",
+      "bytes": 2421,
+      "sha256": "fde161e892ccbc3c28f44f5b521dbf1aecb718e8f84faba713e3a86e816d404e"
+    },
+    {
+      "path": "GLM/external/glmsingle/matlab/utilities/zeromean.m",
+      "bytes": 724,
+      "sha256": "36f8f3736ea897a5f9eff9aade8b7da3244f5ed69c75597c49cce30a46232f45"
+    },
+    {
+      "path": "GLM/matlab/+psy/confound_design.m",
+      "bytes": 3029,
+      "sha256": "5315654a7e071fb98950f72589d09084349e59c53eb2f2b802b7e32a01d9f8c4"
+    },
+    {
+      "path": "GLM/matlab/+psy/discover_hcp.m",
+      "bytes": 2195,
+      "sha256": "d76cebbf67c1b678b1ed266eeb91e133a6e5117dacf2a82fdde97438cef3627e"
+    },
+    {
+      "path": "GLM/matlab/+psy/file_sha256.m",
+      "bytes": 542,
+      "sha256": "5e52b1220479ba1a76189f60006ecbac31bf933c0ab162afeaa4507974a1cab9"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_absolute_path.m",
+      "bytes": 441,
+      "sha256": "291e787a3db7ef75c2aba70b0887e2b81731f459450e7783ef813724ab46795f"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_basis.m",
+      "bytes": 853,
+      "sha256": "52e4bd85b3d6c6fafe54c5a1899c90c0f2575166e27d623157f2aaf54775a8b1"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_batch.m",
+      "bytes": 2542,
+      "sha256": "edf16d6b4a43bcfbb9da6a62e1c954feea7f7c57333e23663bfb9b743a1b5064"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_beta_catalog.m",
+      "bytes": 9847,
+      "sha256": "b96a20f12a146bd4de57a95a634c3a9d32cd301cbed960f53e64d301ed38c079"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_beta_read.m",
+      "bytes": 2961,
+      "sha256": "2c7980f6fc5e1d3acb7635359fe0691ca3719dd1fef8e264ad9c0cd235c51ad7"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_contrast_table.m",
+      "bytes": 746,
+      "sha256": "e327d52517fd7019bf74d6716f48af2eb8450ae8618f12733324369de157f6cc"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_contrasts.m",
+      "bytes": 1146,
+      "sha256": "ff1bf890178a02d9f69b2d5f74efa51a9ef3adc92487a7169483825ecf523205"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_diagnostics.m",
+      "bytes": 5032,
+      "sha256": "49e9dcaab035b56c4eed8dd8d9014204e05eaae9f54a188cf9d053f3e7c5fdd4"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_events.m",
+      "bytes": 1221,
+      "sha256": "c8739f96302e6260bdb048032038644e2ab3bd8254fcc51dd98ad018b6e6efbd"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_file_inventory.m",
+      "bytes": 641,
+      "sha256": "7372145b1d8bc137b1f2dc2037aeafc0ac04e4964ede6f01daaf03aab852ce42"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_framework_batch.m",
+      "bytes": 6029,
+      "sha256": "a49842aafdc2dd2d928e1c4572d5de16f575ef18e635ac7a8497895f82403d45"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_framework_options.m",
+      "bytes": 11430,
+      "sha256": "4a947f0d3efac133a381b619d1f4a92b80fe0e48bddf5c5398677c3ffce382cc"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_framework_plan.m",
+      "bytes": 6926,
+      "sha256": "461419aa2eb1db4a38c01a3570955ff7f8a6670abc193cbf3f9850ebeff6a410"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_framework_run.m",
+      "bytes": 6158,
+      "sha256": "60d2cbd82ee47ad47d6895bc296c5104030f21bb2f9b14f0a39bc55da435f775"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_group_batch.m",
+      "bytes": 8928,
+      "sha256": "0098cb505976c2fb30e3bd62ec46f9118769eb9709caf4f778ff48b31b9f53a3"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_group_plan.m",
+      "bytes": 6691,
+      "sha256": "9cfbe10cecde309b173524084c57c128c851efcece067e136821a22fb3104cb3"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_highpass_rank.m",
+      "bytes": 200,
+      "sha256": "754c148c032efc5ad84fa780d1cda9b7d9c53db55b6a5e2b9cd03d99365d048c"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_model_contrasts.m",
+      "bytes": 1874,
+      "sha256": "fc87298bbcca60c1abde4b5da838e869e79eb249f96048ed4a791e029a44be68"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_outputs_options.m",
+      "bytes": 2156,
+      "sha256": "f14284b6a16b05e048b67b73f2ce2a1d12e71b1f788e5b241e063f8ecad56edb"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_pmod.m",
+      "bytes": 1684,
+      "sha256": "0dba7005f9d81079f5642284de46b2ce3936e16c9e356fb2542bb9cadb346952"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_read_table.m",
+      "bytes": 645,
+      "sha256": "acb4e948238617f2ef14523085297e9d2f7d4368208ce799007352925c5fa14c"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_results_export.m",
+      "bytes": 5878,
+      "sha256": "d2e1f7b48944f3435c3386ba4946898aa3076a9cfb95a8c740abfd54b7c8606f"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_results_plot.m",
+      "bytes": 2609,
+      "sha256": "dcc37b09a79990d2b627779ecc3e1bf8188f4590b4f2d874fb2f829dec0115f0"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_roi_extract.m",
+      "bytes": 1974,
+      "sha256": "21afa86f2e4e135f8cb2a3c8525013b38110e868b8996a40def520248c75f192"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_run.m",
+      "bytes": 7547,
+      "sha256": "647ca181fe4cf3c70bc20b3c3c21ed0f0b3289d32802b28a8e40b33978599055"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_subject_run.m",
+      "bytes": 4320,
+      "sha256": "c58e91dcc394fdf2f7ea2d98d96b3a3e534258ba17504f9816c8523f2308e9cc"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_threshold.m",
+      "bytes": 2387,
+      "sha256": "eff32b57342c070cfd7fe965a58e41642e602231acf27bfe7cbb203b418e2892"
+    },
+    {
+      "path": "GLM/matlab/+psy/glm_write_json.m",
+      "bytes": 315,
+      "sha256": "40bed1dbac6a183c8668ac77053128aced90947b2bc40b87d2d6f5a58893c421"
+    },
+    {
+      "path": "GLM/matlab/+psy/glmsingle_dependency.m",
+      "bytes": 1483,
+      "sha256": "b1a3d53332f5ae9f591891e33823f99d3312dec4c00f771efd1d90b5a64ecd37"
+    },
+    {
+      "path": "GLM/matlab/+psy/glmsingle_design_check.m",
+      "bytes": 1702,
+      "sha256": "f502d36a00965281e4e8158b45a806d52fa699105fecff7c6fabd07f62f19cce"
+    },
+    {
+      "path": "GLM/matlab/+psy/glmsingle_export.m",
+      "bytes": 5598,
+      "sha256": "930d416181ef2e1531b84cbdc6cc9fe44c038a668eea782225cd0412d37804d7"
+    },
+    {
+      "path": "GLM/matlab/+psy/glmsingle_options.m",
+      "bytes": 2493,
+      "sha256": "77f68529502a0b12b922e2542976c5d7702683f506598581c320180d88f1ff18"
+    },
+    {
+      "path": "GLM/matlab/+psy/glmsingle_plan.m",
+      "bytes": 5187,
+      "sha256": "aad9007d0e51b971dfa0ff59e41e29b2821ed163672655030926e369560ac911"
+    },
+    {
+      "path": "GLM/matlab/+psy/glmsingle_run.m",
+      "bytes": 8526,
+      "sha256": "d0058fdd4398aca5aa1e714fb8e46c47d71dec93cdfa90fae7e8bc8b955dc19f"
+    },
+    {
+      "path": "GLM/matlab/+psy/read_events_tsv.m",
+      "bytes": 1199,
+      "sha256": "975afbe7a98b8b6e8c61ef092401dae063013e7fa7dd63f71bc27f36f4249db6"
+    },
+    {
+      "path": "GLM/matlab/+psy/read_hcp_events.m",
+      "bytes": 2135,
+      "sha256": "3e4a2bc61c0300f2729a19f608c816485a45184473b48670c26f5b35152bada1"
+    },
+    {
+      "path": "GLM/matlab/+psy/run_output_dir.m",
+      "bytes": 298,
+      "sha256": "a88092dfdc20fdcc2092d88296d84070d7b6dabfb7fa444228cd73430a98d46a"
+    },
+    {
+      "path": "GLM/matlab/+psy/single_trial_batch.m",
+      "bytes": 2720,
+      "sha256": "08fb859d9905e35672e6ca2c680c2a2cf070fc97ae6bc8467e4ecac8dbd2b2c0"
+    },
+    {
+      "path": "GLM/matlab/+psy/single_trial_run.m",
+      "bytes": 5122,
+      "sha256": "589b4ca5ad7c97a75bb3a303b310a9136553c52d47d44f5b7c106fb5b5cf867a"
+    },
+    {
+      "path": "GLM/matlab/+psy/spm_step.m",
+      "bytes": 180,
+      "sha256": "0e57d0ca4383a699d3fe8adee5ff1060388e3055082216794296d0fc2074bc91"
+    },
+    {
+      "path": "GLM/matlab/+psy/verify_glm.m",
+      "bytes": 3057,
+      "sha256": "506ed1ba9a1d002a5bd7087e5a50d6610325759074cc873084c1d086bedfdde5"
+    },
+    {
+      "path": "GLM/run_glm.m",
+      "bytes": 295,
+      "sha256": "52424782178a459b89c62405dc9cf5dd52c1c38e975ac162011432207e3a4f68"
+    },
+    {
+      "path": "GLM/run_glm_outputs.m",
+      "bytes": 5249,
+      "sha256": "f3599bbde685902f0f8e56f878246b969d3cf26cafe30bc93eca7e451eab83fa"
+    },
+    {
+      "path": "GLM/run_glmsingle_demo.m",
+      "bytes": 12814,
+      "sha256": "ecd5ead359ab2f8651b04f517e2a8ec3e03500ad6e5c00a2953925adb5aa050c"
+    },
+    {
+      "path": "GLM/run_single_trial.m",
+      "bytes": 285,
+      "sha256": "a0be4f936e9c3a459f7874a86ef745388ebc9e26fe8f587a036884cd46fadf7d"
+    },
+    {
+      "path": "GLM/scripts/release_layout.json",
+      "bytes": 10666,
+      "sha256": "7910853f5b157e4cbd3032bbf0f7df723a82b35a77a243adc1de988ef6a68b7e"
+    },
+    {
+      "path": "GLM/scripts/sync_glm_copy.ps1",
+      "bytes": 6756,
+      "sha256": "11c885cca97ae99f616bf722949c8f74156db6f8e8164d36b11931e0927636e3"
+    },
+    {
+      "path": "GLM/tests/test_glm.m",
+      "bytes": 1070,
+      "sha256": "755dff15ec7cf0bf628a3666f71cdbff64664d31f890eee2eb1d3897d164770d"
+    },
+    {
+      "path": "GLM/tests/test_glm_framework.m",
+      "bytes": 13601,
+      "sha256": "c50492c0842a2f6644008b34cc179fbe2256277a5f651aad38233a96c7f7bbd8"
+    },
+    {
+      "path": "GLM/tests/test_glm_group_extended.m",
+      "bytes": 10014,
+      "sha256": "712ab1351e082267de2f0f950c2793d3506f8dcf0eb43dee14163b2391fdeb35"
+    },
+    {
+      "path": "GLM/tests/test_glm_multilevel.m",
+      "bytes": 8534,
+      "sha256": "edb157c51639a5d855bd42008da086d3dcf0dac2d578f5350f0694a522c7a73b"
+    },
+    {
+      "path": "GLM/tests/test_glm_outputs.m",
+      "bytes": 14317,
+      "sha256": "87c6f3de5ad76656b6301f88a059cdaf1f9ea671d273611c4b5cb9c87d8544fa"
+    },
+    {
+      "path": "GLM/tests/test_glm_pmod_fir.m",
+      "bytes": 11116,
+      "sha256": "ffdb559a6a98335e254cf095775be35747d8105af725f46c11970c85fdd18648"
+    },
+    {
+      "path": "GLM/tests/test_glmsingle.m",
+      "bytes": 10879,
+      "sha256": "fbf74fef7570adbe787f9e82f5b6c572167f58600d5bc19c3710e3de01b6fb82"
+    },
+    {
+      "path": "GLM/tests/test_glmsingle_demo.m",
+      "bytes": 5521,
+      "sha256": "05c13a8053fe602163510c80dc1014bacdbe3f3a3476aac528a7d84c0cf41cf8"
+    },
+    {
+      "path": "GLM/tests/test_single_trial.m",
+      "bytes": 4338,
+      "sha256": "171fa2af80e813ed757a5b44342653d1d01858db961e29eb934de2bc455bbfeb"
+    },
+    {
+      "path": "GLM/tests/test_verify_glm.m",
+      "bytes": 1465,
+      "sha256": "0f47c7a6f0e769c8c0f339e1b11bc29ae4557d1999cf94194324b3f5eb596240"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3549,
+      "sha256": "9d9fb46194d1a2fdf6b07dad7b64c80cbfbfa69aaff60d37a81f24a3d0a374b0"
+    }
+  ],
+  "upstream_manifest_notes": [
+    {
+      "manifest": "Function/FILE_MANIFEST.json",
+      "path": "Function/METHOD_STATUS.tsv",
+      "current_state": "absent_in_user_copy"
+    },
+    {
+      "manifest": "Function/FILE_MANIFEST.json",
+      "path": "Function/README.md",
+      "current_state": "present_with_different_bytes"
+    },
+    {
+      "manifest": "Function/FILE_MANIFEST.json",
+      "path": "Function/docs/File_Reference.md",
+      "current_state": "present_with_different_bytes"
+    },
+    {
+      "manifest": "GLM/FILE_MANIFEST.json",
+      "path": "GLM/docs/Package_File_Explanation.md",
+      "current_state": "present_with_different_bytes"
+    },
+    {
+      "manifest": "GLM/FILE_MANIFEST.json",
+      "path": "GLM/README.md",
+      "current_state": "present_with_different_bytes"
+    }
+  ],
+  "scope": "Current user-provided files preserved; only root repository entry files added. This manifest excludes itself."
+}

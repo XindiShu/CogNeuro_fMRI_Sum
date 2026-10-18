@@ -1,0 +1,7 @@
+onset	duration	trial_type	trial_id	stimulus_id	phase
+4	1	conditionA	trial001	itemA01	stimulus
+16	1	conditionB	trial002	itemB01	stimulus
+28	1	conditionA	trial003	itemA01	stimulus
+40	1	conditionB	trial004	itemB02	stimulus
+52	1	conditionA	trial005	itemA02	stimulus
+64	1	conditionB	trial006	itemB01	stimulus

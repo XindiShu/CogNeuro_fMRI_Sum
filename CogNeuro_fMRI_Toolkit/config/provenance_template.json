@@ -1,0 +1,6 @@
+{
+  "Pipeline": "REPLACE_WITH_ACTUAL_PIPELINE",
+  "Version": "REPLACE_WITH_ACTUAL_RELEASE",
+  "Space": "REPLACE_WITH_ACTUAL_SPACE",
+  "Description": "REPLACE: record distortion correction, motion correction, denoising, filtering and smoothing; explicitly state unknown steps"
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "认知神经 fMRI 首次配置"
+  short_description: "选择现有工具包和本机运行环境，检查路径并保存供后续研究读取的配置"
+  default_prompt: "使用 $cogneuro-setup 配置我已有的三个工具包、MATLAB/SPM和工作目录。"
+policy:
+  allow_implicit_invocation: false

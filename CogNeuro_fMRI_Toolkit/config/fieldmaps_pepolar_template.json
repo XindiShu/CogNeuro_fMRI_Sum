@@ -1,0 +1,7 @@
+{
+  "Type": "pepolar",
+  "Images": [
+    {"Path": "E:/YOUR_DATA/se_epi_pos.nii.gz", "PhaseEncodingDirection": "j", "TotalReadoutTime": 0.05},
+    {"Path": "E:/YOUR_DATA/se_epi_neg.nii.gz", "PhaseEncodingDirection": "j-", "TotalReadoutTime": 0.05}
+  ]
+}

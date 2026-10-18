@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="3190" viewBox="0 0 1920 3190">
+<title>fMRI 预处理路线总图</title><desc>按当前工具包调用链绘制，展示不同 SDC 路线的实际顺序、群体标准化、停止条件及后续输出。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#48749a"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="48" y="66" font-family="Microsoft YaHei, sans-serif" font-size="42" font-weight="700" fill="#213b53">fMRI 预处理路线总图</text>
+<text x="48" y="110" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#213b53">主轴按处理阶段排列；右侧展开方法。实际先后顺序以第 3 阶段的各条路线为准。</text>
+<text x="1400" y="63" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">蓝：主链   紫：条件约束   红：结束</text>
+<rect x="48" y="140" width="380" height="170" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="180" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">0  输入与预检</text>
+<text x="66" y="213" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">run_toolkit.m →</text>
+<text x="66" y="240" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">preprocess_batch.m</text>
+<text x="66" y="267" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">execute=false：只预检</text>
+<rect x="48" y="350" width="380" height="120" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="390" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">1  DICOM → NIfTI</text>
+<text x="66" y="423" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">cfg.dicom.enabled</text>
+<text x="66" y="450" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">materialize_dicom_run.m</text>
+<rect x="48" y="510" width="380" height="145" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="550" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">2  删除初始 dummy 帧</text>
+<text x="66" y="583" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">cfg.discardVolumes</text>
+<text x="66" y="610" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">trim_dummy_bold.m</text>
+<text x="66" y="637" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">原始输入只读</text>
+<rect x="48" y="705" width="380" height="690" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="745" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">3  STC／畸变／头动</text>
+<text x="66" y="778" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">cfg.sdc.method 决定路线</text>
+<text x="66" y="832" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">STC 的可选方式：</text>
+<text x="66" y="859" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">off：跳过</text>
+<text x="66" y="886" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">metadata：逐 run 秒数</text>
+<text x="66" y="913" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">explicit_seconds：共享秒数</text>
+<text x="66" y="940" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">五种标准单带预设：</text>
+<text x="66" y="967" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">ascending / descending</text>
+<text x="66" y="994" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">interleaved_midtop</text>
+<text x="66" y="1021" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">interleaved_bottomup</text>
+<text x="66" y="1048" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">interleaved_topdown</text>
+<text x="66" y="1102" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">单带预设不替代真实多带时序。</text>
+<text x="66" y="1156" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">外部 sdc_corrected 输入：</text>
+<text x="66" y="1183" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">来源记录已核实，静态校正</text>
+<text x="66" y="1210" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">不重复；走可选 STC 与普通</text>
+<text x="66" y="1237" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">Realign。</text>
+<text x="66" y="1291" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">前五条路线继续到 QC；</text>
+<text x="66" y="1318" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">VDM-only 在此结束。</text>
+<rect x="48" y="1440" width="380" height="165" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="1480" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">4  头动与时序 QC</text>
+<text x="66" y="1513" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">motion_qc.m</text>
+<text x="66" y="1540" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">finalize_realign.m（适用时）</text>
+<text x="66" y="1567" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">timeseries_qc.m（启用时）</text>
+<rect x="48" y="1650" width="380" height="170" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="1690" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">5  结构像分割</text>
+<text x="66" y="1723" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">cfg.segment.backend</text>
+<text x="66" y="1750" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">segment_run.m</text>
+<text x="66" y="1777" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">原生 T1，不修改原始文件</text>
+<rect x="48" y="1955" width="380" height="145" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="1995" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">6  EPI–T1 配准</text>
+<text x="66" y="2028" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">spatial_steps.m</text>
+<text x="66" y="2055" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">固定 Coregister: Estimate</text>
+<text x="66" y="2082" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">均值 EPI → 原生 T1</text>
+<rect x="48" y="2150" width="380" height="340" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="2190" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">7  标准化到 MNI</text>
+<text x="66" y="2223" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">cfg.normalise.method</text>
+<text x="66" y="2250" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">segmentation / dartel / shooting</text>
+<text x="66" y="2304" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">体素大小与 bounding box</text>
+<text x="66" y="2331" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">控制最终标准空间网格。</text>
+<text x="66" y="2385" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">群体路线的结构准备实际</text>
+<text x="66" y="2412" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">发生在逐 run 功能处理前，</text>
+<text x="66" y="2439" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">见上方紫色说明。</text>
+<rect x="48" y="2540" width="380" height="170" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="2580" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">8  平滑或零核</text>
+<text x="66" y="2613" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">cfg.smoothingFwhmMm</text>
+<text x="66" y="2640" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">普通 Smooth / 原生联合写出</text>
+<text x="66" y="2667" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">保留未平滑标准化结果</text>
+<rect x="48" y="2760" width="380" height="170" rx="12" fill="#e8f1f9" stroke="#37678e" stroke-width="2"/>
+<text x="66" y="2800" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">9  输出与后续去向</text>
+<text x="66" y="2833" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">COMPLETE.mat</text>
+<text x="66" y="2860" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">batch_status.tsv</text>
+<text x="66" y="2887" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">按实际记录定位输出</text>
+<polyline points="238,310 238,350" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="238,470 238,510" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="238,655 238,705" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="238,1395 238,1440" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="238,1605 238,1650" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="238,1820 238,1955" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="238,2100 238,2150" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="238,2490 238,2540" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="238,2710 238,2760" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="480" y="140" width="440" height="170" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="180" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">manifest：一般研究</text>
+<text x="498" y="213" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">TSV 每行一个 run</text>
+<text x="498" y="240" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">read_manifest.m</text>
+<text x="498" y="267" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">24 名 × 2 runs = 48 行</text>
+<rect x="945" y="140" width="440" height="170" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="963" y="180" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">hcp：HCP 示例</text>
+<text x="963" y="213" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">preprocess_config.m</text>
+<text x="963" y="240" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">discover_hcp.m</text>
+<text x="963" y="267" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">只发现已解压原始包</text>
+<rect x="1410" y="140" width="460" height="170" rx="12" fill="#fff0ed" stroke="#c06552" stroke-width="2"/>
+<text x="1428" y="180" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">输入阶段与预检</text>
+<text x="1428" y="213" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">raw / sdc_corrected</text>
+<text x="1428" y="240" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">preprocessed：仅核查</text>
+<text x="1428" y="267" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">execute=false 不处理影像</text>
+<rect x="480" y="350" width="680" height="120" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="390" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">false：直接读 NIfTI</text>
+<text x="498" y="423" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">true：SPM 导入单序列 DICOM</text>
+<text x="498" y="450" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">预检仅列清单；execute=true 才转换</text>
+<rect x="1185" y="350" width="685" height="120" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="1203" y="390" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">自动转换后再完整预检</text>
+<text x="1203" y="423" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">import_dicom_series.m</text>
+<text x="1203" y="450" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">工作副本写到独立输出目录</text>
+<rect x="480" y="510" width="680" height="145" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="550" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">0：保留全部帧；N&gt;0：删前 N 帧</text>
+<text x="498" y="583" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">只处理 BOLD，至少保留 2 帧</text>
+<text x="498" y="610" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">T1／SBRef／场图不随之删除帧</text>
+<rect x="1185" y="510" width="685" height="145" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="1203" y="550" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">有事件且删帧时，明确时间基准</text>
+<text x="1203" y="583" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">original_first_volume：onset 减 N×TR</text>
+<text x="1203" y="610" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">retained_first_volume：onset 不变</text>
+<polyline points="428,1050 455,1050" fill="none" stroke="#48749a" stroke-width="3"/>
+<polyline points="455,757 455,1317" fill="none" stroke="#48749a" stroke-width="3"/>
+<rect x="480" y="705" width="310" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="740" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#213b53">none</text>
+<text x="498" y="771" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#213b53">不做静态畸变校正</text>
+<rect x="820" y="705" width="1050" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="838" y="742" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#213b53">实际顺序</text>
+<text x="838" y="775" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">可选 STC → Realign: Estimate &amp; Reslice</text>
+<text x="838" y="802" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">spm_motion_step.m</text>
+<polyline points="455,757 480,757" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="790,757 820,757" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1870,757 1896,757" fill="none" stroke="#48749a" stroke-width="3"/>
+<rect x="480" y="817" width="310" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="852" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#213b53">fsl_topup</text>
+<text x="498" y="883" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#213b53">反向 PE SE-EPI + SBRef</text>
+<rect x="820" y="817" width="1050" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="838" y="854" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#213b53">实际顺序</text>
+<text x="838" y="887" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">TOPUP → 自动 SE 均值 → BOLD 校正 → 可选 STC → Estimate &amp; Reslice</text>
+<text x="838" y="914" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">topup_run.m → bold_unwarp_run.m → spm_motion_step.m</text>
+<polyline points="455,869 480,869" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="790,869 820,869" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1870,869 1896,869" fill="none" stroke="#48749a" stroke-width="3"/>
+<rect x="480" y="929" width="310" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="964" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#213b53">spm_fieldmap_applyvdm</text>
+<text x="498" y="995" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#213b53">实测场 / 已有 VDM；静态校正</text>
+<rect x="820" y="929" width="1050" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="838" y="966" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#213b53">实际顺序</text>
+<text x="838" y="999" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">可选 STC → Realign: Estimate → 生成/导入 VDM → Apply VDM</text>
+<text x="838" y="1026" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">spm_motion_step.m → spm_fieldmap_vdm.m → SPM Apply VDM</text>
+<polyline points="455,981 480,981" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="790,981 820,981" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1870,981 1896,981" fill="none" stroke="#48749a" stroke-width="3"/>
+<rect x="480" y="1041" width="310" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="1076" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#213b53">spm_fieldmap_unwarp</text>
+<text x="498" y="1107" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#213b53">实测 VDM + 动态 Unwarp</text>
+<rect x="820" y="1041" width="1050" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="838" y="1078" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#213b53">实际顺序</text>
+<text x="838" y="1111" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">可选 STC → 生成/导入 VDM → Realign &amp; Unwarp</text>
+<text x="838" y="1138" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">spm_fieldmap_vdm.m → spm_motion_step.m；受 AP/PA 方向限制</text>
+<polyline points="455,1093 480,1093" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="790,1093 820,1093" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1870,1093 1896,1093" fill="none" stroke="#48749a" stroke-width="3"/>
+<rect x="480" y="1153" width="310" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="1188" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#213b53">spm_unwarp</text>
+<text x="498" y="1219" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#213b53">无实测 VDM 的动态 Unwarp</text>
+<rect x="820" y="1153" width="1050" height="104" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="838" y="1190" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#213b53">实际顺序</text>
+<text x="838" y="1223" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">可选 STC → Realign &amp; Unwarp</text>
+<text x="838" y="1250" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">不代表已经校正静态解剖畸变</text>
+<polyline points="455,1205 480,1205" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="790,1205 820,1205" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1870,1205 1896,1205" fill="none" stroke="#48749a" stroke-width="3"/>
+<rect x="480" y="1265" width="310" height="104" rx="12" fill="#fff0ed" stroke="#c06552" stroke-width="2"/>
+<text x="498" y="1300" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#213b53">spm_vdm_only</text>
+<text x="498" y="1331" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#213b53">只准备 VDM → 结束</text>
+<rect x="820" y="1265" width="1050" height="104" rx="12" fill="#fff0ed" stroke="#c06552" stroke-width="2"/>
+<text x="838" y="1302" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#213b53">实际顺序</text>
+<text x="838" y="1335" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">生成/导入 VDM，可选单幅参考 QC 图 → 停止</text>
+<text x="838" y="1362" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">不做 STC、全序列头动或后续空间步骤</text>
+<polyline points="455,1317 480,1317" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="790,1317 820,1317" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1896,757 1896,1418 700,1418 700,1440" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="480" y="1440" width="440" height="165" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="1480" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">FD：每个头动结果均检查</text>
+<text x="498" y="1513" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">标记，不自动删帧</text>
+<text x="498" y="1540" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">stopAfter=realign：QC 后结束</text>
+<rect x="945" y="1440" width="440" height="165" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="963" y="1480" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">全时序 QC：可开关</text>
+<text x="963" y="1513" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">cfg.qc.enabled</text>
+<text x="963" y="1540" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">FD / DVARS / tSNR 等</text>
+<text x="963" y="1567" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">无均值时记录跳过</text>
+<rect x="1410" y="1440" width="460" height="165" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="1428" y="1480" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">非有限值处理：适用时</text>
+<text x="1428" y="1513" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">保留原重采样结果</text>
+<text x="1428" y="1540" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">另写有限值副本与有效掩膜</text>
+<text x="1428" y="1567" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">不恢复缺失信号</text>
+<rect x="480" y="1650" width="440" height="170" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="1690" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">SPM Segment</text>
+<text x="498" y="1723" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">T1，或已关联的 T1 + T2/PD</text>
+<text x="498" y="1750" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">偏置、组织、形变场可选</text>
+<text x="498" y="1777" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">stopAfter=segment：至此结束</text>
+<rect x="945" y="1650" width="440" height="170" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="963" y="1690" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">CAT12</text>
+<text x="963" y="1723" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">当前接口仅 T1</text>
+<text x="963" y="1750" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">CAT 内部处理 ≠ 本包独立</text>
+<text x="963" y="1777" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">DARTEL / Shooting 路线</text>
+<rect x="1410" y="1650" width="460" height="170" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="1428" y="1690" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">可选原生空间图谱</text>
+<text x="1428" y="1723" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">target=t1：分割后</text>
+<text x="1428" y="1750" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">target=bold：EPI–T1 配准后</text>
+<text x="1428" y="1777" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">apply_atlases.m</text>
+<rect x="480" y="1850" width="1390" height="78" rx="12" fill="#f1edfa" stroke="#8570b3" stroke-width="2"/>
+<text x="498" y="1887" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#213b53">DARTEL / Shooting 的实际结构准备顺序</text>
+<text x="498" y="1920" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">全批预检 → 唯一结构分割 → 建立/匹配群体模板 → 再处理各 run；要求 SPM Segment 且 stopAfter=smooth。</text>
+<rect x="480" y="1955" width="1390" height="145" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="1995" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">当前接口固定 Estimate；未提供 Reslice / Estimate &amp; Reslice 选择</text>
+<text x="498" y="2028" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">Reference = T1；Source = 头动后的平均 EPI；Other = 全部处理后 BOLD 帧</text>
+<text x="498" y="2055" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">更新影像空间关系，随后按所选标准化路线写出。</text>
+<rect x="480" y="2150" width="440" height="340" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="2190" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">segmentation</text>
+<text x="498" y="2223" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">SPM Segment / CAT12 前向场</text>
+<text x="498" y="2250" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">→ Normalise: Write</text>
+<text x="498" y="2304" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">插值 0–7；自定义网格</text>
+<text x="498" y="2331" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">→ 下一步普通 Smooth</text>
+<text x="498" y="2385" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">使用分割得到的场，</text>
+<text x="498" y="2412" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">不是额外的 Normalise:</text>
+<text x="498" y="2439" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">Estimate / Estimate &amp; Write。</text>
+<rect x="945" y="2150" width="440" height="150" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="963" y="2190" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">dartel</text>
+<text x="963" y="2223" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">SPM GM/WM Imported</text>
+<text x="963" y="2250" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">create / existing 模板</text>
+<text x="963" y="2277" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">→ flow 与最终形变</text>
+<rect x="1410" y="2150" width="460" height="150" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="1428" y="2190" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">shooting</text>
+<text x="1428" y="2223" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">SPM GM/WM Imported</text>
+<text x="1428" y="2250" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">create / existing 模板</text>
+<text x="1428" y="2277" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">→ 速度场与最终形变</text>
+<polyline points="1165,2300 1165,2310 1635,2310" fill="none" stroke="#48749a" stroke-width="3"/>
+<polyline points="1640,2300 1640,2310" fill="none" stroke="#48749a" stroke-width="3"/>
+<polyline points="1165,2310 1165,2330" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1640,2310 1640,2330" fill="none" stroke="#48749a" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="945" y="2330" width="440" height="160" rx="12" fill="#f1edfa" stroke="#8570b3" stroke-width="2"/>
+<text x="963" y="2370" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">writeMethod=native</text>
+<text x="963" y="2403" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">原生 MNI 写出与平滑</text>
+<text x="963" y="2430" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">固定三线性；核须等方性</text>
+<text x="963" y="2457" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">Preserve 可选 0/1</text>
+<rect x="1410" y="2330" width="460" height="160" rx="12" fill="#f1edfa" stroke="#8570b3" stroke-width="2"/>
+<text x="1428" y="2370" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">writeMethod=deformations</text>
+<text x="1428" y="2403" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">合成最终场 → Write → Smooth</text>
+<text x="1428" y="2430" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">插值 0–7；核可各向异性</text>
+<text x="1428" y="2457" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">Preserve 只允许 0</text>
+<rect x="480" y="2540" width="680" height="170" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="2580" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">普通 Smooth</text>
+<text x="498" y="2613" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">smooth_run.m；三轴 FWHM 可不同</text>
+<text x="498" y="2640" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">可选 dataType / implicitMasking / prefix</text>
+<text x="498" y="2667" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">[0 0 0] = 不增加此平滑核</text>
+<rect x="1185" y="2540" width="685" height="170" rx="12" fill="#f1edfa" stroke="#8570b3" stroke-width="2"/>
+<text x="1203" y="2580" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">DARTEL / Shooting native</text>
+<text x="1203" y="2613" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">平滑在原生 MNI 写出内完成，不再重复 Smooth</text>
+<text x="1203" y="2640" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">仅允许兼容的 same / false；核须等方性</text>
+<text x="1203" y="2667" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">需额外菜单时选择 deformations 写出</text>
+<rect x="480" y="2760" width="680" height="170" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="498" y="2800" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">保留输出</text>
+<text x="498" y="2833" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">未平滑 / 平滑标准化 BOLD、运动参数、QC</text>
+<text x="498" y="2860" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">SMOOTHING_COMPLETE.mat 记录实际路径</text>
+<text x="498" y="2887" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">自定义前缀时，不只凭 w* / sw* 猜文件</text>
+<rect x="1185" y="2760" width="685" height="170" rx="12" fill="#f8fafc" stroke="#b8cbd9" stroke-width="2"/>
+<text x="1203" y="2800" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">后续分析独立选择输入</text>
+<text x="1203" y="2833" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">GLM：D:\GLM；不由预处理自动启动</text>
+<text x="1203" y="2860" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">FC / PPI / DCM：后续独立分析需求</text>
+<text x="1203" y="2887" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#213b53">时序去噪、模型与组统计不由此图自动完成</text>
+<rect x="48" y="2980" width="1822" height="130" rx="12" fill="#fff0ed" stroke="#c06552" stroke-width="2"/>
+<text x="66" y="3020" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#213b53">停止与兼容条件</text>
+<text x="66" y="3055" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" fill="#213b53">spm_vdm_only：到 VDM 结束；stopAfter=realign / segment：在相应阶段结束；完整空间链选择 smooth。</text>
+<text x="66" y="3084" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" fill="#213b53">SPM 的 resliceImages=all 无均值，只允许停在 realign；预检通过或 COMPLETE.mat 存在都不代表全部步骤已执行。</text>
+<text x="48" y="3161" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#213b53">依据当前代码调用关系绘制；选项可用不等于所有数据与参数组合都经过真实数据验证。</text>
+</svg>

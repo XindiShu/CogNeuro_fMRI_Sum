@@ -1,0 +1,3 @@
+roi	mask_file	label
+binary_region	E:/study/roi/binary_mask.nii	0
+atlas_region_17	E:/study/roi/atlas_labels.nii	17

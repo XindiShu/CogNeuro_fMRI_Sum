@@ -1,0 +1,6 @@
+id	engine	source_dir	variant
+trial_joint	framework	E:/study/trial_joint/sub-p01/task_run1	auto
+trial_lss	framework	E:/study/trial_lss/sub-p01/task_run1	auto
+legacy_lsa	single_trial	E:/study/single_trial/sub-p01/task_run1	LSA
+legacy_lss	single_trial	E:/study/single_trial/sub-p01/task_run1	LSS
+gs_d	glmsingle	E:/study/glmsingle/sub-p01/combined	D

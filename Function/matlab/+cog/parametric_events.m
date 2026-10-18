@@ -1,0 +1,8 @@
+function events=parametric_events(onsetsSeconds,durationsSeconds,values,modulatorNames,conditionName,centerValues)
+%PARAMETRIC_EVENTS 显式秒时序/数值→SPM多条件MAT结构，不拟合GLM也不猜反馈时点。
+onsetsSeconds=double(onsetsSeconds(:));durationsSeconds=double(durationsSeconds(:));values=double(values);names=string(modulatorNames(:));conditionName=string(conditionName);n=numel(onsetsSeconds);
+if n<1||numel(durationsSeconds)~=n||any(~isfinite(onsetsSeconds)|onsetsSeconds<0)||any(diff(onsetsSeconds)<0)||any(~isfinite(durationsSeconds)|durationsSeconds<0)||size(values,1)~=n||size(values,2)~=numel(names)||isempty(names)||any(~isfinite(values),'all')||~isreal(values)||numel(unique(names))~=numel(names)||any(ismissing(names)|names=="")||~isscalar(conditionName)||ismissing(conditionName)||conditionName==""||~isscalar(centerValues),error('cog:ParametricEvents','Explicit ordered seconds onsets/durations and aligned named finite modulators required');end
+removedMean=zeros(1,size(values,2));if centerValues,removedMean=mean(values,1);values=values-removedMean;end
+pmod=struct('name',{cellstr(names)'},'param',{mat2cell(values,n,ones(1,size(values,2)))},'poly',{repmat({1},1,numel(names))});
+events=struct('names',{{char(conditionName)}},'onsets',{{onsetsSeconds}},'durations',{{durationsSeconds}},'pmod',pmod,'orth',{{0}},'metadata',struct('units','seconds','centerValues',logical(centerValues),'removedMean',removedMean,'orthogonalization',false,'note','Explicit first-order parametric modulators. Timing/latent semantics are supplied by caller; no inferred feedback time, HRF convolution or existing GLM modification.'));
+end

@@ -1,0 +1,14 @@
+function summary=validate_hcp_stage3_multivariate(workspace)
+%VALIDATE_HCP_STAGE3_MULTIVARIATE 三人脑FC与行为摘要只作工程矩阵示例。
+if nargin<1,workspace=fileparts(fileparts(fileparts(mfilename('fullpath'))));end
+addpath(fullfile(workspace,'function_toolkit'));setup_function;out=fullfile(workspace,'derivatives','function_stage3_multivariate_20261017');if isfolder(out),error('cog:Exists','Preserve successful output');end;mkdir(out);subjects=["100206";"100307";"100408"];X=[];Y=zeros(3,2);
+for s=1:3
+    fcFile=fullfile(workspace,'derivatives','function_stage1_real_20261016','timeseries_results',subjects(s),'REST1_LR_prefix256','static_fc.mat');a=load(fcFile,'fc');mask=triu(true(size(a.fc.correlation)),1);X(s,:)=a.fc.fisherZ(mask);rt=[];acc=[];for run=["LR","RL"],t=cog.read_tsv(fullfile(workspace,'derivatives','function_stage3_behavior_20261017',subjects(s)+"_"+run+"_trials.tsv"));rt=[rt;str2double(t.rt_seconds)];acc=[acc;str2double(t.reward)];end;Y(s,:)=[mean(rt) mean(acc)]; %#ok<AGROW>
+end
+[i,j]=find(mask);data=struct('X',X,'Y',Y,'M',Y(:,1),'sampleIds',subjects,'independentUnitIds',subjects,'XfeatureIds',"roi"+string(i)+"_roi"+string(j),'YfeatureIds',{{'first_option_rt_seconds','accuracy_proxy'}},'cvGroups',subjects,'note','3 engineering subjects; family dependence not established. Brain6ROI REST prefix FC and pooled LANGUAGE first-option RT/ACC proxies; no research inference.');file=fullfile(out,'data.mat');save(file,'data');c=multivariate_config;c.dataFile=file;c.execute=true;c.options.nComponents=1;c.options.crossValidate=true;c.options.nPermutations=19;c.options.exchangeabilityJustification='Engineering only: three subject rows, no family/exchangeability evidence; numerical refit check, not inferential p-values.';
+for method={'pls_covariance','cca','pls_regression','mediation'}
+    c.method=method{1};c.outputRoot=fullfile(out,method{1});if strcmp(method{1},'pls_regression'),c.options.nPermutations=0;end;if strcmp(method{1},'mediation'),c.options.crossValidate=false;c.options.nBootstrap=0;c.mediation.outcomeColumn=2;end
+    r=run_multivariate(c);if strcmp(method{1},'mediation'),summary.(method{1})=struct('indirect',r.indirect,'residualDfOutcome',r.residualDfOutcome,'inferenceEligible',r.inferenceEligible);else,summary.(method{1})=struct('statistics',r.model.statistics,'inferenceEligible',r.inferenceEligible);end
+end
+summary.skipped={'Classical CCA on real 15-feature X with N3: rank-deficient; regularized CCA used instead.','Mediation inferential/bootstrap CI on real N3: outcome residual df0; only point paths returned.'};summary.scope='Three-subject high-dimensional engineering example. PLS-C/regularized CCA refit Y-row permutations and frozen LO-subject score products, native PLS regression LO-subject prediction, mediation point coefficients only. No population, model-selection, canonical-correlation adequacy or causal mediation claim.';cog.write_json(fullfile(out,'VALIDATION.json'),summary);
+end

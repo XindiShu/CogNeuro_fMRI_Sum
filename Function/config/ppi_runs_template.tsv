@@ -1,0 +1,2 @@
+subject	session	run	spm_mat	seed_mask	spm_session_index
+sub01	ses01	task01	/path/SPM.mat	/path/seed.nii	1

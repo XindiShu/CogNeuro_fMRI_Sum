@@ -1,0 +1,6 @@
+subject	session	contrast	contrast_image	mask	synthetic_score
+participant01	baseline	A_minus_B	E:/study/p01/con_0001.nii	E:/study/p01/mask.nii	1
+participant02	baseline	A_minus_B	E:/study/p02/con_0001.nii	E:/study/p02/mask.nii	4
+participant03	baseline	A_minus_B	E:/study/p03/con_0001.nii	E:/study/p03/mask.nii	2
+participant04	baseline	A_minus_B	E:/study/p04/con_0001.nii	E:/study/p04/mask.nii	5
+participant05	baseline	A_minus_B	E:/study/p05/con_0001.nii	E:/study/p05/mask.nii	3

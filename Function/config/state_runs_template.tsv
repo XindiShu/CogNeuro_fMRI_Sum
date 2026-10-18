@@ -1,0 +1,4 @@
+subject	session	run	data_file
+001	s1	rest1	prepared/001_roi_timeseries.mat
+001	s1	rest2	prepared/001_roi_timeseries_run2.mat
+002	s1	rest1	prepared/002_roi_timeseries.mat

@@ -1,0 +1,2 @@
+subject	session	run	trials_file
+001	s1	bandit1	prepared/001_trials.tsv

@@ -1,0 +1,8 @@
+{
+  "Type": "fieldmap_hz",
+  "Units": "Hz",
+  "SPMBlipDirection": -1,
+  "Images": [
+    {"Path": "E:/YOUR_DATA/fieldmap_hz.nii.gz", "Role": "fieldmap_hz"}
+  ]
+}

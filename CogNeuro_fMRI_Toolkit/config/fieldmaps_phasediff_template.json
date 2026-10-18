@@ -1,0 +1,11 @@
+{
+  "Type": "phasediff",
+  "EchoTime1": 0.004,
+  "EchoTime2": 0.006,
+  "Units": "rad",
+  "SPMBlipDirection": -1,
+  "Images": [
+    {"Path": "E:/YOUR_DATA/phasediff.nii.gz", "Role": "phasediff"},
+    {"Path": "E:/YOUR_DATA/magnitude.nii.gz", "Role": "magnitude"}
+  ]
+}

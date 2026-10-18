@@ -1,0 +1,4 @@
+subject	session	run	bold	t1	input_stage	sbref
+pilotA	baseline	rest_run1	E:/YOUR_DATA/pilotA/baseline/rest.nii.gz	E:/YOUR_DATA/pilotA/baseline/T1w.nii.gz	raw	
+pilotA	followup	memory_run1	E:/YOUR_DATA/pilotA/followup/memory.nii.gz	E:/YOUR_DATA/pilotA/followup/T1w.nii.gz	raw	
+pilotB	baseline	rest_run1	E:/YOUR_DATA/pilotB/baseline/rest.nii.gz	E:/YOUR_DATA/pilotB/baseline/T1w.nii.gz	raw	

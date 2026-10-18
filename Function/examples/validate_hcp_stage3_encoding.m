@@ -1,0 +1,11 @@
+function summary=validate_hcp_stage3_encoding(workspace)
+%VALIDATE_HCP_STAGE3_ENCODING 既有事件beta，条件/位置工程特征→64脑活动输出。
+if nargin<1,workspace=fileparts(fileparts(fileparts(mfilename('fullpath'))));end
+addpath(fullfile(workspace,'function_toolkit'));setup_function;out=fullfile(workspace,'derivatives','function_stage3_encoding_20261017');if isfolder(out),error('cog:Exists','Preserve successful output');end;mkdir(out);subjects=["100307";"100408"];
+for k=1:2
+    s=load(fullfile(workspace,'derivatives','function_stage3_pcm_20261017',subjects(k)+"_data.mat"),'data');d=s.data;parts=string(d.partition);ordinal=zeros(size(parts));frameIndices=ordinal;for p=unique(parts,'stable')',ii=find(parts==p);ordinal(ii)=linspace(-1,1,numel(ii));frameIndices(ii)=(1:numel(ii))';end
+    a=[double(d.condition=="story") double(d.condition=="math")];b=[ordinal ordinal.^2];data=struct('featureSpaces',{{a,b}},'featureSpaceNames',{{'condition','engineering_ordinal'}},'featureIds',{{{'story','math'},{'ordinal','ordinal_squared'}}},'targetIds',d.featureIds,'y',d.y,'runIds',parts,'frameIndices',frameIndices,'cvGroups',parts,'note','Event estimates, not continuous scanner frames. Condition labels/ordinal are engineering features. Shared upstream GLMsingle HRF across runs limits end-to-end CV.');file=fullfile(out,subjects(k)+"_data.mat");save(file,'data');c=encoding_config;c.dataFile=file;c.execute=true;
+    for method={'ridge','banded_ridge'},c.options.method=method{1};if strcmp(method{1},'ridge'),c.options.lambdaCandidates=10;else,c.options.lambdaCandidates=[1 10];end;c.outputRoot=fullfile(out,subjects(k),method{1});r=run_encoding(c);summary.("sub"+subjects(k)).(method{1})=struct('status',r.status,'nTargets',numel(r.correlation),'fixedPenalty',c.options.lambdaCandidates);end
+end
+summary.scope='2 subjects/2 run partitions each/50 total TYPEB units, 64 fixed brain-feature outputs; condition and ordinal engineering predictors, prespecified penalties, leave-run prediction. Multiple-candidate nested tuning and continuous lag/gap processing synthetic tested. No rich-stimulus encoding, scientific feature interpretation or leakage-free upstream fit claim.';cog.write_json(fullfile(out,'VALIDATION.json'),summary);
+end

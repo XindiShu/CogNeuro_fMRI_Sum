@@ -1,0 +1,1342 @@
+{
+  "schema_version": 1,
+  "purpose": "existing_toolkit_interface_registry_not_algorithm_implementation",
+  "entries": [
+    {
+      "id": "preprocessing.preprocess",
+      "package": "preprocessing",
+      "label_zh": "通用预处理／SDC／分割／标准化／平滑",
+      "entry_file": "run_toolkit.m",
+      "config_file": "config/toolkit_config.m",
+      "target": "psy.preprocess_batch",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/runs_template.tsv",
+          "config/runs_extended_template.tsv",
+          "config/runs_segmentation_template.tsv"
+        ]
+      },
+      "docs": [],
+      "capabilities": [
+        "dummy/STC",
+        "Realign/Unwarp/FieldMap/TOPUP",
+        "SPM/CAT",
+        "segmentation/DARTEL/Shooting",
+        "smoothing/atlas"
+      ],
+      "notes_zh": "直接调用原生batch并在内存传cfg；不以旧skill的none/SPM/segmentation白名单限制原包。实际可用选项和依赖以当前配置及原生验证为准。",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "preprocessing.confounds",
+      "package": "preprocessing",
+      "label_zh": "组织信号与运动混杂提取",
+      "entry_file": "run_confounds.m",
+      "config_file": "config/confounds_config.m",
+      "target": "psy.confounds_batch",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/confounds_runs_template.tsv"
+        ]
+      },
+      "docs": [],
+      "capabilities": [],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "preprocessing.confound_design",
+      "package": "preprocessing",
+      "label_zh": "混杂设计矩阵",
+      "entry_file": "run_confound_design.m",
+      "config_file": "config/design_config.m",
+      "target": "psy.confound_design_batch",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "inputRoot": {
+          "required": true,
+          "kind": "directory",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [],
+      "capabilities": [],
+      "notes_zh": "",
+      "input_names": [
+        "inputRoot"
+      ]
+    },
+    {
+      "id": "preprocessing.denoise",
+      "package": "preprocessing",
+      "label_zh": "时间去噪",
+      "entry_file": "run_denoise.m",
+      "config_file": "config/denoise_config.m",
+      "target": "psy.denoise_batch",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/denoise_runs_template.tsv"
+        ]
+      },
+      "docs": [],
+      "capabilities": [],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "preprocessing.timeseries_qc",
+      "package": "preprocessing",
+      "label_zh": "已处理时序的批量QC",
+      "entry_file": "run_timeseries_qc.m",
+      "config_file": "config/qc_config.m",
+      "target": "psy.qc_batch",
+      "style": "qc_roots",
+      "role": "analysis",
+      "inputs": {
+        "inputRoot": {
+          "required": true,
+          "kind": "directory",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [],
+      "capabilities": [],
+      "notes_zh": "原生函数没有execute=false门；prepare仅检查配置，不提前运行QC。输入目录布局须按原包说明核对。",
+      "input_names": [
+        "inputRoot"
+      ]
+    },
+    {
+      "id": "preprocessing.topup",
+      "package": "preprocessing",
+      "label_zh": "独立TOPUP场图估计",
+      "entry_file": "matlab/+psy/topup_batch.m",
+      "config_file": "config/topup_config.m",
+      "target": "psy.topup_batch",
+      "style": "specs_cfg",
+      "role": "analysis",
+      "inputs": {
+        "specsFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": "JSON为原生spec结构数组；各run路径和采集事实必须真实。"
+        }
+      },
+      "templates": {},
+      "docs": [],
+      "capabilities": [],
+      "notes_zh": "",
+      "input_names": [
+        "specsFile"
+      ]
+    },
+    {
+      "id": "preprocessing.bold_unwarp",
+      "package": "preprocessing",
+      "label_zh": "独立TOPUP场图到BOLD校正",
+      "entry_file": "matlab/+psy/bold_unwarp_batch.m",
+      "config_file": "config/bold_unwarp_config.m",
+      "target": "psy.bold_unwarp_batch",
+      "style": "specs_cfg",
+      "role": "analysis",
+      "inputs": {
+        "specsFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": "JSON为原生spec结构数组；不是自动选择畸变校正方法。"
+        }
+      },
+      "templates": {},
+      "docs": [],
+      "capabilities": [],
+      "notes_zh": "",
+      "input_names": [
+        "specsFile"
+      ]
+    },
+    {
+      "id": "preprocessing.hcp_example",
+      "package": "preprocessing",
+      "label_zh": "HCP示例入口",
+      "entry_file": "run_preprocessing.m",
+      "config_file": "config/preprocess_config.m",
+      "target": "psy.preprocess_hcp",
+      "style": "cfg",
+      "role": "example",
+      "inputs": {
+        "dataRoot": {
+          "required": true,
+          "kind": "directory",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [],
+      "capabilities": [],
+      "notes_zh": "数据集示例，不作为通用数据路径的默认入口；dataRoot必须替换为用户明确提供的路径。",
+      "input_names": [
+        "dataRoot"
+      ]
+    },
+    {
+      "id": "preprocessing.validation",
+      "package": "preprocessing",
+      "label_zh": "开发验证脚本",
+      "entry_file": "validate_preprocessing.m",
+      "config_file": "config/preprocess_config.m",
+      "target": "validate_preprocessing",
+      "style": "cfg",
+      "role": "validation",
+      "inputs": {},
+      "templates": {},
+      "docs": [],
+      "capabilities": [],
+      "notes_zh": "不是用户分析入口，不自动运行整套测试。",
+      "input_names": []
+    },
+    {
+      "id": "glm.model",
+      "package": "glm",
+      "label_zh": "可组合GLM／LSA/LSS／pmod/FIR／跨run／组统计／GLMsingle",
+      "entry_file": "run_glm.m",
+      "config_file": "config/glm_config.m",
+      "target": "psy.glm_batch",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/glm_runs_template.tsv",
+          "config/glm_group_template.tsv",
+          "config/glm_group_paired_template.tsv",
+          "config/glm_group_two_sample_template.tsv",
+          "config/glm_group_regression_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/Methods_Summary.md",
+        "docs/GUIDE.md"
+      ],
+      "capabilities": [
+        "condition/event/trial/item/block/phase/trial_phase",
+        "canonical/derivatives/FIR",
+        "joint/LSA/LSS",
+        "pmod",
+        "run/subject/group",
+        "SPM/GLMsingle"
+      ],
+      "notes_zh": "这些是原包现成的可组合选项；不是skill分别重写的算法。模板随level和group.design选择，不能把run当独立被试。",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "glm.single_trial",
+      "package": "glm",
+      "label_zh": "原有逐事件LSA/LSS入口",
+      "entry_file": "run_single_trial.m",
+      "config_file": "config/single_trial_config.m",
+      "target": "psy.single_trial_batch",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/single_trial_runs_template.tsv",
+          "config/glm_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/LSA_GLM.md",
+        "docs/LSS_GLM.md"
+      ],
+      "capabilities": [],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "glm.outputs",
+      "package": "glm",
+      "label_zh": "已估计GLM结果／beta目录／ROI导出",
+      "entry_file": "run_glm_outputs.m",
+      "config_file": "config/glm_outputs_config.m",
+      "target": "run_glm_outputs",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "results.manifestFile": {
+          "required": false,
+          "kind": "file",
+          "note_zh": "mode=results/both时需要"
+        },
+        "betas.manifestFile": {
+          "required": false,
+          "kind": "file",
+          "note_zh": "mode=betas/both时需要"
+        },
+        "results.roiManifestFile": {
+          "required": false,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "betas.roiManifestFile": {
+          "required": false,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "results.manifestFile": [
+          "config/glm_results_template.tsv"
+        ],
+        "betas.manifestFile": [
+          "config/glm_beta_sources_template.tsv"
+        ],
+        "results.roiManifestFile": [
+          "config/glm_roi_template.tsv"
+        ],
+        "betas.roiManifestFile": [
+          "config/glm_roi_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/Methods_Summary.md"
+      ],
+      "capabilities": [],
+      "notes_zh": "原生函数没有execute=false；prepare不执行结果导出。mode所需清单须显式提供或逐项确认沿用。",
+      "input_names": [
+        "results.manifestFile",
+        "betas.manifestFile",
+        "results.roiManifestFile",
+        "betas.roiManifestFile"
+      ]
+    },
+    {
+      "id": "glm.glmsingle_demo",
+      "package": "glm",
+      "label_zh": "GLMsingle专用工程示例",
+      "entry_file": "run_glmsingle_demo.m",
+      "config_file": "config/glmsingle_demo_config.m",
+      "target": "run_glmsingle_demo",
+      "style": "cfg_demo",
+      "role": "example",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/glm_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/GLMsingle_ABCD.md",
+        "docs/GLMSINGLE_HCP_DEMO.md"
+      ],
+      "capabilities": [],
+      "notes_zh": "仅在用户明确要求该近似示例时选择；一般研究用glm.model的原生GLMsingle后端。",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.function",
+      "package": "function",
+      "label_zh": "连续时序：FC／ALFF/fALFF／ReHo",
+      "entry_file": "run_function.m",
+      "config_file": "config/function_config.m",
+      "target": "run_function",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/analysis_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/FC.md",
+        "docs/ALFF_REHO.md",
+        "docs/Basic_Graph_Stats.md"
+      ],
+      "capabilities": [
+        "static_fc",
+        "alff/fALFF",
+        "reho",
+        "graph",
+        "seed-to-voxel through cfg.fc.seedColumns"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.prepare_inputs",
+      "package": "function",
+      "label_zh": "BOLD到ROI/体素MAT准备",
+      "entry_file": "run_prepare_inputs.m",
+      "config_file": "config/prepare_inputs_config.m",
+      "target": "run_prepare_inputs",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/analysis_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/Process_Summary.md"
+      ],
+      "capabilities": [
+        "roi/voxels preparation"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.dynamic_fc",
+      "package": "function",
+      "label_zh": "滑动窗口连接",
+      "entry_file": "run_dynamic_fc.m",
+      "config_file": "config/dynamic_fc_config.m",
+      "target": "run_dynamic_fc",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/dynamic_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/Dynamic_FC.md"
+      ],
+      "capabilities": [
+        "sliding-window FC"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.states",
+      "package": "function",
+      "label_zh": "HMM／CAP／LEiDA与状态统计",
+      "entry_file": "run_states.m",
+      "config_file": "config/state_config.m",
+      "target": "run_states",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/state_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/HMM_CAP_LEiDA.md"
+      ],
+      "capabilities": [
+        "hmm",
+        "cap",
+        "leida"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.ica",
+      "package": "function",
+      "label_zh": "组ICA／双回归／FNC",
+      "entry_file": "run_ica.m",
+      "config_file": "config/ica_config.m",
+      "target": "run_ica",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/ica_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/ICA_Dual_FNC.md"
+      ],
+      "capabilities": [
+        "group spatial ICA",
+        "dual regression",
+        "FNC"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.gradients",
+      "package": "function",
+      "label_zh": "连接梯度／对齐／空间零模型",
+      "entry_file": "run_gradients.m",
+      "config_file": "config/gradient_config.m",
+      "target": "run_gradients",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/gradient_inputs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/Gradients_Spatial_Nulls.md"
+      ],
+      "capabilities": [
+        "gradients",
+        "alignment",
+        "spatial nulls"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.network",
+      "package": "function",
+      "label_zh": "网络拓扑／社区／保度零网络／NBS",
+      "entry_file": "run_network.m",
+      "config_file": "config/network_config.m",
+      "target": "run_network",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/network_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/Network_NBS.md"
+      ],
+      "capabilities": [
+        "graph metrics",
+        "communities",
+        "NBS"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.dcm",
+      "package": "function",
+      "label_zh": "任务／谱DCM与模型比较",
+      "entry_file": "run_dcm.m",
+      "config_file": "config/dcm_config.m",
+      "target": "run_dcm",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/dcm_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/DCM_and_PEB.md"
+      ],
+      "capabilities": [
+        "task DCM",
+        "spectral DCM",
+        "candidate model comparison"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.dcm_group",
+      "package": "function",
+      "label_zh": "PEB／BMR／BMA",
+      "entry_file": "run_dcm_group.m",
+      "config_file": "config/dcm_group_config.m",
+      "target": "run_dcm_group",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/dcm_group_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/DCM_and_PEB.md"
+      ],
+      "capabilities": [
+        "PEB",
+        "BMR",
+        "BMA"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.pcm",
+      "package": "function",
+      "label_zh": "固定／多成分PCM与交叉验证",
+      "entry_file": "run_pcm.m",
+      "config_file": "config/pcm_config.m",
+      "target": "run_pcm",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "pcmPath": {
+          "required": true,
+          "kind": "directory",
+          "note_zh": "原生PCM依赖目录，不是研究输入文件。"
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/pcm_subjects_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/PCM.md"
+      ],
+      "capabilities": [
+        "fixed/component PCM",
+        "individual/group CV"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile",
+        "pcmPath"
+      ]
+    },
+    {
+      "id": "function.behavior",
+      "package": "function",
+      "label_zh": "RW／Softmax／DDM行为模型",
+      "entry_file": "run_behavior.m",
+      "config_file": "config/behavior_config.m",
+      "target": "run_behavior",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/behavior_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/Behaviour_Models.md"
+      ],
+      "capabilities": [
+        "rw_softmax",
+        "ddm"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.rest_extended",
+      "package": "function",
+      "label_zh": "熵／时间尺度／同源连接",
+      "entry_file": "run_rest_extended.m",
+      "config_file": "config/rest_extended_config.m",
+      "target": "run_rest_extended",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/rest_extended_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/Extended_Rest.md"
+      ],
+      "capabilities": [
+        "entropy",
+        "timescales",
+        "homotopic"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.regularized_fc",
+      "package": "function",
+      "label_zh": "OAS收缩连接",
+      "entry_file": "run_regularized_fc.m",
+      "config_file": "config/regularized_fc_config.m",
+      "target": "run_regularized_fc",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "manifestFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "manifestFile": [
+          "config/regularized_fc_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/OAS_SVM_Regulated_FC_MVPA_RSA.md"
+      ],
+      "capabilities": [
+        "OAS covariance/FC"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "manifestFile"
+      ]
+    },
+    {
+      "id": "function.background_fc",
+      "package": "function",
+      "label_zh": "任务背景连接",
+      "entry_file": "run_background_fc.m",
+      "config_file": "config/background_config.m",
+      "target": "run_background_fc",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "spmMat": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "maskFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "roiFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/FC.md"
+      ],
+      "capabilities": [
+        "background connectivity"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "spmMat",
+        "maskFile",
+        "roiFile"
+      ]
+    },
+    {
+      "id": "function.ppi",
+      "package": "function",
+      "label_zh": "单模型PPI／gPPI",
+      "entry_file": "run_ppi.m",
+      "config_file": "config/ppi_config.m",
+      "target": "run_ppi",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "spmMat": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "seedMask": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "analysisMask": {
+          "required": false,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/PPI_gPPI.md"
+      ],
+      "capabilities": [
+        "ppi",
+        "gppi"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "spmMat",
+        "seedMask",
+        "analysisMask"
+      ]
+    },
+    {
+      "id": "function.ppi_batch",
+      "package": "function",
+      "label_zh": "多被试/session/run PPI／gPPI",
+      "entry_file": "run_ppi_batch.m",
+      "config_file": "config/ppi_config.m",
+      "target": "run_ppi_batch",
+      "style": "cfg_manifest",
+      "role": "analysis",
+      "inputs": {
+        "argument_manifest": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "argument_manifest": [
+          "config/ppi_runs_template.tsv"
+        ]
+      },
+      "docs": [
+        "docs/PPI_gPPI.md"
+      ],
+      "capabilities": [
+        "ppi",
+        "gppi"
+      ],
+      "notes_zh": "真实签名run_ppi_batch(cfg,manifest)；不能伪装为仅cfg入口。表中每行对应一个源模型session。",
+      "input_names": [
+        "argument_manifest"
+      ]
+    },
+    {
+      "id": "function.prepare_dcm_spm",
+      "package": "function",
+      "label_zh": "已估计任务SPM到私有VOI/DCM输入",
+      "entry_file": "matlab/+cog/prepare_dcm_spm.m",
+      "config_file": "",
+      "target": "cog.prepare_dcm_spm",
+      "style": "dcm_spm",
+      "role": "preparation",
+      "inputs": {
+        "spmMat": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "roiManifest": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "sessionIndex": {
+          "required": true,
+          "kind": "value",
+          "note_zh": ""
+        },
+        "TESeconds": {
+          "required": true,
+          "kind": "value",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "roiManifest": [
+          {
+            "columns": [
+              "name",
+              "mask_file"
+            ],
+            "source": "matlab/+cog/prepare_dcm_spm.m"
+          }
+        ]
+      },
+      "docs": [
+        "docs/DCM_and_PEB.md"
+      ],
+      "capabilities": [],
+      "notes_zh": "真实签名(spmMat,roiManifest,sessionIndex,TESeconds,newOutput)；TE不得从默认值猜测。原生函数写dcm_data.mat供run_dcm使用。",
+      "input_names": [
+        "spmMat",
+        "roiManifest",
+        "sessionIndex",
+        "TESeconds"
+      ]
+    },
+    {
+      "id": "function.prediction",
+      "package": "function",
+      "label_zh": "嵌套CPM／Ridge预测",
+      "entry_file": "run_prediction.m",
+      "config_file": "config/prediction_config.m",
+      "target": "run_prediction",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "dataFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/Nested_Prediction.md"
+      ],
+      "capabilities": [
+        "cpm",
+        "nested ridge"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "dataFile"
+      ]
+    },
+    {
+      "id": "function.encoding",
+      "package": "function",
+      "label_zh": "Ridge／Banded Ridge编码",
+      "entry_file": "run_encoding.m",
+      "config_file": "config/encoding_config.m",
+      "target": "run_encoding",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "dataFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/Encoding.md"
+      ],
+      "capabilities": [
+        "ridge",
+        "banded_ridge",
+        "continuous lag encoding"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "dataFile"
+      ]
+    },
+    {
+      "id": "function.multivariate",
+      "package": "function",
+      "label_zh": "PLS／CCA／中介分析",
+      "entry_file": "run_multivariate.m",
+      "config_file": "config/multivariate_config.m",
+      "target": "run_multivariate",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "dataFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/PLS_CCA_Mediation.md"
+      ],
+      "capabilities": [
+        "pls_covariance",
+        "cca",
+        "pls_regression",
+        "mediation"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "dataFile"
+      ]
+    },
+    {
+      "id": "function.naturalistic",
+      "package": "function",
+      "label_zh": "ISC／ISFC／SRM／事件分段",
+      "entry_file": "run_naturalistic.m",
+      "config_file": "config/naturalistic_config.m",
+      "target": "run_naturalistic",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "dataFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/ISC_ISFC_SRM_Events.md"
+      ],
+      "capabilities": [
+        "isc",
+        "isfc",
+        "srm",
+        "eventseg"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "dataFile"
+      ]
+    },
+    {
+      "id": "function.transfer",
+      "package": "function",
+      "label_zh": "冻结模型跨域泛化",
+      "entry_file": "run_transfer.m",
+      "config_file": "config/transfer_config.m",
+      "target": "run_transfer",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "dataFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/Transfer_Reliability.md"
+      ],
+      "capabilities": [
+        "cross-task/session/subject transfer"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "dataFile"
+      ]
+    },
+    {
+      "id": "function.reliability",
+      "package": "function",
+      "label_zh": "ICC／分半信度",
+      "entry_file": "run_reliability.m",
+      "config_file": "config/reliability_config.m",
+      "target": "run_reliability",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "dataFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/Transfer_Reliability.md"
+      ],
+      "capabilities": [
+        "icc",
+        "split_half"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "dataFile"
+      ]
+    },
+    {
+      "id": "function.linear_decode",
+      "package": "function",
+      "label_zh": "线性SVM／逻辑回归",
+      "entry_file": "run_linear_decode.m",
+      "config_file": "config/linear_decode_config.m",
+      "target": "run_linear_decode",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "dataFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/OAS_SVM_Regulated_FC_MVPA_RSA.md"
+      ],
+      "capabilities": [
+        "linear SVM",
+        "logistic"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "dataFile"
+      ]
+    },
+    {
+      "id": "function.rsa_ceiling",
+      "package": "function",
+      "label_zh": "RSA噪声天花板／被试Bootstrap",
+      "entry_file": "run_rsa_ceiling.m",
+      "config_file": "config/rsa_ceiling_config.m",
+      "target": "run_rsa_ceiling",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "dataFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {},
+      "docs": [
+        "docs/Beta_MVPA_RSA.md"
+      ],
+      "capabilities": [
+        "RDM comparison",
+        "noise ceiling",
+        "subject bootstrap"
+      ],
+      "notes_zh": "",
+      "input_names": [
+        "dataFile"
+      ]
+    },
+    {
+      "id": "function.roi_patterns",
+      "package": "function",
+      "label_zh": "Beta-series／ROI解码／RSA",
+      "entry_file": "run_roi_patterns.m",
+      "config_file": "config/roi_patterns_config.m",
+      "target": "run_roi_patterns",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "catalogFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        },
+        "roiFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "catalogFile": [
+          {
+            "columns": [
+              "estimate_id",
+              "subject",
+              "session",
+              "run",
+              "condition",
+              "image_path",
+              "mask_path",
+              "volume_index"
+            ],
+            "source": "run_roi_patterns.m"
+          }
+        ]
+      },
+      "docs": [
+        "docs/Beta_MVPA_RSA.md"
+      ],
+      "capabilities": [
+        "beta_series",
+        "decode",
+        "rsa"
+      ],
+      "notes_zh": "catalogFile优先使用GLM原包已生成的beta_catalog.tsv，不重新估计GLM；所选target/CV/交换块可能要求额外列。",
+      "input_names": [
+        "catalogFile",
+        "roiFile"
+      ]
+    },
+    {
+      "id": "function.searchlight",
+      "package": "function",
+      "label_zh": "Searchlight解码／RSA",
+      "entry_file": "run_searchlight.m",
+      "config_file": "config/searchlight_config.m",
+      "target": "run_searchlight",
+      "style": "cfg",
+      "role": "analysis",
+      "inputs": {
+        "catalogFile": {
+          "required": true,
+          "kind": "file",
+          "note_zh": ""
+        }
+      },
+      "templates": {
+        "catalogFile": [
+          {
+            "columns": [
+              "estimate_id",
+              "subject",
+              "session",
+              "run",
+              "condition",
+              "image_path",
+              "mask_path",
+              "volume_index"
+            ],
+            "source": "run_searchlight.m"
+          }
+        ]
+      },
+      "docs": [
+        "docs/Searchlight.md"
+      ],
+      "capabilities": [
+        "searchlight decode",
+        "searchlight RSA"
+      ],
+      "notes_zh": "catalogFile优先使用GLM原包已生成的beta_catalog.tsv，不重新估计GLM；所选target/CV/交换块可能要求额外列。",
+      "input_names": [
+        "catalogFile"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+name	role	source	version_policy	bundled
+MATLAB	core and tests	https://www.mathworks.com/products/matlab.html	R2025b tested	no
+SPM	NIfTI IO and later PPI/DCM	https://github.com/spm/spm	SPM12 revision7771 locally tested	no
+CoSMoMVPA	neighborhood/decoding method reference	https://github.com/CoSMoMVPA/CoSMoMVPA	installed source inspected; current decoding/neighborhood runtime uses this package MATLAB kernels, not CoSMo calls	no
+DPABI	method reference for ALFF/fALFF/ReHo	https://github.com/Chaogan-Yan/DPABI	algorithms independently checked, not vendored	no
+GIFT	spatial ICA backend icatb_fastICA	https://github.com/trendscenter/gift	commit df369a2f73aab06c4fe97a10ffab841320722281; original copyright retained; no top-level license found; selected file installed locally only	no
+BrainSpace	connectivity gradients alignment and spatial nulls	https://github.com/MICA-MNI/BrainSpace	commit 8730de88ae32c4f88eeaf16ef2a6e53c5c32dc34; BSD-3-Clause retained locally	no
+GLHMM	Gaussian HMM native Python backend	https://github.com/vidaurre/glhmm	PyPI1.1.2 isolated Python3.12; GPL-3.0 wheel license retained; requirements lock and provenance in environment root	no
+PCM MATLAB	pattern component models and native optimizers	https://github.com/jdiedrichsen/pcm_toolbox	existing local ZIP snapshot without reliable commit; critical file hashes in FUNCTION_PROVENANCE.json; original MIT license retained	no
+PyDDM	constant binary drift diffusion native backend	https://github.com/mwshinn/PyDDM	PyPI0.9.0 isolated Python3.12; original MIT wheel license and additional requirements lock retained	no
+BrainIAK	ISC/ISFC/SRM/event-method reference	https://github.com/brainiak/brainiak	current mathematical baseline independently implemented in MATLAB; not installed or called	no
+nibabel	compressed NIfTI read-only HCP example preparation	https://github.com/nipy/nibabel	5.4.2 present in isolated Function Python environment; original package metadata/license retained	no
+BCT	native Louvain participation and binary degree rewiring	https://sites.google.com/site/bctnet/	official ZIP 2019_03_03_BCT; original author notices retained; no archive-wide LICENSE found; provenance/hashes in external install	no
+scikit-learn OAS	formula reference and independent test oracle only	https://scikit-learn.org/stable/modules/generated/oas-function.html	1.9.1 existing isolated environment; original BSD package metadata retained; MATLAB OAS core has no Python runtime requirement	no

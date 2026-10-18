@@ -1,0 +1,2 @@
+subject	session	run	data_file
+sub01	ses01	task01	/path/dcm_data.mat

@@ -1,0 +1,5 @@
+subject	session	run	bold	t1	input_stage	sbref	metadata	events	fieldmaps	provenance	sdc_method	discard_volumes	event_reference	realign_weight	fieldmap_epi
+S01	baseline	language_run1	E:/YOUR_DATA/S01/bold_run1.nii.gz	E:/YOUR_DATA/S01/t1.nii.gz	raw	E:/YOUR_DATA/S01/sbref_run1.nii.gz	E:/YOUR_DATA/S01/bold_run1.json		E:/YOUR_DATA/S01/fieldmaps_run1.json		fsl_topup				
+S01	baseline	language_run2	E:/YOUR_DATA/S01/bold_run2.nii.gz	E:/YOUR_DATA/S01/t1.nii.gz	raw	E:/YOUR_DATA/S01/sbref_run2.nii.gz	E:/YOUR_DATA/S01/bold_run2.json		E:/YOUR_DATA/S01/fieldmaps_run2.json		fsl_topup				
+S02	baseline	language_run1	E:/YOUR_DATA/S02/bold_run1.nii.gz	E:/YOUR_DATA/S02/t1.nii.gz	raw	E:/YOUR_DATA/S02/sbref_run1.nii.gz	E:/YOUR_DATA/S02/bold_run1.json		E:/YOUR_DATA/S02/fieldmaps_run1.json		fsl_topup				
+S02	baseline	language_run2	E:/YOUR_DATA/S02/bold_run2.nii.gz	E:/YOUR_DATA/S02/t1.nii.gz	raw	E:/YOUR_DATA/S02/sbref_run2.nii.gz	E:/YOUR_DATA/S02/bold_run2.json		E:/YOUR_DATA/S02/fieldmaps_run2.json		fsl_topup				

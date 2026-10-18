@@ -1,0 +1,2 @@
+subject	session	run	bold	wm	csf	motion	alignment
+100206		tfMRI_LANGUAGE_LR	../derivatives/hcp_sdc_spatial_validation/sub-100206/tfMRI_LANGUAGE_LR/realigned_finite.nii	../derivatives/hcp_sdc_spatial_validation/sub-100206/tfMRI_LANGUAGE_LR/anat/c2100206_3T_T1w_MPR1.nii	../derivatives/hcp_sdc_spatial_validation/sub-100206/tfMRI_LANGUAGE_LR/anat/c3100206_3T_T1w_MPR1.nii	../derivatives/hcp_sdc_realign_validation/sub-100206/tfMRI_LANGUAGE_LR/rp_bold_unwarped_jac.txt	world_aligned

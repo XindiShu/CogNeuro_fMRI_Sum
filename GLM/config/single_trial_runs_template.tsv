@@ -1,0 +1,3 @@
+subject	session	run	bold	events	confounds	temporal_state
+pilotA	baseline	task_run1	E:/YOUR_DATA/sub-pilotA/ses-baseline/task_run1_spatial_bold.nii	E:/YOUR_DATA/sub-pilotA/ses-baseline/task_run1_events.tsv	E:/YOUR_DATA/sub-pilotA/ses-baseline/task_run1_confounds.tsv	unfiltered_unregressed
+pilotB	baseline	task_run2	E:/YOUR_DATA/sub-pilotB/ses-baseline/task_run2_spatial_bold.nii	E:/YOUR_DATA/sub-pilotB/ses-baseline/task_run2_events.tsv	E:/YOUR_DATA/sub-pilotB/ses-baseline/task_run2_confounds.tsv	unfiltered_unregressed

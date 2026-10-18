@@ -1,0 +1,6 @@
+{
+  "Atlases": [
+    {"Name": "YourLabels", "Path": "D:/YOUR_ATLASES/labels_in_spm_tpm_space.nii", "Kind": "labels", "Space": "spm_tpm_mni"},
+    {"Name": "YourProbability", "Path": "D:/YOUR_ATLASES/probability_in_spm_tpm_space.nii", "Kind": "probability", "Space": "spm_tpm_mni"}
+  ]
+}

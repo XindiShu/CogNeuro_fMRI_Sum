@@ -1,0 +1,5 @@
+subject	session	run	bold	t1	input_stage	anatomy_channels	atlases
+S01		run1	D:/YOUR_DATA/S01/bold_run1.nii.gz	D:/YOUR_DATA/S01/T1.nii.gz	raw	D:/YOUR_DATA/S01/channels.json	D:/YOUR_ATLASES/atlases.json
+S01		run2	D:/YOUR_DATA/S01/bold_run2.nii.gz	D:/YOUR_DATA/S01/T1.nii.gz	raw	D:/YOUR_DATA/S01/channels.json	D:/YOUR_ATLASES/atlases.json
+S02		run1	D:/YOUR_DATA/S02/bold_run1.nii.gz	D:/YOUR_DATA/S02/T1.nii.gz	raw	D:/YOUR_DATA/S02/channels.json	D:/YOUR_ATLASES/atlases.json
+S02		run2	D:/YOUR_DATA/S02/bold_run2.nii.gz	D:/YOUR_DATA/S02/T1.nii.gz	raw	D:/YOUR_DATA/S02/channels.json	D:/YOUR_ATLASES/atlases.json

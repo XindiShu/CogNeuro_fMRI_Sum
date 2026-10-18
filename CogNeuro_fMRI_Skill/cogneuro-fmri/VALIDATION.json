@@ -1,0 +1,352 @@
+{
+  "schema_version": 2,
+  "skill_version": "0.4.0",
+  "validation_date": "2026-10-18",
+  "release_stage": "native_toolkit_connection_layer",
+  "scope": "Invoke existing installed toolkit interfaces; no new analysis algorithms or toolkit method revalidation.",
+  "implemented": [
+    "read_only_installed_toolkit_entry_config_template_and_documentation_inspection",
+    "adaptive_goal_paradigm_stage_and_missing_input_dialogue",
+    "native_method_selection_independent_of_bold_or_legacy_four_route_whitelist",
+    "confirmed_fact_provenance_and_project_owned_native_template_tsv_generation",
+    "current_config_source_hash_review_and_in_memory_native_field_overrides",
+    "exact_typed_complex_native_values_from_confirmed_mat_variables",
+    "config_only_prepare_without_invoking_analysis_or_native_execute_false_branches",
+    "original_entry_dispatch_for_six_native_calling_styles",
+    "preserve_original_native_execute_semantics",
+    "review_confirmation_source_checks_isolated_process_new_outputs_and_native_return_receipt",
+    "native_artifact_driven_sequential_stage_handoff_in_skill_instructions"
+  ],
+  "interface_source_verification": {
+    "total": 40,
+    "by_package": {
+      "preprocessing": 9,
+      "glm": 4,
+      "function": 27
+    },
+    "by_role": {
+      "analysis": 36,
+      "example": 2,
+      "validation": 1,
+      "preparation": 1
+    },
+    "unmapped_top_level_launchers": {
+      "preprocessing": [],
+      "glm": [],
+      "function": []
+    },
+    "missing_registered_source_or_config": [],
+    "evidence_level": "Source files, signatures, configuration dependencies and native templates inspected; not per-method numerical execution."
+  },
+  "python_connection_and_compatibility_tests": {
+    "total": 119,
+    "passed": 119,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "real_participant_data": false
+  },
+  "matlab_mock_dispatch_tests": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "incomplete": 0,
+    "test_scope": "mock_entry_argument_wiring_only",
+    "real_toolkit_analysis_executed": false
+  },
+  "matlab_code_analyzer": {
+    "file": "matlab/cogneuro_toolkit_dispatch.m",
+    "issues": []
+  },
+  "original_toolkit_preservation": {
+    "toolkit_files_unchanged": 621,
+    "protected_files_unchanged": 130
+  },
+  "real_toolkit_analysis_executed_this_release": false,
+  "real_participant_data_tested_this_release": false,
+  "all_registered_methods_numerically_revalidated": false,
+  "scientific_model_quality_verified": false,
+  "known_limits": [
+    "Forty registered interfaces include two examples and one developer validation entry; they are not forty independent algorithms.",
+    "Generic dispatch was checked with mock entry functions. Successful execution of every native method is not claimed.",
+    "Native model constraints, convergence, data internals and third-party dependencies remain the selected toolkit responsibility and need research-specific inspection.",
+    "Directory inputs record directory metadata; full recursive contents and nested references inside MAT files are not all frozen.",
+    "Workflow stage selection and artifact handoff are performed by Codex following skill instructions; an arbitrary dependency graph is not automatically inferred by a single CLI command.",
+    "Filenames do not prove preprocessing history. Acquisition facts, trial times, model networks and sample partitions require evidence.",
+    "Completion records engineering outputs and native returned statuses; they do not establish scientific validity.",
+    "The confirmation phrase records human approval already obtained; it does not authenticate a user."
+  ],
+  "legacy_specialized_adapters": {
+    "routes": [
+      "preprocess",
+      "preprocess_glm",
+      "glm",
+      "fc"
+    ],
+    "status": "Retained for existing projects; new studies use toolkit_method and native installed options.",
+    "scope_note": "Historical narrow-route limits do not restrict the new generic toolkit interfaces."
+  },
+  "historical_validation": {
+    "release_0_3_1": {
+      "schema_version": 1,
+      "skill_version": "0.3.1",
+      "validation_date": "2026-10-18",
+      "release_stage": "full_spatial_branch_synthetic_validated",
+      "implemented": [
+        "v0.1_inventory_dialogue_provenance_and_immutable_plan_revisions",
+        "structured_confirmed_parameter_validation_for_fc_and_condition_glm",
+        "private_input_copy_and_gzip_expansion",
+        "native_fc_masked_finite_grid_tr_roi_projection_estimator_preflight",
+        "native_spm_design_specification_and_contrast_estimability_before_estimation",
+        "preallocation_nuisance_and_design_budget_guards",
+        "review_digest_and_explicit_confirmation_for_exact_attempt",
+        "frozen_source_private_input_planner_adapter_toolkit_spm_code_validation",
+        "independent_matlab_processes_and_new_output_directory_per_attempt",
+        "completion_receipt_with_required_maps_and_output_sha256",
+        "failure_preservation_no_automatic_retry_or_overwrite",
+        "offline_source_status_and_duplicate_execution_state_protection",
+        "raw_nifti_preprocessing_native_spm_adapter_with_official_config_hash_and_in_memory_scientific_overrides",
+        "standalone_preprocessing_and_exact_confirmed_preprocessing_glm_policy",
+        "completion_record_handoff_with_identity_frame_tr_grid_and_one_time_dummy_event_shift_checks",
+        "native_24_motion_regressors_and_fd_with_executed_radius_provenance",
+        "deferred_real_spm_design_preflight_and_estimation_only_after_handoff_checks",
+        "separate_matlab_process_per_pipeline_stage_with_runtime_artifact_and_job_hash_checks",
+        "reproducible_template_derived_spatial_phantom_and_independent_native_record_geometry_audit",
+        "version_030_project_read_and_new_revision_compatibility"
+      ],
+      "synthetic_python_tests": {
+        "total": 103,
+        "passed": 103,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "real_participant_data": false
+      },
+      "synthetic_native_matlab_tests": {
+        "total": 44,
+        "passed": 44,
+        "failed": 0,
+        "incomplete": 0,
+        "by_suite": {
+          "test_fc_adapter": 13,
+          "test_glm_adapter": 10,
+          "test_preprocess_adapter": 11,
+          "test_preprocess_handoff": 10
+        },
+        "real_participant_data": false,
+        "checks": [
+          "actual_spm_fc_and_glm_regression",
+          "known_A_gt_B_contrast_and_weights",
+          "actual_multi_run_realign_and_dummy_slice_timing_private_input_protection",
+          "native_config_hash_scientific_option_and_input_rejections",
+          "single_dummy_event_shift_extra_column_and_negative_onset_preservation",
+          "native_motion_24_plus_fd_and_actual_radius_numeric_agreement",
+          "handoff_completion_identity_mask_grid_nonfinite_frame_and_selection_rejections"
+        ],
+        "last_run_release": "0.3.0",
+        "rerun_for_this_validation_only_patch": false,
+        "scope_note": "Existing 44 adapter regressions carried forward; no production imaging calculation changed in 0.3.1."
+      },
+      "real_participant_data_tested": false,
+      "scientific_model_quality_verified": false,
+      "execution_routes": {
+        "fc": {
+          "scope": "per-run ROI static FC; confirmed unfiltered_unregressed input",
+          "supported_estimators": [
+            "pearson",
+            "spearman",
+            "partial"
+          ],
+          "native_execution_tested_estimators": [
+            "pearson"
+          ]
+        },
+        "glm": {
+          "scope": "independent run-level condition classical GLM; canonical HRF",
+          "supported_serial_correlation": [
+            "AR(1)",
+            "FAST"
+          ],
+          "native_execution_tested_serial_correlation": [
+            "AR(1)"
+          ]
+        },
+        "preprocess": {
+          "scope": "raw NIfTI; no SDC; SPM segmentation backend and segmentation normalisation",
+          "implemented_stops": [
+            "realign",
+            "segment",
+            "smooth"
+          ],
+          "native_synthetic_execution_tested_stops": [
+            "realign",
+            "segment",
+            "smooth"
+          ],
+          "native_synthetic_steps_tested": [
+            "dummy removal",
+            "slice timing",
+            "realign",
+            "multi-run",
+            "spm segmentation",
+            "coregister estimate",
+            "normalise write",
+            "smoothing with custom prefix"
+          ],
+          "segment_smooth_skill_end_to_end_tested": true,
+          "real_participant_end_to_end_tested": false,
+          "full_spatial_test_scope": "Single 4mm template-derived phantom, 50 input frames/48 retained, no SDC; separate segment-only stop."
+        },
+        "preprocess_glm": {
+          "scope": "fixed confirmed raw-to-preprocessing-to-condition-GLM policy; deferred real design checks",
+          "implemented_bold_sources": [
+            "realigned",
+            "normalized_unsmoothed",
+            "smoothed"
+          ],
+          "native_synthetic_integration_bold_sources": [
+            "realigned",
+            "smoothed"
+          ],
+          "motion_handoff": "24 native motion columns plus FD; no tissue means",
+          "integration_motion_model": "none for synthetic zero-motion phantom; motion handoff checked separately",
+          "native_synthetic_handoff_only_bold_sources": [
+            "normalized_unsmoothed"
+          ],
+          "normalized_unsmoothed_glm_end_to_end_tested": false
+        }
+      },
+      "planning_only_routes": [
+        "ppi",
+        "task_dcm",
+        "spectral_dcm"
+      ],
+      "unimplemented": [
+        "PPI_DCM_execution",
+        "participant_data_end_to_end_validation",
+        "full_anatomical_and_scientific_QC",
+        "group_inference_and_cross_run_statistical_combination",
+        "automatic_incomplete_attempt_resume",
+        "BIDS_inheritance_DICOM_3D_series_NIfTI2",
+        "behavior_log_conversion",
+        "WM_CSF_tissue_mean_handoff",
+        "SDC_CAT_DARTEL_Shooting_and_atlas_skill_execution",
+        "raw_to_FC_or_DCM_cross_package_execution"
+      ],
+      "known_limits": [
+        "Caller confirmation phrase records prior human approval; it is not authentication.",
+        "Input processing declarations require reliable evidence; voxel values do not prove processing history.",
+        "Masked finiteness and same grid do not establish anatomical alignment or whole-image quality.",
+        "Memory budgets limit selected arrays, not total MATLAB/SPM process peak memory.",
+        "Pending status hashes frozen dependencies; completed status checks output existence/size with full hashes retained.",
+        "Code fingerprints cover selected m/p/MEX files, not a full operating-system/runtime environment image.",
+        "Complete denotes engineering outputs, not convergence or scientific inference acceptance.",
+        "Realign-only handoff is partial spatial preprocessing, not a completed anatomical preprocessing chain.",
+        "The first raw preflight cannot validate a future GLM design; exact confirmed policy gates it after preprocessing.",
+        "Raw route always requires a real T1 per native manifest contract, even for realign-only.",
+        "No automatic mask creation or resampling; tissue means are rejected rather than fabricated.",
+        "Full spatial validation uses one coarse template-derived phantom; it is not independent anatomical ground truth or participant validation.",
+        "Known synthetic coregistration displacement is checked against a 4mm test bound, not a scientific alignment acceptance criterion.",
+        "Smoothed input completed GLM; normalized_unsmoothed has separate native handoff validation, not another GLM estimation.",
+        "No new SDC, CAT, group-normalisation, tissue-mean, PPI or DCM execution route is added in this patch."
+      ],
+      "prior_isolated_cli_integration_v02": {
+        "status": "passed",
+        "routes": [
+          "fc",
+          "glm"
+        ],
+        "source_files_unchanged": 9,
+        "commands": [
+          "scan",
+          "plan",
+          "prepare",
+          "execute",
+          "execution-status"
+        ],
+        "actual_matlab_preflight_and_estimation": true,
+        "approval_simulated_for_development_only": true,
+        "fc_independent_pearson_tolerance": 1e-06,
+        "glm_required_maps_present_in_receipt": true
+      },
+      "isolated_cli_integration": {
+        "status": "passed",
+        "route": "preprocess_glm",
+        "primary_bold_source": "smoothed",
+        "stages": [
+          "preprocessing",
+          "handoff",
+          "glm_preflight",
+          "glm_execute"
+        ],
+        "actual_matlab_preflight_and_estimation": true,
+        "approval_simulated_for_development_only": true,
+        "real_participant_data": false,
+        "source_files_prior_and_config_unchanged": 8,
+        "receipt_outputs_verified": 62,
+        "spatial_audit": {
+          "status": "passed",
+          "real_participant_data": false,
+          "segment_batch_matches_executed_configuration": true,
+          "coreg_batch_matches_executed_configuration": true,
+          "normalise_batch_matches_executed_configuration": true,
+          "normalized_and_smoothed_grid_checked": true,
+          "custom_smoothing_prefix": "g",
+          "smoothing_fwhm_mm": [
+            4,
+            4,
+            4
+          ],
+          "retained_frames": 48,
+          "tr_seconds": 2,
+          "dimensions": [
+            41,
+            48,
+            41
+          ],
+          "initial_known_coreg_displacement_mm": 8,
+          "remaining_coreg_displacement_mm": 0.15816471403590937,
+          "known_A_gt_B_mean_contrast": 4.928766745071198,
+          "primary_glm_input": "smoothed",
+          "alternate_handoff_input": "normalized_unsmoothed",
+          "both_handoffs_identical_events_and_confounds": true,
+          "segment_only_stop_checked": true,
+          "separate_segment_test_approval": "synthetic_development_only",
+          "scientific_qc_passed": false
+        },
+        "fixture_limits": [
+          "Template-derived synthetic phantom, not independent anatomical ground truth or participant validation.",
+          "Coarse 4mm grid, 4mm segment sampling, linear interpolation, STC/QC off, no SDC: engineering choices only.",
+          "Task signal and mask derive from prior anatomy, never from fitted statistics."
+        ],
+        "limitations": [
+          "Single template-derived 4mm phantom, no SDC, canonical HRF/AR(1), motion_model=none; no participant/scientific-quality claim."
+        ]
+      },
+      "imaging_adapter_source_hashes_unchanged_since": "0.3.0",
+      "prior_isolated_cli_integration_v03": {
+        "status": "passed",
+        "real_participant_data": false,
+        "approval_simulated_for_development_only": true,
+        "source_files_and_config_unchanged": 6,
+        "retained_frames": 64,
+        "event_shift_seconds": 4.0,
+        "motion_columns_including_fd": 25,
+        "limitations": [
+          "Synthetic realign-only spatial path; no segmentation/normalisation/smoothing validation in this integration",
+          "Synthetic motion_model=none; full motion handoff is validated separately"
+        ],
+        "route": "preprocess_glm",
+        "stages": [
+          "preprocessing",
+          "handoff",
+          "glm_preflight",
+          "glm_execute"
+        ],
+        "actual_matlab_preflight_and_estimation": true,
+        "receipt_hashes_verified": true,
+        "known_A_gt_B_mean_contrast": 19.64089665730794
+      }
+    }
+  }
+}

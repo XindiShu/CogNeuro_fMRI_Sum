@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "plugin_version": "0.1.1",
+  "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "bytes": 352,
+      "sha256": "cac3fee990eb9979ba33ccb06822a7e1c7714a1e8f473ff1448f8a05dc56b570"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 38,
+      "sha256": "f371675b2c5fbb4ee895b6d70f27687ba63287a5dc7f536e9f04c22928de881b"
+    },
+    {
+      "path": "INSTALL_ZH.md",
+      "bytes": 5608,
+      "sha256": "6987fbdd873634f6f7aaf662089b022e474ca011380728864657198bf6a4e21b"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/plugin.json",
+      "bytes": 1418,
+      "sha256": "1b4a8c0af453fec0b44e29ce55669e5c319af027c31758a3cc3126e86a6d758c"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/agents/openai.yaml",
+      "bytes": 434,
+      "sha256": "7a5c33e3471d336fb1b2355e9bfaf78d094c4c05cefbd23dce1135c86a21af54"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/answers.example.json",
+      "bytes": 2244,
+      "sha256": "8d7650139c11b1eb2f75467fb41cac6ec4faaa0c07ec151e551d3a495f612eaa"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/execution-profiles.example.json",
+      "bytes": 6698,
+      "sha256": "d981bd7ccdb98abb2a6c702d99a062c912de1edbaf8cbb0665ee03c10f7e78b7"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/native-answers.example.json",
+      "bytes": 2084,
+      "sha256": "bb2ee1def96ffd5111cb03d6fa7bd69c658b7432fc4444879d5c0e1a8a49ebb0"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/assets/toolkit-registry.json",
+      "bytes": 34661,
+      "sha256": "a2a31395140d5f9fb7cc103ac16a046233492bf68ed4128cf15724905b733f38"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_fc_adapter.m",
+      "bytes": 14058,
+      "sha256": "e994f986dd962a46a6afc35357885dc2be71af1a6e63a392661a29c789f8c78c"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_glm_adapter.m",
+      "bytes": 22763,
+      "sha256": "5e1e48e8618a0c13648686d0d51e5683aeaccdd1f421c064b2a34f5e315db433"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_job.m",
+      "bytes": 1565,
+      "sha256": "da3d7f897020480cebc6dd7dc76b4771e65031bfe4c582d22502d3964a99e837"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_preprocess_adapter.m",
+      "bytes": 25274,
+      "sha256": "1e76972f2738fff429e39fa83a79eaa1c651bc8d010458b388d175b15ddd9d29"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_preprocess_handoff.m",
+      "bytes": 20060,
+      "sha256": "fb92874bfe4e98f48c6c10d7fd3f4b95e9534c6afda09880389e75fe9855047c"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/matlab/cogneuro_toolkit_dispatch.m",
+      "bytes": 7897,
+      "sha256": "1db063ffa674865d8caab85e4b41861039b01824fb7aaa7cb243b370b071a75c"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/PACKAGE_MANIFEST.json",
+      "bytes": 6514,
+      "sha256": "1921431224810012caba5766108b97db73eaabf320cea18358219e65ad56e486"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/references/interface-map.md",
+      "bytes": 5422,
+      "sha256": "afdb1ad9e2cb2f931e14cfe85bde89dac3c3d9f7636b1d4f3504108bb9b82d88"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/references/toolkit-adapters.md",
+      "bytes": 4816,
+      "sha256": "ac716c13fccc657363e3735fe2dc743fd22e03e174c46c6c00d84fd2acfb443c"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/references/workflow-spec.md",
+      "bytes": 4716,
+      "sha256": "8fd2ebe75b5d0959e060fbd3352dd1319d90cf98f80d112e26c80f559fcd4f48"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/execution.py",
+      "bytes": 31999,
+      "sha256": "7c7555bed40a80a4e49032f6735dac85f04a56a1d2be92a603d50a0836367181"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/fmri_project.py",
+      "bytes": 29833,
+      "sha256": "d67a62d0d06e7c3670b9aa403dd02749ce8d18f85bcd70649e1e5ea86558868b"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/inventory.py",
+      "bytes": 17734,
+      "sha256": "f60073923ff1c88fd145cccd0ab8ee0e442202b8be9b4b5e2f5fa5646788146a"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/native_jobs.py",
+      "bytes": 7897,
+      "sha256": "1d125dd653a9a75b87367ed38f42bd20095d539b237a9d4006d4820f4ebdbf01"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/native_plan.py",
+      "bytes": 12139,
+      "sha256": "fe2215eecc80b9214d02a90ab1e50b35720feaa2cdf6049ceb3069d3d70103eb"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/preprocessing.py",
+      "bytes": 17078,
+      "sha256": "c501f55c98e17036c583c2320916a14a0b05168e66784d2f929129b6ff8d4f7d"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/scripts/toolkit_catalog.py",
+      "bytes": 8004,
+      "sha256": "2919c0fcf590bde4fee1e9139d612696f275c63aba8a9e76f5e31c56b786d68a"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/SKILL.md",
+      "bytes": 7534,
+      "sha256": "3ca5ba567d4d96b1a0813cd468ed78154295610ded47c9468ddf795115d2e708"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/helpers/cogneuro_check_spatial_integration.m",
+      "bytes": 7764,
+      "sha256": "83443b5354c579c6dcf0e32f5b20c320ae148ae475a10c943f56ce5664a2d25d"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/helpers/cogneuro_make_spatial_fixture.m",
+      "bytes": 5212,
+      "sha256": "357e7d9b9848ce04e788e71c2a2b0125462f4065a5f1d02265fca11474f8b953"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_fc_adapter.m",
+      "bytes": 11235,
+      "sha256": "5c7a804953030fef6477c932a619fb46cf2b7ef4564b22cfc62c5c39998ef2a2"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_glm_adapter.m",
+      "bytes": 9984,
+      "sha256": "62887826c4d089ce72195a6fdb5957ee1118d1916538c1607e25c2d5933a9997"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_native_dispatch.m",
+      "bytes": 7181,
+      "sha256": "29b7900da56f036d64507a665304b97d2ac2834b8e9faa0c390d195d67146fb0"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_preprocess_adapter.m",
+      "bytes": 11341,
+      "sha256": "8dd2e7424ead2e965276d93ba444f328ebfc12f1dd00bf0582b1918613f45100"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/matlab/test_preprocess_handoff.m",
+      "bytes": 10723,
+      "sha256": "e44a5e8eac37105948a23938b52c3b5aec59eae9d802fd207b64c9b249b5201c"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_preprocessing_integration.py",
+      "bytes": 9164,
+      "sha256": "f8f547bd0a4e6a23c323f47ee09bb8fbea471f0482fb8cb1ab0fa93984ba2931"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_spatial_integration.py",
+      "bytes": 6712,
+      "sha256": "6639d40ce4f806ea89873d68a7c8931995e52728087e466a24a7f634d78e33be"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/run_synthetic_integration.py",
+      "bytes": 9830,
+      "sha256": "138ec038b37462c53182bacc4b71784b7368d2b67764c544b0162e07e731e12e"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_execution.py",
+      "bytes": 31709,
+      "sha256": "b1392969a98aadc52c130e5ef13905b731287ff7751a6a2f6fdd9670efba8c97"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_inventory.py",
+      "bytes": 14049,
+      "sha256": "78055c21ea2c3c0c13c133e12c5d823748ff457d0452bbcd4567ebd091460dc9"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_native_interfaces.py",
+      "bytes": 11744,
+      "sha256": "d655057fb5d30954d0472070aca48ee988035fc6f88344b0ea64b72bb61fe083"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_preprocessing_execution.py",
+      "bytes": 24830,
+      "sha256": "58fce4786f0e0c2a5b793388072190ec1dc8dadc052a668a1b838ae0dfcbe850"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/tests/test_project.py",
+      "bytes": 20498,
+      "sha256": "91eb2876142ee35af24803e5c118f15ab2c8b8e7f0811b10533a41e6d2f8e544"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-fmri/VALIDATION.json",
+      "bytes": 16004,
+      "sha256": "f4623f0bdc74d21cdee20415977363339127b02d3965270883f4e2a88b53e42d"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-setup/agents/openai.yaml",
+      "bytes": 337,
+      "sha256": "bd75d408d4fc861f2a2178aaa4740e7c0a30c0d99d99fdef0cec49a29e4d870e"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-setup/scripts/environment.py",
+      "bytes": 7292,
+      "sha256": "805cdc0e1d88200431f1ada5956fc9638789b409128b6b26e75214318190bb6e"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/skills/cogneuro-setup/SKILL.md",
+      "bytes": 3754,
+      "sha256": "8882e00350850aa44b723ac2054c835d9d5d0f91534731079440198589708125"
+    },
+    {
+      "path": "plugins/cogneuro-fmri/tests/test_environment.py",
+      "bytes": 6045,
+      "sha256": "8a41d1172274ffd9b0f058959491261efd11385aad8762f9ce4188d22f1a59f7"
+    },
+    {
+      "path": "PUBLISHING_ZH.md",
+      "bytes": 3185,
+      "sha256": "8d73407dda66a293386d1cd7a0384137e9f2b1afbe35de33ee9dc9fd5ab00f8a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4305,
+      "sha256": "d81ef8a98f739121f896051597b1eb023ae3ed8fdd3802ace1ceaf885ce88188"
+    },
+    {
+      "path": "scripts/package_release.py",
+      "bytes": 4588,
+      "sha256": "99adb56eff3798bac565e309ea0a109390d5ef97c353af5e86e11585adaa5875"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 2584,
+      "sha256": "43eed2db5e07578e1f34794582906782ef6d49b6cd5b1801fec19da7219a1428"
+    }
+  ]
+}

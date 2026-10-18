@@ -1,0 +1,3 @@
+subject	session	run	data_file
+001	s1	rest1	prepared/001_connectivity_features.mat
+002	s1	rest1	prepared/002_connectivity_features.mat

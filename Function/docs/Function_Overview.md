@@ -1,0 +1,29 @@
+
+
+## 方法与启动脚本
+
+| 方法章                                                              | 主要入口                                                     | 配置                                                              | 主启动模板                                                    |
+| ---------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------- |
+| [功能连接：Pearson、秩相关、偏相关、种子与任务背景](FUNCTION_FC.md)                   | run_function / run_background_fc / run_prepare_inputs    | function_config, background_config, prepare_inputs_config       | [start_fc.m](../examples/start_fc.m)                     |
+| [自发活动：ALFF、fALFF 与 ReHo](FUNCTION_ALFF_REHO.md)                  | run_function                                             | function_config                                                 | [start_spectrum.m](../examples/start_spectrum.m)         |
+| [Beta-series、ROI 解码与 RSA：从估计单元到模式](FUNCTION_BETA_MVPA_RSA.md)    | run_roi_patterns                                         | roi_patterns_config, pattern_config                             | [start_beta.m](../examples/start_beta.m)                 |
+| [PPI / gPPI：任务条件怎样调制种子关系](FUNCTION_PPI.md)                       | run_ppi / run_ppi_batch                                  | ppi_config                                                      | [start_ppi.m](../examples/start_ppi.m)                   |
+| [基础网络指标、网络摘要与被试一样本统计](FUNCTION_BASIC_GRAPH_STATS.md)             | run_function                                             | function_config                                                 | [start_graph.m](../examples/start_graph.m)               |
+| [DCM、spectral DCM 与 PEB：从网络假设到参数](FUNCTION_DCM_AND_PEB.md)       | run_dcm / run_dcm_group                                  | dcm_config, dcm_group_config                                    | [start_dcm.m](../examples/start_dcm.m)                   |
+| [空间组 ICA、双回归与 FNC](FUNCTION_ICA_DUAL_FNC.md)                     | run_ica                                                  | ica_config                                                      | [start_ica.m](../examples/start_ica.m)                   |
+| [体积 Searchlight：把解码或 RSA 移动到每个局部球](FUNCTION_SEARCHLIGHT.md)      | run_searchlight                                          | searchlight_config, pattern_config                              | [start_searchlight.m](../examples/start_searchlight.m)   |
+| [连接梯度、跨人对齐与空间零模型](FUNCTION_GRADIENTS_SPATIAL_NULLS.md)           | run_gradients                                            | gradient_config                                                 | [start_gradient.m](../examples/start_gradient.m)         |
+| [被试层面的 CPM / Ridge：内折选择、外折检验](FUNCTION_NESTED_PREDICTION.md)     | run_prediction                                           | prediction_config                                               | [start_prediction.m](../examples/start_prediction.m)     |
+| [滑窗动态连接与平稳相位零模型](FUNCTION_DYNAMIC_FC.md)                         | run_dynamic_fc                                           | dynamic_fc_config                                               | [start_dynamic.m](../examples/start_dynamic.m)           |
+| [HMM、CAP 与 LEiDA：状态是什么、怎样统计变化](FUNCTION_HMM_CAP_LEIDA.md)        | run_states                                               | state_config                                                    | [start_states.m](../examples/start_states.m)             |
+| [PCM：用第二矩描述表示结构](FUNCTION_PCM.md)                                | run_pcm                                                  | pcm_config                                                      | [start_pcm.m](../examples/start_pcm.m)                   |
+| [Ridge / Banded Ridge 编码：从刺激特征预测脑反应](FUNCTION_ENCODING.md)       | run_encoding                                             | encoding_config                                                 | [start_encoding.m](../examples/start_encoding.m)         |
+| [RW 学习、Softmax、DDM 与潜变量事件导出](FUNCTION_BEHAVIOR_MODELS.md)        | run_behavior                                             | behavior_config                                                 | [start_behavior.m](../examples/start_behavior.m)         |
+| [自然刺激：ISC、ISFC、SRM 与有序事件分段](FUNCTION_INTERSUBJECT_SRM_EVENTS.md) | run_naturalistic                                         | naturalistic_config                                             | [start_naturalistic.m](../examples/start_naturalistic.m) |
+| [PLS、CCA 与线性中介：关联、预测和路径要分开](FUNCTION_PLS_CCA_MEDIATION.md)       | run_multivariate                                         | multivariate_config                                             | [start_multivariate.m](../examples/start_multivariate.m) |
+| [同源配对连接、三种熵与 ACF 时间尺度](FUNCTION_EXTENDED_REST.md)                | run_rest_extended                                        | rest_extended_config                                            | [start_extended.m](../examples/start_extended.m)         |
+| [社区、密度敏感性、保度零网络与 NBS](FUNCTION_NETWORK_NBS.md)                   | run_network                                              | network_config                                                  | [start_network.m](../examples/start_network.m)           |
+| [冻结泛化、六种 ICC 与匹配项目分半](FUNCTION_TRANSFER_RELIABILITY.md)          | run_transfer / run_reliability                           | transfer_config, reliability_config                             | [start_transfer.m](../examples/start_transfer.m)         |
+| [OAS 收缩连接、线性分类器与 RSA 噪声天花板](FUNCTION_REGULARIZED_FC_MVPA_RSA.md) | run_regularized_fc / run_linear_decode / run_rsa_ceiling | regularized_fc_config, linear_decode_config, rsa_ceiling_config | [start_regularized.m](../examples/start_regularized.m)   |
+
+##

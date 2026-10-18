@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/cvnlab/GLMsingle",
+  "commit": "1ab54a65edd3ea41a6133d4b4ecb78a9c7296684",
+  "archiveSha256": "FBDB19905B21825E422937B4CD70E802B9C7B9CE59A903310A0CE054B4F477D3",
+  "fracridgeRepository": "https://github.com/nrdg/fracridge",
+  "fracridgeCommit": "1ac49cae092cca3efa083451808c26989d17a3b5",
+  "fracridgeArchiveSha256": "BB760A0059C42500E646E43F15E4880975083CD09B162CAD410AF294446B1B46",
+  "scope": "Unmodified MATLAB function, utilities and HRF TSV; fracridge MATLAB functions and licenses only. No examples, data, repository metadata or documentation."
+}

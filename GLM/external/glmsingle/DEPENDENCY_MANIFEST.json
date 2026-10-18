@@ -1,0 +1,437 @@
+[
+  {
+    "path": "LICENSE",
+    "sha256": "C4074F88FC1D822ACB17EB12D8278BC096D8B1884D310F573574436C54FC94B7",
+    "bytes": 1520
+  },
+  {
+    "path": "matlab/fracridge/LICENSE",
+    "sha256": "BE29AB2BB99E886C5CDDCAFCEAB0871E02AA07C8A7F279F942D954F4CAF18778",
+    "bytes": 1311
+  },
+  {
+    "path": "matlab/fracridge/matlab/fracridge.m",
+    "sha256": "10EBBF9BA5BE453C65FA926EB870B354A5765AAF0FA19CCDB4111ECFDB522169",
+    "bytes": 19048
+  },
+  {
+    "path": "matlab/fracridge/matlab/interp1qr_license.txt",
+    "sha256": "E8B763247BB67732424741596C6D927C0BEF9E360EC11FD6597A2D5500B88F1C",
+    "bytes": 1312
+  },
+  {
+    "path": "matlab/fracridge/matlab/interp1qr.m",
+    "sha256": "BEF97E58FCA6DDF9B407642B8752157D539D8F04EFFF4F9EC5EDE7256FCA00BD",
+    "bytes": 3159
+  },
+  {
+    "path": "matlab/GLMestimatesingletrial.m",
+    "sha256": "F6C7B9AA3023B90F143FF1C1BBC69514D2DD58166E8E5BEA703BA76D72991129",
+    "bytes": 63318
+  },
+  {
+    "path": "matlab/utilities/absolutepath.m",
+    "sha256": "9FD9152806DCE309FB737E6988B886E0758239A4DA07ECB8827814E70B87AAFB",
+    "bytes": 737
+  },
+  {
+    "path": "matlab/utilities/axissquarify.m",
+    "sha256": "8178BF41162682A631D94164643F37B4E76B1AE89C59F1FA934986156B6EAE7D",
+    "bytes": 903
+  },
+  {
+    "path": "matlab/utilities/calccod.m",
+    "sha256": "655E7A869E60E2D26C6A44E38313A2992E4F054470A6FE80C8D059D0AAABA451",
+    "bytes": 4080
+  },
+  {
+    "path": "matlab/utilities/calccodcell.m",
+    "sha256": "FED4D04C5CA732EBC02FF55FE4E6666B18CC8BE94B8BC0EC6107C69223C8D167",
+    "bytes": 892
+  },
+  {
+    "path": "matlab/utilities/calccorrelation.m",
+    "sha256": "8C633EF71F58F6328BE756F1D735268F2B9924498941E16E933B352157AB05A2",
+    "bytes": 3942
+  },
+  {
+    "path": "matlab/utilities/calccpfov1D.m",
+    "sha256": "B4201A4265BC4C9F929719603020320F3A0AE59AEDB2C44C9248A7C9F2C9C3B0",
+    "bytes": 621
+  },
+  {
+    "path": "matlab/utilities/calczscore.m",
+    "sha256": "3A26E4E2BF227C16991EF58B558C81A732463C0EE7304DC2B2A310F62D609377",
+    "bytes": 1839
+  },
+  {
+    "path": "matlab/utilities/catcell.m",
+    "sha256": "8457F32EE205EE536C1D5061BAD719A30A383F0AD98A7B42C5695EDACDA8CF54",
+    "bytes": 472
+  },
+  {
+    "path": "matlab/utilities/cell2str.m",
+    "sha256": "7D14312681E69B61CDC4813043D0BCEF35B8801113BFC58251A1B43DCE19F1FB",
+    "bytes": 475
+  },
+  {
+    "path": "matlab/utilities/choose.m",
+    "sha256": "308D9ACE4636E3D045313B4FECE185436A1D6C156A56C098FEF1DA0F962E2F63",
+    "bytes": 314
+  },
+  {
+    "path": "matlab/utilities/chunking.m",
+    "sha256": "ADE4674E79E5A9E627A758474FFAE69882AE4315694E638C09A43F6ADDF69519",
+    "bytes": 973
+  },
+  {
+    "path": "matlab/utilities/cmaplookup.m",
+    "sha256": "305BC23EC9C4020452F7059CF7C68BB1C258F46233AE90753E6193C1E0761E8F",
+    "bytes": 1402
+  },
+  {
+    "path": "matlab/utilities/cmapsign.m",
+    "sha256": "913890DCBC485F9FFF2FF5356E90173812515E7786D0F682D937185362F090C6",
+    "bytes": 630
+  },
+  {
+    "path": "matlab/utilities/cmapsign2.m",
+    "sha256": "33B0AA2F9D9291A261AC2859AAF6A21EC533C6084FD6FD6D297C4751BAC4D899",
+    "bytes": 633
+  },
+  {
+    "path": "matlab/utilities/cmapsign4.m",
+    "sha256": "6A505B59CFEA13AC91D09370235B0F0E1B49C33EB2AB059533F89E42759A8A4A",
+    "bytes": 724
+  },
+  {
+    "path": "matlab/utilities/cmapturbo.m",
+    "sha256": "CE08659E888C8283E52754C62994DBFAFEB40BB381F123128DD6673778993662",
+    "bytes": 8135
+  },
+  {
+    "path": "matlab/utilities/constructbutterfilter1D.m",
+    "sha256": "53DD93EBFA56CEB6FEEFD215BD9A8CC80CF74FFCA20360E85D3CF4CBED617DD3",
+    "bytes": 1615
+  },
+  {
+    "path": "matlab/utilities/constructpolynomialmatrix.m",
+    "sha256": "774C2199781CC01C1F08B95E8025007C5113901D68FDDDC96B17DB5D74ECA502",
+    "bytes": 1323
+  },
+  {
+    "path": "matlab/utilities/constructstimulusmatrices.m",
+    "sha256": "93B60C9AD0260D4326598C97EA1C6FAFAD887354E60C7D2B216733C97826D460",
+    "bytes": 2366
+  },
+  {
+    "path": "matlab/utilities/copymatrix.m",
+    "sha256": "8CAC437610ACDDE74560A3299A7FD12468AA756C33661D78786642102CBDBE13",
+    "bytes": 1495
+  },
+  {
+    "path": "matlab/utilities/deconvolvevectors.m",
+    "sha256": "5F3321A9BB5CDDF04971AF60E02862AD41584A2D6ABEBE35FD9ECBE1EA4D64DD",
+    "bytes": 507
+  },
+  {
+    "path": "matlab/utilities/errorbar2.m",
+    "sha256": "50C4E6EF5CC0513B15A9E5B79A2E6BD2C1542BB4828E90700ED593A17308A01A",
+    "bytes": 1833
+  },
+  {
+    "path": "matlab/utilities/figureprep.m",
+    "sha256": "00E7E3EDBC765C5670A5E5AA55B6FA08010C8C339AD387AD72426E3E32391102",
+    "bytes": 771
+  },
+  {
+    "path": "matlab/utilities/figurewrite.m",
+    "sha256": "755A2780B055B7939010AD5133411E89C230C6857AE56B7CEA1CDCCD6AF72AB3",
+    "bytes": 1863
+  },
+  {
+    "path": "matlab/utilities/filterout.m",
+    "sha256": "FAC252F24EEFA34AED5654559B34A9D98B921822BC3ACC7C859ADE235BDBF351",
+    "bytes": 947
+  },
+  {
+    "path": "matlab/utilities/findtailthreshold.m",
+    "sha256": "01C444F62052B2F1EEC643708DAA1D004EC59D91D2A4A069AC2EAF9BF2CD8EB0",
+    "bytes": 3714
+  },
+  {
+    "path": "matlab/utilities/flatten.m",
+    "sha256": "66A17DAF2ED9C69EE131948E898B4223FD97087229CA5FB260DC5A20F0549297",
+    "bytes": 176
+  },
+  {
+    "path": "matlab/utilities/fouriertospace1D.m",
+    "sha256": "92FD6D3CC38681116CAEE5250E14FA9BF591F2B46ACFD37AC8BC704591BFEDDE",
+    "bytes": 2101
+  },
+  {
+    "path": "matlab/utilities/getcanonicalhrf.m",
+    "sha256": "F111A3BDDA125D2C96C4C18CB7D473298FBDB1FEA7E3063B676AA3128CEC7D5E",
+    "bytes": 6058
+  },
+  {
+    "path": "matlab/utilities/getcanonicalhrflibrary.m",
+    "sha256": "80036AFE5013BE24BBD9671B13405ED23E85D8AEF4BECE244B2D5DC679E2497C",
+    "bytes": 1732
+  },
+  {
+    "path": "matlab/utilities/getcanonicalhrflibrary.tsv",
+    "sha256": "9E7B5C293819DC0D85B0006BC8712459DB82D0D2A7695CE7219FDE0EFB5F0106",
+    "bytes": 108451
+  },
+  {
+    "path": "matlab/utilities/getfigurepos.m",
+    "sha256": "E40FB9D1DFD5A63E699D060C32D309ABCBC980C175F1CEB24AA5391B340B6C68",
+    "bytes": 555
+  },
+  {
+    "path": "matlab/utilities/GLMestimatemodel.m",
+    "sha256": "B165B624D6271AEA81E8E2764E7B05CD8CCD47C1CDBE633DC0D2BBF1AA78DE42",
+    "bytes": 38371
+  },
+  {
+    "path": "matlab/utilities/GLMpredictresponses.m",
+    "sha256": "78AF25F255822D065EA73B625EB4625473487E108E0C2F3736EC9275FA7782D9",
+    "bytes": 4502
+  },
+  {
+    "path": "matlab/utilities/imageactual.m",
+    "sha256": "92608DA68D4BC2BD931F0DFD2845ABC3D10CB26F196DE8E66B771213251140CF",
+    "bytes": 1142
+  },
+  {
+    "path": "matlab/utilities/isint.m",
+    "sha256": "7DACFC101466647F3BBA90CC7710D488E14728F7526E4F8E2FA997E56D4B4A07",
+    "bytes": 371
+  },
+  {
+    "path": "matlab/utilities/isrowvector.m",
+    "sha256": "205DAB93EE2AD872E98AA464AA554A06DE7EE53D811F58522E3128C8E3961BCE",
+    "bytes": 308
+  },
+  {
+    "path": "matlab/utilities/linspacecircular.m",
+    "sha256": "8A2A1B53E0BAB6E59B10C0DF57A6F720F64D5202B9AC363EC095A604FFDE2ED3",
+    "bytes": 385
+  },
+  {
+    "path": "matlab/utilities/linspacefixeddiff.m",
+    "sha256": "DA8B235027332BD5CDF2ECEAC83D1CD1D14976AD4AEEAE95615CF7EAC5D3024B",
+    "bytes": 365
+  },
+  {
+    "path": "matlab/utilities/makeimagestack.m",
+    "sha256": "144C10BC5E0322455A83F96D1A6F195C69950BF7EE998FE3AD9127DDBBD8B178",
+    "bytes": 5949
+  },
+  {
+    "path": "matlab/utilities/matchfiles.m",
+    "sha256": "C0B7DDC90FEC81D63C4FA4B2BA9ADAF2BED46E8C4A7EEDABE64189A7FD9374DD",
+    "bytes": 9839
+  },
+  {
+    "path": "matlab/utilities/matrixindex.m",
+    "sha256": "FD135F870278CF2EA12AD4368F57AF77F98AB202BB948F94808C2BC2B0754036",
+    "bytes": 680
+  },
+  {
+    "path": "matlab/utilities/mkdirquiet.m",
+    "sha256": "76BFF7871D73A69F976C8B2B7C56DED0E9A7CB9EFA3DD65AF9FBAB5271FA9818",
+    "bytes": 383
+  },
+  {
+    "path": "matlab/utilities/mod2.m",
+    "sha256": "D7AABF02CAB5A9D697FFF1803D00C0E24B22588BDCA832F2251F5114E5D3C464",
+    "bytes": 196
+  },
+  {
+    "path": "matlab/utilities/mtimescell.m",
+    "sha256": "CBEA41AEE044F40769ABA50896DBE7105CE7360358DC3188B939059A80350A14",
+    "bytes": 526
+  },
+  {
+    "path": "matlab/utilities/nanreplace.m",
+    "sha256": "0220B27A083592DFDD21BE8BB454A347FF24C7D63CF9BE9BC4875DA73702D570",
+    "bytes": 922
+  },
+  {
+    "path": "matlab/utilities/normalizemax.m",
+    "sha256": "633AF735B91BFECB3BCF51B29825A0537473DC1B3006E15232F58D95A7330470",
+    "bytes": 564
+  },
+  {
+    "path": "matlab/utilities/normalizerange.m",
+    "sha256": "75C4CE6A8D60C7A451233EE45FBB39BB72B45ED7E8587D1662361DBDE99DEA32",
+    "bytes": 3664
+  },
+  {
+    "path": "matlab/utilities/olsmatrix.m",
+    "sha256": "06976CBED5150C047B8CF085E77A133D00C327DD9F81F65659900A1E604BDB9B",
+    "bytes": 2019
+  },
+  {
+    "path": "matlab/utilities/olsmatrix2.m",
+    "sha256": "A48FA548E8A339C61744B1F2A514297C2A2C196CB16EC00D1FD69970D831C403",
+    "bytes": 2163
+  },
+  {
+    "path": "matlab/utilities/permutedim.m",
+    "sha256": "913A6C46033AF273092F56076304A5CF1BD9F548C29B692125ECB7BDDB7D8EE7",
+    "bytes": 1991
+  },
+  {
+    "path": "matlab/utilities/picksubset.m",
+    "sha256": "CCF4E2EE61E1B9DCF39031692980F575DB88643D5A758843D9E9EDD50B936063",
+    "bytes": 1316
+  },
+  {
+    "path": "matlab/utilities/placematrix.m",
+    "sha256": "53DD10CE5F68035C6B3C77C9A1C6B4BE69F8A39729EF9CF36C9389A332475DF2",
+    "bytes": 1452
+  },
+  {
+    "path": "matlab/utilities/printnice.m",
+    "sha256": "D19642390517D2B0173E7BEBE81611E41C726AB73C8A37CC7E5A811FB8FFC8CB",
+    "bytes": 2860
+  },
+  {
+    "path": "matlab/utilities/processmulti1D.m",
+    "sha256": "7AC3ECA97748AB59928CC8B888AF2122D0449DFDF09D77C069135D4A2A197601",
+    "bytes": 860
+  },
+  {
+    "path": "matlab/utilities/projectionmatrix.m",
+    "sha256": "D31202FA9E9531D82A66A744E76D0764DEB158BA0DFCEED3141200873DD83929",
+    "bytes": 854
+  },
+  {
+    "path": "matlab/utilities/resamplingindices.m",
+    "sha256": "47D677909C4558B024F205F73D038CCC939FFDB73C39597E3B7B563C6AD133A7",
+    "bytes": 943
+  },
+  {
+    "path": "matlab/utilities/reshape2D_undo.m",
+    "sha256": "54C649B550BD01D9759A7AA34199EDCCF686407F254A00BD7881A5BE12668008",
+    "bytes": 930
+  },
+  {
+    "path": "matlab/utilities/reshape2D.m",
+    "sha256": "BA49487E564628D3E3492EBE28A0221B45CEF72650BF4AAFFBF1FB113A1A0EFA",
+    "bytes": 557
+  },
+  {
+    "path": "matlab/utilities/rmdirquiet.m",
+    "sha256": "6439196466B4237BC1D1F4423845B532B2701F486A2D47A2A033F73A93C50075",
+    "bytes": 398
+  },
+  {
+    "path": "matlab/utilities/robustrange.m",
+    "sha256": "A9DD9322362FC85C3418D987A830FF68F870B48CBEA4F4FA03EB61058C8EE2CB",
+    "bytes": 1629
+  },
+  {
+    "path": "matlab/utilities/scattersparse.m",
+    "sha256": "A2B3988002725D231FF8E278C388AB8B9A7D1705EBF6360495A0002183A91063",
+    "bytes": 1444
+  },
+  {
+    "path": "matlab/utilities/setfigurepos.m",
+    "sha256": "3FB26CFC146AA32D9A2BB61F328364C260416B82D7ED37711A02E2CE84454952",
+    "bytes": 1148
+  },
+  {
+    "path": "matlab/utilities/setrandstate.m",
+    "sha256": "1D6C4DC043A0432AC9A413A2F40B22FFFEDF5E2FDC5851AE2DB5AA6022A26FAD",
+    "bytes": 471
+  },
+  {
+    "path": "matlab/utilities/signedarraypower.m",
+    "sha256": "DB267047117C444F80311D8ADEC182CD948DECC714A4CBE107E4E4536AF4C8B6",
+    "bytes": 242
+  },
+  {
+    "path": "matlab/utilities/sizefull.m",
+    "sha256": "DCD5D62589E43A500F1661E52F806260225BADA0A357354F30105B4A8F7474EF",
+    "bytes": 359
+  },
+  {
+    "path": "matlab/utilities/splitmatrix.m",
+    "sha256": "592A9971E823F18C2231892D24FD16DDD5BA4110F185BE8895824FFCA7DD9420",
+    "bytes": 1293
+  },
+  {
+    "path": "matlab/utilities/squish.m",
+    "sha256": "611C4BE6F87D92840816872ABDFD9E68695B75AFF6538723C36C1524DECDA888",
+    "bytes": 523
+  },
+  {
+    "path": "matlab/utilities/statusdots.m",
+    "sha256": "6BBD4096EB115EDA84739E7936AF717AFB77528E15B97E4031B860AA1888644A",
+    "bytes": 683
+  },
+  {
+    "path": "matlab/utilities/straightline.m",
+    "sha256": "8B2A38B0560704A075FE34289E117770B47A87556593CA2459901DC12173715D",
+    "bytes": 1226
+  },
+  {
+    "path": "matlab/utilities/stripfile.m",
+    "sha256": "3A35F00603FB06E0B0F9A6061066C407AB6C6EB90440D790B2592F20A43F0B36",
+    "bytes": 1381
+  },
+  {
+    "path": "matlab/utilities/subscript.m",
+    "sha256": "CE551ADF4856D3E947E7A637C0B12D28A9449CACB0486FC0FEEEC5CCB3727007",
+    "bytes": 2236
+  },
+  {
+    "path": "matlab/utilities/swap.m",
+    "sha256": "CF460156D4C49990610FB931FC0663403C5F11E13C2000B7A150FB6BB1AB5055",
+    "bytes": 150
+  },
+  {
+    "path": "matlab/utilities/tsfilter.m",
+    "sha256": "C5915011C188B08006CE2ADCD26D7A9BA17871E5EC6929A502EE3828712E301D",
+    "bytes": 2013
+  },
+  {
+    "path": "matlab/utilities/unitlength.m",
+    "sha256": "043AF1A8A519D39D190079AA4ECB017D84283542B59929E9A3D2C2789B7F16BD",
+    "bytes": 2576
+  },
+  {
+    "path": "matlab/utilities/unitlengthfast.m",
+    "sha256": "C66EBB0F34BE8DBB0B35362CBBC670B1A5CD15120A001C20C2E7AC77F4F0D761",
+    "bytes": 1203
+  },
+  {
+    "path": "matlab/utilities/vectorlength.m",
+    "sha256": "E29FE10124341D00FC33B9C81C014BF76F7DA112B0843BD22AD73A8FA86D7531",
+    "bytes": 932
+  },
+  {
+    "path": "matlab/utilities/vflatten.m",
+    "sha256": "27FF2C8308CCDEBDA188F13DFD193CCA3E6D8907A5256A8C0FB6E95E45256D00",
+    "bytes": 181
+  },
+  {
+    "path": "matlab/utilities/zerodiv.m",
+    "sha256": "FDE161E892CCBC3C28F44F5B521DBF1AECB718E8F84FABA713E3A86E816D404E",
+    "bytes": 2421
+  },
+  {
+    "path": "matlab/utilities/zeromean.m",
+    "sha256": "36F8F3736EA897A5F9EFF9AADE8B7DA3244F5ED69C75597C49CCE30A46232F45",
+    "bytes": 724
+  },
+  {
+    "path": "SOURCE.json",
+    "sha256": "189364FA0C2296F64D2238BA6A3831CFBD04E95DC0BF3959762CFACD4AFADA03",
+    "bytes": 601
+  }
+]

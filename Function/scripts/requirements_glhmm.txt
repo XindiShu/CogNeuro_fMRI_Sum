@@ -1,0 +1,7 @@
+# 本机Python 3.12工程验证版本；GLHMM依赖不放入D:/Function。
+glhmm==1.1.2
+numpy==2.5.4
+scipy==1.18.1
+numba==0.68.0
+scikit-learn==1.9.1
+h5py==3.16.0

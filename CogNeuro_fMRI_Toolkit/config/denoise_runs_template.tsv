@@ -1,0 +1,2 @@
+subject	session	run	bold	confounds	purpose	temporal_state
+pilotA	baseline	rest_run1	E:/YOUR_DATA/unsmoothed_aligned.nii	E:/YOUR_DATA/confounds.tsv	rest	unfiltered_unregressed

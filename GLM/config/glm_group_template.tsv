@@ -1,0 +1,4 @@
+subject	session	contrast	contrast_image	mask
+participant01	baseline	A_minus_B	../derivatives/subject_glm/sub-participant01/ses-baseline/combined/model/con_0001.nii	../derivatives/subject_glm/sub-participant01/ses-baseline/combined/model/mask.nii
+participant02	baseline	A_minus_B	../derivatives/subject_glm/sub-participant02/ses-baseline/combined/model/con_0001.nii	../derivatives/subject_glm/sub-participant02/ses-baseline/combined/model/mask.nii
+participant03	baseline	A_minus_B	../derivatives/subject_glm/sub-participant03/ses-baseline/combined/model/con_0001.nii	../derivatives/subject_glm/sub-participant03/ses-baseline/combined/model/mask.nii

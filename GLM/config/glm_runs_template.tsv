@@ -1,0 +1,2 @@
+subject	session	run	bold	events	confounds	temporal_state
+pilotA	baseline	task_run1	E:/YOUR_DATA/spatial_bold.nii	E:/YOUR_DATA/events.tsv	E:/YOUR_DATA/confounds.tsv	unfiltered_unregressed

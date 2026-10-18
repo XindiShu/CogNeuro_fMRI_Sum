@@ -1,0 +1,13 @@
+{
+  "Type": "real_imaginary",
+  "Units": "arbitrary",
+  "EchoTime1": 0.004,
+  "EchoTime2": 0.006,
+  "SPMBlipDirection": -1,
+  "Images": [
+    {"Role": "real1", "Path": "E:/YOUR_DATA/real1.nii.gz"},
+    {"Role": "imaginary1", "Path": "E:/YOUR_DATA/imaginary1.nii.gz"},
+    {"Role": "real2", "Path": "E:/YOUR_DATA/real2.nii.gz"},
+    {"Role": "imaginary2", "Path": "E:/YOUR_DATA/imaginary2.nii.gz"}
+  ]
+}

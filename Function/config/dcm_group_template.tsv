@@ -1,0 +1,4 @@
+subject	dcm_file
+sub01	/path/subject1/DCM.mat
+sub02	/path/subject2/DCM.mat
+sub03	/path/subject3/DCM.mat

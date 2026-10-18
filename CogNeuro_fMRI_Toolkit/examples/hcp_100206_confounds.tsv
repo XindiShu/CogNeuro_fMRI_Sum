@@ -1,0 +1,2 @@
+subject	session	run	bold	wm	csf	motion	alignment
+100206		tfMRI_LANGUAGE_LR	../derivatives/language_spatial_validation/sub-100206/tfMRI_LANGUAGE_LR/r100206_3T_tfMRI_LANGUAGE_LR.nii	../derivatives/language_spatial_validation/sub-100206/tfMRI_LANGUAGE_LR/anat/c2100206_3T_T1w_MPR1.nii	../derivatives/language_spatial_validation/sub-100206/tfMRI_LANGUAGE_LR/anat/c3100206_3T_T1w_MPR1.nii	../derivatives/language_realign_validation/sub-100206/tfMRI_LANGUAGE_LR/rp_100206_3T_tfMRI_LANGUAGE_LR.txt	world_aligned

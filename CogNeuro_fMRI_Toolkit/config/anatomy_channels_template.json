@@ -1,0 +1,6 @@
+{
+  "Channels": [
+    {"Name": "T1", "Path": "D:/YOUR_DATA/S01/T1.nii.gz", "Volume": 1, "BiasRegularisation": 0.001, "BiasFwhmMm": 60, "SaveBias": "corrected"},
+    {"Name": "T2", "Path": "D:/YOUR_DATA/S01/T2.nii.gz", "Volume": 1, "BiasRegularisation": 0.001, "BiasFwhmMm": 60, "SaveBias": "corrected"}
+  ]
+}

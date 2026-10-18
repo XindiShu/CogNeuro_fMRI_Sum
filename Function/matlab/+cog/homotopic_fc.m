@@ -1,0 +1,7 @@
+function result=homotopic_fc(y,pairs,o)
+%HOMOTOPIC_FC 声明的同源体素/特征对相关；几何镜像不能自动证明解剖对应。
+if ~isnumeric(y)||~ismatrix(y)||~isreal(y)||size(y,1)<4||any(~isfinite(y),'all')||size(pairs,2)~=2||isempty(pairs)||any(~isfinite(pairs),'all')||any(pairs<1|pairs>size(y,2)|pairs~=fix(pairs),'all')||numel(unique(pairs(:)))~=numel(pairs),error('cog:HomotopicInput','Finite time x features and disjoint explicit left/right feature pairs required');end
+if ~ismember(o.mappingStatus,{'verified_symmetric','engineering_mirror'})||strlength(string(o.mappingNote))==0||strcmp(o.mappingStatus,'engineering_mirror')&&~o.allowEngineeringMapping,error('cog:HomotopicMapping','Explicit justified symmetric mapping or engineering opt-in required');end
+a=double(y(:,pairs(:,1)));b=double(y(:,pairs(:,2)));a=a-mean(a,1);b=b-mean(b,1);da=sum(a.^2,1);db=sum(b.^2,1);valid=da>0&db>0;r=nan(1,size(pairs,1));r(valid)=sum(a(:,valid).*b(:,valid),1)./sqrt(da(valid).*db(valid));r(valid)=max(-1,min(1,r(valid)));if ~any(valid),error('cog:HomotopicCoverage','No nonconstant paired features');end
+result=struct('pairs',pairs,'correlation',r,'fisherZ',atanh(r),'valid',valid,'scientificMappingVerified',strcmp(o.mappingStatus,'verified_symmetric'),'options',o,'note','Paired Pearson r/Fisher z; perfect r retains infinite z. Zero-variance pairs are NaN. Mapping verified flag is a caller declaration, not automatic registration/anatomical QC; engineering mirror is explicitly not verified symmetric VMHC.');
+end

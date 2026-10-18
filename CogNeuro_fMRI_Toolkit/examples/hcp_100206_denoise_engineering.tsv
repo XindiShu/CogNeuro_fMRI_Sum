@@ -1,0 +1,2 @@
+subject	session	run	bold	confounds	purpose	temporal_state
+100206		tfMRI_LANGUAGE_LR	../derivatives/language_spatial_validation/sub-100206/tfMRI_LANGUAGE_LR/r100206_3T_tfMRI_LANGUAGE_LR.nii	../derivatives/confounds_validation/sub-100206/tfMRI_LANGUAGE_LR/confounds.tsv	engineering	unfiltered_unregressed

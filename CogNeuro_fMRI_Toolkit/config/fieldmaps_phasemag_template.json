@@ -1,0 +1,13 @@
+{
+  "Type": "phase_magnitude",
+  "Units": "rad",
+  "EchoTime1": 0.004,
+  "EchoTime2": 0.006,
+  "SPMBlipDirection": -1,
+  "Images": [
+    {"Role": "phase1", "Path": "E:/YOUR_DATA/phase1.nii.gz"},
+    {"Role": "magnitude1", "Path": "E:/YOUR_DATA/magnitude1.nii.gz"},
+    {"Role": "phase2", "Path": "E:/YOUR_DATA/phase2.nii.gz"},
+    {"Role": "magnitude2", "Path": "E:/YOUR_DATA/magnitude2.nii.gz"}
+  ]
+}

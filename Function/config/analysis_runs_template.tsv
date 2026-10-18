@@ -1,0 +1,2 @@
+subject	session	run	bold	mask	roi_file	tr_seconds	temporal_state	smoothing_fwhm_mm	confounds	purpose
+sub01	ses01	rest01	/path/bold.nii	/path/mask.nii	/path/labels.nii	0.8	unfiltered_unregressed	0	/path/confounds.tsv	rest

@@ -1,0 +1,2 @@
+subject	session	run	bold	events	confounds	temporal_state
+100206		tfMRI_LANGUAGE_LR	../derivatives/hcp_sdc_spatial_validation/sub-100206/tfMRI_LANGUAGE_LR/swrealigned_finite.nii	hcp_language_lr_events.tsv	../derivatives/hcp_sdc_confounds_validation/sub-100206/tfMRI_LANGUAGE_LR/confounds.tsv	unfiltered_unregressed

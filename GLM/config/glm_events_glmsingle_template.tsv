@@ -1,0 +1,7 @@
+onset	duration	trial_type	stimulus_id	trial_id
+10	2	conditionA	image_001	trial_001
+22	2	conditionB	image_002	trial_002
+34	2	conditionA	image_003	trial_003
+46	2	conditionB	image_004	trial_004
+58	2	conditionA	image_001	trial_005
+70	2	conditionB	image_002	trial_006

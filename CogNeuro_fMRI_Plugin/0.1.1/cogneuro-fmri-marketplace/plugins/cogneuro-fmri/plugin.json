@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "cogneuro-fmri",
+  "version": "0.1.1",
+  "description": "交互式接入已有的预处理、GLM和分析方法三个fMRI工具包，检查环境、盘点数据、确认研究方案并调用原生入口。",
+  "keywords": ["fmri", "neuroscience", "matlab", "spm"],
+  "repository": "https://github.com/XindiShu/CogNeuro_fMRI_Sum",
+  "homepage": "https://github.com/XindiShu/CogNeuro_fMRI_Sum",
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "onboardingSkill": "./skills/cogneuro-setup/SKILL.md",
+      "interface": {
+        "displayName": "认知神经 fMRI 工具包向导",
+        "websiteURL": "https://github.com/XindiShu/CogNeuro_fMRI_Sum",
+        "shortDescription": "配置本地环境，逐步确认研究方案并调用三个现成工具包",
+        "longDescription": "包含现有cogneuro-fmri 0.4.0和首次配置向导。分析由用户安装的原工具包执行；数据与配置保存在插件目录之外。",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": [
+          "使用 $cogneuro-setup 配置我已有的三个工具包、MATLAB/SPM和工作目录。",
+          "使用 $cogneuro-fmri 读取我提供的环境档和数据路径，先询问分析起止阶段、范式及目标。"
+        ]
+      }
+    }
+  }
+}

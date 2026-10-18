@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.asv
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+*.local.json
+.env
+.git-credentials

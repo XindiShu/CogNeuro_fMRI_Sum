@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "route": "toolkit_method",
+  "method_id": "function.ppi_batch",
+  "goal": "",
+  "paradigm": "",
+  "independent_unit": "",
+  "toolkit_roots": {
+    "function": ""
+  },
+  "inputs": {
+    "argument_manifest": {
+      "template": "config/ppi_runs_template.tsv",
+      "rows": [
+        {
+          "subject": {
+            "value": "",
+            "source": "待核实真实文件/用户回答",
+            "confirmed": false
+          },
+          "session": {
+            "value": "",
+            "source": "待核实真实文件/用户回答",
+            "confirmed": false
+          },
+          "run": {
+            "value": "",
+            "source": "待核实真实文件/用户回答",
+            "confirmed": false
+          },
+          "spm_mat": {
+            "value": "",
+            "source": "待核实真实文件/用户回答",
+            "confirmed": false
+          },
+          "seed_mask": {
+            "value": "",
+            "source": "待核实真实文件/用户回答",
+            "confirmed": false
+          },
+          "spm_session_index": {
+            "value": 1,
+            "source": "待核实真实文件/用户回答",
+            "confirmed": false
+          }
+        }
+      ]
+    }
+  },
+  "parameter_choices": {
+    "native_config": {
+      "value": {
+        "config_hashes": {},
+        "native_execute": true,
+        "overrides": [
+          {
+            "path": "mode",
+            "value": "gppi"
+          }
+        ]
+      },
+      "source": "待读取所选原包当前配置，确认全部继承配置哈希与本研究选择；不是科研推荐默认",
+      "confirmed": false
+    }
+  },
+  "instructions_zh": [
+    "这是结构示例，不代表用户已选择PPI；根据实际目标换method_id及原生inputs。",
+    "所有confirmed=false；Codex与用户逐轮讨论后填写真实来源。",
+    "可将表格对象替换为带来源确认的现成TSV文件路径。MAT方法直接绑定dataFile，不需要BOLD。"
+  ]
+}

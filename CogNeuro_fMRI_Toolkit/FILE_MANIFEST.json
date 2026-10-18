@@ -1,0 +1,912 @@
+[
+  {
+    "path": "config/acquisition_template.json",
+    "bytes": 90,
+    "sha256": "AE69AC6DF01E0EB64807C649F1932AB4AE09ACD965659A2D30F9B3726F109E19"
+  },
+  {
+    "path": "config/anatomy_channels_template.json",
+    "bytes": 309,
+    "sha256": "3A551E9AFAF18590E75B2BDD4DAD5D06DD338FD7898BB04D1C2DD391C9A02791"
+  },
+  {
+    "path": "config/atlases_template.json",
+    "bytes": 287,
+    "sha256": "53470C12FBA534AD2C48E760840E0F4D6B302A51CD956704019788269BA90BE9"
+  },
+  {
+    "path": "config/bold_unwarp_config.m",
+    "bytes": 1030,
+    "sha256": "FF5C1ECF10277E3C0598922F7598BE4C52A27B529FBF07856562828D8C5A95F0"
+  },
+  {
+    "path": "config/confounds_config.m",
+    "bytes": 1301,
+    "sha256": "400C9188FDC8D789286D9B344A817F51B06CA14B6B170B53E03194A9DBCF6904"
+  },
+  {
+    "path": "config/confounds_runs_template.tsv",
+    "bytes": 343,
+    "sha256": "E3BA7ED8EBDF4E0E479410489A1DECDF7685BD5B10893E90A26C6F59411E0F4F"
+  },
+  {
+    "path": "config/denoise_config.m",
+    "bytes": 1230,
+    "sha256": "C1862620796FB5BB40CE4E101FCF0DC8C218552D4FC34BA3D4EFCA4D7F84A981"
+  },
+  {
+    "path": "config/denoise_runs_template.tsv",
+    "bytes": 175,
+    "sha256": "6119A6577C90D7BE489405552170EFB6898733D72D7C9F0FE4A9D47B53B7F6AF"
+  },
+  {
+    "path": "config/design_config.m",
+    "bytes": 1089,
+    "sha256": "FDCCF5723C79B83157D71F8D705A0B43AB4E38E97CB7F3E4E65E415AC6B3589D"
+  },
+  {
+    "path": "config/events_template.tsv",
+    "bytes": 47,
+    "sha256": "FBD434BF79D8658C575C0EB8B093A2F9B1A9532B5949C4B7F1CF9B0F016F06CF"
+  },
+  {
+    "path": "config/fieldmaps_hz_template.json",
+    "bytes": 161,
+    "sha256": "1CFCC79AD02302D598640A63142D3906619A58B6E9348F886F7744A1BF3ACD9E"
+  },
+  {
+    "path": "config/fieldmaps_pepolar_template.json",
+    "bytes": 253,
+    "sha256": "F304C2FFD2D044E6D80AEC525BE4F74B37588C47ECDAAE7A9268C5FA88D8E07E"
+  },
+  {
+    "path": "config/fieldmaps_phasediff_template.json",
+    "bytes": 268,
+    "sha256": "C548BC3188E5BFB0BD109C8C3AC98C75B1CCC549F3143B3124C980574DB4A33A"
+  },
+  {
+    "path": "config/fieldmaps_phasemag_template.json",
+    "bytes": 402,
+    "sha256": "5E9509C4A8E62AD7A08184C651C7C28E9812C071622B5FDDC6F43F6EE1F6203F"
+  },
+  {
+    "path": "config/fieldmaps_realimag_template.json",
+    "bytes": 403,
+    "sha256": "44C7D67C446C467906BD7561AFCF78A984319164670BF426138416031BA47CE0"
+  },
+  {
+    "path": "config/fieldmaps_vdm_template.json",
+    "bytes": 120,
+    "sha256": "F8494E113D92B25D545ABB4EB11B11C80B9ECEC8097C37DFE3782583D7708120"
+  },
+  {
+    "path": "config/hcp_language_config.m",
+    "bytes": 1162,
+    "sha256": "5CC669E6C006801EE80093BA441ADF185A21E3E0CDAEB0DD138F51F29812DDE1"
+  },
+  {
+    "path": "config/preprocess_config.m",
+    "bytes": 2074,
+    "sha256": "125A1A6B803A5CE32898DEDD14215EEA7DAB6872B6539DFF09E90CF7C337DE60"
+  },
+  {
+    "path": "config/provenance_template.json",
+    "bytes": 278,
+    "sha256": "45F4BEE03209AC689EC6743FC8182C096755998128318970E8D2DB98B5927289"
+  },
+  {
+    "path": "config/qc_config.m",
+    "bytes": 623,
+    "sha256": "F0D80F6545C6E589FAE896470EBA79CD5BB464225AD0CC5C29E83CF1C990217A"
+  },
+  {
+    "path": "config/runs_extended_template.tsv",
+    "bytes": 1007,
+    "sha256": "27CDCFEA0092F7BB80A880FBA699E6CBBA20DA13326BB0B9C5EA6661E9A27369"
+  },
+  {
+    "path": "config/runs_segmentation_template.tsv",
+    "bytes": 605,
+    "sha256": "726A095A8BC1463A76EE9B2817498E297C7321376BA07EBE94B14D1B22A98669"
+  },
+  {
+    "path": "config/runs_template.tsv",
+    "bytes": 386,
+    "sha256": "288C7FAE14149485A00BE49AA79DD3D7EA002FADD8CBE4441DE9410F334C22DC"
+  },
+  {
+    "path": "config/spatial_reuse_template.tsv",
+    "bytes": 575,
+    "sha256": "4000654002ABEFF323EA3EF85260A729F3E6DAA963456E072ED5F0F1EE728788"
+  },
+  {
+    "path": "config/toolkit_config.m",
+    "bytes": 27736,
+    "sha256": "6C36BBDF326BD31B183C19F003BD3EA0DB79FB834984B850CA4C8DD355F00086"
+  },
+  {
+    "path": "config/topup_config.m",
+    "bytes": 1124,
+    "sha256": "17253B9BC5A7A652E746875747B4C3444D38DBFBF3F50FAE4C4F4FA3C3A5FAC5"
+  },
+  {
+    "path": "docs/COREGISTRATION.md",
+    "bytes": 30406,
+    "sha256": "3EE967B5BA6B3F7693A7462E08FE2936758E5D9A4901AE0B8148C22EED82D882"
+  },
+  {
+    "path": "docs/ENGINEERING_QC.md",
+    "bytes": 47361,
+    "sha256": "8F0FEE5AF56D0ECD10E331AF589193B6CBBB63956D7E0C1C5AC614F36932D0BE"
+  },
+  {
+    "path": "docs/figures/preprocessing_routes.png",
+    "bytes": 853733,
+    "sha256": "5175AB4A9E294A893EF51A2F02CCF547C739138EC48AE403004134F7797CA4B7"
+  },
+  {
+    "path": "docs/figures/preprocessing_routes.svg",
+    "bytes": 37268,
+    "sha256": "2DF4D9DD141469BA5D0BD02F601169E7A6B616111E0CEECF3C0C1F3CCB285248"
+  },
+  {
+    "path": "docs/FILE_CATALOG_AND_ENVIRONMENT.md",
+    "bytes": 45193,
+    "sha256": "77391C4E7C7B2E7615980D66F930575D9C5D4321C06070D04D51CA57D74E1B6B"
+  },
+  {
+    "path": "docs/HCP_LANGUAGE.md",
+    "bytes": 3314,
+    "sha256": "723C002B0EEC189FACD97605E303FEB84417F0121D7E0A4B7FD3145E03FDD2DE"
+  },
+  {
+    "path": "docs/NORMALIZATION.md",
+    "bytes": 55258,
+    "sha256": "62F7FC9A3C6025338C6D588F9565EFC1C9C21EBB44A7BDEF0EF74305AB947202"
+  },
+  {
+    "path": "docs/PREPROCESSING_FINAL_INTEGRATION_REVIEW_20261016.md",
+    "bytes": 10207,
+    "sha256": "064DA0E2A870EE80F1F2C68B37F9DBB373548FEA8BD449D7C18EC78F07AF0657"
+  },
+  {
+    "path": "docs/PREPROCESSING_ROUTE_MAP.md",
+    "bytes": 7091,
+    "sha256": "A83D27C6F8491BAB5FA3917B733E9B6BFDDA1C5663F963790C486C9F0CD2B616"
+  },
+  {
+    "path": "docs/PREPROCESSING.md",
+    "bytes": 14906,
+    "sha256": "89F58D43A894B509581117B313A9E6846C746335671AE4DB23CB1D6257D75A93"
+  },
+  {
+    "path": "docs/REALIGNMENT.md",
+    "bytes": 40528,
+    "sha256": "606547E009A6A58714A2570F9F3BA1DF5813C8A910696674530C77D44E4E72B6"
+  },
+  {
+    "path": "docs/RUN_MANIFEST_GUIDE.md",
+    "bytes": 13624,
+    "sha256": "F774F80EB968F6582D516C7D046FDA259CED1D0C7E78D95435315E486C16BD00"
+  },
+  {
+    "path": "docs/SDC.md",
+    "bytes": 78900,
+    "sha256": "87A665035FB101FF1F5A3E485FC946BA19641CBF333E5E2B1CD3F0E28C4ACCFE"
+  },
+  {
+    "path": "docs/SEGMENTATION.md",
+    "bytes": 59122,
+    "sha256": "ECFFD6A9B066DD5ED20F28887862A48C979FF454043142FB3CCEF6A3646788DD"
+  },
+  {
+    "path": "docs/Spatial Smoothing.md",
+    "bytes": 31099,
+    "sha256": "DE464AB66E83D63E96FC4DEF4D34D35BDCA01DAEEB9E098299FE79CE73373149"
+  },
+  {
+    "path": "docs/STC_Slice Timing Correction.md",
+    "bytes": 24763,
+    "sha256": "C0D05EAE43AB52509D903F8946D3AE593D55AEDC9ACF60D3638B537500409928"
+  },
+  {
+    "path": "docs/TOPUP_INSTALL.md",
+    "bytes": 2435,
+    "sha256": "A14355099B005B2D497DE4A532F86CADB30A3717411AE3417371E9454986EDC9"
+  },
+  {
+    "path": "examples/hcp_100206_confounds.tsv",
+    "bytes": 505,
+    "sha256": "3BD14C907701601D20715427A88BA89061F12816375B7A714DEA1CE01FE71BA3"
+  },
+  {
+    "path": "examples/hcp_100206_denoise_engineering.tsv",
+    "bytes": 303,
+    "sha256": "F4EA7C02E4019E69ED5E11F6EEC1808E9A38255FFB45DB8793EFEC83E845AA52"
+  },
+  {
+    "path": "examples/hcp_100206_runs.tsv",
+    "bytes": 2285,
+    "sha256": "A904D8C9F3B92F1E07B929EFF718D5C136478A9887925421AAC49A063ABA0926"
+  },
+  {
+    "path": "examples/hcp_100206_sdc_confounds.tsv",
+    "bytes": 479,
+    "sha256": "AF1CBF66B45A9A4F69EB3F22A5DC349D3A2AE72FC4E80EC842D2AF61CCFBBD58"
+  },
+  {
+    "path": "examples/hcp_100206_sdc_runs.tsv",
+    "bytes": 495,
+    "sha256": "4D22679C5840B8C1DE3B80B5697F89ABE3BCB70B099E3ABCAB7BA1E9F91456FF"
+  },
+  {
+    "path": "examples/hcp_language_lr_events.tsv",
+    "bytes": 272,
+    "sha256": "2BF808D2FB929CE41170DDAB0BBE375CCDB008F74EA6E3E2B04C44D23EC985EE"
+  },
+  {
+    "path": "examples/recover_hcp_sdc_realign_100206.m",
+    "bytes": 1526,
+    "sha256": "17D8AD094DFBB76EE4C68E89ACE83B07D6F09E65056353F16FB1975B7F313F90"
+  },
+  {
+    "path": "examples/run_hcp_bold_unwarp_100206.m",
+    "bytes": 1537,
+    "sha256": "F21C1FA266B33235C07E1C033BAA045C2112909312AF91D30A611DBC43440864"
+  },
+  {
+    "path": "examples/run_hcp_sdc_confound_design_100206.m",
+    "bytes": 1496,
+    "sha256": "8E21C1ADA53AD299E2299AE6D3FBA8FD9006EA62CD54E8F9C636EF09B7726965"
+  },
+  {
+    "path": "examples/run_hcp_sdc_confounds_100206.m",
+    "bytes": 2097,
+    "sha256": "04419604ED5D6BCD8D4EFEA92AEDCF8204CC8DB1D38E26422496BF9D57BB2D31"
+  },
+  {
+    "path": "examples/run_hcp_sdc_realign_100206.m",
+    "bytes": 1206,
+    "sha256": "31AF1DE7F79540181219B137BC6C93137624E2C1B0B7260003B9509D39288E36"
+  },
+  {
+    "path": "examples/run_hcp_sdc_spatial_100206.m",
+    "bytes": 2612,
+    "sha256": "D79EA6518676EA54A2F0A3D4A9FD7E2D4A84A23DFABC63EAB028A7C2018A08D8"
+  },
+  {
+    "path": "examples/run_hcp_topup_100206.m",
+    "bytes": 2139,
+    "sha256": "6E61620CA3D3FC5CDF461BA878AC57EBD39ACE1D4307EAC2057872FCBB419EF9"
+  },
+  {
+    "path": "examples/validate_denoise_engineering.m",
+    "bytes": 635,
+    "sha256": "E5EB3250E83577D17C5C95AEB680D5E1CE61258601B87363DA89DBB654F9268E"
+  },
+  {
+    "path": "matlab/+psy/apply_atlases.m",
+    "bytes": 2764,
+    "sha256": "8E60380A5006815AA49DCC04D4D0DFF268A246DE8523EC0A0E50A171F77854A7"
+  },
+  {
+    "path": "matlab/+psy/atlas_options.m",
+    "bytes": 902,
+    "sha256": "6A45C81993D0966CD73D12CE776D944CDB12076DED372F72ECED0F3959AEADD0"
+  },
+  {
+    "path": "matlab/+psy/bold_unwarp_batch.m",
+    "bytes": 559,
+    "sha256": "13F9C056EC5F7AFA8B378C4A66DFE3083D7CF74FAD62B543ACF5D16DDB5BAF13"
+  },
+  {
+    "path": "matlab/+psy/bold_unwarp_finalize.m",
+    "bytes": 1883,
+    "sha256": "F501FED934C2DF545504EC5F2B20D3336D4D1F55BC7D0FC2F753FCD414C30CA7"
+  },
+  {
+    "path": "matlab/+psy/bold_unwarp_qc.m",
+    "bytes": 3070,
+    "sha256": "760C14493B649DF076EF619023AAF2D1D681F41C93B9D26E078F122409098731"
+  },
+  {
+    "path": "matlab/+psy/bold_unwarp_run.m",
+    "bytes": 4991,
+    "sha256": "19529CE346DF481A6F60CA96EA0D87A4911F1131C6EC61C3A42CC2641BC4CFB6"
+  },
+  {
+    "path": "matlab/+psy/bold_unwarp_validate.m",
+    "bytes": 2642,
+    "sha256": "1D1512225FF5A48DEEE9F22F3B6A3FC48DDA7725D5366335A839ECE7F808B3F6"
+  },
+  {
+    "path": "matlab/+psy/cat12_environment.m",
+    "bytes": 1695,
+    "sha256": "2DF5FAEEDB95DBCAE61DFBA74523781C2F46E275CCCE27A2EA1012584F01ADFC"
+  },
+  {
+    "path": "matlab/+psy/cat12_segment.m",
+    "bytes": 3282,
+    "sha256": "2E967D94DA778BDE1929088C47F224402E718674C2D84A2142486C50812C5FD7"
+  },
+  {
+    "path": "matlab/+psy/confound_design_batch.m",
+    "bytes": 1740,
+    "sha256": "C28E65EBE0FA41EB33FB376B0161F36D65CA3A19612E15364C47D3ACB9F2DDCA"
+  },
+  {
+    "path": "matlab/+psy/confound_design.m",
+    "bytes": 3029,
+    "sha256": "5315654A7E071FB98950F72589D09084349E59C53EB2F2B802B7E32A01D9F8C4"
+  },
+  {
+    "path": "matlab/+psy/confounds_batch.m",
+    "bytes": 3203,
+    "sha256": "AEFC06D30A9BDFBC05DBD7A9078370D3FAF38E4A72BF4799B3E239098E654D6B"
+  },
+  {
+    "path": "matlab/+psy/dartel_job.m",
+    "bytes": 690,
+    "sha256": "C5FC9343DBD73F926B9D1C37C403779ECA56675DE17A81737B6DE2D251E5E747"
+  },
+  {
+    "path": "matlab/+psy/deformation_field_flags.m",
+    "bytes": 573,
+    "sha256": "813289BAE4FB6F09FD71A065DBE02A138F6A9914129F748E69725518A81A2338"
+  },
+  {
+    "path": "matlab/+psy/denoise_batch.m",
+    "bytes": 2989,
+    "sha256": "F03E7F8A91791766629F95E669147943D955A686064B7D5A1D4FE01D06479B9D"
+  },
+  {
+    "path": "matlab/+psy/denoise_run.m",
+    "bytes": 3027,
+    "sha256": "4391B2624EDF8384C8F11ECE3F2FB3D19D33788D5BF164A5838D79E284793971"
+  },
+  {
+    "path": "matlab/+psy/discover_hcp.m",
+    "bytes": 2195,
+    "sha256": "D76CEBBF67C1B678B1ED266EEB91E133A6E5117DACF2A82FDDE97438CEF3627E"
+  },
+  {
+    "path": "matlab/+psy/dummy_plan.m",
+    "bytes": 2427,
+    "sha256": "25BC83EB7E88CA3E9D97186AB018E9AE53B631A151E7BB39B9FA87CF71697148"
+  },
+  {
+    "path": "matlab/+psy/export_hcp_manifest.m",
+    "bytes": 816,
+    "sha256": "198761BEF3A7C2C1F5EE6CADD13BF5E2FFA22A02D67A2A96557AB1D601C83285"
+  },
+  {
+    "path": "matlab/+psy/extract_confounds.m",
+    "bytes": 3209,
+    "sha256": "0D01F680C7E9E9EEC83E542518C0C2E98312E14AF7FFF48AF9E6A7A528E1F49A"
+  },
+  {
+    "path": "matlab/+psy/fieldmap_reference.m",
+    "bytes": 1716,
+    "sha256": "1713CEB94B907AA62F1FF43A715781221EAF89BFF57FD13A2516862A4D2DECC1"
+  },
+  {
+    "path": "matlab/+psy/file_sha256.m",
+    "bytes": 542,
+    "sha256": "5E52B1220479BA1A76189F60006ECBAC31BF933C0AB162AFEAA4507974A1CAB9"
+  },
+  {
+    "path": "matlab/+psy/finalize_realign.m",
+    "bytes": 3759,
+    "sha256": "13F47089931052EE370B1B16F3D5E7487AE58CF7381513FC8461FBAC91A4B59F"
+  },
+  {
+    "path": "matlab/+psy/group_deformations.m",
+    "bytes": 1714,
+    "sha256": "929E08CAD46B2CBC0E89B750F954305F9F1FCEC1BA44D2F2E82A8BE91FD6F4E1"
+  },
+  {
+    "path": "matlab/+psy/group_normalise_write.m",
+    "bytes": 3848,
+    "sha256": "93E174157F3DD2F0BC7D90010E14B57E781DFD828589C5389EFCB648F3081FCC"
+  },
+  {
+    "path": "matlab/+psy/has_dicom_sources.m",
+    "bytes": 553,
+    "sha256": "FCAEC0BC4D9FF90BCFB3215769EDC6DDAF08159D321EDEC05532D24AA5CDB5D0"
+  },
+  {
+    "path": "matlab/+psy/import_dicom_series.m",
+    "bytes": 4070,
+    "sha256": "B4DF638BF449BD4AC335C157B54EAD8619411431733B7F16E6D414AD0FBB0C56"
+  },
+  {
+    "path": "matlab/+psy/inspect_contract.m",
+    "bytes": 3213,
+    "sha256": "C9854617B007592C044698F604C793EB92F5797A8CC904F7CD360F420F79BEAF"
+  },
+  {
+    "path": "matlab/+psy/inspect_dicom_inventory.m",
+    "bytes": 918,
+    "sha256": "2A927AAAE4BE230FB042938BFEA330EA48AC70204D334FA357DD25873A5E90B8"
+  },
+  {
+    "path": "matlab/+psy/inspect_fieldmaps.m",
+    "bytes": 4767,
+    "sha256": "AEA5655929E8E18941F259F43F14F7308C9E79D722064D4034473DF3A436FAEF"
+  },
+  {
+    "path": "matlab/+psy/inspect_run.m",
+    "bytes": 1694,
+    "sha256": "8BA5D1311CD47EA090B452B29197439B03655BF52EA656A16D4B787E63B09720"
+  },
+  {
+    "path": "matlab/+psy/materialize_dicom_run.m",
+    "bytes": 2035,
+    "sha256": "D988AB8009F58CF1308D446423A7CDE6A24C019D176380278999035274F5DFBE"
+  },
+  {
+    "path": "matlab/+psy/motion_qc.m",
+    "bytes": 859,
+    "sha256": "0713D12CCBF80D26F63722E84A95761BB6D4FB24907886F0926A87FE3F153EA8"
+  },
+  {
+    "path": "matlab/+psy/motion_regressors.m",
+    "bytes": 711,
+    "sha256": "D8068E81D27FDCE83C5A1A506397C51049C247B1A1E1D27BE233160E66C6EF11"
+  },
+  {
+    "path": "matlab/+psy/nifti_geometry.m",
+    "bytes": 1651,
+    "sha256": "320841B5B856D4E61357CCC4ED09FD01DEA0A7A56D0BC29D1E9A502B1ADC6B20"
+  },
+  {
+    "path": "matlab/+psy/normalise_group_plan.m",
+    "bytes": 4467,
+    "sha256": "A83B363B731E1891DE78EA71C606E3D72132240A7C3A0A2DD570674611866076"
+  },
+  {
+    "path": "matlab/+psy/normalise_group_run.m",
+    "bytes": 6728,
+    "sha256": "D1DB86B0FE9D22B9F091996F86B2AE29BF5A325A3AE51DADCA87A759AB223871"
+  },
+  {
+    "path": "matlab/+psy/normalise_options.m",
+    "bytes": 4926,
+    "sha256": "3C8226C2D5E7738D925B5C891A51F1096CCA220AC71A4370F44A849B5C5122EC"
+  },
+  {
+    "path": "matlab/+psy/normalise_output_check.m",
+    "bytes": 1396,
+    "sha256": "63599376E0FD73EACFF6D5A86F94E79B6316F32A0C1EBB00C3A46604DC37EB1E"
+  },
+  {
+    "path": "matlab/+psy/plot_qc_mask.m",
+    "bytes": 1267,
+    "sha256": "82FABEE169BB17E44865EBD333E66B5631525452A92B002025F316B11D881A67"
+  },
+  {
+    "path": "matlab/+psy/plot_tissue_masks.m",
+    "bytes": 1056,
+    "sha256": "878F6A84F2BB7AEAB65707BAB9B6B332C268EF94427BC4ACB734AB4330CD0BDA"
+  },
+  {
+    "path": "matlab/+psy/prepare_spm_sdc.m",
+    "bytes": 6189,
+    "sha256": "94B566CA211BC6D2C41F0BA3C215684D101B34442F82B9C5B4CCE1D8C72B5CDA"
+  },
+  {
+    "path": "matlab/+psy/preprocess_batch.m",
+    "bytes": 6783,
+    "sha256": "EF334A4149BECCCE6A66A9383F01CA1609F14904408B1A94F8B2CC4AFE33AE6D"
+  },
+  {
+    "path": "matlab/+psy/preprocess_group_batch.m",
+    "bytes": 4245,
+    "sha256": "0523234FA7A131A159AB242394862E79F75F477177554E55D4606B44EAB71CA4"
+  },
+  {
+    "path": "matlab/+psy/preprocess_hcp.m",
+    "bytes": 181,
+    "sha256": "11B7F10B75B47092D2CE0DA32A22CA8407A6D97E594904F1B065A9AA9C3C47FF"
+  },
+  {
+    "path": "matlab/+psy/preprocess_plan.m",
+    "bytes": 5588,
+    "sha256": "E3BF1D3BD07A4648A053BB1DBDBF592AFDC16C1F7CC14FC735C5651AA4E2B1C3"
+  },
+  {
+    "path": "matlab/+psy/process_run.m",
+    "bytes": 9731,
+    "sha256": "E226AC51560F8FBF1FF39A41039708369E98D3654BF9258F5F7F5096972B4137"
+  },
+  {
+    "path": "matlab/+psy/qc_batch.m",
+    "bytes": 2242,
+    "sha256": "6EC59CED74B3D9826757727FB7E155BA3DA02302812EB02980885A34CC75385C"
+  },
+  {
+    "path": "matlab/+psy/read_events_tsv.m",
+    "bytes": 1199,
+    "sha256": "975AFBE7A98B8B6E8C61EF092401DAE063013E7FA7DD63F71BC27F36F4249DB6"
+  },
+  {
+    "path": "matlab/+psy/read_hcp_events.m",
+    "bytes": 2135,
+    "sha256": "3E4A2BC61C0300F2729A19F608C816485A45184473B48670C26F5B35152BADA1"
+  },
+  {
+    "path": "matlab/+psy/read_manifest.m",
+    "bytes": 6520,
+    "sha256": "C235221462F5A5AA86EF42EFCDEBB1847CFD0BDE974F2DD5E6973D1396B398B7"
+  },
+  {
+    "path": "matlab/+psy/realign_weight_plan.m",
+    "bytes": 3358,
+    "sha256": "622B726AC87A5F48555ECC97890DA8DC0246967C94ED85BABDCA380FC4EA4DD2"
+  },
+  {
+    "path": "matlab/+psy/reuse_anatomy.m",
+    "bytes": 3114,
+    "sha256": "4B9DE7E3EE31BDD8F7B2F105F416E557427C12F8961A002C60BC27DFEDFD6EE7"
+  },
+  {
+    "path": "matlab/+psy/run_output_dir.m",
+    "bytes": 298,
+    "sha256": "A88092DFDC20FDCC2092D88296D84070D7B6DABFB7FA444228CD73430A98D46A"
+  },
+  {
+    "path": "matlab/+psy/sdc_spm_options.m",
+    "bytes": 625,
+    "sha256": "C36BFB171A707BC34BDAC984250F1F91268A97CAC69AEC6C8865140423740278"
+  },
+  {
+    "path": "matlab/+psy/segment_options.m",
+    "bytes": 2667,
+    "sha256": "3D24067DCED8516337BBAF8036AA40789031FC2C322E81BDE8736419D91B50A8"
+  },
+  {
+    "path": "matlab/+psy/segment_output_flags.m",
+    "bytes": 607,
+    "sha256": "5B2D5F11B48197C850D4C3484B068D672BC45D66BD73F97029B52124851EBA35"
+  },
+  {
+    "path": "matlab/+psy/segment_plan.m",
+    "bytes": 7052,
+    "sha256": "4995B9C5BC858C4B9FC2731AAA9F8820D55A576BDED413027598EC21C6A92006"
+  },
+  {
+    "path": "matlab/+psy/segment_run.m",
+    "bytes": 1955,
+    "sha256": "90B19E19EB6FB903FBCC4CA0463A2396CC04A1B2BB06145C3199C6E7D6FEB387"
+  },
+  {
+    "path": "matlab/+psy/shooting_defaults.m",
+    "bytes": 638,
+    "sha256": "8E9F14941F1360A5DAFAD19BC63C042E82EB17E68F58579B5A01306EEE06E5B3"
+  },
+  {
+    "path": "matlab/+psy/shooting_run.m",
+    "bytes": 1323,
+    "sha256": "9763703F7D26FFDB43C296D6F5EB1FE5BFF8096ABD495C05DF0D084009D98928"
+  },
+  {
+    "path": "matlab/+psy/slice_timing_plan.m",
+    "bytes": 4003,
+    "sha256": "68DB8C2F4A78316A350FC6A8A66211D9373A2D6D40788B0EECD98126D7F0498D"
+  },
+  {
+    "path": "matlab/+psy/smooth_options.m",
+    "bytes": 2610,
+    "sha256": "2EDFCF02CFB98B06246C2E9CEDAB05237B97817492785F11DC9AA46EE7D85714"
+  },
+  {
+    "path": "matlab/+psy/smooth_record.m",
+    "bytes": 1343,
+    "sha256": "F31D9822B273FC3E83FEC11E084AE03E4E25B0BAA76A992AF67EEEBEAF240DA4"
+  },
+  {
+    "path": "matlab/+psy/smooth_run.m",
+    "bytes": 1726,
+    "sha256": "4401761B55AD6D67764135DAA9956A78E5EB94CD52D9641419CA7A4E5F1DED88"
+  },
+  {
+    "path": "matlab/+psy/spatial_steps.m",
+    "bytes": 2664,
+    "sha256": "B053735DCC3009D28B8649B73CD0A12D1A55F9B33F31EA924B4D23CAD830A83F"
+  },
+  {
+    "path": "matlab/+psy/spm_fieldmap_vdm.m",
+    "bytes": 8275,
+    "sha256": "5F795ED73F7E958E9A3227C6DE59E9D3AC3F641495790E58810B38C993FCEC69"
+  },
+  {
+    "path": "matlab/+psy/spm_motion_step.m",
+    "bytes": 5025,
+    "sha256": "50F0CBCD67680A0F823FBDC6517CA06D5A9C010DCCE0552D5FB093CC5AD821CB"
+  },
+  {
+    "path": "matlab/+psy/spm_segment_batch.m",
+    "bytes": 1666,
+    "sha256": "871B52A5DEE231AEE3960F9DFBDCCF78FADAF1B7CC09ACDC896093361E122ACF"
+  },
+  {
+    "path": "matlab/+psy/spm_step.m",
+    "bytes": 180,
+    "sha256": "0E57D0CA4383A699D3FE8ADEE5FF1060388E3055082216794296D0FC2074BC91"
+  },
+  {
+    "path": "matlab/+psy/stage_anatomy.m",
+    "bytes": 2089,
+    "sha256": "25BB4AAC9F45C62600F2427601D5713BACAE26696539426D9EF8E854197C3FC9"
+  },
+  {
+    "path": "matlab/+psy/stage_image.m",
+    "bytes": 498,
+    "sha256": "0821E2BEC4CCF42842EA5C27E64B03ED305A8628588888D90B08171B0C59ABF8"
+  },
+  {
+    "path": "matlab/+psy/temporal_basis.m",
+    "bytes": 1641,
+    "sha256": "6B0637FF3B5F3FAA28234D5C1DD41083C05BCEE5C6643CEF505A72787BBE0B1A"
+  },
+  {
+    "path": "matlab/+psy/timeseries_qc.m",
+    "bytes": 4948,
+    "sha256": "053DEC922F73F55C2B485E158334C556C59D91DAAB0FB032C0F6DFCBF4D695D0"
+  },
+  {
+    "path": "matlab/+psy/tissue_mask.m",
+    "bytes": 1386,
+    "sha256": "5035CABE60A885411734F75759FDFC0A26BC2B2EDCA577D911A11924AD085ADD"
+  },
+  {
+    "path": "matlab/+psy/topup_batch.m",
+    "bytes": 632,
+    "sha256": "08BCB30B7516EE606C1BBCC1CFF00A326B8500EA9A53A50FF8906EEF21878656"
+  },
+  {
+    "path": "matlab/+psy/topup_qc.m",
+    "bytes": 3607,
+    "sha256": "99AEE6F3860A147C41C07970CE311822D6CFBD38E27871D42D733127B91A2AC8"
+  },
+  {
+    "path": "matlab/+psy/topup_run.m",
+    "bytes": 5531,
+    "sha256": "1E0F604F7A8A13E50EA50A547E767C0B881B40117453E1C29D9738252ED35BD8"
+  },
+  {
+    "path": "matlab/+psy/topup_validate.m",
+    "bytes": 3053,
+    "sha256": "6CEAA2B89534F7EAA482E111E762884C3DC8837B9A4158D9B1624EEADECFA6EC"
+  },
+  {
+    "path": "matlab/+psy/trim_dummy_bold.m",
+    "bytes": 660,
+    "sha256": "A53E75570CF97CEA3BE1F95DE53D8C0BE7A042F69F675371D6BCCBDB77654C5F"
+  },
+  {
+    "path": "matlab/+psy/validate_preprocess_config.m",
+    "bytes": 8007,
+    "sha256": "32FEA3A39BF593968A9F4061B4997861270954E3141A7212513CBBC8A4456287"
+  },
+  {
+    "path": "matlab/+psy/verify_realign.m",
+    "bytes": 2983,
+    "sha256": "C0B01ED18B16EBB3653EB84450D3EB1967DDCDE5B8CFDBAE6723AC69A402363B"
+  },
+  {
+    "path": "matlab/+psy/verify_spatial.m",
+    "bytes": 5056,
+    "sha256": "5C01E967F691F0DF7938D2DCFA85A015C3AC6379721A4857E0F34EBFEFF95A15"
+  },
+  {
+    "path": "matlab/+psy/write_dummy_events.m",
+    "bytes": 1433,
+    "sha256": "583E619CC7BEA9204BA66883D11BA4D0E984AA45E2533782FF89294C2A32F8C1"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2592,
+    "sha256": "CDB1606F27568E61ED565D3F1D5F29B5BB6A5DA4BF97DB81E7B2C6FC3B9AD99B"
+  },
+  {
+    "path": "run_confound_design.m",
+    "bytes": 288,
+    "sha256": "3F0C3E8B5D1B5B578CABEF3809F3B560D723FEB8679690DB42F9A79B63C57D03"
+  },
+  {
+    "path": "run_confounds.m",
+    "bytes": 284,
+    "sha256": "EFBE002EEAED7B3E6A474483DAA0E388E5B9D6BEA5227D0578D447889B175CC5"
+  },
+  {
+    "path": "run_denoise.m",
+    "bytes": 279,
+    "sha256": "885D76D63DA35B21DEABF39CB42534C7B7E9D1D0D14B60BE40D4FD76DC8A6F0E"
+  },
+  {
+    "path": "run_preprocessing.m",
+    "bytes": 557,
+    "sha256": "E4C342BC4A35C46E4D5923EF3E261B34B75FF817EE88D49D24D1EA6173963E5E"
+  },
+  {
+    "path": "run_timeseries_qc.m",
+    "bytes": 412,
+    "sha256": "993CEEB9D2ECCAAA7CF93FFED12A1F47EC7FD521FB10CCC355940D02B402B7EB"
+  },
+  {
+    "path": "run_toolkit.m",
+    "bytes": 656,
+    "sha256": "D5E0C3529C06C68E9AA305656A9E0E5B743B8EA6AC51FE2AFA8C2214E6B39590"
+  },
+  {
+    "path": "scripts/audit_hcp_headers.py",
+    "bytes": 1898,
+    "sha256": "B5ED95C5A70D8193B7D6EADA5243CB689AF3AD4806F70A93E77A78E5CC58CBA1"
+  },
+  {
+    "path": "scripts/extract_hcp.py",
+    "bytes": 4329,
+    "sha256": "FA7B8ACCD54FC88B525AC43FF4D103F36F181AD47BEA15966B1ACC008162E3BB"
+  },
+  {
+    "path": "scripts/getfsl_official.sh",
+    "bytes": 5688,
+    "sha256": "006229BF716B04167F66124B70A4BCE592742302470161D7DEF00649C6D41CAC"
+  },
+  {
+    "path": "scripts/install_cat12.ps1",
+    "bytes": 2475,
+    "sha256": "AC411EFD07490B7EF48896BD7471DC219DD555BD7E7A075D4E33C03A90E736EC"
+  },
+  {
+    "path": "scripts/install_topup_wsl.sh",
+    "bytes": 1944,
+    "sha256": "5828B277336E3A7FB09942F275488F4BCFDB890B4716BC244C1B9E00400063FA"
+  },
+  {
+    "path": "scripts/release_layout.json",
+    "bytes": 10666,
+    "sha256": "7910853F5B157E4CBD3032BBF0F7DF723A82B35A77A243ADC1DE988EF6A68B7E"
+  },
+  {
+    "path": "scripts/sync_final_copy.ps1",
+    "bytes": 10384,
+    "sha256": "4EFA3F7946E76EFC83C2C93D576B865559B9FA956DF5A1668185EC0EAAD7A849"
+  },
+  {
+    "path": "scripts/verify_nifti_stream.py",
+    "bytes": 2581,
+    "sha256": "24AFEA68D6ABED4FC94D8CFDB1B3B7DD4E6B6729705FD11B790CA93EE82E2AAC"
+  },
+  {
+    "path": "tests/manual_normalisation_routes.m",
+    "bytes": 4513,
+    "sha256": "CA39DF5969D570750F641DCF74BA0AD9BD7779A578940BBFB71379D335752F1A"
+  },
+  {
+    "path": "tests/manual_segmentation_extensions.m",
+    "bytes": 4618,
+    "sha256": "62E67B392697903293C66630B038D7E09BFD29DE0EA98AED68BA700CF91DFFD0"
+  },
+  {
+    "path": "tests/manual_spm_fieldmap_fullchain.m",
+    "bytes": 5377,
+    "sha256": "F4C1D03A836DDF20926B2A051F711AB6974C9B27110A71F76DD201517AC17C24"
+  },
+  {
+    "path": "tests/manual_spm_fieldmap_smoke.m",
+    "bytes": 3364,
+    "sha256": "A206D707A86D2DC5FCDB0D9CFA826B7FB6A864B24AB7FFA3B08A770868BA3848"
+  },
+  {
+    "path": "tests/manual_topup_handoff.m",
+    "bytes": 4996,
+    "sha256": "01BE5EAFE8319224A5A2D9AA54D6FB8B87EE0F42012340C940523E9055A299F9"
+  },
+  {
+    "path": "tests/test_bold_unwarp.m",
+    "bytes": 2535,
+    "sha256": "050C3D3854A9BD81B13110B25D6C45C87A208FAC0FD05BA67D6637F70C496DB4"
+  },
+  {
+    "path": "tests/test_confound_design.m",
+    "bytes": 1570,
+    "sha256": "0726DD39492ED68A1F7C58DF3A12D5E07DA5B0F02261B7413102A3B71E6FC9F8"
+  },
+  {
+    "path": "tests/test_confounds.m",
+    "bytes": 3131,
+    "sha256": "071240D59341C520241BDF79CE3691D3BC85E27FB88C0AB4D4DE1C32FA378227"
+  },
+  {
+    "path": "tests/test_denoise.m",
+    "bytes": 3346,
+    "sha256": "0F5CE1815104AFE2E87ECE814DFDCB820F7DFC19282AB37D9E5DFDFB3051E082"
+  },
+  {
+    "path": "tests/test_dicom_dummy.m",
+    "bytes": 6024,
+    "sha256": "D2FC7897A4C514E3DC22868419CDD63938EEC72AF627EABA07D20832EA090FD1"
+  },
+  {
+    "path": "tests/test_finalize_realign.m",
+    "bytes": 1484,
+    "sha256": "9DA94452041E682D557B7F3A2D0CC561150125BB8FC88CC708DA114611AE9501"
+  },
+  {
+    "path": "tests/test_hcp_events.m",
+    "bytes": 1757,
+    "sha256": "9454999E98EB67E503013E3D00F2A27B9F058B71FCDEEF68F6CC4091CB17D89F"
+  },
+  {
+    "path": "tests/test_input_contract.m",
+    "bytes": 5113,
+    "sha256": "8C8DD43C9CA5C8FD0B0D31216732241DF4C3537CB44C99E38CA8AE3ACFA20885"
+  },
+  {
+    "path": "tests/test_manifest.m",
+    "bytes": 3408,
+    "sha256": "12B0896AA127313C18F090120622545BC6E12BD1C058634AFF614D31A2040015"
+  },
+  {
+    "path": "tests/test_nifti_geometry.m",
+    "bytes": 788,
+    "sha256": "7B5E362079F14C7F75DDCB532F123112B281F7C294E9907875A53CC73C0EFCA1"
+  },
+  {
+    "path": "tests/test_normalisation_interfaces.m",
+    "bytes": 13095,
+    "sha256": "6C6A494EF5E3F61414FD246FDBB6D9ED51C9957E84BC4714F2035EAFE2B5370F"
+  },
+  {
+    "path": "tests/test_preprocessing.m",
+    "bytes": 2025,
+    "sha256": "30932D5A9573DE4A235BA7CF40A39AA93501D65AD0E9C0961AC2020CECFEDA6D"
+  },
+  {
+    "path": "tests/test_realign_weight.m",
+    "bytes": 8040,
+    "sha256": "636BD4E8DEAEE12171F5CCD39E0CFD993309682B2BEB029AD2114678BE30C2CD"
+  },
+  {
+    "path": "tests/test_reuse_anatomy.m",
+    "bytes": 2449,
+    "sha256": "E29DE6939A4B52A0A76C2B72BF72A469A81D4CF467752493E0F8238923DBAFF9"
+  },
+  {
+    "path": "tests/test_sdc_interfaces.m",
+    "bytes": 12825,
+    "sha256": "F7C69C7F4BE68BE36F7621B6B9E42F5AD4D6002989D21F86A6B17CCB1DFF5312"
+  },
+  {
+    "path": "tests/test_segmentation_interfaces.m",
+    "bytes": 9179,
+    "sha256": "298DCD05F33601944E9DB4FF9E96807C6D86F82FCCA2DC5B8CFFDFEAF348CCB7"
+  },
+  {
+    "path": "tests/test_smoothing_interfaces.m",
+    "bytes": 11975,
+    "sha256": "806229488795286FD52A050316ED979D46AAB65ADD0AD66F06A457B36E08B5F4"
+  },
+  {
+    "path": "tests/test_timeseries_qc.m",
+    "bytes": 1604,
+    "sha256": "719A7980A4F0E442C447D84FD74386EB98922FD6336959C38A69F950AF02A95F"
+  },
+  {
+    "path": "tests/test_topup.m",
+    "bytes": 5658,
+    "sha256": "5D8E2BF9B6BB18F5E66F013B0D85ED707397A4668A69C195DC50036D4AB9D352"
+  },
+  {
+    "path": "tests/test_unified_preprocessing.m",
+    "bytes": 6330,
+    "sha256": "1220B8AFF388ECACE1B301A6B698B780167723FB09FA5402181CE1778895F035"
+  },
+  {
+    "path": "validate_preprocessing.m",
+    "bytes": 715,
+    "sha256": "958D48AB7E106BD3AA4CCEFD4CB60191612DFF17F886DF05CE6E8EE9E2E3747A"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "Type": "vdm",
+  "Units": "voxel",
+  "Images": [
+    {"Role": "vdm", "Path": "E:/YOUR_DATA/vdm5_run1.nii.gz"}
+  ]
+}

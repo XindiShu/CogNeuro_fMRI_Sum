@@ -1,0 +1,2 @@
+subject	session	run	bold	t1	input_stage	sbref	provenance
+100206		tfMRI_LANGUAGE_LR	../derivatives/hcp_bold_unwarp_validation_v2/sub-100206/tfMRI_LANGUAGE_LR/bold_unwarped_jac.nii.gz	D:/IBM/100206_extracted/100206_3T_Structural_unproc/100206/unprocessed/3T/T1w_MPR1/100206_3T_T1w_MPR1.nii.gz	sdc_corrected	../derivatives/hcp_bold_unwarp_validation_v2/sub-100206/tfMRI_LANGUAGE_LR/sbref_unwarped_jac.nii.gz	../derivatives/hcp_bold_unwarp_validation_v2/sub-100206/tfMRI_LANGUAGE_LR/provenance.json
