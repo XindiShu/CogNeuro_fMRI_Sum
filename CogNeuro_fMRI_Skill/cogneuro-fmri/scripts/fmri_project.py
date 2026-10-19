@@ -14,7 +14,7 @@ import sys
 
 from inventory import scan_dataset
 
-VERSION = "0.4.0"
+VERSION = "0.5.0"
 ROUTES = {
     "toolkit_method": ("调用三个现成工具包中的方法", []),
     "preprocess": ("原始数据→所选预处理终点", ["preprocessing"]),
@@ -106,7 +106,7 @@ def input_changes(inventory, selected):
 def ensure_project(path, *, require_data_root=True):
     project = Path(path).resolve(strict=True)
     state = read_json(project / "project.json")
-    if state.get("schema_version") != 1 or state.get("skill_version") not in {"0.1.0", "0.2.0", "0.3.0", "0.3.1", VERSION}:
+    if state.get("schema_version") != 1 or state.get("skill_version") not in {"0.1.0", "0.2.0", "0.3.0", "0.3.1", "0.4.0", VERSION}:
         raise ValueError("项目版本不兼容，请保留原项目并使用对应版本或建立新项目")
     # 读取已有执行结果时允许原始数据盘离线；规划、预检和执行仍要求可访问。
     data_root = Path(state["data_root"]).resolve(strict=require_data_root)
@@ -146,6 +146,11 @@ def event_issues(path):
 
 
 def make_plan(inventory, answers):
+    import review_policy
+    return review_policy.require_setup(_make_plan(inventory, answers), answers)
+
+
+def _make_plan(inventory, answers):
     if not isinstance(answers, dict) or answers.get("schema_version", 1) != 1:
         raise ValueError("答案 schema_version 必须为 1")
     for key in ("runs", "parameter_choices", "toolkit_roots"):
@@ -430,8 +435,37 @@ def main(argv=None):
     execution_status = sub.add_parser("execution-status", help="只读执行状态，不重跑任何计算")
     execution_status.add_argument("--project-dir", required=True)
     execution_status.add_argument("--attempt-id")
+    assess_parser = sub.add_parser("assess-parameters", help="补齐参数评估表，不授予执行许可")
+    assess_parser.add_argument("--project-dir", required=True)
+    assess_parser.add_argument("--attempt-id", required=True)
+    assess_parser.add_argument("--review-digest", required=True)
+    assess_parser.add_argument("--assessment", required=True, help="Codex根据当前配置/文档填写的项目评估JSON")
+    approve_parser = sub.add_parser("approve", help="用户审阅具体表格后记录真实确认；不可自行代答")
+    approve_parser.add_argument("--project-dir", required=True)
+    approve_parser.add_argument("--attempt-id", required=True)
+    approve_parser.add_argument("--review-digest", required=True)
+    approve_parser.add_argument("--source", required=True, help="真实用户回复的会话/消息来源")
+    approve_parser.add_argument("--reply", required=True, help="真实确认回复，不伪造")
+    approve_parser.add_argument("--actor", choices=['human','delegated_demo'], default='human')
+    approve_parser.add_argument("--delegation-source", help="仅演示代答：人类明确授权的来源")
+    workflow_parser = sub.add_parser("workflow", help="登记三包的执行/复用/跳过路线，不执行分析")
+    workflow_parser.add_argument("--project-dir", required=True)
+    workflow_parser.add_argument("--spec", required=True)
+    report_parser = sub.add_parser("report", help="只读执行记录，生成完整步骤与参数报告，不重跑分析")
+    report_parser.add_argument("--project-dir", required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command in {'assess-parameters','approve'}:
+            import review_policy
+            if args.command == 'assess-parameters':
+                result = review_policy.assess(args.project_dir,args.attempt_id,args.review_digest,args.assessment)
+            else:
+                result = review_policy.approve(args.project_dir,args.attempt_id,args.review_digest,args.source,args.reply,args.actor,args.delegation_source)
+            print(json.dumps(result,ensure_ascii=False));return 0
+        if args.command in {'workflow','report'}:
+            import workflow_report
+            result = workflow_report.register(args.project_dir,args.spec) if args.command=='workflow' else workflow_report.generate(args.project_dir)
+            print(json.dumps(result,ensure_ascii=False));return 0
         if args.command in {"prepare", "execute", "execution-status"}:
             import execution
             if args.command == "prepare":

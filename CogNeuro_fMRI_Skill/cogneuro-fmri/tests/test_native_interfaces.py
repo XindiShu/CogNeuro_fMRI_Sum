@@ -13,6 +13,8 @@ import fmri_project as project
 import native_plan
 import native_jobs
 import toolkit_catalog as catalog
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from approval_fixture import reviewed
 
 
 def fact(value):return {'value':value,'source':'用户确认：合成接口测试的文件/选择，不代表真实研究','confirmed':True}
@@ -39,11 +41,15 @@ class NativeInterfacesTests(unittest.TestCase):
 
     def tearDown(self):self.tmp.cleanup()
 
+    def prepared(self):
+        return reviewed(self.project,execution.prepare(self.project,str(self.matlab),None,runner=self.runner))
+
     def answers(self,method='function.prediction'):
         entry=catalog.selected(method,{'function':str(self.toolkit)})
         return {'schema_version':1,'route':'toolkit_method','method_id':method,'goal':'现成方法接入',
             'paradigm':'矩阵测试','independent_unit':'每行一个独立被试','toolkit_roots':{'function':str(self.toolkit)},
             'inputs':{'dataFile':fact(str(self.mat))} if method.endswith('prediction') else {},
+            'parameter_setup':fact('ready'),
             'parameter_choices':{'native_config':fact({'config_hashes':entry['config_hashes'],'native_execute':True,
                 'overrides':[{'path':'options.method','value':'cpm'}] if method.endswith('prediction') else []})}}
 
@@ -61,7 +67,8 @@ class NativeInterfacesTests(unittest.TestCase):
         entry=next(x for x in catalog.registry() if x['id']==job['method_id'])
         if job['mode']=='preflight':
             return {'status':'preflight_passed','method_id':job['method_id'],'target':entry['target'],
-                'native_analysis_called':False,'resolved_config':{'execute':job['native_execute']},'output_files':[]}
+                'native_analysis_called':False,'baseline_config':{'execute':False},
+                'resolved_config':{'execute':job['native_execute']},'output_files':[]}
         output=Path(job['output_root']);output.mkdir();artifact=output/'native_result.mat';artifact.write_bytes(b'sentinel callback result')
         return {'status':'complete','method_id':job['method_id'],'target':entry['target'],
             'native_analysis_called':True,'native_statuses':['complete'],'output_files':[str(artifact)]}
@@ -118,13 +125,13 @@ class NativeInterfacesTests(unittest.TestCase):
 
     def test_prepare_only_inspects_configuration_and_preserves_sources(self):
         self.build();before=self.mat.read_bytes();cfg=(self.toolkit/'config/prediction_config.m').read_bytes()
-        prepared=execution.prepare(self.project,str(self.matlab),None,runner=self.runner)
+        prepared=self.prepared()
         self.assertEqual(prepared['phase'],'awaiting_confirmation');self.assertEqual(len(self.calls),1)
         self.assertEqual(self.calls[0]['mode'],'preflight');self.assertFalse((Path(prepared['attempt_dir'])/'results').exists())
         self.assertEqual(self.mat.read_bytes(),before);self.assertEqual((self.toolkit/'config/prediction_config.m').read_bytes(),cfg)
 
     def test_confirmed_generic_call_records_native_outputs_and_cannot_repeat(self):
-        self.build();prepared=execution.prepare(self.project,str(self.matlab),None,runner=self.runner)
+        self.build();prepared=self.prepared()
         done=execution.execute(self.project,prepared['attempt_id'],prepared['review_digest'],'确认执行',runner=self.runner)
         self.assertEqual(done['phase'],'complete');self.assertEqual([j['mode'] for j in self.calls],['preflight','execute'])
         self.assertEqual(execution.status(self.project)['phase'],'complete')
@@ -132,7 +139,7 @@ class NativeInterfacesTests(unittest.TestCase):
 
     def test_native_prepare_selection_is_preserved_not_forced_to_estimate(self):
         answers=self.answers();answers['parameter_choices']['native_config']['value']['native_execute']=False
-        self.build(answers);prepared=execution.prepare(self.project,str(self.matlab),None,runner=self.runner)
+        self.build(answers);prepared=self.prepared()
         done=execution.execute(self.project,prepared['attempt_id'],prepared['review_digest'],'确认执行',runner=self.runner)
         self.assertEqual(done['phase'],'complete');self.assertFalse(self.calls[1]['native_execute'])
 
@@ -144,7 +151,7 @@ class NativeInterfacesTests(unittest.TestCase):
         self.assertEqual(result['phase'],'preflight_failed')
 
     def test_changed_declared_input_invalidates_exact_approval(self):
-        self.build();prepared=execution.prepare(self.project,str(self.matlab),None,runner=self.runner)
+        self.build();prepared=self.prepared()
         self.mat.write_bytes(b'changed after review')
         with self.assertRaises(ValueError):execution.execute(self.project,prepared['attempt_id'],prepared['review_digest'],'确认执行',runner=self.runner)
         self.assertEqual(execution.status(self.project)['phase'],'invalidated')
@@ -159,7 +166,7 @@ class NativeInterfacesTests(unittest.TestCase):
         parameters=self.data/'models.mat';parameters.write_bytes(b'callback-only MAT parameter fixture')
         answers=self.answers();answers['parameter_choices']['native_config']['value']['overrides']=[{
             'path':'options','value':{'matlab_value_file':str(parameters),'variable':'nativeOptions'}}]
-        self.build(answers);prepared=execution.prepare(self.project,str(self.matlab),None,runner=self.runner)
+        self.build(answers);prepared=self.prepared()
         review=read(Path(prepared['attempt_dir'])/'review.json')
         self.assertTrue(any(item['path']==str(parameters) for item in review['frozen_files']))
 

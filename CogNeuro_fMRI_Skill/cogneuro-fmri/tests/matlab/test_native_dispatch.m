@@ -20,6 +20,16 @@ function testCfgCallPreservesNativePrepareFlag(t)
 r=cogneuro_toolkit_dispatch(job);verifyTrue(t,r.native_analysis_called);
 s=load(fullfile(job.output_root,'sentinel.mat'),'observed');verifyFalse(t,s.observed.cfg.execute);
 end
+function testBaselineAndEffectiveParametersAreBothCaptured(t)
+[job,~]=fixture(t,'function.prediction');job.mode='preflight';
+job.overrides=struct('path','options.method','value','project_choice');
+r=cogneuro_toolkit_dispatch(job);
+verifyEqual(t,r.baseline_config.options.method,'literal_config');
+verifyEqual(t,r.resolved_config.options.method,'project_choice');
+verifyFalse(t,r.baseline_config.execute);verifyTrue(t,r.resolved_config.execute);
+verifyFalse(t,r.native_analysis_called);verifyFalse(t,isfolder(job.output_root));
+verifyNotEmpty(t,r.software.matlab);
+end
 function testCfgAndManifestUsesTwoArguments(t)
 [job,~]=fixture(t,'function.ppi_batch');
 job.bindings=struct('path','argument_manifest','value','literal path with quote '' and spaces.tsv');

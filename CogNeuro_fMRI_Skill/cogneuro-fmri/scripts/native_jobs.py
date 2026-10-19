@@ -75,16 +75,16 @@ def prepare(project_dir,matlab_executable,spm_root=None,runner=None):
                 'frozen_files':frozen,'code_groups':groups,'directory_inputs':native['directories'],
                 'execution_ready':False,'scientific_qc_passed':False,
                 'scope':'Existing native entry call only; configuration inspection is not scientific/data validation.'}
+            import review_policy
+            review['additional_review_notes']='\n## 现成入口接入范围\n\n方法：'+entry['label_zh']+' (`'+entry['id']+'`)；实际调用 `'+entry['target']+'`；配置工厂：'+(entry['config_file'] or '无，按原生签名')+'。\nprepare只读取配置，不调用原生分析入口。原包数值、模型及依赖检查由原入口承担；目录输入只记录元数据，MAT内部引用不声称全部冻结。\n'
+            review_policy.initialize(review,answers)
+            ctl._json(attempt/'parameter_assessment.template.json',review_policy.template(review))
             ctl._json(attempt/'review.json',review)
             text=ctl._review_markdown(review)
-            text+='\n## 现成入口接入范围\n\n方法：'+entry['label_zh']+' (`'+entry['id']+'`)。\n'
-            text+='实际调用 `'+entry['target']+'`；配置工厂 '+(entry['config_file'] or '无，按原生参数签名')+'。\n'
-            text+='prepare仅读取配置和文件/表格结构，未调用分析入口，也未以execute=false运行分析。原生数值、模型及依赖检查在原入口承担。\n'
-            text+='原包代码/正式配置不修改。输出使用本次新目录；目录输入只记录目录元数据，MAT内部引用不声称全内容冻结。\n'
-            text+='如已有明确批准的完整工作流覆盖本阶段且参数/选图规则未变，沿用该授权；材料或研究选择改变时停止并重新确认。\n'
             (attempt/'review.md').write_text(text,encoding='utf-8')
             return ctl._state(attempt,'awaiting_confirmation',review_digest=ctl.sha256(attempt/'review.json'),
-                review_path=str(attempt/'review.md'),review_markdown_sha256=ctl.sha256(attempt/'review.md'),job_file=str(attempt/'execution_job.json'))
+                review_path=str(attempt/'review.md'),review_markdown_sha256=ctl.sha256(attempt/'review.md'),job_file=str(attempt/'execution_job.json'),
+                parameter_review_status='needs_assessment',assessment_template=str(attempt/'parameter_assessment.template.json'))
         except Exception as exc:return ctl._state(attempt,'preflight_failed',error=str(exc),retry_policy='new_attempt_only')
 
 

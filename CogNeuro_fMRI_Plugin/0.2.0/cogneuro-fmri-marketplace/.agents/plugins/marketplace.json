@@ -1,0 +1,12 @@
+{
+  "name": "cogneuro-fmri-tools",
+  "interface": { "displayName": "认知神经 fMRI 工具包" },
+  "plugins": [
+    {
+      "name": "cogneuro-fmri",
+      "source": { "source": "local", "path": "./plugins/cogneuro-fmri" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

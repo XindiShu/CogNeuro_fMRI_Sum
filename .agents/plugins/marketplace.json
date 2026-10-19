@@ -8,7 +8,7 @@
       "name": "cogneuro-fmri",
       "source": {
         "source": "local",
-        "path": "./CogNeuro_fMRI_Plugin/0.1.1/cogneuro-fmri-marketplace/plugins/cogneuro-fmri"
+        "path": "./CogNeuro_fMRI_Plugin/0.2.0/cogneuro-fmri-marketplace/plugins/cogneuro-fmri"
       },
       "policy": {
         "installation": "AVAILABLE",

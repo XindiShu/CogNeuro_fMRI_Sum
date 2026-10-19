@@ -21,6 +21,8 @@ SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 import fmri_project as project_module
 import execution
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from approval_fixture import reviewed
 
 FIXTURE_SPEC = importlib.util.spec_from_file_location("execution_fixture_helpers", Path(__file__).with_name("test_project.py"))
 assert FIXTURE_SPEC is not None and FIXTURE_SPEC.loader is not None
@@ -108,7 +110,7 @@ class ExecutionTests(unittest.TestCase):
         return {"schema_version": 1, "route": route, "goal": "检验预先定义的研究问题", "paradigm": "明确记录的任务或静息",
                 "independent_unit": "被试，session/run 为重复测量", "selected_run_ids": [run_id],
                 "toolkit_roots": self.toolkits, "runs": {run_id: {"facts": {k: fact(v) for k, v in values.items()}}},
-                "parameter_choices": choices}
+                "parameter_choices": choices, "parameter_setup": fact("ready")}
 
     def build_project(self, route="fc", mutate=None):
         inventory = project_module.scan_dataset(self.data)
@@ -155,7 +157,7 @@ class ExecutionTests(unittest.TestCase):
         return {"status": "complete", "runs": [], "output_files": outputs}
 
     def prepare(self, runner=None):
-        return execution.prepare(self.project, self.matlab, self.spm, runner=runner or self.fake_runner)
+        return reviewed(self.project, execution.prepare(self.project, self.matlab, self.spm, runner=runner or self.fake_runner))
 
     def execute(self, prepared, **changes):
         arguments = {"project_dir": self.project, "attempt_id": prepared["attempt_id"],

@@ -96,7 +96,7 @@ class ProjectTests(unittest.TestCase):
         return {"schema_version": 1, "route": route, "goal": "检验预先定义的研究问题", "paradigm": "静息或明确的记忆任务",
                 "independent_unit": "被试，session/run 为重复测量", "selected_run_ids": [run_id],
                 "toolkit_roots": self.packages, "runs": {run_id: {"facts": {k: fact(v) for k, v in values.items()}}},
-                "parameter_choices": choices}
+                "parameter_choices": choices, "parameter_setup": fact("ready")}
 
     def plan(self, answers=None):
         return project_module.make_plan(self.inventory, self.answers() if answers is None else answers)

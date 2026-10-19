@@ -1,5 +1,10 @@
 {
   "schema_version": 1,
+  "parameter_setup": {
+    "value": null,
+    "source": "待用户回答参数已修改、未修改或部分修改",
+    "confirmed": false
+  },
   "route": "toolkit_method",
   "method_id": "function.ppi_batch",
   "goal": "",

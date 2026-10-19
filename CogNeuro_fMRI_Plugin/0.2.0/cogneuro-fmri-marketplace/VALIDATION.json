@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "plugin_version": "0.2.0",
+  "bundled_analysis_skill_version": "0.5.0",
+  "validation_date": "2026-10-19",
+  "status": "package_checks_passed",
+  "python_environment_checks": {
+    "total": 11,
+    "passed": 11,
+    "errors": 0,
+    "failures": 0
+  },
+  "skills_quick_validation": "passed",
+  "native_app_server_explicit_source_read": "passed",
+  "native_source_localVersion": "0.2.0",
+  "native_source_skills": 2,
+  "cli_available_list_note": "Existing installed 0.1.1 is omitted from available list; new source was validated with plugin/read, installed cache unchanged.",
+  "toolkit_analysis_executed_this_release": false,
+  "fresh_gui_installation_tested": false,
+  "parameter_and_compatibility_python_tests": 136,
+  "matlab_mock_dispatch_tests": 11,
+  "project_license_selected": false,
+  "previous_release_validation": {
+    "schema_version": 1,
+    "plugin_version": "0.1.1",
+    "bundled_analysis_skill_version": "0.4.0",
+    "validation_date": "2026-10-18",
+    "status": "package_checks_passed",
+    "python_environment_checks": {
+      "total": 11,
+      "passed": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "toolkit_analysis_executed": false
+    },
+    "live_environment_profile_check": {
+      "status": "passed",
+      "counts": {
+        "preprocessing": 9,
+        "glm": 4,
+        "function": 27
+      },
+      "profile_unchanged_on_check": true,
+      "toolkit_analysis_executed": false,
+      "programs_launched": false,
+      "recorded_plugin_version": "0.1.1"
+    },
+    "codex_cli": {
+      "version": "0.162.0-alpha.17.2",
+      "actual_marketplace_discovery": "passed",
+      "discovered_plugin": "cogneuro-fmri@cogneuro-fmri-tools",
+      "per_command_config_only": true,
+      "user_configuration_modified": false,
+      "plugin_installation_performed": false
+    },
+    "skills_quick_validation": {
+      "cogneuro-fmri": "passed",
+      "cogneuro-setup": "passed"
+    },
+    "bundled_analysis_skill": {
+      "original_files": 39,
+      "copied_without_byte_changes": true
+    },
+    "preservation": {
+      "original_files_unchanged": 892
+    },
+    "toolkit_analysis_executed_this_task": false,
+    "matlab_started_this_task": false,
+    "participant_data_used": false,
+    "fresh_gui_installation_tested": false,
+    "github_remote_installation_tested": false,
+    "github_repository": "https://github.com/XindiShu/CogNeuro_fMRI_Sum",
+    "project_license_selected": false,
+    "limits": [
+      "CLI discovery and configuration checks do not establish full GUI onboarding behavior.",
+      "The specified GitHub repository was empty when inspected; no remote publication or install was performed.",
+      "Toolkits, MATLAB/SPM and optional method dependencies are not bundled or automatically installed.",
+      "Environment profiles check paths and registered source hashes; they do not validate runtime licensing, model constraints or scientific quality.",
+      "Original skill 0.4.0 validation remains scoped as recorded in its own VALIDATION.json; no method numerical tests were rerun.",
+      "Author identity and project licensing remain decisions for the publisher; no identity or license is invented."
+    ],
+    "release_scope": "Repository metadata, installation instructions and manifest-derived environment version.",
+    "repository_inspection": {
+      "status": "empty",
+      "git_head_ref_found": false,
+      "remote_publication_performed": false,
+      "inspection_date": "2026-10-18"
+    }
+  }
+}

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "skill_version": "0.4.0",
+  "skill_version": "0.5.0",
   "files": [
     {
       "path": "agents/openai.yaml",
-      "bytes": 434,
-      "sha256": "7a5c33e3471d336fb1b2355e9bfaf78d094c4c05cefbd23dce1135c86a21af54"
+      "bytes": 482,
+      "sha256": "7ae3ffa829b6ff18491258eaa6d8eaf1f2fb0cb081fb6c1dde67297cc6e57bc6"
     },
     {
       "path": "assets/answers.example.json",
@@ -19,8 +19,8 @@
     },
     {
       "path": "assets/native-answers.example.json",
-      "bytes": 2084,
-      "sha256": "bb2ee1def96ffd5111cb03d6fa7bd69c658b7432fc4444879d5c0e1a8a49ebb0"
+      "bytes": 2236,
+      "sha256": "8098ca555ce9c3ec7e88dabdc5f4aafb94d82ccd3823266e9b4eb71b1f58b60d"
     },
     {
       "path": "assets/toolkit-registry.json",
@@ -54,13 +54,18 @@
     },
     {
       "path": "matlab/cogneuro_toolkit_dispatch.m",
-      "bytes": 7897,
-      "sha256": "1db063ffa674865d8caab85e4b41861039b01824fb7aaa7cb243b370b071a75c"
+      "bytes": 8250,
+      "sha256": "ee1e48544a04f513558b5d18d9b1d75a7329a951a71ebe3e88e13303c6acc26f"
     },
     {
       "path": "references/interface-map.md",
       "bytes": 5422,
       "sha256": "afdb1ad9e2cb2f931e14cfe85bde89dac3c3d9f7636b1d4f3504108bb9b82d88"
+    },
+    {
+      "path": "references/parameter-review-and-report.md",
+      "bytes": 7096,
+      "sha256": "faf224a574b2553961e0fa0b2479c3a07fe966687e25abeaf958840b922b01fd"
     },
     {
       "path": "references/toolkit-adapters.md",
@@ -69,18 +74,18 @@
     },
     {
       "path": "references/workflow-spec.md",
-      "bytes": 4716,
-      "sha256": "8fd2ebe75b5d0959e060fbd3352dd1319d90cf98f80d112e26c80f559fcd4f48"
+      "bytes": 5222,
+      "sha256": "d714faf8e56552bb8ed8e0ec7f98df763cbba4774d09fee8a75dd014582aa68e"
     },
     {
       "path": "scripts/execution.py",
-      "bytes": 31999,
-      "sha256": "7c7555bed40a80a4e49032f6735dac85f04a56a1d2be92a603d50a0836367181"
+      "bytes": 32760,
+      "sha256": "971e4a54775985230b40c0296d79b45ea1882b3ce3c513c6220513b78ed2a237"
     },
     {
       "path": "scripts/fmri_project.py",
-      "bytes": 29833,
-      "sha256": "d67a62d0d06e7c3670b9aa403dd02749ce8d18f85bcd70649e1e5ea86558868b"
+      "bytes": 32367,
+      "sha256": "2b7e86a945206a65fff454559c0e2130ab28a8c78759c1cbd1b44a1ac23c83ef"
     },
     {
       "path": "scripts/inventory.py",
@@ -89,8 +94,8 @@
     },
     {
       "path": "scripts/native_jobs.py",
-      "bytes": 7897,
-      "sha256": "1d125dd653a9a75b87367ed38f42bd20095d539b237a9d4006d4820f4ebdbf01"
+      "bytes": 7860,
+      "sha256": "5e022c83b89a6b04171e25619fb33cbd932b78a46699ed8883bada619a8fb564"
     },
     {
       "path": "scripts/native_plan.py",
@@ -99,8 +104,13 @@
     },
     {
       "path": "scripts/preprocessing.py",
-      "bytes": 17078,
-      "sha256": "c501f55c98e17036c583c2320916a14a0b05168e66784d2f929129b6ff8d4f7d"
+      "bytes": 17147,
+      "sha256": "49ed1be12d751d509982d2e3f81a647fe2eb7a81e54247be50740e28d34175ee"
+    },
+    {
+      "path": "scripts/review_policy.py",
+      "bytes": 10997,
+      "sha256": "6f57353a57e8189580982001cd0e94f9633d91d1b3722ba1cca0843e55a39429"
     },
     {
       "path": "scripts/toolkit_catalog.py",
@@ -108,9 +118,19 @@
       "sha256": "2919c0fcf590bde4fee1e9139d612696f275c63aba8a9e76f5e31c56b786d68a"
     },
     {
+      "path": "scripts/workflow_report.py",
+      "bytes": 16761,
+      "sha256": "c9de20c2d549dadea75f7d30cf756ede34240b8f64e3c9e0d863ecd29434eed5"
+    },
+    {
       "path": "SKILL.md",
-      "bytes": 7534,
-      "sha256": "3ca5ba567d4d96b1a0813cd468ed78154295610ded47c9468ddf795115d2e708"
+      "bytes": 9794,
+      "sha256": "2b0cdfaab772b4979cf8038d944f7fe57208fb147ea2a81add16dc3ab91f1e23"
+    },
+    {
+      "path": "tests/approval_fixture.py",
+      "bytes": 1205,
+      "sha256": "0049fccdaa02ccf3f689b7b6ef1334bfe2ddd15237792f4584aa65c790c544f0"
     },
     {
       "path": "tests/helpers/cogneuro_check_spatial_integration.m",
@@ -134,8 +154,8 @@
     },
     {
       "path": "tests/matlab/test_native_dispatch.m",
-      "bytes": 7181,
-      "sha256": "29b7900da56f036d64507a665304b97d2ac2834b8e9faa0c390d195d67146fb0"
+      "bytes": 7749,
+      "sha256": "d1847d0efb078b78313c34cac364bacd6df85a96118c22aebcf6c43128833613"
     },
     {
       "path": "tests/matlab/test_preprocess_adapter.m",
@@ -149,23 +169,23 @@
     },
     {
       "path": "tests/run_preprocessing_integration.py",
-      "bytes": 9164,
-      "sha256": "f8f547bd0a4e6a23c323f47ee09bb8fbea471f0482fb8cb1ab0fa93984ba2931"
+      "bytes": 9264,
+      "sha256": "f0c464bf6531525dd98a7909554ffd025a00e799d44d7a5592d4c4f5ef8cc8a9"
     },
     {
       "path": "tests/run_spatial_integration.py",
-      "bytes": 6712,
-      "sha256": "6639d40ce4f806ea89873d68a7c8931995e52728087e466a24a7f634d78e33be"
+      "bytes": 6805,
+      "sha256": "a55c72abb86532a9bb2eb5c3b228334c2a8ce0387593fee8703692621ba6cd00"
     },
     {
       "path": "tests/run_synthetic_integration.py",
-      "bytes": 9830,
-      "sha256": "138ec038b37462c53182bacc4b71784b7368d2b67764c544b0162e07e731e12e"
+      "bytes": 9998,
+      "sha256": "1c9deb456700fd0f193fb543d4d4be528a13f07589b895bfae9d7eb2665d828d"
     },
     {
       "path": "tests/test_execution.py",
-      "bytes": 31709,
-      "sha256": "b1392969a98aadc52c130e5ef13905b731287ff7751a6a2f6fdd9670efba8c97"
+      "bytes": 31862,
+      "sha256": "fcbaea25972c8881c106f1f3a5e4d8b3a026eb030a8a623b9f3b4593d352864b"
     },
     {
       "path": "tests/test_inventory.py",
@@ -174,8 +194,13 @@
     },
     {
       "path": "tests/test_native_interfaces.py",
-      "bytes": 11744,
-      "sha256": "d655057fb5d30954d0472070aca48ee988035fc6f88344b0ea64b72bb61fe083"
+      "bytes": 11787,
+      "sha256": "70b954a18083f9a2d2965f348b3924149d7d0e913029137c1967ed9fa70d50fe"
+    },
+    {
+      "path": "tests/test_parameter_workflow.py",
+      "bytes": 12123,
+      "sha256": "f658607bc0284615bc59dba2223722cfe68e1f6f74174bc0d7de536329f46db5"
     },
     {
       "path": "tests/test_preprocessing_execution.py",
@@ -184,13 +209,13 @@
     },
     {
       "path": "tests/test_project.py",
-      "bytes": 20498,
-      "sha256": "91eb2876142ee35af24803e5c118f15ab2c8b8e7f0811b10533a41e6d2f8e544"
+      "bytes": 20532,
+      "sha256": "6a6ef5015b659043070f497b5f2be0d87e7bb5706d38c12f813be7c6243a0a9f"
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 16004,
-      "sha256": "f4623f0bdc74d21cdee20415977363339127b02d3965270883f4e2a88b53e42d"
+      "bytes": 19744,
+      "sha256": "a19067099e1d287e98c6130b9f9b7a43bfeaa7a4bce8b5d7adf8b6265a7f500d"
     }
   ]
 }

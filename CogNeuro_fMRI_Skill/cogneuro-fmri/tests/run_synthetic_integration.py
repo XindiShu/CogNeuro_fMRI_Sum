@@ -14,6 +14,8 @@ import subprocess
 import sys
 
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
+sys.path.insert(0,str(SCRIPTS))
+from approval_fixture import reviewed
 
 
 def nifti(shape, values, tr=2.0):
@@ -139,7 +141,8 @@ def main():
         answers = {"schema_version": 1, "route": route, "goal": "开发用合成流程验收，无科研显著性主张", "paradigm": "合成测试",
                    "independent_unit": "单个合成运行，无群体推断", "selected_run_ids": [run_id],
                    "toolkit_roots": {"function" if route == "fc" else "glm": args.function_root if route == "fc" else args.glm_root},
-                   "runs": {run_id: {"facts": {k: fact(v) for k, v in values.items()}}}, "parameter_choices": choices}
+                   "runs": {run_id: {"facts": {k: fact(v) for k, v in values.items()}}}, "parameter_choices": choices,
+                   "parameter_setup":fact("ready")}
         answer_file = project / "answers.json"
         write_json(answer_file, answers)
         cli("plan", "--project-dir", project, "--answers", answer_file)
@@ -151,6 +154,7 @@ def main():
         assert review["preflight"]["status"] == "preflight_passed"
         assert not Path(review["output_root"]).exists()
         print(f"{route}: synthetic-test approval and actual execution", flush=True)
+        prepared = reviewed(project,prepared)
         executed = cli("execute", "--project-dir", project, "--attempt-id", prepared["attempt_id"],
                        "--review-digest", prepared["review_digest"], "--confirmation", "确认执行")
         assert executed["phase"] == "complete", executed

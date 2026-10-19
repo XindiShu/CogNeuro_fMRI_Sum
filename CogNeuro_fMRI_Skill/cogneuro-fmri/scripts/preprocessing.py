@@ -178,14 +178,15 @@ def prepare(project_dir, matlab_executable, spm_root, runner=None):
                       "scientific_qc_passed": False, "execution_ready": False,
                       "deferred_checks": ["预处理后按确认policy选择真实完成产物", "交接帧数/事件零点/运动混杂/掩膜网格",
                                           "实际GLM设计可估计性；失败时不进行估计"] if plan["route"] == "preprocess_glm" else []}
+            import review_policy
+            review['additional_review_notes'] = '\n## 本次预处理范围\n\n按确认配置调用原生SPM步骤；私有副本停止点：'+options['preprocessing']['stop_after']+'。\n'
+            if plan['route']=='preprocess_glm':
+                review['additional_review_notes'] += '预处理→实际完成记录交接→GLM设计预检→条件GLM。输入尚未产生，设计尚未验证；交接或设计检查失败则停止，保留产物。\n'
+            review['additional_review_notes'] += '旧专用路线不包含SDC/CAT/群体配准；不自动新增参数、重采样分析掩膜、补造组织信号或再次平移事件。科研QC仍待人工审查。\n'
+            review_policy.initialize(review,answers)
+            ctl._json(attempt/'parameter_assessment.template.json',review_policy.template(review))
             ctl._json(attempt/"review.json", review)
             text = ctl._review_markdown(review)
-            text += "\n## 本次预处理范围\n\n按确认配置调用原生SPM步骤；dummy删除和重采样只在私有副本发生。"
-            text += "\n停止点："+options["preprocessing"]["stop_after"]+"；不包含磁敏感/梯度畸变校正、CAT或群体配准。\n"
-            if plan["route"] == "preprocess_glm":
-                text += "\n## 同一确认覆盖的后续阶段\n\n预处理→实际完成记录交接→GLM设计预检→条件GLM。"
-                text += "\nGLM输入尚未产生，其设计未在当前预检中验证；仅当所有交接和设计检查通过才估计，失败停止并保留产物。"
-                text += "\n不自动新增参数、重采样分析掩膜、补造组织信号或再次平移事件；科研QC仍待人工审查。\n"
             (attempt/"review.md").write_text(text, encoding="utf-8")
             return ctl._state(attempt, "awaiting_confirmation", review_digest=ctl.sha256(attempt/"review.json"),
                               review_path=str(attempt/"review.md"), review_markdown_sha256=ctl.sha256(attempt/"review.md"),

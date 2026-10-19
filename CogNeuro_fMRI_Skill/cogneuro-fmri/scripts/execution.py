@@ -290,6 +290,7 @@ def _invoke(job_file, executable, runner):
 
 
 def _review_markdown(review):
+    import review_policy
     lines = ["# fMRI 执行前审阅", "", f"路线：{review['route']}；目标：{review['goal']}",
              f"纳入运行：{len(review['runs'])}；独立单位：{review['independent_unit']}",
              f"结果目录：{review['output_root']}", "", "## 将执行的配置", "", "```json",
@@ -308,7 +309,7 @@ def _review_markdown(review):
                   "科研参数、来源确认及完整文件指纹保存在 review.json。预检通过不表示科学假设或配准质量通过。",
                   "Python/MATLAB 安装及系统动态库不做完整环境镜像；代码指纹覆盖所选工具包与 SPM 的 .m/.p/MEX。",
                   "", "只有用户审阅并确认此具体方案后才可调用 execute。"])
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines) + "\n" + review.get('additional_review_notes','') + review_policy.markdown(review)
 
 
 def prepare(project_dir, matlab_executable, spm_root, runner=None):
@@ -422,12 +423,16 @@ def prepare(project_dir, matlab_executable, spm_root, runner=None):
                       "matlab_executable": str(executable), "output_root": base["output_root"],
                       "preflight": preflight, "frozen_files": frozen, "code_groups": code_groups,
                       "execution_ready": False, "scientific_qc_passed": False}
+            import review_policy
+            review_policy.initialize(review, answers)
+            _json(attempt / "parameter_assessment.template.json", review_policy.template(review))
             _json(attempt / "review.json", review)
             (attempt / "review.md").write_text(_review_markdown(review), encoding="utf-8")
             digest = sha256(attempt / "review.json")
             return _state(attempt, "awaiting_confirmation", review_digest=digest,
                           review_path=str(attempt / "review.md"), review_markdown_sha256=sha256(attempt / "review.md"),
-                          job_file=str(attempt / "execution_job.json"))
+                          job_file=str(attempt / "execution_job.json"), parameter_review_status='needs_assessment',
+                          assessment_template=str(attempt/'parameter_assessment.template.json'))
         except Exception as exc:
             return _state(attempt, "preflight_failed", error=str(exc), retry_policy="new_attempt_only")
 
@@ -490,6 +495,8 @@ def execute(project_dir, attempt_id, review_digest, confirmation, runner=None):
             raise ValueError("此尝试不在等待确认状态；已完成/失败/中断的尝试均不自动重跑")
         if not isinstance(review_digest, str) or review_digest != state["review_digest"]:
             raise ValueError("审阅摘要不符，需重新展示并确认当前具体方案")
+        import review_policy
+        review_policy.require_approval(attempt, state, _read(attempt/'review.json'))
         _, project_state, _ = project_api.ensure_project(project)
         try:
             if sha256(attempt / "review.json") != review_digest or sha256(attempt / "review.md") != state["review_markdown_sha256"]:
@@ -530,11 +537,15 @@ def execute(project_dir, attempt_id, review_digest, confirmation, runner=None):
             _json(attempt / "receipt.json", {"status": "complete", "review_digest": review_digest,
                                             "outputs": outputs, "result": result, "stages": result.get("stages", []),
                                             "scientific_qc_passed": False})
-            return _state(attempt, "complete", receipt_sha256=sha256(attempt / "receipt.json"),
-                          output_root=str(output), stage="complete", scientific_qc_passed=False, **extra_state)
+            finished = _state(attempt, "complete", receipt_sha256=sha256(attempt / "receipt.json"),
+                              output_root=str(output), stage="complete", scientific_qc_passed=False, **extra_state)
+            import workflow_report
+            return workflow_report.after_execution(project, finished)
         except Exception as exc:
-            return _state(attempt, "execution_failed", error=str(exc), retry_policy="new_attempt_only",
-                          partial_outputs_preserved=True)
+            failed = _state(attempt, "execution_failed", error=str(exc), retry_policy="new_attempt_only",
+                            partial_outputs_preserved=True)
+            import workflow_report
+            return workflow_report.after_execution(project, failed)
 
 
 def status(project_dir, attempt_id=None):

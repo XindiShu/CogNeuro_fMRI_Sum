@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.5.0",
+  "files": [
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 482,
+      "sha256": "7ae3ffa829b6ff18491258eaa6d8eaf1f2fb0cb081fb6c1dde67297cc6e57bc6"
+    },
+    {
+      "path": "assets/answers.example.json",
+      "bytes": 2244,
+      "sha256": "8d7650139c11b1eb2f75467fb41cac6ec4faaa0c07ec151e551d3a495f612eaa"
+    },
+    {
+      "path": "assets/execution-profiles.example.json",
+      "bytes": 6698,
+      "sha256": "d981bd7ccdb98abb2a6c702d99a062c912de1edbaf8cbb0665ee03c10f7e78b7"
+    },
+    {
+      "path": "assets/native-answers.example.json",
+      "bytes": 2236,
+      "sha256": "8098ca555ce9c3ec7e88dabdc5f4aafb94d82ccd3823266e9b4eb71b1f58b60d"
+    },
+    {
+      "path": "assets/toolkit-registry.json",
+      "bytes": 34661,
+      "sha256": "a2a31395140d5f9fb7cc103ac16a046233492bf68ed4128cf15724905b733f38"
+    },
+    {
+      "path": "matlab/cogneuro_fc_adapter.m",
+      "bytes": 14058,
+      "sha256": "e994f986dd962a46a6afc35357885dc2be71af1a6e63a392661a29c789f8c78c"
+    },
+    {
+      "path": "matlab/cogneuro_glm_adapter.m",
+      "bytes": 22763,
+      "sha256": "5e1e48e8618a0c13648686d0d51e5683aeaccdd1f421c064b2a34f5e315db433"
+    },
+    {
+      "path": "matlab/cogneuro_job.m",
+      "bytes": 1565,
+      "sha256": "da3d7f897020480cebc6dd7dc76b4771e65031bfe4c582d22502d3964a99e837"
+    },
+    {
+      "path": "matlab/cogneuro_preprocess_adapter.m",
+      "bytes": 25274,
+      "sha256": "1e76972f2738fff429e39fa83a79eaa1c651bc8d010458b388d175b15ddd9d29"
+    },
+    {
+      "path": "matlab/cogneuro_preprocess_handoff.m",
+      "bytes": 20060,
+      "sha256": "fb92874bfe4e98f48c6c10d7fd3f4b95e9534c6afda09880389e75fe9855047c"
+    },
+    {
+      "path": "matlab/cogneuro_toolkit_dispatch.m",
+      "bytes": 8250,
+      "sha256": "ee1e48544a04f513558b5d18d9b1d75a7329a951a71ebe3e88e13303c6acc26f"
+    },
+    {
+      "path": "references/interface-map.md",
+      "bytes": 5422,
+      "sha256": "afdb1ad9e2cb2f931e14cfe85bde89dac3c3d9f7636b1d4f3504108bb9b82d88"
+    },
+    {
+      "path": "references/parameter-review-and-report.md",
+      "bytes": 7096,
+      "sha256": "faf224a574b2553961e0fa0b2479c3a07fe966687e25abeaf958840b922b01fd"
+    },
+    {
+      "path": "references/toolkit-adapters.md",
+      "bytes": 4816,
+      "sha256": "ac716c13fccc657363e3735fe2dc743fd22e03e174c46c6c00d84fd2acfb443c"
+    },
+    {
+      "path": "references/workflow-spec.md",
+      "bytes": 5222,
+      "sha256": "d714faf8e56552bb8ed8e0ec7f98df763cbba4774d09fee8a75dd014582aa68e"
+    },
+    {
+      "path": "scripts/execution.py",
+      "bytes": 32760,
+      "sha256": "971e4a54775985230b40c0296d79b45ea1882b3ce3c513c6220513b78ed2a237"
+    },
+    {
+      "path": "scripts/fmri_project.py",
+      "bytes": 32367,
+      "sha256": "2b7e86a945206a65fff454559c0e2130ab28a8c78759c1cbd1b44a1ac23c83ef"
+    },
+    {
+      "path": "scripts/inventory.py",
+      "bytes": 17734,
+      "sha256": "f60073923ff1c88fd145cccd0ab8ee0e442202b8be9b4b5e2f5fa5646788146a"
+    },
+    {
+      "path": "scripts/native_jobs.py",
+      "bytes": 7860,
+      "sha256": "5e022c83b89a6b04171e25619fb33cbd932b78a46699ed8883bada619a8fb564"
+    },
+    {
+      "path": "scripts/native_plan.py",
+      "bytes": 12139,
+      "sha256": "fe2215eecc80b9214d02a90ab1e50b35720feaa2cdf6049ceb3069d3d70103eb"
+    },
+    {
+      "path": "scripts/preprocessing.py",
+      "bytes": 17147,
+      "sha256": "49ed1be12d751d509982d2e3f81a647fe2eb7a81e54247be50740e28d34175ee"
+    },
+    {
+      "path": "scripts/review_policy.py",
+      "bytes": 10997,
+      "sha256": "6f57353a57e8189580982001cd0e94f9633d91d1b3722ba1cca0843e55a39429"
+    },
+    {
+      "path": "scripts/toolkit_catalog.py",
+      "bytes": 8004,
+      "sha256": "2919c0fcf590bde4fee1e9139d612696f275c63aba8a9e76f5e31c56b786d68a"
+    },
+    {
+      "path": "scripts/workflow_report.py",
+      "bytes": 16761,
+      "sha256": "c9de20c2d549dadea75f7d30cf756ede34240b8f64e3c9e0d863ecd29434eed5"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 9794,
+      "sha256": "2b0cdfaab772b4979cf8038d944f7fe57208fb147ea2a81add16dc3ab91f1e23"
+    },
+    {
+      "path": "tests/approval_fixture.py",
+      "bytes": 1205,
+      "sha256": "0049fccdaa02ccf3f689b7b6ef1334bfe2ddd15237792f4584aa65c790c544f0"
+    },
+    {
+      "path": "tests/helpers/cogneuro_check_spatial_integration.m",
+      "bytes": 7764,
+      "sha256": "83443b5354c579c6dcf0e32f5b20c320ae148ae475a10c943f56ce5664a2d25d"
+    },
+    {
+      "path": "tests/helpers/cogneuro_make_spatial_fixture.m",
+      "bytes": 5212,
+      "sha256": "357e7d9b9848ce04e788e71c2a2b0125462f4065a5f1d02265fca11474f8b953"
+    },
+    {
+      "path": "tests/matlab/test_fc_adapter.m",
+      "bytes": 11235,
+      "sha256": "5c7a804953030fef6477c932a619fb46cf2b7ef4564b22cfc62c5c39998ef2a2"
+    },
+    {
+      "path": "tests/matlab/test_glm_adapter.m",
+      "bytes": 9984,
+      "sha256": "62887826c4d089ce72195a6fdb5957ee1118d1916538c1607e25c2d5933a9997"
+    },
+    {
+      "path": "tests/matlab/test_native_dispatch.m",
+      "bytes": 7749,
+      "sha256": "d1847d0efb078b78313c34cac364bacd6df85a96118c22aebcf6c43128833613"
+    },
+    {
+      "path": "tests/matlab/test_preprocess_adapter.m",
+      "bytes": 11341,
+      "sha256": "8dd2e7424ead2e965276d93ba444f328ebfc12f1dd00bf0582b1918613f45100"
+    },
+    {
+      "path": "tests/matlab/test_preprocess_handoff.m",
+      "bytes": 10723,
+      "sha256": "e44a5e8eac37105948a23938b52c3b5aec59eae9d802fd207b64c9b249b5201c"
+    },
+    {
+      "path": "tests/run_preprocessing_integration.py",
+      "bytes": 9264,
+      "sha256": "f0c464bf6531525dd98a7909554ffd025a00e799d44d7a5592d4c4f5ef8cc8a9"
+    },
+    {
+      "path": "tests/run_spatial_integration.py",
+      "bytes": 6805,
+      "sha256": "a55c72abb86532a9bb2eb5c3b228334c2a8ce0387593fee8703692621ba6cd00"
+    },
+    {
+      "path": "tests/run_synthetic_integration.py",
+      "bytes": 9998,
+      "sha256": "1c9deb456700fd0f193fb543d4d4be528a13f07589b895bfae9d7eb2665d828d"
+    },
+    {
+      "path": "tests/test_execution.py",
+      "bytes": 31862,
+      "sha256": "fcbaea25972c8881c106f1f3a5e4d8b3a026eb030a8a623b9f3b4593d352864b"
+    },
+    {
+      "path": "tests/test_inventory.py",
+      "bytes": 14049,
+      "sha256": "78055c21ea2c3c0c13c133e12c5d823748ff457d0452bbcd4567ebd091460dc9"
+    },
+    {
+      "path": "tests/test_native_interfaces.py",
+      "bytes": 11787,
+      "sha256": "70b954a18083f9a2d2965f348b3924149d7d0e913029137c1967ed9fa70d50fe"
+    },
+    {
+      "path": "tests/test_parameter_workflow.py",
+      "bytes": 12123,
+      "sha256": "f658607bc0284615bc59dba2223722cfe68e1f6f74174bc0d7de536329f46db5"
+    },
+    {
+      "path": "tests/test_preprocessing_execution.py",
+      "bytes": 24830,
+      "sha256": "58fce4786f0e0c2a5b793388072190ec1dc8dadc052a668a1b838ae0dfcbe850"
+    },
+    {
+      "path": "tests/test_project.py",
+      "bytes": 20532,
+      "sha256": "6a6ef5015b659043070f497b5f2be0d87e7bb5706d38c12f813be7c6243a0a9f"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 19744,
+      "sha256": "a19067099e1d287e98c6130b9f9b7a43bfeaa7a4bce8b5d7adf8b6265a7f500d"
+    }
+  ]
+}

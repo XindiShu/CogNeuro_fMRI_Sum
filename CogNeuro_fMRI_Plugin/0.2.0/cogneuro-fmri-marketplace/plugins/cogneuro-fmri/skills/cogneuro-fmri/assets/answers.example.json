@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "route": null,
+  "goal": "",
+  "paradigm": "",
+  "independent_unit": "",
+  "selected_run_ids": [],
+  "toolkit_roots": {},
+  "runs": {},
+  "parameter_choices": {},
+  "field_format_example": {
+    "value": null,
+    "source": "记录真实来源文件、元数据字段或用户回答；本对象仅演示字段格式",
+    "confirmed": false
+  },
+  "instructions_zh": [
+    "复制到新项目目录后填写；不要把候选值自动标记为确认。",
+    "route 可选 preprocess_glm、glm、fc、ppi、task_dcm、spectral_dcm；仅 fc/glm 支持实际预检与具体方案获确认后的执行。",
+    "selected_run_ids 使用 inventory.json 中实际 run_id；runs 以同样的 run_id 为键。",
+    "每个 runs[run_id] 含 facts 对象；facts 的每个字段使用 value/source/confirmed 三项格式。",
+    "subject/session/run 均需确认，session 可以明确为空。TR、TE、区域时延单位为秒，平滑 FWHM 单位为毫米。",
+    "缺少真实事实时保留未知；空路径只有明确允许不用时才可确认。",
+    "toolkit_roots 按路线填写 preprocessing、glm 或 function 的真实绝对目录。",
+    "parameter_choices 每项也使用 value/source/confirmed 格式；查看 questions.json，并补齐执行所需的结构化参数。",
+    "执行字段见 execution-profiles.example.json 与 scripts/execution.py 的 normalized_options；示例不是科研推荐默认值，不得复制为已确认选择。",
+    "fc/glm 执行要求 temporal_state=unfiltered_unregressed；已有滤波或回归的时序仍可规划。",
+    "FC 的 cleaning.value 是 detrend/bandHz/minResidualDimensions 对象；execution_options.value 含 max_matrix_gib 与 roi_min_voxels。",
+    "GLM 的 conditions.value 是条件名称数组，contrasts.value 是含 name/weights 的数组，glm_options.value 是完整结构对象；execution_options.value 只含 max_matrix_gib。",
+    "GLM 每个 run 另需已确认的显式 mask、真实 confounds TSV 和事件零点；本版不自动平移事件或删除 dummy 帧。",
+    "draft_prepared 不等于预检通过；prepare 生成 review.md/review.json 后须向用户展示并取得对该具体方案的明确执行确认。"
+  ]
+}

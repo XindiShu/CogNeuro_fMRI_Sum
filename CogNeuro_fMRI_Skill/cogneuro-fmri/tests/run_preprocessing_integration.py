@@ -10,7 +10,7 @@ from pathlib import Path
 import random
 import struct
 
-from run_synthetic_integration import cli, digest, fact, nifti, write_json
+from run_synthetic_integration import cli, digest, fact, nifti, write_json, reviewed
 
 
 def contrast_mean(file, mask):
@@ -98,7 +98,8 @@ def main():
     answers = {"schema_version":1,"route":"preprocess_glm","goal":"合成预处理到GLM工程接线验收，无科研推断",
                "paradigm":"合成双条件事件","independent_unit":"单个合成run",
                "selected_run_ids":[run_id],"toolkit_roots":{"preprocessing":args.preprocessing_root,"glm":args.glm_root},
-               "runs":{run_id:{"facts":{name:fact(value) for name,value in facts.items()}}},"parameter_choices":options}
+               "runs":{run_id:{"facts":{name:fact(value) for name,value in facts.items()}}},"parameter_choices":options,
+               "parameter_setup":fact("ready")}
     answer_file = project/"answers.json"
     write_json(answer_file,answers)
     planned = cli("plan","--project-dir",project,"--answers",answer_file)
@@ -109,6 +110,7 @@ def main():
     attempt = Path(prepared["attempt_dir"])
     assert not (attempt/"results").exists()
     print("pipeline: simulated development confirmation; preprocessing/handoff/GLM preflight/estimate",flush=True)
+    prepared = reviewed(project,prepared)
     executed = cli("execute","--project-dir",project,"--attempt-id",prepared["attempt_id"],
                    "--review-digest",prepared["review_digest"],"--confirmation","确认执行")
     assert executed["phase"] == "complete", executed

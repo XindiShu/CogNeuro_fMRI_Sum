@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 import subprocess
 
-from run_synthetic_integration import cli, digest, fact, write_json
+from run_synthetic_integration import cli, digest, fact, write_json, reviewed
 
 
 def matlab(executable, expression, log):
@@ -54,7 +54,8 @@ def main():
     answers = {'schema_version':1,'route':'preprocess_glm','goal':'完整空间链路合成工程验证；无参与者或科研推断',
         'paradigm':'合成双条件事件','independent_unit':'单个合成run','selected_run_ids':[run_id],
         'toolkit_roots':{'preprocessing':args.preprocessing_root,'glm':args.glm_root},
-        'runs':{run_id:{'facts':{key:fact(value) for key,value in values.items()}}},'parameter_choices':choices}
+        'runs':{run_id:{'facts':{key:fact(value) for key,value in values.items()}}},'parameter_choices':choices,
+        'parameter_setup':fact('ready')}
     answer_file = project/'answers.json'
     write_json(answer_file,answers)
     planned = cli('plan','--project-dir',project,'--answers',answer_file)
@@ -66,6 +67,7 @@ def main():
     review = json.loads((attempt/'review.json').read_text(encoding='utf-8'))
     assert review['deferred_checks'] and not Path(review['output_root']).exists()
     print('spatial pipeline: development-only confirmation; actual Segment/Coregister/Normalise/Smooth and GLM',flush=True)
+    prepared = reviewed(project,prepared)
     executed = cli('execute','--project-dir',project,'--attempt-id',prepared['attempt_id'],
         '--review-digest',prepared['review_digest'],'--confirmation','确认执行')
     assert executed['phase']=='complete',executed
